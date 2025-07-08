@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Net;
 using HtmlAgilityPack;
 
 namespace WowheadScraper;
@@ -7,6 +8,7 @@ class Program
 {
     private static readonly Uri BaseUrl = new Uri("https://www.wowhead.com/", UriKind.Absolute);
     private static readonly HttpClient HttpClient = new HttpClient();
+    private const int LastItemIdInClassic = 24283;
 
     private static readonly List<string> NotAvailableIdentifiers = new List<string>()
     {
@@ -32,7 +34,7 @@ class Program
         HttpClient.BaseAddress = BaseUrl;
         
         var wowheadScraper = new OrderedProducerConsumer();
-        await wowheadScraper.Run(10, 25000);
+        await wowheadScraper.Run(20, LastItemIdInClassic);
     }
 
     public static async Task<Item> GetItem(int i)
@@ -64,19 +66,18 @@ class Program
         var htmlDocument = new HtmlDocument();
         htmlDocument.LoadHtml(html);
 
-        // TODO: Handle & and "
-        var itemName = htmlDocument.DocumentNode.SelectSingleNode("//h1[@class='heading-size-1']")?.InnerText;
+        var itemName = htmlDocument.DocumentNode.SelectSingleNode(".//h1[@class='heading-size-1']")?.InnerText;
         if (string.IsNullOrWhiteSpace(itemName))
         {
             return new Item {ErrorMessage = $"{i}: itemName was empty"};
         }
 
-        var isDeprecated = NotAvailableIdentifiers.Any(identifier =>
-            itemName.Contains(identifier, StringComparison.InvariantCulture));
+        itemName = WebUtility.HtmlDecode(itemName);
+        var identifier = NotAvailableIdentifiers.Find(identifier => itemName.Contains(identifier, StringComparison.InvariantCulture));
         var isException = NotAvailableExceptions.Contains(i);
-        if (isDeprecated && !isException)
+        if (identifier != null && !isException)
         {
-            return new Item {ErrorMessage = $"{i}: item is deprecated/old/monster: {itemName}"};
+            return new Item {ErrorMessage = $"{i}: itemName has identifier {identifier}: {itemName}"};
         }
         
         if (html.Contains("This item is not available to players."))
@@ -84,14 +85,13 @@ class Program
             return new Item {ErrorMessage = $"{i}: item is not available to players: {itemName}"};
         }
 
-        // TODO Fix recipe prices
         var sellPrice = 0;
-        var sellPriceElement = htmlDocument.DocumentNode.SelectSingleNode("//div[@class='whtt-sellprice']");
+        var sellPriceElement = htmlDocument.DocumentNode.SelectSingleNode(".//div[@class='whtt-sellprice']");
         if (sellPriceElement != null)
         {
-            var gold = sellPriceElement.SelectSingleNode("//span[@class='moneygold']")?.InnerText;
-            var silver = sellPriceElement.SelectSingleNode("//span[@class='moneysilver']")?.InnerText;
-            var copper = sellPriceElement.SelectSingleNode("//span[@class='moneycopper']")?.InnerText;
+            var gold = sellPriceElement.SelectSingleNode(".//span[@class='moneygold']")?.InnerText;
+            var silver = sellPriceElement.SelectSingleNode(".//span[@class='moneysilver']")?.InnerText;
+            var copper = sellPriceElement.SelectSingleNode(".//span[@class='moneycopper']")?.InnerText;
 
             sellPrice = GetMoney(gold, 1000) + GetMoney(silver, 100) + GetMoney(copper, 1);
         }
