@@ -26,7 +26,7 @@ class Program
         HttpClient.BaseAddress = BaseUrl;
         
         var wowheadScraper = new OrderedProducerConsumer();
-        await wowheadScraper.Run(8, 1000);
+        await wowheadScraper.Run(10, 25000);
     }
 
     public static async Task<Item> GetItem(int i)
