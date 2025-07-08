@@ -108,7 +108,7 @@ public class OrderedProducerConsumer
                     
                     _tasks.TryRemove(key, out _);
 
-                    if (key % 10 == 0)
+                    if (key % 100 == 0)
                     {
                         Console.WriteLine($"[{DateTime.Now:t}] {key} / {itemsToProcess} completed. Elapsed {stopwatch.Elapsed.Seconds} seconds");
                         stopwatch.Restart();
