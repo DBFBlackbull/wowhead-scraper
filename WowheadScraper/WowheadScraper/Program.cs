@@ -12,7 +12,13 @@ class Program
     {
         "OLD",
         "Deprecated",
+        "Depricated", // misspelled item
+        "Deptecated", // misspelled item
+        "DEBUG",
         "Monster",
+        "QA",
+        "(Test)",
+        "[PH]",
     };
 
     private static readonly List<int> NotAvailableExceptions = new List<int>()
@@ -58,6 +64,7 @@ class Program
         var htmlDocument = new HtmlDocument();
         htmlDocument.LoadHtml(html);
 
+        // TODO: Handle & and "
         var itemName = htmlDocument.DocumentNode.SelectSingleNode("//h1[@class='heading-size-1']")?.InnerText;
         if (string.IsNullOrWhiteSpace(itemName))
         {
@@ -77,6 +84,7 @@ class Program
             return new Item {ErrorMessage = $"{i}: item is not available to players: {itemName}"};
         }
 
+        // TODO Fix recipe prices
         var sellPrice = 0;
         var sellPriceElement = htmlDocument.DocumentNode.SelectSingleNode("//div[@class='whtt-sellprice']");
         if (sellPriceElement != null)
