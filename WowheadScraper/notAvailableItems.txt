@@ -1626,7 +1626,7 @@
 4912: itemName has identifier Test: Test Wand JChow
 4927: itemName has identifier Deprecated: Deprecated Keg of Chen's Stormstout
 4934: itemName has identifier Deprecated: Deprecated Heavy Cord Shoulderpads
-4943: item is not available to players: Torka's Egg Cracker [UNUSED]
+4943: itemName has identifier [UNUSED]: Torka's Egg Cracker [UNUSED]
 4950: itemName has identifier Deprecated: Deprecated Orc Protector
 4955: itemName has identifier Deprecated: Deprecated Nomadic Shoulderpads
 4956: itemName has identifier Test: Test Totem
@@ -1776,7 +1776,7 @@
 5893: item not found
 5894: item not found
 5895: item not found
-5896: item is not available to players: Theramore Guard Medallion UNUSED
+5896: itemName has identifier UNUSED: Theramore Guard Medallion UNUSED
 5898: item not found
 5899: item not found
 5900: item not found
@@ -2931,7 +2931,7 @@
 9525: item not found
 9526: item not found
 9549: item not found
-9572: item is not available to players: <UNUSED> Glyphic Rune
+9572: itemName has identifier <UNUSED>: <UNUSED> Glyphic Rune
 9582: item not found
 9583: item not found
 9584: item not found
@@ -4006,9 +4006,10 @@
 12421: itemName has identifier Monster: Monster - Staff, White Jeweled
 12423: item not found
 12439: item not found
+12440: itemName has identifier (DND): Magic Knucklebone (DND)
 12441: item not found
-12442: item is not available to players: Charm Pouch (DND)
-12443: item is not available to players: Knucklebone Pouch (DND)
+12442: itemName has identifier (DND): Charm Pouch (DND)
+12443: itemName has identifier (DND): Knucklebone Pouch (DND)
 12452: itemName has identifier Monster: Monster - Shield, Horde A02 Silver
 12453: itemName has identifier Monster: Monster - Shield, Horde A03 Triangle
 12454: itemName has identifier Monster: Monster - Shield, Horde B01 Brown
@@ -4344,7 +4345,7 @@
 13516: item not found
 13540: item not found
 13541: item not found
-13543: item is not available to players: Krastinov's Bag of Horrors UNUSED
+13543: itemName has identifier UNUSED: Krastinov's Bag of Horrors UNUSED
 13547: item not found
 13548: item not found
 13549: item not found
@@ -4890,8 +4891,6 @@
 15099: item not found
 15100: item not found
 15101: item not found
-15102: itemName has identifier Test: Un'Goro Tested Sample
-15103: itemName has identifier Test: Corrupt Tested Sample
 15141: item is not available to players: Onyxia Scale Breastplate
 15201: item not found
 15315: item not found
@@ -6471,7 +6470,7 @@
 19917: itemName has identifier Monster: Monster - Wand, Horde A01 Green
 19924: itemName has identifier Monster: Monster - Dagger, Fang Hook Curve Dark
 19926: itemName has identifier DEPRECATED: Flowing Ritual Robes DEPRECATED
-19932: item is not available to players: UNUSED Empowered Mojo Bundle
+19932: itemName has identifier UNUSED: UNUSED Empowered Mojo Bundle
 19966: itemName has identifier DEPRECATED: Thrice Strung Longbow DEPRECATED
 19971: itemName has identifier Test: High Test Eternium Fishing Line
 19976: item not found
@@ -6905,10 +6904,10 @@
 21231: item not found
 21233: item not found
 21234: item not found
-21238: item is not available to players: Winter Veil Cookie UNUSED
+21238: itemName has identifier UNUSED: Winter Veil Cookie UNUSED
 21239: item not found
 21274: itemName has identifier Test: Test Stackable Items
-21276: item is not available to players: Blessed Qiraji Naturalist Staff UNUSED
+21276: itemName has identifier UNUSED: Blessed Qiraji Naturalist Staff UNUSED
 21286: itemName has identifier Monster: Monster - Axe, 2H Large Double Bladed, Gold
 21339: itemName has identifier [PH]: Doomcaller's Handwraps [PH]
 21419: itemName has identifier TEST: AHNQIRAJ TEST ITEM A CLOTH LEGS
@@ -7269,8 +7268,8 @@
 22473: item not found
 22474: item not found
 22475: item not found
-22485: item is not available to players: [UNUSED] Scourge Invasion Focus Object
-22486: item is not available to players: [UNUSED] Scourge Invasion Boss Summoner
+22485: itemName has identifier [UNUSED]: [UNUSED] Scourge Invasion Focus Object
+22486: itemName has identifier [UNUSED]: [UNUSED] Scourge Invasion Boss Summoner
 22487: item not found
 22521: item not found
 22522: item not found
@@ -7463,7 +7462,7 @@
 22928: item not found
 22929: item not found
 22931: item not found
-22933: item is not available to players: [UNUSED] Abom Stoone
+22933: itemName has identifier [UNUSED]: [UNUSED] Abom Stoone
 22934: item not found
 22951: item not found
 22952: item not found
@@ -7500,7 +7499,7 @@
 22998: item not found
 23003: item not found
 23026: item not found
-23034: item is not available to players: Nax PH Crit Plate Shoulders
+23034: itemName has identifier PH: Nax PH Crit Plate Shoulders
 23051: item not found
 23052: item not found
 23058: item is not available to players: Life Channeling Necklace
@@ -7510,7 +7509,7 @@
 23077: item not found
 23079: item not found
 23080: item not found
-23086: item is not available to players: [UNUSED] Letter Cookie
+23086: itemName has identifier [UNUSED]: [UNUSED] Letter Cookie
 23094: item not found
 23095: item not found
 23096: item not found

@@ -8429,7 +8429,6 @@
 ["item:12436"] = 0,	//Frostmaul E'ko
 ["item:12437"] = 0,	//Ridgewell's Crate
 ["item:12438"] = 0,	//Tinkee's Letter
-["item:12440"] = 0,	//Magic Knucklebone (DND)
 ["item:12444"] = 0,	//Uncracked Chillwind Horn
 ["item:12445"] = 0,	//Felnok's Package
 ["item:12446"] = 19,	//Anvilmar Musket
@@ -10207,6 +10206,8 @@
 ["item:15094"] = 5155,	//Runic Leather Headband
 ["item:15095"] = 2885,	//Runic Leather Pants
 ["item:15096"] = 8332,	//Runic Leather Shoulders
+["item:15102"] = 0,	//Un'Goro Tested Sample
+["item:15103"] = 0,	//Corrupt Tested Sample
 ["item:15104"] = 3188,	//Wingborne Boots
 ["item:15105"] = 5397,	//Staff of Noh'Orahil
 ["item:15106"] = 5447,	//Staff of Dar'Orahil

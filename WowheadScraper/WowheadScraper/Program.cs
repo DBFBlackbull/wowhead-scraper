@@ -12,21 +12,26 @@ class Program
     public static readonly List<string> NotAvailableIdentifiers = new List<string>()
     {
         "OLD",
+        "DEBUG",
         "Deprecated",
         "Depricated", // misspelled item
         "Deptecated", // misspelled item
         "DEPRECATED",
         "DEP",
-        "DEBUG",
+        "(DND)",
         "Monster",
-        "QA",
         "[PH]",
+        "PH",
+        "QA",
         "(test)",
         "(Test)",
         "(TEST)",
         "Test",
         "TEST",
         "Unused",
+        "<UNUSED>",
+        "[UNUSED]",
+        "UNUSED",
     };
 
     public static readonly List<int> NotAvailableExceptions = new List<int>()
@@ -34,6 +39,8 @@ class Program
         16110, // Recipe: Monster Omelet
         12218, // Monster Omelet
         8523, // Field Testing Kit
+        15102, // Un'Goro Tested Sample - Incorrectly marked as Not Available to players even though it is
+        15103 // Corrupt Tested Sample - Incorrectly marked as Not Available to players even though it is
     };
 
     static async Task Main(string[] args)
@@ -71,7 +78,7 @@ class Program
             return new Item {ErrorMessage = $"{i}: itemName has identifier {identifier}: {itemName}"};
         }
 
-        if (html.Contains("This item is not available to players."))
+        if (html.Contains("This item is not available to players.") && !isException)
         {
             return new Item {ErrorMessage = $"{i}: item is not available to players: {itemName}"};
         }
