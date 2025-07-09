@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using System.Net;
+﻿using System.Net;
 using HtmlAgilityPack;
 
 namespace WowheadScraper;
@@ -7,10 +6,10 @@ namespace WowheadScraper;
 class Program
 {
     private static readonly Uri BaseUrl = new Uri("https://www.wowhead.com/", UriKind.Absolute);
-    private static readonly HttpClient HttpClient = new HttpClient();
+    public static readonly HttpClient HttpClient = new HttpClient();
     private const int LastItemIdInClassic = 24283;
 
-    private static readonly List<string> NotAvailableIdentifiers = new List<string>()
+    public static readonly List<string> NotAvailableIdentifiers = new List<string>()
     {
         "OLD",
         "Deprecated",
@@ -23,7 +22,7 @@ class Program
         "[PH]",
     };
 
-    private static readonly List<int> NotAvailableExceptions = new List<int>()
+    public static readonly List<int> NotAvailableExceptions = new List<int>()
     {
         16110, // Recipe: Monster Omelet
         12218, // Monster Omelet
@@ -32,37 +31,15 @@ class Program
     static async Task Main(string[] args)
     {
         HttpClient.BaseAddress = BaseUrl;
-        
-        var wowheadScraper = new OrderedProducerConsumer();
-        await wowheadScraper.Run(20, LastItemIdInClassic);
+        var folder = Path.Join(SolutionDirectory(), "classic");
+        Directory.CreateDirectory(folder);
+
+        var wowheadScraper = new ConsumerRunner();
+        await wowheadScraper.Run(LastItemIdInClassic);
     }
 
-    public static async Task<Item> GetItem(int i)
+    public static Item GetItem(int i, string html)
     {
-        string html;
-        using (var response = await HttpClient.GetAsync(new Uri($"classic/item={i}", UriKind.Relative)))
-        {
-            if (!response.IsSuccessStatusCode)
-            {
-                return new Item {ErrorMessage = $"{i}: failed to get item: {response.StatusCode}"};
-            }
-
-            if (response.RequestMessage?.RequestUri != null)
-            {
-                var request = response.RequestMessage.RequestUri;
-                var query = System.Web.HttpUtility.ParseQueryString(request.Query);
-                if (query["notFound"] != null)
-                {
-                    return new Item {ErrorMessage = $"{i}: item not found"};
-                }
-            }
-
-            using (var responseContent = response.Content)
-            {
-                html = await responseContent.ReadAsStringAsync();
-            }
-        }
-
         var htmlDocument = new HtmlDocument();
         htmlDocument.LoadHtml(html);
 
@@ -73,13 +50,19 @@ class Program
         }
 
         itemName = WebUtility.HtmlDecode(itemName);
-        var identifier = NotAvailableIdentifiers.Find(identifier => itemName.Contains(identifier, StringComparison.InvariantCulture));
-        var isException = NotAvailableExceptions.Contains(i);
+        if (itemName == "Classic Items")
+        {
+            return new Item {ErrorMessage = $"{i}: item not found"};
+        }
+
+        var identifier = Program.NotAvailableIdentifiers.Find(identifier =>
+            itemName.Contains(identifier, StringComparison.InvariantCulture));
+        var isException = Program.NotAvailableExceptions.Contains(i);
         if (identifier != null && !isException)
         {
             return new Item {ErrorMessage = $"{i}: itemName has identifier {identifier}: {itemName}"};
         }
-        
+
         if (html.Contains("This item is not available to players."))
         {
             return new Item {ErrorMessage = $"{i}: item is not available to players: {itemName}"};
@@ -99,7 +82,7 @@ class Program
         return new Item {Name = itemName, SellPrice = sellPrice};
     }
 
-    private static int GetMoney(string? money, int factor)
+    public static int GetMoney(string? money, int factor)
     {
         if (string.IsNullOrWhiteSpace(money))
         {

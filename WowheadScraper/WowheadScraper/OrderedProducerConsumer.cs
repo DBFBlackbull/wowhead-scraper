@@ -1,5 +1,7 @@
 using System.Collections.Concurrent;
 using System.Diagnostics;
+using System.Net;
+using HtmlAgilityPack;
 
 namespace WowheadScraper;
 
@@ -10,7 +12,7 @@ public class OrderedProducerConsumer
     private readonly ConcurrentDictionary<int, TaskCompletionSource<Item>> _tasks = new();
 
     // A thread-safe way to get a unique integer key.
-    private int _currentItemKey = 0;
+    private int _currentItemId = 0;
 
     public async Task Run(int producerCount, int itemsToProcess)
     {
@@ -50,15 +52,14 @@ public class OrderedProducerConsumer
     {
         while (true)
         {
-            int key = Interlocked.Increment(ref _currentItemKey);
-
+            int key = Interlocked.Increment(ref _currentItemId);
             if (key > itemsToProcess)
             {
                 break;
             }
 
             // --- Simulate slow work ---
-            var item = await Program.GetItem(key);
+            var item = await GetItem(key);
             // -------------------------
 
             // Find the "promise" for this key and set its result.
@@ -78,10 +79,10 @@ public class OrderedProducerConsumer
         var available = Path.Join(Program.SolutionDirectory(), "availableItems.txt");
         var notAvailable = Path.Join(Program.SolutionDirectory(), "notAvailableItems.txt");
 
-        using (var availableStream = new StreamWriter(File.Create(available)))
+        await using (var availableStream = new StreamWriter(File.Create(available)))
         {
             availableStream.AutoFlush = true;
-            using (var notAvailableStream = new StreamWriter(File.Create(notAvailable)))
+            await using (var notAvailableStream = new StreamWriter(File.Create(notAvailable)))
             {
                 notAvailableStream.AutoFlush = true;
 
@@ -105,17 +106,81 @@ public class OrderedProducerConsumer
                     {
                         await notAvailableStream.WriteLineAsync(item.ErrorMessage);
                     }
-                    
+
                     _tasks.TryRemove(key, out _);
 
                     if (key % 100 == 0)
                     {
-                        Console.WriteLine($"[{DateTime.Now:t}] {key} / {itemsToProcess} completed. Elapsed {stopwatch.Elapsed.Seconds} seconds");
+                        Console.WriteLine(
+                            $"[{DateTime.Now:t}] {key} / {itemsToProcess} completed. Elapsed {stopwatch.Elapsed.Seconds} seconds");
                         stopwatch.Restart();
                     }
                     // ------------------------------------
                 }
             }
         }
+    }
+
+    private static async Task<Item> GetItem(int i)
+    {
+        string html;
+        using (var response = await Program.HttpClient.GetAsync(new Uri($"classic/item={i}", UriKind.Relative)))
+        {
+            if (!response.IsSuccessStatusCode)
+            {
+                return new Item {ErrorMessage = $"{i}: failed to get item: {response.StatusCode}"};
+            }
+
+            if (response.RequestMessage?.RequestUri != null)
+            {
+                var request = response.RequestMessage.RequestUri;
+                var query = System.Web.HttpUtility.ParseQueryString(request.Query);
+                if (query["notFound"] != null)
+                {
+                    return new Item {ErrorMessage = $"{i}: item not found"};
+                }
+            }
+
+            using (var responseContent = response.Content)
+            {
+                html = await responseContent.ReadAsStringAsync();
+            }
+        }
+
+        var htmlDocument = new HtmlDocument();
+        htmlDocument.LoadHtml(html);
+
+        var itemName = htmlDocument.DocumentNode.SelectSingleNode(".//h1[@class='heading-size-1']")?.InnerText;
+        if (string.IsNullOrWhiteSpace(itemName))
+        {
+            return new Item {ErrorMessage = $"{i}: itemName was empty"};
+        }
+
+        itemName = WebUtility.HtmlDecode(itemName);
+        var identifier = Program.NotAvailableIdentifiers.Find(identifier =>
+            itemName.Contains(identifier, StringComparison.InvariantCulture));
+        var isException = Program.NotAvailableExceptions.Contains(i);
+        if (identifier != null && !isException)
+        {
+            return new Item {ErrorMessage = $"{i}: itemName has identifier {identifier}: {itemName}"};
+        }
+
+        if (html.Contains("This item is not available to players."))
+        {
+            return new Item {ErrorMessage = $"{i}: item is not available to players: {itemName}"};
+        }
+
+        var sellPrice = 0;
+        var sellPriceElement = htmlDocument.DocumentNode.SelectSingleNode(".//div[@class='whtt-sellprice']");
+        if (sellPriceElement != null)
+        {
+            var gold = sellPriceElement.SelectSingleNode(".//span[@class='moneygold']")?.InnerText;
+            var silver = sellPriceElement.SelectSingleNode(".//span[@class='moneysilver']")?.InnerText;
+            var copper = sellPriceElement.SelectSingleNode(".//span[@class='moneycopper']")?.InnerText;
+
+            sellPrice = Program.GetMoney(gold, 1000) + Program.GetMoney(silver, 100) + Program.GetMoney(copper, 1);
+        }
+
+        return new Item {Name = itemName, SellPrice = sellPrice};
     }
 }
