@@ -13852,7 +13852,6 @@
 ["item:20480"] = 8078,	//Spitfire Gauntlets
 ["item:20481"] = 8139,	//Spitfire Bracers
 ["item:20485"] = 0,	//Duke's Seal
-["item:20487"] = 22093,	//Lok'delar, Stave of the Ancient Keepers DEP
 ["item:20489"] = 0,	//Crown of the Council
 ["item:20490"] = 0,	//Ironforge Mint
 ["item:20491"] = 0,	//Undercity Mint
@@ -15139,7 +15138,6 @@
 ["item:22383"] = 12291,	//Sageblade
 ["item:22384"] = 8554,	//Persuader
 ["item:22385"] = 7276,	//Titanic Leggings
-["item:22386"] = 0,	//Head of Instructor Razuvious DEP
 ["item:22387"] = 0,	//Heart of Anub'Rekhan
 ["item:22388"] = 6000,	//Plans: Titanic Leggings
 ["item:22389"] = 2000,	//Plans: Sageblade

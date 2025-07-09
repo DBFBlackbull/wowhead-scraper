@@ -15,17 +15,21 @@ class Program
         "Deprecated",
         "Depricated", // misspelled item
         "Deptecated", // misspelled item
+        "DEPRECATED",
+        "DEP",
         "DEBUG",
         "Monster",
         "QA",
-        "(Test)",
         "[PH]",
+        "(Test)",
+        "Test",
     };
 
     public static readonly List<int> NotAvailableExceptions = new List<int>()
     {
         16110, // Recipe: Monster Omelet
         12218, // Monster Omelet
+        8523, // Field Testing Kit
     };
 
     static async Task Main(string[] args)

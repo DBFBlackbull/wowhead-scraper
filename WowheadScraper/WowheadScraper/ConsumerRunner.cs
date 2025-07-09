@@ -38,7 +38,7 @@ public class ConsumerRunner
                         await notAvailableStream.WriteLineAsync(item.ErrorMessage);
                     }
 
-                    if (key % 100 == 0)
+                    if (key % 1000 == 0)
                     {
                         Console.WriteLine(
                             $"[{DateTime.Now:t}] {key} / {itemsToProcess} completed. Elapsed {stopwatch.Elapsed.Seconds} seconds");

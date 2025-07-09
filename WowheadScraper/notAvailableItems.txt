@@ -670,7 +670,7 @@
 775: item not found
 784: itemName has identifier Deprecated: Deprecated Tiny Flame Sac
 786: itemName has identifier Deprecated: Deprecated Pure Copper Ingot
-788: item is not available to players: Test Fire Sword
+788: itemName has identifier Test: Test Fire Sword
 800: item not found
 801: item not found
 802: item not found
@@ -826,7 +826,7 @@
 1160: item not found
 1162: itemName has identifier (Test): Pirates Patch (Test)
 1163: itemName has identifier (Test): Dwarven Explorer's Monocle (Test)
-1165: item is not available to players: Test Food
+1165: itemName has identifier Test: Test Food
 1170: itemName has identifier Deprecated: Deprecated Brown Leather Vest
 1174: itemName has identifier Deprecated: Deprecated Light Soldier Boots
 1184: itemName has identifier Deprecated: Deprecated Scarlet Badge
@@ -853,7 +853,7 @@
 1249: item not found
 1253: itemName has identifier Deprecated: Deprecated Summoned Lockpick
 1255: itemName has identifier Deprecated: Deprecated Conjured Mana Gem
-1258: item is not available to players: Bind On Use Test Item
+1258: itemName has identifier Test: Bind On Use Test Item
 1259: item is not available to players: JYoo test item
 1266: itemName has identifier Deprecated: Deprecated Orcslayer
 1267: itemName has identifier Deprecated: Deprecated Cask of Merlot
@@ -1191,7 +1191,7 @@
 2095: item not found
 2096: item not found
 2097: item not found
-2103: item is not available to players: Test Arrow
+2103: itemName has identifier Test: Test Arrow
 2104: itemName has identifier Deprecated: Deprecated Standard Shot
 2106: itemName has identifier Deprecated: Deprecated Worn Pants
 2107: itemName has identifier Deprecated: Deprecated Travel-worn Boots
@@ -1437,7 +1437,7 @@
 3112: item not found
 3128: itemName has identifier OLD: (OLD)Medium Throwing Axe
 3136: itemName has identifier OLD: (OLD)Heavy Throwing Axe
-3145: item is not available to players: Off Hand Test Dagger
+3145: itemName has identifier Test: Off Hand Test Dagger
 3147: itemName has identifier Deprecated: Deprecated Tattered Shirt
 3148: itemName has identifier Deprecated: Deprecated Work Shirt
 3149: itemName has identifier Deprecated: Deprecated Ripped Vest
@@ -1537,7 +1537,7 @@
 3768: itemName has identifier Deprecated: Deprecated Anti-magic Potion
 3773: itemName has identifier Deprecated: Deprecated Murkwood Sap
 3774: itemName has identifier Monster: Monster - Dynamite, Unlit
-3865: item is not available to players: Test Offhand Weapon
+3865: itemName has identifier Test: Test Offhand Weapon
 3878: itemName has identifier Deprecated: Deprecated Conjured Mana Jewel
 3881: itemName has identifier Deprecated: Deprecated Kurzen's Head
 3883: itemName has identifier Deprecated: Deprecated Thick Cloth Hat
@@ -1619,22 +1619,22 @@
 4884: itemName has identifier Deprecated: Deprecated Small Scorpid Carapace
 4885: itemName has identifier Deprecated: Deprecated Large Scorpid Carapace
 4889: itemName has identifier Deprecated: Deprecated Mottled Boar Steaks
-4899: item is not available to players: Test Crossbow
-4900: item is not available to players: Test Spear
-4901: item is not available to players: Test Polearm
+4899: itemName has identifier Test: Test Crossbow
+4900: itemName has identifier Test: Test Spear
+4901: itemName has identifier Test: Test Polearm
 4902: itemName has identifier Deprecated: Deprecated Apprentice Wand
-4912: item is not available to players: Test Wand JChow
+4912: itemName has identifier Test: Test Wand JChow
 4927: itemName has identifier Deprecated: Deprecated Keg of Chen's Stormstout
 4934: itemName has identifier Deprecated: Deprecated Heavy Cord Shoulderpads
 4943: item is not available to players: Torka's Egg Cracker [UNUSED]
 4950: itemName has identifier Deprecated: Deprecated Orc Protector
 4955: itemName has identifier Deprecated: Deprecated Nomadic Shoulderpads
-4956: item is not available to players: Test Totem
-4985: item is not available to players: Test Proc Wand
+4956: itemName has identifier Test: Test Totem
+4985: itemName has identifier Test: Test Proc Wand
 4991: itemName has identifier Monster: Monster - Sword2H, Broadsword
 4993: itemName has identifier Monster: Monster - Item, Skull
 4994: itemName has identifier Monster: Monster - Item, Gizmo
-4996: item is not available to players: Test Item 1
+4996: itemName has identifier Test: Test Item 1
 4997: itemName has identifier Deprecated: Deprecated Recipe: Kodo Skin Bag
 5031: item not found
 5032: item not found
@@ -1703,7 +1703,7 @@
 5358: itemName has identifier Deprecated: Deprecated Whisperwind Headdress
 5365: itemName has identifier Deprecated: Deprecated Pickpocket
 5372: itemName has identifier Deprecated: Deprecated Glowing Shrunken Skull
-5378: item is not available to players: Shane Test (DELETE ME)
+5378: itemName has identifier Test: Shane Test (DELETE ME)
 5384: itemName has identifier Deprecated: Deprecated Tower of Althalaxx Key
 5407: itemName has identifier Deprecated: Deprecated Empty Lesser Bloodstone
 5408: itemName has identifier Deprecated: Deprecated Minor Bloodstone
@@ -1730,22 +1730,22 @@
 5515: itemName has identifier Deprecated: Deprecated Iron Pummel
 5531: itemName has identifier Deprecated: Deprecated Brakgul Deathbringer's Head
 5532: itemName has identifier Monster: Monster - Hot Iron Poker
-5545: item is not available to players: Fast Test Polearm
-5546: item is not available to players: Fast Test Crossbow
-5548: item is not available to players: Fast Test Bow
-5549: item is not available to players: Fast Test Dagger
-5550: item is not available to players: Fast Test Gun
-5551: item is not available to players: Fast Test 1H Axe
-5552: item is not available to players: Fast Test 2H Axe
-5553: item is not available to players: Fast Test 1H Mace
-5554: item is not available to players: Fast Test 2H Mace
-5555: item is not available to players: Fast Test 1H Sword
-5556: item is not available to players: Fast Test 2H Sword
-5557: item is not available to players: Fast Test Spear
-5558: item is not available to players: Fast Test Staff
-5559: item is not available to players: Fast Test Thrown
-5560: item is not available to players: Fast Test Wand
-5561: item is not available to players: Fast Test Generic
+5545: itemName has identifier Test: Fast Test Polearm
+5546: itemName has identifier Test: Fast Test Crossbow
+5548: itemName has identifier Test: Fast Test Bow
+5549: itemName has identifier Test: Fast Test Dagger
+5550: itemName has identifier Test: Fast Test Gun
+5551: itemName has identifier Test: Fast Test 1H Axe
+5552: itemName has identifier Test: Fast Test 2H Axe
+5553: itemName has identifier Test: Fast Test 1H Mace
+5554: itemName has identifier Test: Fast Test 2H Mace
+5555: itemName has identifier Test: Fast Test 1H Sword
+5556: itemName has identifier Test: Fast Test 2H Sword
+5557: itemName has identifier Test: Fast Test Spear
+5558: itemName has identifier Test: Fast Test Staff
+5559: itemName has identifier Test: Fast Test Thrown
+5560: itemName has identifier Test: Fast Test Wand
+5561: itemName has identifier Test: Fast Test Generic
 5562: itemName has identifier Deprecated: Voidstone (Deprecated)
 5563: itemName has identifier Deprecated: Succubi Stone (Deprecated)
 5564: itemName has identifier Deprecated: Felstone (Deprecated)
@@ -1758,7 +1758,7 @@
 5651: itemName has identifier Deprecated: Deprecated Dull Razormane Backstabber
 5652: itemName has identifier Deprecated: Deprecated Cracked Razormane Wand
 5653: itemName has identifier Deprecated: Deprecated Broken Razormane War Shield
-5688: item is not available to players: Test Language Item
+5688: itemName has identifier Test: Test Language Item
 5745: itemName has identifier Monster: Monster - Trident, Wood Handle
 5746: itemName has identifier Monster: Monster - Trident, Copper
 5747: itemName has identifier Monster: Monster - Trident, Ornate
@@ -1869,7 +1869,7 @@
 6033: item not found
 6034: item not found
 6035: item not found
-6036: item is not available to players: Rogue Test Dagger
+6036: itemName has identifier Test: Rogue Test Dagger
 6088: itemName has identifier Monster: Monster - Torch, Ranged
 6090: itemName has identifier OLD: OLDNoboru's Cudgel
 6099: item not found
@@ -1908,7 +1908,7 @@
 6163: item not found
 6164: item not found
 6165: item not found
-6213: item is not available to players: Test Sharpening Stone
+6213: itemName has identifier Test: Test Sharpening Stone
 6221: item not found
 6224: itemName has identifier Monster: Monster - Sword2H, Black Metal Hilt
 6225: itemName has identifier Monster: Monster - Item, Fish - Blue
@@ -1934,8 +1934,8 @@
 6606: item not found
 6618: itemName has identifier Monster: Monster - Orb
 6639: itemName has identifier Deprecated: Deprecated Rough Pebble
-6673: item is not available to players: Test HP Ring
-6674: item is not available to players: Test MP Ring
+6673: itemName has identifier Test: Test HP Ring
+6674: itemName has identifier Test: Test MP Ring
 6680: itemName has identifier Monster: Monster - Spear, Sharp Thin
 6698: item is not available to players: Stone of Pierce
 6699: item not found
@@ -2010,7 +2010,7 @@
 6884: item not found
 6885: item not found
 6886: itemName has identifier Monster: Monster - Throwing Knife
-6896: item is not available to players: Twain Component Test
+6896: itemName has identifier Test: Twain Component Test
 6917: item not found
 6918: item not found
 6919: item not found
@@ -2202,7 +2202,7 @@
 7263: item not found
 7264: item not found
 7265: item not found
-7299: item is not available to players: Test - Magic Stone Helmet
+7299: itemName has identifier Test: Test - Magic Stone Helmet
 7300: item not found
 7301: item not found
 7302: item not found
@@ -2352,8 +2352,8 @@
 7704: item not found
 7705: item not found
 7706: itemName has identifier Monster: Monster - Mace2H, Special NPC (Mograine)
-7707: item is not available to players: Twain Test
-7725: item is not available to players: Tabard of the Scarlet Crusade DEPRECATED
+7707: itemName has identifier Test: Twain Test
+7725: itemName has identifier DEPRECATED: Tabard of the Scarlet Crusade DEPRECATED
 7732: item not found
 7743: item not found
 7744: item not found
@@ -2543,7 +2543,7 @@
 8104: item not found
 8105: item not found
 8145: item not found
-8164: item is not available to players: Test Stationery
+8164: itemName has identifier Test: Test Stationery
 8166: item not found
 8219: item not found
 8220: item not found
@@ -2684,7 +2684,7 @@
 8520: item not found
 8521: item not found
 8522: item not found
-8527: item is not available to players: Sealed Field Testing Kit
+8527: itemName has identifier Test: Sealed Field Testing Kit
 8530: item not found
 8531: item not found
 8532: item not found
@@ -2799,7 +2799,7 @@
 8680: item not found
 8681: item not found
 8682: item not found
-8688: item is not available to players: Bind On Acquire Test Item
+8688: itemName has identifier Test: Bind On Acquire Test Item
 8689: item not found
 8690: item not found
 8691: item not found
@@ -3140,7 +3140,7 @@
 10535: item not found
 10536: item not found
 10537: item not found
-10555: item is not available to players: Resist Test Item
+10555: itemName has identifier Test: Resist Test Item
 10557: item not found
 10568: itemName has identifier Monster: Monster - Mace2H, Pacifier
 10591: itemName has identifier Monster: Monster - Mace, Stormhammer
@@ -3903,9 +3903,9 @@
 12182: itemName has identifier Monster: Monster - Staff of Jordan
 12183: itemName has identifier Monster: Monster - Mace, Thrall's Hammer
 12186: itemName has identifier OLD: Drakefire Amulet (OLD) (UNUSED)
-12187: item is not available to players: Test Defense Chest
-12188: item is not available to players: Test Armor Chest
-12189: item is not available to players: Test Strength Chest
+12187: itemName has identifier Test: Test Defense Chest
+12188: itemName has identifier Test: Test Armor Chest
+12189: itemName has identifier Test: Test Strength Chest
 12193: item not found
 12194: item not found
 12195: item not found
@@ -3917,8 +3917,8 @@
 12201: item not found
 12221: item not found
 12222: item not found
-12244: item is not available to players: Test Agility Chest
-12245: item is not available to players: Test Spirit Chest
+12244: itemName has identifier Test: Test Agility Chest
+12245: itemName has identifier Test: Test Spirit Chest
 12246: item not found
 12265: item not found
 12266: item not found
@@ -4236,7 +4236,7 @@
 13165: itemName has identifier Monster: Monster - Sword, Long Silver - Green Pommel
 13200: item not found
 13201: item not found
-13214: item is not available to players: TestBoots - Puffed Mail Green
+13214: itemName has identifier Test: TestBoots - Puffed Mail Green
 13215: item not found
 13219: itemName has identifier Monster: Monster - Item, Holy Symbol Offhand
 13220: itemName has identifier Monster: Monster - Item, Holy Symbol
@@ -4295,7 +4295,7 @@
 13300: item not found
 13301: item not found
 13312: itemName has identifier Monster: Monster - Mace, Hammer Gold Orange
-13315: item is not available to players: Testament of Hope
+13315: itemName has identifier Test: Testament of Hope
 13316: itemName has identifier Monster: Monster - Sword2H, Claymore Silver Yellow Glow
 13318: itemName has identifier Monster: Monster - Shield, Horde A01 Red
 13319: itemName has identifier Monster: Monster - Shield, Horde B03
@@ -4379,7 +4379,7 @@
 13579: item not found
 13580: item not found
 13581: item not found
-13586: item is not available to players: Test Crit Chest
+13586: itemName has identifier Test: Test Crit Chest
 13587: item not found
 13588: item not found
 13589: item not found
@@ -4431,76 +4431,76 @@
 13639: item not found
 13640: item not found
 13641: item not found
-13642: item is not available to players: Level 15 Test Gear Cloth - Mage/Priest/Warlock
-13643: item is not available to players: Level 15 Test Gear Leather - Druid/Shaman
-13644: item is not available to players: Level 15 Test Gear Leather - Hunter/Rogue
-13645: item is not available to players: Level 15 Test Gear Mail - Paladin/Warrior
-13646: item is not available to players: Level 20 Test Gear Cloth - Mage/Priest/Warlock
-13647: item is not available to players: Level 25 Test Gear Cloth - Mage/Priest/Warlock
-13648: item is not available to players: Level 30 Test Gear Cloth - Mage/Priest/Warlock
-13649: item is not available to players: Level 35 Test Gear Cloth - Mage/Priest/Warlock
-13650: item is not available to players: Level 40 Test Gear Cloth - Mage/Priest/Warlock
-13651: item is not available to players: Level 45 Test Gear Cloth - Mage/Priest/Warlock
-13652: item is not available to players: Level 50 Test Gear Cloth - Mage/Priest/Warlock
-13653: item is not available to players: Level 55 Test Gear Cloth - Mage/Priest/Warlock
-13654: item is not available to players: Level 60 Test Gear Cloth - Mage/Priest/Warlock
-13655: item is not available to players: Level 65 Test Gear Cloth - Mage
-13656: item is not available to players: Level 20 Test Gear Mail - Paladin/Warrior
-13657: item is not available to players: Level 25 Test Gear Mail - Paladin/Warrior
-13658: item is not available to players: Level 30 Test Gear Mail - Paladin/Warrior
-13659: item is not available to players: Level 35 Test Gear Mail - Paladin/Warrior
-13660: item is not available to players: Level 20 Test Gear Leather - Druid/Shaman
-13661: item is not available to players: Level 25 Test Gear Leather - Druid/Shaman
-13662: item is not available to players: Level 30 Test Gear Leather - Druid/Shaman
-13663: item is not available to players: Level 35 Test Gear Leather - Druid/Shaman
-13664: item is not available to players: Level 20 Test Gear Leather - Hunter/Rogue
-13665: item is not available to players: Level 25 Test Gear Leather - Hunter/Rogue
-13666: item is not available to players: Level 30 Test Gear Leather - Hunter/Rogue
-13667: item is not available to players: Level 35 Test Gear Leather - Hunter/Rogue
-13668: item is not available to players: Level 40 Test Gear Leather - Druid
-13669: item is not available to players: Level 45 Test Gear Leather - Druid
-13670: item is not available to players: Level 50 Test Gear Leather - Druid
-13671: item is not available to players: Level 55 Test Gear Leather - Druid
-13672: item is not available to players: Level 60 Test Gear Leather - Druid
-13673: item is not available to players: Level 65 Test Gear Leather - Druid
-13674: item is not available to players: Level 40 Test Gear Leather - Rogue
-13675: item is not available to players: Level 45 Test Gear Leather - Rogue
-13676: item is not available to players: Level 50 Test Gear Leather - Rogue
-13677: item is not available to players: Level 55 Test Gear Leather - Rogue
-13678: item is not available to players: Level 60 Test Gear Leather - Rogue
-13679: item is not available to players: Level 65 Test Gear Leather - Rogue
-13680: item is not available to players: Level 40 Test Gear Plate - Paladin/Warrior
-13681: item is not available to players: Level 45 Test Gear Plate - Paladin/Warrior
-13682: item is not available to players: Level 50 Test Gear Plate - Paladin/Warrior
-13683: item is not available to players: Level 55 Test Gear Plate - Paladin/Warrior
-13684: item is not available to players: Level 60 Test Gear Plate - Paladin/Warrior
-13685: item is not available to players: Level 65 Test Gear Plate - Paladin
-13686: item is not available to players: Level 40 Test Gear Mail - Hunter
-13687: item is not available to players: Level 45 Test Gear Mail - Hunter
-13688: item is not available to players: Level 50 Test Gear Mail - Hunter
-13689: item is not available to players: Level 55 Test Gear Mail - Hunter
-13690: item is not available to players: Level 60 Test Gear Mail - Hunter
-13691: item is not available to players: Level 65 Test Gear Mail - Hunter
-13692: item is not available to players: Level 40 Test Gear Mail - Shaman
-13693: item is not available to players: Level 45 Test Gear Mail - Shaman
-13694: item is not available to players: Level 50 Test Gear Mail - Shaman
-13695: item is not available to players: Level 55 Test Gear Mail - Shaman
-13696: item is not available to players: Level 60 Test Gear Mail - Shaman
-13697: item is not available to players: Level 65 Test Gear Mail - Shaman
+13642: itemName has identifier Test: Level 15 Test Gear Cloth - Mage/Priest/Warlock
+13643: itemName has identifier Test: Level 15 Test Gear Leather - Druid/Shaman
+13644: itemName has identifier Test: Level 15 Test Gear Leather - Hunter/Rogue
+13645: itemName has identifier Test: Level 15 Test Gear Mail - Paladin/Warrior
+13646: itemName has identifier Test: Level 20 Test Gear Cloth - Mage/Priest/Warlock
+13647: itemName has identifier Test: Level 25 Test Gear Cloth - Mage/Priest/Warlock
+13648: itemName has identifier Test: Level 30 Test Gear Cloth - Mage/Priest/Warlock
+13649: itemName has identifier Test: Level 35 Test Gear Cloth - Mage/Priest/Warlock
+13650: itemName has identifier Test: Level 40 Test Gear Cloth - Mage/Priest/Warlock
+13651: itemName has identifier Test: Level 45 Test Gear Cloth - Mage/Priest/Warlock
+13652: itemName has identifier Test: Level 50 Test Gear Cloth - Mage/Priest/Warlock
+13653: itemName has identifier Test: Level 55 Test Gear Cloth - Mage/Priest/Warlock
+13654: itemName has identifier Test: Level 60 Test Gear Cloth - Mage/Priest/Warlock
+13655: itemName has identifier Test: Level 65 Test Gear Cloth - Mage
+13656: itemName has identifier Test: Level 20 Test Gear Mail - Paladin/Warrior
+13657: itemName has identifier Test: Level 25 Test Gear Mail - Paladin/Warrior
+13658: itemName has identifier Test: Level 30 Test Gear Mail - Paladin/Warrior
+13659: itemName has identifier Test: Level 35 Test Gear Mail - Paladin/Warrior
+13660: itemName has identifier Test: Level 20 Test Gear Leather - Druid/Shaman
+13661: itemName has identifier Test: Level 25 Test Gear Leather - Druid/Shaman
+13662: itemName has identifier Test: Level 30 Test Gear Leather - Druid/Shaman
+13663: itemName has identifier Test: Level 35 Test Gear Leather - Druid/Shaman
+13664: itemName has identifier Test: Level 20 Test Gear Leather - Hunter/Rogue
+13665: itemName has identifier Test: Level 25 Test Gear Leather - Hunter/Rogue
+13666: itemName has identifier Test: Level 30 Test Gear Leather - Hunter/Rogue
+13667: itemName has identifier Test: Level 35 Test Gear Leather - Hunter/Rogue
+13668: itemName has identifier Test: Level 40 Test Gear Leather - Druid
+13669: itemName has identifier Test: Level 45 Test Gear Leather - Druid
+13670: itemName has identifier Test: Level 50 Test Gear Leather - Druid
+13671: itemName has identifier Test: Level 55 Test Gear Leather - Druid
+13672: itemName has identifier Test: Level 60 Test Gear Leather - Druid
+13673: itemName has identifier Test: Level 65 Test Gear Leather - Druid
+13674: itemName has identifier Test: Level 40 Test Gear Leather - Rogue
+13675: itemName has identifier Test: Level 45 Test Gear Leather - Rogue
+13676: itemName has identifier Test: Level 50 Test Gear Leather - Rogue
+13677: itemName has identifier Test: Level 55 Test Gear Leather - Rogue
+13678: itemName has identifier Test: Level 60 Test Gear Leather - Rogue
+13679: itemName has identifier Test: Level 65 Test Gear Leather - Rogue
+13680: itemName has identifier Test: Level 40 Test Gear Plate - Paladin/Warrior
+13681: itemName has identifier Test: Level 45 Test Gear Plate - Paladin/Warrior
+13682: itemName has identifier Test: Level 50 Test Gear Plate - Paladin/Warrior
+13683: itemName has identifier Test: Level 55 Test Gear Plate - Paladin/Warrior
+13684: itemName has identifier Test: Level 60 Test Gear Plate - Paladin/Warrior
+13685: itemName has identifier Test: Level 65 Test Gear Plate - Paladin
+13686: itemName has identifier Test: Level 40 Test Gear Mail - Hunter
+13687: itemName has identifier Test: Level 45 Test Gear Mail - Hunter
+13688: itemName has identifier Test: Level 50 Test Gear Mail - Hunter
+13689: itemName has identifier Test: Level 55 Test Gear Mail - Hunter
+13690: itemName has identifier Test: Level 60 Test Gear Mail - Hunter
+13691: itemName has identifier Test: Level 65 Test Gear Mail - Hunter
+13692: itemName has identifier Test: Level 40 Test Gear Mail - Shaman
+13693: itemName has identifier Test: Level 45 Test Gear Mail - Shaman
+13694: itemName has identifier Test: Level 50 Test Gear Mail - Shaman
+13695: itemName has identifier Test: Level 55 Test Gear Mail - Shaman
+13696: itemName has identifier Test: Level 60 Test Gear Mail - Shaman
+13697: itemName has identifier Test: Level 65 Test Gear Mail - Shaman
 13698: itemName has identifier Monster: Monster - Staff, Ornate Warlock Staff Black Glow Low
 13705: itemName has identifier Monster: Monster - Staff, Yellow Jeweled with Low Purple Glow
 13706: itemName has identifier Monster: Monster - Axe, 2H Horde Black Tombstone
 13707: itemName has identifier Monster: Monster - Sword, Horde Sword B04 Black
 13708: itemName has identifier Monster: Monster - Sword2H, Horde Massive Blue
 13709: itemName has identifier Monster: Monster - Staff Green Sphere Glowing
-13710: item is not available to players: Test Stamina Chest
-13711: item is not available to players: Test Attack Power Chest
-13712: item is not available to players: Test Sword Chest
-13713: item is not available to players: Test Dodge Chest
-13714: item is not available to players: Test Parry Chest
-13715: item is not available to players: Test Block Chest
-13716: item is not available to players: Test Haste Chest
-13717: item is not available to players: Test Hit Chance Chest
+13710: itemName has identifier Test: Test Stamina Chest
+13711: itemName has identifier Test: Test Attack Power Chest
+13712: itemName has identifier Test: Test Sword Chest
+13713: itemName has identifier Test: Test Dodge Chest
+13714: itemName has identifier Test: Test Parry Chest
+13715: itemName has identifier Test: Test Block Chest
+13716: itemName has identifier Test: Test Haste Chest
+13717: itemName has identifier Test: Test Hit Chance Chest
 13718: itemName has identifier Monster: Monster - Sword, Horde Jagged Red
 13719: itemName has identifier Monster: Monster - Sword, Horde Jagged Red w/ Low Yellow Glow
 13720: itemName has identifier Monster: Monster - Staff, Feathered Invert - Glow Black High
@@ -4833,16 +4833,16 @@
 14880: itemName has identifier Monster: Monster - Axe, Wide Blade Silver
 14881: itemName has identifier Monster: Monster - Glaive - 3 Blade Black
 14882: itemName has identifier Monster: Monster - Glaive - 2 Blade Silver
-14883: item is not available to players: Test Glaive A
-14884: item is not available to players: Test Glaive B
-14885: item is not available to players: Test Glaive C
-14886: item is not available to players: Test Glaive D
-14887: item is not available to players: Test Glaive E
-14888: item is not available to players: Test Glaive F
-14889: item is not available to players: Test Glaive G
-14890: item is not available to players: Test Glaive H
-14891: item is not available to players: Test Glaive I
-14892: item is not available to players: Test Glaive J
+14883: itemName has identifier Test: Test Glaive A
+14884: itemName has identifier Test: Test Glaive B
+14885: itemName has identifier Test: Test Glaive C
+14886: itemName has identifier Test: Test Glaive D
+14887: itemName has identifier Test: Test Glaive E
+14888: itemName has identifier Test: Test Glaive F
+14889: itemName has identifier Test: Test Glaive G
+14890: itemName has identifier Test: Test Glaive H
+14891: itemName has identifier Test: Test Glaive I
+14892: itemName has identifier Test: Test Glaive J
 14893: itemName has identifier Monster: Monster - Axe, Horde C01 Gold
 14984: item not found
 14985: item not found
@@ -4890,8 +4890,8 @@
 15099: item not found
 15100: item not found
 15101: item not found
-15102: item is not available to players: Un'Goro Tested Sample
-15103: item is not available to players: Corrupt Tested Sample
+15102: itemName has identifier Test: Un'Goro Tested Sample
+15103: itemName has identifier Test: Corrupt Tested Sample
 15141: item is not available to players: Onyxia Scale Breastplate
 15201: item not found
 15315: item not found
@@ -4971,8 +4971,8 @@
 16019: item not found
 16020: item not found
 16021: item not found
-16024: item is not available to players: Ashbringer Test 001
-16025: item is not available to players: Ashbringer Test 002
+16024: itemName has identifier Test: Ashbringer Test 001
+16025: itemName has identifier Test: Ashbringer Test 002
 16026: item is not available to players: PVP Plate Helm Alliance
 16027: item is not available to players: PVP Plate Breastplate Alliance
 16028: item is not available to players: PVP Plate Legplates Alliance
@@ -4984,26 +4984,26 @@
 16034: item is not available to players: PVP Plate Cloak Alliance
 16035: item is not available to players: PVP Cloth Helm Horde
 16038: item is not available to players: PVP Cloth Shoulder Horde
-16061: item is not available to players: Test Fire Res Shoulders Cloth
-16062: item is not available to players: Test Fire Res Waist Cloth
-16063: item is not available to players: Test Fire Res Hands Cloth
-16064: item is not available to players: Test Fire Res Waist Mail
-16065: item is not available to players: Test Fire Res Feet Leather
-16066: item is not available to players: Test Fire Res Feet Mail
-16067: item is not available to players: Test Fire Res Ring
-16068: item is not available to players: Test Fire Resist Cloth LockBox
-16069: item is not available to players: Test Fire Resist Leather LockBox
-16070: item is not available to players: Test Fire Resist Mail LockBox
-16071: item is not available to players: Test Fire Resist Plate LockBox
-16074: item is not available to players: Test Potion LockBox (Warrior)
-16075: item is not available to players: Test Potion LockBox (Rogue)
-16076: item is not available to players: Test Potion LockBox (Paladin)
-16077: item is not available to players: Test Potion LockBox (Hunter)
-16078: item is not available to players: Test Potion LockBox (Druid)
-16079: item is not available to players: Test Potion LockBox (Shaman)
-16080: item is not available to players: Test Potion LockBox (Mage/Priest/Warlock)
-16081: item is not available to players: Test Potion LockBox (Raid)
-16086: item is not available to players: Test Enchant Chest Health
+16061: itemName has identifier Test: Test Fire Res Shoulders Cloth
+16062: itemName has identifier Test: Test Fire Res Waist Cloth
+16063: itemName has identifier Test: Test Fire Res Hands Cloth
+16064: itemName has identifier Test: Test Fire Res Waist Mail
+16065: itemName has identifier Test: Test Fire Res Feet Leather
+16066: itemName has identifier Test: Test Fire Res Feet Mail
+16067: itemName has identifier Test: Test Fire Res Ring
+16068: itemName has identifier Test: Test Fire Resist Cloth LockBox
+16069: itemName has identifier Test: Test Fire Resist Leather LockBox
+16070: itemName has identifier Test: Test Fire Resist Mail LockBox
+16071: itemName has identifier Test: Test Fire Resist Plate LockBox
+16074: itemName has identifier Test: Test Potion LockBox (Warrior)
+16075: itemName has identifier Test: Test Potion LockBox (Rogue)
+16076: itemName has identifier Test: Test Potion LockBox (Paladin)
+16077: itemName has identifier Test: Test Potion LockBox (Hunter)
+16078: itemName has identifier Test: Test Potion LockBox (Druid)
+16079: itemName has identifier Test: Test Potion LockBox (Shaman)
+16080: itemName has identifier Test: Test Potion LockBox (Mage/Priest/Warlock)
+16081: itemName has identifier Test: Test Potion LockBox (Raid)
+16086: itemName has identifier Test: Test Enchant Chest Health
 16087: item not found
 16088: item not found
 16089: item not found
@@ -5019,81 +5019,81 @@
 16099: item not found
 16100: item not found
 16101: item not found
-16102: item is not available to players: Test Enchant Chest Mana
-16103: item is not available to players: Test Enchant Boots Stamina
+16102: itemName has identifier Test: Test Enchant Chest Mana
+16103: itemName has identifier Test: Test Enchant Boots Stamina
 16104: itemName has identifier QA: QAEnchhelp Cloak +7 Fire Resistance
-16105: item is not available to players: Test Enchant Bracer Greater Stamina
-16106: item is not available to players: Test Enchant Weapon Greater Striking
-16107: item is not available to players: Test Enchant Bracer Greater Spirit
-16108: item is not available to players: Test Enchant 2H Weapon Greater Impact
-16109: item is not available to players: Test Enchantments LockBox (Enchanting Items)
-16116: item is not available to players: Test Nature Res Cloak Cloth
-16117: item is not available to players: Test Nature Res Hands Cloth
-16118: item is not available to players: Test Nature Res Legs Cloth
-16119: item is not available to players: Test Nature Res Wrist Cloth
-16120: item is not available to players: Test Nature Res Waist Cloth
-16121: item is not available to players: Test Nature Res Head Cloth
-16122: item is not available to players: Test Nature Res Shoulders Cloth
-16123: item is not available to players: Test Nature Res Neck
-16124: item is not available to players: Test Frost Res Neck
-16125: item is not available to players: Test Arcane Res Neck
-16126: item is not available to players: Test Nature Res Waist Leather
-16127: item is not available to players: Test Nature Res Wrist Leather
+16105: itemName has identifier Test: Test Enchant Bracer Greater Stamina
+16106: itemName has identifier Test: Test Enchant Weapon Greater Striking
+16107: itemName has identifier Test: Test Enchant Bracer Greater Spirit
+16108: itemName has identifier Test: Test Enchant 2H Weapon Greater Impact
+16109: itemName has identifier Test: Test Enchantments LockBox (Enchanting Items)
+16116: itemName has identifier Test: Test Nature Res Cloak Cloth
+16117: itemName has identifier Test: Test Nature Res Hands Cloth
+16118: itemName has identifier Test: Test Nature Res Legs Cloth
+16119: itemName has identifier Test: Test Nature Res Wrist Cloth
+16120: itemName has identifier Test: Test Nature Res Waist Cloth
+16121: itemName has identifier Test: Test Nature Res Head Cloth
+16122: itemName has identifier Test: Test Nature Res Shoulders Cloth
+16123: itemName has identifier Test: Test Nature Res Neck
+16124: itemName has identifier Test: Test Frost Res Neck
+16125: itemName has identifier Test: Test Arcane Res Neck
+16126: itemName has identifier Test: Test Nature Res Waist Leather
+16127: itemName has identifier Test: Test Nature Res Wrist Leather
 16128: item not found
-16129: item is not available to players: Test Nature Res Feet Mail
+16129: itemName has identifier Test: Test Nature Res Feet Mail
 16130: item not found
-16131: item is not available to players: Test Nature Res Waist Mail
-16132: item is not available to players: Test Nature Res Wrist Mail
+16131: itemName has identifier Test: Test Nature Res Waist Mail
+16132: itemName has identifier Test: Test Nature Res Wrist Mail
 16133: item not found
-16134: item is not available to players: Test Nature Res Shoulders Mail
-16135: item is not available to players: Test Frost Res Feet Cloth
-16136: item is not available to players: Test Frost Res Waist Cloth
-16137: item is not available to players: Test Frost Res Wrist Cloth
-16138: item is not available to players: Test Frost Res Head Cloth
-16139: item is not available to players: Test Frost Res Head Leather
-16140: item is not available to players: Test Nature Res Head Leather
-16141: item is not available to players: Test Nature Res Head Mail
-16142: item is not available to players: Test Frost Res Wrist Mail
-16143: item is not available to players: Test Frost Res Shoulder Mail
-16144: item is not available to players: Test Frost Res Shoulders Leather
-16145: item is not available to players: Test Shadow Res Waist Cloth
-16146: item is not available to players: Test Shadow Res Head Cloth
-16147: item is not available to players: Test Shadow Res Shoulders Cloth
-16148: item is not available to players: Test Shadow Res Shoulders Leather
-16149: item is not available to players: Test Shadow Res Shoulder Mail
-16150: item is not available to players: Test Shadow Res Waist Leather
-16151: item is not available to players: Test Arcane Res Feet Cloth
-16152: item is not available to players: Test Arcane Res Waist Cloth
-16153: item is not available to players: Test Arcane Res Wrist Cloth
-16154: item is not available to players: Test Arcane Res Shoulders Cloth
-16155: item is not available to players: Test Arcane Res Waist Leather
-16156: item is not available to players: Test Arcane Res Head Leather
-16157: item is not available to players: Test Arcane Res Feet Mail
-16158: item is not available to players: Test Arcane Res Wrist Mail
-16159: item is not available to players: Test Arcane Res Head Mail
-16160: item is not available to players: Test Arcane Res Shoulders Plate
-16161: item is not available to players: Test Shadow Res Hands Plate
-16162: item is not available to players: Test Frost Res Shoulders Plate
-16163: item is not available to players: Test Arcane Res Waist Mail
-16164: item is not available to players: Test Arcane Res Hands Mail
-16165: item is not available to players: Test Arcane Res Legs Mail
-16172: item is not available to players: Test Nature Res Hands Plate
-16173: item is not available to players: Test Frost Resist Cloth LockBox
-16174: item is not available to players: Test Frost Resist Leather LockBox
-16175: item is not available to players: Test Frost Resist Mail LockBox
-16176: item is not available to players: Test Frost Resist Plate LockBox
-16177: item is not available to players: Test Nature Resist Plate LockBox
-16178: item is not available to players: Test Nature Resist Leather LockBox
-16179: item is not available to players: Test Nature Resist Mail LockBox
-16180: item is not available to players: Test Nature Resist Cloth LockBox
-16181: item is not available to players: Test Shadow Resist Cloth LockBox
-16182: item is not available to players: Test Shadow Resist Leather LockBox
-16183: item is not available to players: Test Shadow Resist Mail LockBox
-16184: item is not available to players: Test Shadow Resist Plate LockBox
-16185: item is not available to players: Test Arcane Resist Plate LockBox
-16186: item is not available to players: Test Arcane Resist Cloth LockBox
-16187: item is not available to players: Test Arcane Resist Leather LockBox
-16188: item is not available to players: Test Arcane Resist Mail LockBox
+16134: itemName has identifier Test: Test Nature Res Shoulders Mail
+16135: itemName has identifier Test: Test Frost Res Feet Cloth
+16136: itemName has identifier Test: Test Frost Res Waist Cloth
+16137: itemName has identifier Test: Test Frost Res Wrist Cloth
+16138: itemName has identifier Test: Test Frost Res Head Cloth
+16139: itemName has identifier Test: Test Frost Res Head Leather
+16140: itemName has identifier Test: Test Nature Res Head Leather
+16141: itemName has identifier Test: Test Nature Res Head Mail
+16142: itemName has identifier Test: Test Frost Res Wrist Mail
+16143: itemName has identifier Test: Test Frost Res Shoulder Mail
+16144: itemName has identifier Test: Test Frost Res Shoulders Leather
+16145: itemName has identifier Test: Test Shadow Res Waist Cloth
+16146: itemName has identifier Test: Test Shadow Res Head Cloth
+16147: itemName has identifier Test: Test Shadow Res Shoulders Cloth
+16148: itemName has identifier Test: Test Shadow Res Shoulders Leather
+16149: itemName has identifier Test: Test Shadow Res Shoulder Mail
+16150: itemName has identifier Test: Test Shadow Res Waist Leather
+16151: itemName has identifier Test: Test Arcane Res Feet Cloth
+16152: itemName has identifier Test: Test Arcane Res Waist Cloth
+16153: itemName has identifier Test: Test Arcane Res Wrist Cloth
+16154: itemName has identifier Test: Test Arcane Res Shoulders Cloth
+16155: itemName has identifier Test: Test Arcane Res Waist Leather
+16156: itemName has identifier Test: Test Arcane Res Head Leather
+16157: itemName has identifier Test: Test Arcane Res Feet Mail
+16158: itemName has identifier Test: Test Arcane Res Wrist Mail
+16159: itemName has identifier Test: Test Arcane Res Head Mail
+16160: itemName has identifier Test: Test Arcane Res Shoulders Plate
+16161: itemName has identifier Test: Test Shadow Res Hands Plate
+16162: itemName has identifier Test: Test Frost Res Shoulders Plate
+16163: itemName has identifier Test: Test Arcane Res Waist Mail
+16164: itemName has identifier Test: Test Arcane Res Hands Mail
+16165: itemName has identifier Test: Test Arcane Res Legs Mail
+16172: itemName has identifier Test: Test Nature Res Hands Plate
+16173: itemName has identifier Test: Test Frost Resist Cloth LockBox
+16174: itemName has identifier Test: Test Frost Resist Leather LockBox
+16175: itemName has identifier Test: Test Frost Resist Mail LockBox
+16176: itemName has identifier Test: Test Frost Resist Plate LockBox
+16177: itemName has identifier Test: Test Nature Resist Plate LockBox
+16178: itemName has identifier Test: Test Nature Resist Leather LockBox
+16179: itemName has identifier Test: Test Nature Resist Mail LockBox
+16180: itemName has identifier Test: Test Nature Resist Cloth LockBox
+16181: itemName has identifier Test: Test Shadow Resist Cloth LockBox
+16182: itemName has identifier Test: Test Shadow Resist Leather LockBox
+16183: itemName has identifier Test: Test Shadow Resist Mail LockBox
+16184: itemName has identifier Test: Test Shadow Resist Plate LockBox
+16185: itemName has identifier Test: Test Arcane Resist Plate LockBox
+16186: itemName has identifier Test: Test Arcane Resist Cloth LockBox
+16187: itemName has identifier Test: Test Arcane Resist Leather LockBox
+16188: itemName has identifier Test: Test Arcane Resist Mail LockBox
 16193: item not found
 16194: item not found
 16195: item not found
@@ -5103,9 +5103,9 @@
 16199: item not found
 16200: item not found
 16201: item not found
-16211: item is not available to players: Test Quality Modifier Chest
+16211: itemName has identifier Test: Test Quality Modifier Chest
 16212: item is not available to players: TEST SWORD 3
-16213: item is not available to players: Test Quality Modifier Chest
+16213: itemName has identifier Test: Test Quality Modifier Chest
 16225: item not found
 16226: item not found
 16227: item not found
@@ -5243,7 +5243,7 @@
 16779: item not found
 16780: item not found
 16781: item not found
-16785: item is not available to players: Rexxar's Testament
+16785: itemName has identifier Test: Rexxar's Testament
 16874: item not found
 16875: item not found
 16876: item not found
@@ -5316,8 +5316,8 @@
 17159: item not found
 17160: item not found
 17161: item not found
-17162: item is not available to players: Eric Test Item A
-17163: item is not available to players: Eric Test Item B
+17162: itemName has identifier Test: Eric Test Item A
+17163: itemName has identifier Test: Eric Test Item B
 17164: item not found
 17165: item not found
 17166: item not found
@@ -5447,8 +5447,8 @@
 17339: item not found
 17340: item not found
 17341: item not found
-17342: item is not available to players: JYoo Random Item Test
-17343: item is not available to players: Test Random Chest
+17342: itemName has identifier Test: JYoo Random Item Test
+17343: itemName has identifier Test: Test Random Chest
 17350: item not found
 17356: item not found
 17357: item not found
@@ -5706,7 +5706,7 @@
 17799: item not found
 17800: item not found
 17801: item not found
-17802: item is not available to players: Thunderfury, Blessed Blade of the Windseeker DEPRECATED
+17802: itemName has identifier DEPRECATED: Thunderfury, Blessed Blade of the Windseeker DEPRECATED
 17803: item not found
 17804: item not found
 17805: item not found
@@ -5726,43 +5726,43 @@
 17819: item not found
 17820: item not found
 17821: item not found
-17824: item is not available to players: Level 65 Test Gear Cloth - Priest
-17825: item is not available to players: Level 65 Test Gear Cloth - Warlock
-17826: item is not available to players: Level 65 Test Gear Plate - Warrior
+17824: itemName has identifier Test: Level 65 Test Gear Cloth - Priest
+17825: itemName has identifier Test: Level 65 Test Gear Cloth - Warlock
+17826: itemName has identifier Test: Level 65 Test Gear Plate - Warrior
 17827: itemName has identifier QA: QAEnchant Bracer +9 Strength
 17828: itemName has identifier QA: QAEnchant Bracer +9 Stamina
 17829: itemName has identifier QA: QAEnchant Bracer +9 Spirit
 17830: itemName has identifier QA: QAEnchant Bracer +7 Intellect
-17831: item is not available to players: Level 60 Test Gear Cloth - Mage/Priest/Warlock 2
-17832: item is not available to players: Level 60 Test Gear Leather - Druid 2
-17833: item is not available to players: Level 60 Test Gear Leather - Rogue 2
-17834: item is not available to players: Level 60 Test Gear Mail - Hunter 2
-17835: item is not available to players: Level 60 Test Gear Mail - Shaman 2
-17836: item is not available to players: Level 60 Test Gear Plate - Paladin/Warrior 2
-17837: item is not available to players: Level 55 Test Gear Cloth - Mage/Priest/Warlock 2
-17838: item is not available to players: Level 55 Test Gear Leather - Druid 2
-17839: item is not available to players: Level 55 Test Gear Leather - Rogue 2
-17840: item is not available to players: Level 55 Test Gear Mail - Hunter 2
-17841: item is not available to players: Level 55 Test Gear Mail - Shaman 2
-17842: item is not available to players: Level 55 Test Gear Plate - Paladin/Warrior 2
-17843: item is not available to players: Level 50 Test Gear Cloth - Mage/Priest/Warlock 2
-17844: item is not available to players: Level 50 Test Gear Leather - Druid 2
-17845: item is not available to players: Level 50 Test Gear Leather - Rogue 2
-17846: item is not available to players: Level 50 Test Gear Mail - Hunter 2
-17847: item is not available to players: Level 50 Test Gear Mail - Shaman 2
-17848: item is not available to players: Level 50 Test Gear Plate - Paladin/Warrior 2
-17851: item is not available to players: Level 65 Test Gear Cloth - Mage 2
-17852: item is not available to players: Level 65 Test Gear Cloth - Priest 2
-17853: item is not available to players: Level 65 Test Gear Cloth - Warlock 2
-17854: item is not available to players: Level 65 Test Gear Leather - Druid 2
-17855: item is not available to players: Level 65 Test Gear Leather - Rogue 2
-17856: item is not available to players: Level 65 Test Gear Leather - Rogue 3
-17857: item is not available to players: Level 65 Test Gear Mail - Hunter 2
-17858: item is not available to players: Level 65 Test Gear Mail - Hunter 3
-17859: item is not available to players: Level 65 Test Gear Mail - Shaman 2
-17860: item is not available to players: Level 65 Test Gear Plate - Paladin 2
-17861: item is not available to players: Level 65 Test Gear Plate - Warrior 2
-17862: item is not available to players: Level 65 Test Gear Plate - Warrior 3
+17831: itemName has identifier Test: Level 60 Test Gear Cloth - Mage/Priest/Warlock 2
+17832: itemName has identifier Test: Level 60 Test Gear Leather - Druid 2
+17833: itemName has identifier Test: Level 60 Test Gear Leather - Rogue 2
+17834: itemName has identifier Test: Level 60 Test Gear Mail - Hunter 2
+17835: itemName has identifier Test: Level 60 Test Gear Mail - Shaman 2
+17836: itemName has identifier Test: Level 60 Test Gear Plate - Paladin/Warrior 2
+17837: itemName has identifier Test: Level 55 Test Gear Cloth - Mage/Priest/Warlock 2
+17838: itemName has identifier Test: Level 55 Test Gear Leather - Druid 2
+17839: itemName has identifier Test: Level 55 Test Gear Leather - Rogue 2
+17840: itemName has identifier Test: Level 55 Test Gear Mail - Hunter 2
+17841: itemName has identifier Test: Level 55 Test Gear Mail - Shaman 2
+17842: itemName has identifier Test: Level 55 Test Gear Plate - Paladin/Warrior 2
+17843: itemName has identifier Test: Level 50 Test Gear Cloth - Mage/Priest/Warlock 2
+17844: itemName has identifier Test: Level 50 Test Gear Leather - Druid 2
+17845: itemName has identifier Test: Level 50 Test Gear Leather - Rogue 2
+17846: itemName has identifier Test: Level 50 Test Gear Mail - Hunter 2
+17847: itemName has identifier Test: Level 50 Test Gear Mail - Shaman 2
+17848: itemName has identifier Test: Level 50 Test Gear Plate - Paladin/Warrior 2
+17851: itemName has identifier Test: Level 65 Test Gear Cloth - Mage 2
+17852: itemName has identifier Test: Level 65 Test Gear Cloth - Priest 2
+17853: itemName has identifier Test: Level 65 Test Gear Cloth - Warlock 2
+17854: itemName has identifier Test: Level 65 Test Gear Leather - Druid 2
+17855: itemName has identifier Test: Level 65 Test Gear Leather - Rogue 2
+17856: itemName has identifier Test: Level 65 Test Gear Leather - Rogue 3
+17857: itemName has identifier Test: Level 65 Test Gear Mail - Hunter 2
+17858: itemName has identifier Test: Level 65 Test Gear Mail - Hunter 3
+17859: itemName has identifier Test: Level 65 Test Gear Mail - Shaman 2
+17860: itemName has identifier Test: Level 65 Test Gear Plate - Paladin 2
+17861: itemName has identifier Test: Level 65 Test Gear Plate - Warrior 2
+17862: itemName has identifier Test: Level 65 Test Gear Plate - Warrior 3
 17863: item not found
 17864: item not found
 17865: item not found
@@ -5800,8 +5800,8 @@
 17897: itemName has identifier QA: QAEnchant Gloves +7 Strength
 17898: itemName has identifier QA: QAEnchant Gloves +7 Agility
 17899: itemName has identifier QA: QAEnchant Gloves +1% Haste
-17910: item is not available to players: Test Enchantments LockBox (Enchanting Items) 2
-17911: item is not available to players: Test Enchantments LockBox (Enchanting Items) 3
+17910: itemName has identifier Test: Test Enchantments LockBox (Enchanting Items) 2
+17911: itemName has identifier Test: Test Enchantments LockBox (Enchanting Items) 3
 17912: item not found
 17913: item not found
 17914: item not found
@@ -5934,7 +5934,7 @@
 18060: item not found
 18061: item not found
 18062: itemName has identifier Monster: Monster - Mace2H, Horde Hammer A03/C01Black
-18063: item is not available to players: Test Epic Mount
+18063: itemName has identifier Test: Test Epic Mount
 18064: item not found
 18065: item not found
 18066: item not found
@@ -6008,11 +6008,11 @@
 18139: item not found
 18140: item not found
 18141: item not found
-18161: item is not available to players: 5% Test Speed Boots
-18162: item is not available to players: 8% Test Speed Boots
-18163: item is not available to players: 10% Test Speed Boots
-18164: item is not available to players: 13% Test Speed Boots
-18165: item is not available to players: 15% Test Speed Boots
+18161: itemName has identifier Test: 5% Test Speed Boots
+18162: itemName has identifier Test: 8% Test Speed Boots
+18163: itemName has identifier Test: 10% Test Speed Boots
+18164: itemName has identifier Test: 13% Test Speed Boots
+18165: itemName has identifier Test: 15% Test Speed Boots
 18166: itemName has identifier Monster: Monster - Shield, Royal Dreadguard
 18167: itemName has identifier Monster: Monster - Sword, Machete C01
 18174: item not found
@@ -6094,8 +6094,8 @@
 18559: item not found
 18560: item not found
 18561: item not found
-18565: item is not available to players: Vessel of Rebirth DEPRECATED
-18566: item is not available to players: Essence of the Firelord DEPRECATED
+18565: itemName has identifier DEPRECATED: Vessel of Rebirth DEPRECATED
+18566: itemName has identifier DEPRECATED: Essence of the Firelord DEPRECATED
 18568: item not found
 18569: item not found
 18570: item not found
@@ -6113,7 +6113,7 @@
 18582: item is not available to players: The Twin Blades of Azzinoth
 18583: item is not available to players: Warglaive of Azzinoth (Right)
 18584: item is not available to players: Warglaive of Azzinoth (Left)
-18589: item is not available to players: Dormant Wind Kissed Blade DEPRECATED
+18589: itemName has identifier DEPRECATED: Dormant Wind Kissed Blade DEPRECATED
 18593: itemName has identifier OLD: Thorium Brotherhood Contract (OLD)
 18596: itemName has identifier Monster: Monster - Axe, Horde B01 Green
 18599: itemName has identifier QA: QAEnchant 2H Weapon +25 Agility
@@ -6134,7 +6134,7 @@
 18685: itemName has identifier OLD: Shadowy Potion OLD
 18732: item not found
 18733: item not found
-18747: item is not available to players: Item Properties Test
+18747: itemName has identifier Test: Item Properties Test
 18748: item not found
 18750: item not found
 18751: item not found
@@ -6202,9 +6202,9 @@
 18940: item not found
 18941: item not found
 18951: item is not available to players: Evonice's Landin' Pilla
-18968: item is not available to players: Ring of Critical Testing
-18970: item is not available to players: Ring of Critical Testing 2
-18971: item is not available to players: Ring of Critical Testing 3
+18968: itemName has identifier Test: Ring of Critical Testing
+18970: itemName has identifier Test: Ring of Critical Testing 2
+18971: itemName has identifier Test: Ring of Critical Testing 3
 18973: item not found
 18974: item not found
 18975: item not found
@@ -6214,7 +6214,7 @@
 18979: item not found
 18980: item not found
 18981: item not found
-18982: item is not available to players: Ring of Critical Testing 4
+18982: itemName has identifier Test: Ring of Critical Testing 4
 18983: itemName has identifier Monster: Monster - Sword, Longsword Exotic Black - Low Red Flame
 18985: itemName has identifier Monster: Monster - Sword, Long Silver - Green Pommel - High Black Glow
 18988: item not found
@@ -6248,7 +6248,7 @@
 19080: item not found
 19081: item not found
 19082: itemName has identifier Monster: Monster - Fire Arrow
-19122: item is not available to players: Woven Ivy Necklace DEPRECATED
+19122: itemName has identifier DEPRECATED: Woven Ivy Necklace DEPRECATED
 19129: item is not available to players: Everglowing Robe
 19158: item is not available to players: TEST Sulfuras, Hand of Ragnaros
 19161: item not found
@@ -6263,31 +6263,31 @@
 19179: item not found
 19180: item not found
 19181: item not found
-19184: item is not available to players: 3800 Test 2h Axe 63 blue
-19185: item is not available to players: 2100 Test 2h Axe 63 blue
-19186: item is not available to players: 2700 Test 2h Axe 63 blue
-19187: item is not available to players: 3200 Test 2h Axe 63 blue
-19188: item is not available to players: 2200 Test 2h Axe 63 blue
-19189: item is not available to players: 2300 Test 2h Axe 63 blue
-19190: item is not available to players: 2400 Test 2h Axe 63 blue
-19191: item is not available to players: 2500 Test 2h Axe 63 blue
-19192: item is not available to players: 2600 Test 2h Axe 63 blue
-19193: item is not available to players: 2800 Test 2h Axe 63 blue
-19194: item is not available to players: 2900 Test 2h Axe 63 blue
-19195: item is not available to players: 3000 Test 2h Axe 63 blue
-19196: item is not available to players: 3100 Test 2h Axe 63 blue
-19197: item is not available to players: 3300 Test 2h Axe 63 blue
-19198: item is not available to players: 3400 Test 2h Axe 63 blue
-19199: item is not available to players: 3500 Test 2h Axe 63 blue
-19200: item is not available to players: 3600 Test 2h Axe 63 blue
-19201: item is not available to players: 3700 Test 2h Axe 63 blue
+19184: itemName has identifier Test: 3800 Test 2h Axe 63 blue
+19185: itemName has identifier Test: 2100 Test 2h Axe 63 blue
+19186: itemName has identifier Test: 2700 Test 2h Axe 63 blue
+19187: itemName has identifier Test: 3200 Test 2h Axe 63 blue
+19188: itemName has identifier Test: 2200 Test 2h Axe 63 blue
+19189: itemName has identifier Test: 2300 Test 2h Axe 63 blue
+19190: itemName has identifier Test: 2400 Test 2h Axe 63 blue
+19191: itemName has identifier Test: 2500 Test 2h Axe 63 blue
+19192: itemName has identifier Test: 2600 Test 2h Axe 63 blue
+19193: itemName has identifier Test: 2800 Test 2h Axe 63 blue
+19194: itemName has identifier Test: 2900 Test 2h Axe 63 blue
+19195: itemName has identifier Test: 3000 Test 2h Axe 63 blue
+19196: itemName has identifier Test: 3100 Test 2h Axe 63 blue
+19197: itemName has identifier Test: 3300 Test 2h Axe 63 blue
+19198: itemName has identifier Test: 3400 Test 2h Axe 63 blue
+19199: itemName has identifier Test: 3500 Test 2h Axe 63 blue
+19200: itemName has identifier Test: 3600 Test 2h Axe 63 blue
+19201: itemName has identifier Test: 3700 Test 2h Axe 63 blue
 19214: itemName has identifier Monster: Monster - Staff, Wooden Handle Spiral Head Dark
-19226: item is not available to players: Fast Test Fist
+19226: itemName has identifier Test: Fast Test Fist
 19285: item not found
-19286: item is not available to players: Fast Test Ammo
+19286: itemName has identifier Test: Fast Test Ammo
 19294: item not found
-19313: item is not available to players: 1300 Test Dagger 63 blue
-19314: item is not available to players: 2000 Test Dagger 63 blue
+19313: itemName has identifier Test: 1300 Test Dagger 63 blue
+19314: itemName has identifier Test: 2000 Test Dagger 63 blue
 19359: item not found
 19404: itemName has identifier Monster: Monster - Mace, The Hand of Nefarius
 19408: item not found
@@ -6304,12 +6304,12 @@
 19419: item not found
 19420: item not found
 19421: item not found
-19427: item is not available to players: 1500 Test sword 63 blue
-19428: item is not available to players: 2900 Test sword 63 blue
+19427: itemName has identifier Test: 1500 Test sword 63 blue
+19428: itemName has identifier Test: 2900 Test sword 63 blue
 19429: item not found
-19455: item is not available to players: 3500 Test 2h Axe 70 purple
-19456: item is not available to players: 2900 Test sword 80 purple
-19457: item is not available to players: 1500 Test sword 80 purple
+19455: itemName has identifier Test: 3500 Test 2h Axe 70 purple
+19456: itemName has identifier Test: 2900 Test sword 80 purple
+19457: itemName has identifier Test: 1500 Test sword 80 purple
 19458: item not found
 19459: item not found
 19460: item not found
@@ -6337,8 +6337,8 @@
 19486: itemName has identifier Monster: Monster - Item, Fish - Green Offhand
 19487: itemName has identifier Monster: Monster - Item, Fish - Orange Offhand
 19488: itemName has identifier Monster: Monster - Item, Fish - Purple Offhand
-19489: item is not available to players: 3300 Test Crossbow 63 blue
-19490: item is not available to players: 2800 Test Bow 63 Blue
+19489: itemName has identifier Test: 3300 Test Crossbow 63 blue
+19490: itemName has identifier Test: 2800 Test Bow 63 Blue
 19492: item not found
 19493: item not found
 19494: item not found
@@ -6349,10 +6349,10 @@
 19499: item not found
 19500: item not found
 19501: item not found
-19502: item is not available to players: 2200 Test sword 63 blue
-19503: item is not available to players: 2200 Test sword 80 purple
-19504: item is not available to players: 2200 Test sword 70 purple
-19622: item is not available to players: 1800 Test Dagger 63 blue
+19502: itemName has identifier Test: 2200 Test sword 63 blue
+19503: itemName has identifier Test: 2200 Test sword 80 purple
+19504: itemName has identifier Test: 2200 Test sword 70 purple
+19622: itemName has identifier Test: 1800 Test Dagger 63 blue
 19623: itemName has identifier Monster: Monster - Mace2H, Horde B01/B01 Orange
 19624: item not found
 19625: item not found
@@ -6391,7 +6391,7 @@
 19659: item not found
 19660: item not found
 19661: item not found
-19662: item is not available to players: 3500 Test 2h Axe 80 purple
+19662: itemName has identifier Test: 3500 Test 2h Axe 80 purple
 19663: item not found
 19664: item not found
 19665: item not found
@@ -6458,22 +6458,22 @@
 19799: item not found
 19800: item not found
 19801: item not found
-19809: item is not available to players: 2500 Test 2h Axe 60 blue
-19810: item is not available to players: 1000 Test dagger 60 blue
-19811: item is not available to players: 2500 Test 2h Axe 60 blue (bear)
-19837: item is not available to players: Test Ranged Slot
-19844: item is not available to players: Zandalar Illusionist's Robe DEPRECATED
-19847: item is not available to players: Zandalar Demoniac's Robe DEPRECATED
+19809: itemName has identifier Test: 2500 Test 2h Axe 60 blue
+19810: itemName has identifier Test: 1000 Test dagger 60 blue
+19811: itemName has identifier Test: 2500 Test 2h Axe 60 blue (bear)
+19837: itemName has identifier Test: Test Ranged Slot
+19844: itemName has identifier DEPRECATED: Zandalar Illusionist's Robe DEPRECATED
+19847: itemName has identifier DEPRECATED: Zandalar Demoniac's Robe DEPRECATED
 19860: item not found
-19868: item is not available to players: Mandokir's Sting DEPRECATED
-19879: item is not available to players: Alex's Test Beatdown Staff
+19868: itemName has identifier DEPRECATED: Mandokir's Sting DEPRECATED
+19879: itemName has identifier Test: Alex's Test Beatdown Staff
 19916: itemName has identifier Monster: Monster - Mace, Standard Serpent Green
 19917: itemName has identifier Monster: Monster - Wand, Horde A01 Green
 19924: itemName has identifier Monster: Monster - Dagger, Fang Hook Curve Dark
-19926: item is not available to players: Flowing Ritual Robes DEPRECATED
+19926: itemName has identifier DEPRECATED: Flowing Ritual Robes DEPRECATED
 19932: item is not available to players: UNUSED Empowered Mojo Bundle
-19966: item is not available to players: Thrice Strung Longbow DEPRECATED
-19971: item is not available to players: High Test Eternium Fishing Line
+19966: itemName has identifier DEPRECATED: Thrice Strung Longbow DEPRECATED
+19971: itemName has identifier Test: High Test Eternium Fishing Line
 19976: item not found
 19977: item not found
 19980: itemName has identifier Monster: Monster - Dagger, Ornate Spikey Base Red
@@ -6608,18 +6608,18 @@
 20361: item is not available to players: 63 Green Frost Shroud
 20362: item is not available to players: 63 Green Frost Staff
 20363: item is not available to players: 63 Green Frost Wand
-20364: item is not available to players: Test Ammo Lockbox
+20364: itemName has identifier Test: Test Ammo Lockbox
 20365: item not found
 20366: item not found
 20368: item is not available to players: Bland Bow of Steadiness
-20370: item is not available to players: Test Staff 90 epic
-20372: item is not available to players: Test Staff 77 epic
+20370: itemName has identifier Test: Test Staff 90 epic
+20372: itemName has identifier Test: Test Staff 77 epic
 20386: item not found
 20412: itemName has identifier Monster: Monster - Polearm, PVPAlliance_A01
 20417: itemName has identifier Monster: Monster - Glaive - 2 Blade Silver (offhand)
 20421: item not found
-20445: item is not available to players: Test Defense Ring +120
-20446: item is not available to players: Test Defense Ring +80
+20445: itemName has identifier Test: Test Defense Ring +120
+20446: itemName has identifier Test: Test Defense Ring +80
 20468: itemName has identifier Monster: Monster - Item, Orb - A01 Green
 20470: item not found
 20471: item not found
@@ -6630,7 +6630,8 @@
 20483: item not found
 20484: item not found
 20486: item not found
-20488: item is not available to players: Rhok'delar, Longbow of the Ancient Keepers DEP
+20487: itemName has identifier DEP: Lok'delar, Stave of the Ancient Keepers DEP
+20488: itemName has identifier DEP: Rhok'delar, Longbow of the Ancient Keepers DEP
 20502: item is not available to players: Ironbark Shield
 20523: item not found
 20524: item is not available to players: Shadowhide Leggings
@@ -6638,8 +6639,8 @@
 20718: itemName has identifier Monster: Monster - Staff, Jeweled Yellow Staff w/Low Purple Glow
 20719: itemName has identifier Monster: Monster - Staff, Jeweled D01/B02 Yellow w/Low Red Flame
 20738: itemName has identifier Monster: Monster - Mace, Scepter of the Shifting Sands
-20739: item is not available to players: Deadwood Headdress Feather DEPRECATED
-20740: item is not available to players: Winterfall Spirit Beads DEPRECATED
+20739: itemName has identifier DEPRECATED: Deadwood Headdress Feather DEPRECATED
+20740: itemName has identifier DEPRECATED: Winterfall Spirit Beads DEPRECATED
 20743: item not found
 20751: item not found
 20759: item not found
@@ -6906,7 +6907,7 @@
 21234: item not found
 21238: item is not available to players: Winter Veil Cookie UNUSED
 21239: item not found
-21274: item is not available to players: Test Stackable Items
+21274: itemName has identifier Test: Test Stackable Items
 21276: item is not available to players: Blessed Qiraji Naturalist Staff UNUSED
 21286: itemName has identifier Monster: Monster - Axe, 2H Large Double Bladed, Gold
 21339: itemName has identifier [PH]: Doomcaller's Handwraps [PH]
@@ -6962,32 +6963,32 @@
 21612: item is not available to players: Wormscale Stompers
 21613: item is not available to players: Wormhide Boots
 21614: item is not available to players: Wormhide Protector
-21628: item is not available to players: Test AQ Resource - Copper
-21629: item is not available to players: Test AQ Resource - Iron
-21630: item is not available to players: Test AQ Resource - Thorium
-21631: item is not available to players: Test AQ Resource - Light Leather
-21632: item is not available to players: Test AQ Resource - Medium Leather
-21633: item is not available to players: Test AQ Resource - Thick Leather
-21634: item is not available to players: Test AQ Resource - Linen Bandage
-21636: item is not available to players: Test AQ Resource - Silk Bandage
-21637: item is not available to players: Test AQ Resource - Runecloth Bandage
-21638: item is not available to players: Test AQ Resource - Spotted Yellowtail
-21641: item is not available to players: Test AQ Resource - Rainbow Fin Albacore
-21642: item is not available to players: Test AQ Resource - Roast Raptor
-21643: item is not available to players: Test AQ Resource - Arthas' Tear
-21644: item is not available to players: Test AQ Resource - Stranglekelp
-21646: item is not available to players: Test AQ Resource - Purple Lotus
-21649: item is not available to players: Test AQ Resource - Tin
-21653: item is not available to players: Test AQ Resource - Mithril
+21628: itemName has identifier Test: Test AQ Resource - Copper
+21629: itemName has identifier Test: Test AQ Resource - Iron
+21630: itemName has identifier Test: Test AQ Resource - Thorium
+21631: itemName has identifier Test: Test AQ Resource - Light Leather
+21632: itemName has identifier Test: Test AQ Resource - Medium Leather
+21633: itemName has identifier Test: Test AQ Resource - Thick Leather
+21634: itemName has identifier Test: Test AQ Resource - Linen Bandage
+21636: itemName has identifier Test: Test AQ Resource - Silk Bandage
+21637: itemName has identifier Test: Test AQ Resource - Runecloth Bandage
+21638: itemName has identifier Test: Test AQ Resource - Spotted Yellowtail
+21641: itemName has identifier Test: Test AQ Resource - Rainbow Fin Albacore
+21642: itemName has identifier Test: Test AQ Resource - Roast Raptor
+21643: itemName has identifier Test: Test AQ Resource - Arthas' Tear
+21644: itemName has identifier Test: Test AQ Resource - Stranglekelp
+21646: itemName has identifier Test: Test AQ Resource - Purple Lotus
+21649: itemName has identifier Test: Test AQ Resource - Tin
+21653: itemName has identifier Test: Test AQ Resource - Mithril
 21654: item not found
-21655: item is not available to players: Test AQ Resource - Heavy Leather
-21656: item is not available to players: Test AQ Resource - Rugged Leather
-21657: item is not available to players: Test AQ Resource - Wool Bandages
-21658: item is not available to players: Test AQ Resource - Mageweave Bandages
-21659: item is not available to players: Test AQ Resource - Lean Wolf Steak
-21660: item is not available to players: Test AQ Resource - Baked Salmon
-21661: item is not available to players: Test AQ Resource - Firebloom
-21662: item is not available to players: Test AQ Resource - Peacebloom
+21655: itemName has identifier Test: Test AQ Resource - Heavy Leather
+21656: itemName has identifier Test: Test AQ Resource - Rugged Leather
+21657: itemName has identifier Test: Test AQ Resource - Wool Bandages
+21658: itemName has identifier Test: Test AQ Resource - Mageweave Bandages
+21659: itemName has identifier Test: Test AQ Resource - Lean Wolf Steak
+21660: itemName has identifier Test: Test AQ Resource - Baked Salmon
+21661: itemName has identifier Test: Test AQ Resource - Firebloom
+21662: itemName has identifier Test: Test AQ Resource - Peacebloom
 21739: itemName has identifier DEBUG: Lunar Festival Invitation DEBUG
 21748: item not found
 21752: item not found
@@ -7018,7 +7019,7 @@
 21779: item not found
 21780: item not found
 21781: item not found
-21782: item is not available to players: 2000 Test sword 63 blue
+21782: itemName has identifier Test: 2000 Test sword 63 blue
 21783: item not found
 21784: item not found
 21785: item not found
@@ -7063,7 +7064,7 @@
 21853: item not found
 21854: item not found
 21855: item not found
-21857: item is not available to players: Test Herb Bag
+21857: itemName has identifier Test: Test Herb Bag
 21858: item not found
 21859: item not found
 21860: item not found
@@ -7238,10 +7239,11 @@
 22215: itemName has identifier Monster: Monster - Dagger, Bonescraper
 22230: item is not available to players: Frightmaw Hide
 22273: item is not available to players: Moonshadow Hood
-22316: item is not available to players: Test Relic
+22316: itemName has identifier Test: Test Relic
 22323: item not found
 22341: itemName has identifier Monster: Monster - Mace, Horde A04 Pale - Bone Wrench
 22346: itemName has identifier Monster: Monster - Mace2H, Unstoppable Force
+22386: itemName has identifier DEP: Head of Instructor Razuvious DEP
 22391: itemName has identifier Monster: Monster - Staff, Lord Valthalak
 22413: item not found
 22414: item not found
@@ -7703,7 +7705,7 @@
 23415: item not found
 23416: item not found
 23417: item not found
-23418: item is not available to players: Test Sapper Charge
+23418: itemName has identifier Test: Test Sapper Charge
 23419: item not found
 23420: item not found
 23421: item not found
@@ -7833,7 +7835,7 @@
 23564: item not found
 23565: item not found
 23566: item not found
-23567: itemName has identifier [PH]: [PH] Silithus PvP Dust [DEP]
+23567: itemName has identifier DEP: [PH] Silithus PvP Dust [DEP]
 23568: item not found
 23569: item not found
 23571: item not found
@@ -7918,7 +7920,7 @@
 23653: item not found
 23654: item not found
 23655: item not found
-23656: item is not available to players: Promotion Test Item
+23656: itemName has identifier Test: Promotion Test Item
 23657: item not found
 23658: item not found
 23659: item not found
@@ -7948,12 +7950,12 @@
 23693: item not found
 23694: item not found
 23695: item not found
-23696: itemName has identifier [PH]: [PH] Potion of Heightened Senses [DEP]
+23696: itemName has identifier DEP: [PH] Potion of Heightened Senses [DEP]
 23697: item not found
-23698: itemName has identifier [PH]: [PH] Nature Resist Potion [DEP]
-23699: itemName has identifier [PH]: [PH] Light Consumable [DEP]
-23700: itemName has identifier [PH]: [PH] Glorious Standard of the Alliance [DEP]
-23701: itemName has identifier [PH]: [PH] Victorious Standard of the Horde [DEP]
+23698: itemName has identifier DEP: [PH] Nature Resist Potion [DEP]
+23699: itemName has identifier DEP: [PH] Light Consumable [DEP]
+23700: itemName has identifier DEP: [PH] Glorious Standard of the Alliance [DEP]
+23701: itemName has identifier DEP: [PH] Victorious Standard of the Horde [DEP]
 23702: item not found
 23703: item not found
 23704: item not found
