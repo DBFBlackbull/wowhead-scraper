@@ -7834,7 +7834,7 @@
 23564: item not found
 23565: item not found
 23566: item not found
-23567: itemName has identifier DEP: [PH] Silithus PvP Dust [DEP]
+23567: itemName has identifier [DEP]: [PH] Silithus PvP Dust [DEP]
 23568: item not found
 23569: item not found
 23571: item not found
@@ -7949,12 +7949,12 @@
 23693: item not found
 23694: item not found
 23695: item not found
-23696: itemName has identifier DEP: [PH] Potion of Heightened Senses [DEP]
+23696: itemName has identifier [DEP]: [PH] Potion of Heightened Senses [DEP]
 23697: item not found
-23698: itemName has identifier DEP: [PH] Nature Resist Potion [DEP]
-23699: itemName has identifier DEP: [PH] Light Consumable [DEP]
-23700: itemName has identifier DEP: [PH] Glorious Standard of the Alliance [DEP]
-23701: itemName has identifier DEP: [PH] Victorious Standard of the Horde [DEP]
+23698: itemName has identifier [DEP]: [PH] Nature Resist Potion [DEP]
+23699: itemName has identifier [DEP]: [PH] Light Consumable [DEP]
+23700: itemName has identifier [DEP]: [PH] Glorious Standard of the Alliance [DEP]
+23701: itemName has identifier [DEP]: [PH] Victorious Standard of the Horde [DEP]
 23702: item not found
 23703: item not found
 23704: item not found

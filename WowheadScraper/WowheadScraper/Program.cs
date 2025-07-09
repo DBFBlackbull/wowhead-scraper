@@ -17,6 +17,7 @@ class Program
         "Depricated", // misspelled item
         "Deptecated", // misspelled item
         "DEPRECATED",
+        "[DEP]",
         "DEP",
         "(DND)",
         "Monster",
