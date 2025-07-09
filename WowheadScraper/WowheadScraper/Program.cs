@@ -21,8 +21,12 @@ class Program
         "Monster",
         "QA",
         "[PH]",
+        "(test)",
         "(Test)",
+        "(TEST)",
         "Test",
+        "TEST",
+        "Unused",
     };
 
     public static readonly List<int> NotAvailableExceptions = new List<int>()

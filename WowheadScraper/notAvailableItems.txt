@@ -721,7 +721,7 @@
 947: item not found
 949: item not found
 950: item not found
-951: item is not available to players: Tome of Whirlwind (TEST)
+951: itemName has identifier (TEST): Tome of Whirlwind (TEST)
 952: item not found
 953: item not found
 956: itemName has identifier Deprecated: Deprecated Area Trigger Flag - Jasperlode mine
@@ -746,7 +746,7 @@
 991: item not found
 993: item not found
 995: item not found
-996: item is not available to players: Ring of Righteous Flame (TEST)
+996: itemName has identifier (TEST): Ring of Righteous Flame (TEST)
 998: item not found
 999: item not found
 1000: item not found
@@ -758,12 +758,12 @@
 1016: itemName has identifier Deprecated: Deprecated Lurker Leg
 1018: itemName has identifier (Test): Chows Blade of DOOM! (Test)
 1020: itemName has identifier (Test): Leather Helmet D (Test)
-1021: item is not available to players: Leather Helmet A (test)
-1022: item is not available to players: Mail Helmet D (test)
-1023: item is not available to players: Mail Helmet C (test)
-1024: item is not available to players: Plate Helmet D2 (test)
+1021: itemName has identifier (test): Leather Helmet A (test)
+1022: itemName has identifier (test): Mail Helmet D (test)
+1023: itemName has identifier (test): Mail Helmet C (test)
+1024: itemName has identifier (test): Plate Helmet D2 (test)
 1025: itemName has identifier (Test): Plate Helmet D1 (Test)
-1026: item is not available to players: Plate Helmet D3 (test)
+1026: itemName has identifier (test): Plate Helmet D3 (test)
 1027: itemName has identifier (Test): Mail Helmet A (Test)
 1028: itemName has identifier Deprecated: Deprecated Dented Skullcap
 1039: item not found
@@ -1216,7 +1216,7 @@
 2183: itemName has identifier Monster: Monster - Axe, Metal Badass
 2184: itemName has identifier Monster: Monster - Dagger Basic
 2185: item not found
-2189: item is not available to players: Tigole's Boomstick (TEST)
+2189: itemName has identifier (TEST): Tigole's Boomstick (TEST)
 2190: item not found
 2191: itemName has identifier Deprecated: Deprecated End Spawn Ticket
 2192: item not found
@@ -1490,29 +1490,29 @@
 3513: itemName has identifier Deprecated: Deprecated Contract for the Magistrate
 3519: itemName has identifier Deprecated: Deprecated DEFAULT QUEST ITEM - Scroll
 3522: item is not available to players: Black Night Elf Breastplate
-3523: item is not available to players: Unused Black Night Elf Pants
-3524: item is not available to players: Unused Black Night Elf Boots
-3525: item is not available to players: Unused Black Night Elf Bracers
+3523: itemName has identifier Unused: Unused Black Night Elf Pants
+3524: itemName has identifier Unused: Unused Black Night Elf Boots
+3525: itemName has identifier Unused: Unused Black Night Elf Bracers
 3526: item is not available to players: Black Night Elf Gloves
 3527: item is not available to players: White Night Elf Breastplate
 3528: item is not available to players: Red Leather C03 Breastplate
 3529: item is not available to players: Black Night Elf Helm
-3532: item is not available to players: Unused Red Leather C03 Pants
+3532: itemName has identifier Unused: Unused Red Leather C03 Pants
 3533: item is not available to players: Red Leather C03 Boots
-3534: item is not available to players: Unused Red Leather C03 Gloves
+3534: itemName has identifier Unused: Unused Red Leather C03 Gloves
 3536: item is not available to players: Demon Hunter Blindfold
 3537: item is not available to players: Black Leather D02 Breastplate
 3538: item is not available to players: Gray Leather D02 Breastplate
-3539: item is not available to players: Unused Black Leather D02 Pants
-3540: item is not available to players: Unused Gray Leather D02 Pants
+3539: itemName has identifier Unused: Unused Black Leather D02 Pants
+3540: itemName has identifier Unused: Unused Gray Leather D02 Pants
 3541: item is not available to players: Black Leather D02 Boots
 3542: item is not available to players: Gray Leather D02 Boots
-3543: item is not available to players: Unused Black Leather D02 Gloves
-3544: item is not available to players: Unused Gray Leather D02 Gloves
+3543: itemName has identifier Unused: Unused Black Leather D02 Gloves
+3544: itemName has identifier Unused: Unused Gray Leather D02 Gloves
 3547: item is not available to players: White Leather D03 Breastplate
-3548: item is not available to players: Unused White Leather D03 Pants
-3549: item is not available to players: Unused White Leather D03 Gloves
-3557: item is not available to players: Unused Tabard of Chow
+3548: itemName has identifier Unused: Unused White Leather D03 Pants
+3549: itemName has identifier Unused: Unused White Leather D03 Gloves
+3557: itemName has identifier Unused: Unused Tabard of Chow
 3568: itemName has identifier Deprecated: Deprecated Oslow's Toolbox
 3579: item not found
 3580: itemName has identifier Deprecated: Deprecated Iron Key
@@ -1546,7 +1546,7 @@
 3886: itemName has identifier Deprecated: Deprecated Padded Cloth Hat
 3887: itemName has identifier Deprecated: Deprecated Cuirboulli Cap
 3888: itemName has identifier Deprecated: Deprecated Polished Scale Cap
-3895: item is not available to players: TEST Legendary
+3895: itemName has identifier TEST: TEST Legendary
 3896: item not found
 3903: item not found
 3933: itemName has identifier Deprecated: Deprecated Moon Glaive
@@ -1554,8 +1554,8 @@
 4081: item not found
 4156: itemName has identifier Deprecated: Deprecated Tome of Conjure Mana Jewel
 4163: itemName has identifier Deprecated: Deprecated Libram: Seal of Fury
-4191: item is not available to players: Unused Feathered Leggings
-4192: item is not available to players: Unused Feathered Gauntlets
+4191: itemName has identifier Unused: Unused Feathered Leggings
+4192: itemName has identifier Unused: Unused Feathered Gauntlets
 4193: itemName has identifier Deprecated: Deprecated Feathered Helm
 4222: itemName has identifier Deprecated: Deprecated Book of Rejuvenation V
 4224: itemName has identifier Deprecated: Deprecated Book of Nullify Disease III
@@ -1610,11 +1610,11 @@
 4815: itemName has identifier Deprecated: Deprecated Heavy Brass Shoulder
 4839: itemName has identifier Deprecated: Deprecated Demon Scarred Pelt
 4842: item is not available to players: test
-4853: item is not available to players: TEST QUEST HELM
-4855: item is not available to players: Unused Cloth Shoulder A01 Gray
-4856: item is not available to players: Unused Cloth Shoulder A02 Yellow
-4857: item is not available to players: Unused Cloth Shoulder B01 Silver
-4858: item is not available to players: Unused Cloth Shoulder B02 Black
+4853: itemName has identifier TEST: TEST QUEST HELM
+4855: itemName has identifier Unused: Unused Cloth Shoulder A01 Gray
+4856: itemName has identifier Unused: Unused Cloth Shoulder A02 Yellow
+4857: itemName has identifier Unused: Unused Cloth Shoulder B01 Silver
+4858: itemName has identifier Unused: Unused Cloth Shoulder B02 Black
 4868: itemName has identifier Deprecated: Deprecated Scorched Heart
 4884: itemName has identifier Deprecated: Deprecated Small Scorpid Carapace
 4885: itemName has identifier Deprecated: Deprecated Large Scorpid Carapace
@@ -1644,7 +1644,7 @@
 5036: item not found
 5037: item not found
 5039: item not found
-5041: item is not available to players: TEST Translation: Taurahe
+5041: itemName has identifier TEST: TEST Translation: Taurahe
 5053: itemName has identifier Deprecated: Deprecated Plain Brown Robe
 5070: item not found
 5090: itemName has identifier Deprecated: Deprecated Torn Shirt
@@ -1709,8 +1709,8 @@
 5408: itemName has identifier Deprecated: Deprecated Minor Bloodstone
 5409: itemName has identifier Deprecated: Deprecated Lesser Bloodstone
 5410: itemName has identifier OLD: OLDCeremonial Club
-5417: item is not available to players: Weapon of Massive Destruction (test)
-5418: item is not available to players: Weapon of Mass Destruction (test)
+5417: itemName has identifier (test): Weapon of Massive Destruction (test)
+5418: itemName has identifier (test): Weapon of Mass Destruction (test)
 5434: itemName has identifier Deprecated: Deprecated Pickpocket Water 31-40
 5436: itemName has identifier Deprecated: Deprecated Pickpocket Undead 41-50
 5438: itemName has identifier OLD: OLDPlague Vials
@@ -1762,7 +1762,7 @@
 5745: itemName has identifier Monster: Monster - Trident, Wood Handle
 5746: itemName has identifier Monster: Monster - Trident, Copper
 5747: itemName has identifier Monster: Monster - Trident, Ornate
-5828: item is not available to players: Ring of Uber Resists (TEST)
+5828: itemName has identifier (TEST): Ring of Uber Resists (TEST)
 5856: itemName has identifier Monster: Monster - Throwing Axe
 5870: itemName has identifier Monster: Monster - Throwing Spear
 5885: item not found
@@ -1811,8 +1811,8 @@
 5933: item not found
 5934: item not found
 5935: item not found
-5953: item is not available to players: TEST SWORD
-5954: item is not available to players: TEST SWORD 2
+5953: itemName has identifier TEST: TEST SWORD
+5954: itemName has identifier TEST: TEST SWORD 2
 5955: item not found
 5977: item not found
 5978: item not found
@@ -1924,7 +1924,7 @@
 6236: itemName has identifier Monster: Monster - Item, Flower - Rose (White)
 6237: itemName has identifier Monster: Monster - Item, Flowers  - Boquet Roses (Black)
 6254: itemName has identifier Monster: Monster - Shield, Ironforge
-6255: item is not available to players: Fishing Pole (JEFFTEST)
+6255: itemName has identifier TEST: Fishing Pole (JEFFTEST)
 6322: itemName has identifier Monster: Monster - Staff, Arugal
 6334: itemName has identifier Monster: Monster - Mace, Green
 6434: itemName has identifier Monster: Monster - Shield, Stromgarde
@@ -2124,7 +2124,7 @@
 7167: item not found
 7168: item not found
 7169: item not found
-7171: item is not available to players: TWAIN TEST ITEM VISUAL SWORD
+7171: itemName has identifier TEST: TWAIN TEST ITEM VISUAL SWORD
 7172: item not found
 7173: item not found
 7174: item not found
@@ -2185,7 +2185,7 @@
 7244: item not found
 7245: item not found
 7246: item not found
-7248: item is not available to players: Twain TEST Cloak
+7248: itemName has identifier TEST: Twain TEST Cloak
 7250: item not found
 7251: item not found
 7252: item not found
@@ -3406,7 +3406,7 @@
 11097: item not found
 11100: item not found
 11117: item not found
-11132: item is not available to players: Unused Scraping Vial
+11132: itemName has identifier Unused: Unused Scraping Vial
 11153: item not found
 11154: item not found
 11155: item not found
@@ -4064,7 +4064,7 @@
 12520: item not found
 12521: item not found
 12523: itemName has identifier Monster: Monster - Gun, Silver Musket
-12526: item is not available to players: TEST Challenge to Urok
+12526: itemName has identifier TEST: TEST Challenge to Urok
 12536: item not found
 12537: item not found
 12538: item not found
@@ -4145,7 +4145,7 @@
 12786: itemName has identifier Monster: Monster - Mace, Horde Skull Club
 12787: itemName has identifier Monster: Monster - Mace, Horde Bone Claw Hammer
 12788: itemName has identifier Monster: Monster - Mace, Horde Bone Spike Hammer
-12789: item is not available to players: Horn of Uber Buffing (test)
+12789: itemName has identifier (test): Horn of Uber Buffing (test)
 12801: itemName has identifier Monster: Monster - Item, Bucket - Wood
 12850: itemName has identifier Monster: Monster - Item, Bag - Black
 12851: itemName has identifier Monster: Monster - Item, Bag - Black Offhand
@@ -4214,10 +4214,10 @@
 12950: itemName has identifier Monster: Monster - Mace2H, Warhammer Ebony
 12951: itemName has identifier Monster: Monster - Axe, 2H War - Red
 12959: itemName has identifier Monster: Monster - Staff, Demon Skull Staff
-12961: item is not available to players: JEFF TEST SHIELD
-12962: item is not available to players: JEFF TEST GLOVES
-12971: item is not available to players: JEFF TEST SWORD
-12972: item is not available to players: JEFF TEST SWORD II
+12961: itemName has identifier TEST: JEFF TEST SHIELD
+12962: itemName has identifier TEST: JEFF TEST GLOVES
+12971: itemName has identifier TEST: JEFF TEST SWORD
+12972: itemName has identifier TEST: JEFF TEST SWORD II
 12980: itemName has identifier Monster: Monster - Shield, Wall Metal Silver
 12981: itemName has identifier Monster: Monster - Shield, Wall Metal Gold
 12986: itemName has identifier Monster: Monster - Spear, Broad Notched
@@ -5104,7 +5104,7 @@
 16200: item not found
 16201: item not found
 16211: itemName has identifier Test: Test Quality Modifier Chest
-16212: item is not available to players: TEST SWORD 3
+16212: itemName has identifier TEST: TEST SWORD 3
 16213: itemName has identifier Test: Test Quality Modifier Chest
 16225: item not found
 16226: item not found
@@ -5279,7 +5279,7 @@
 17108: item is not available to players: Mark of Deflection
 17120: item not found
 17121: item not found
-17122: item is not available to players: ALEX BUG TEST ITEM
+17122: itemName has identifier TEST: ALEX BUG TEST ITEM
 17123: itemName has identifier Monster: Monster - Sword, Horde Troll
 17127: item not found
 17128: item not found
@@ -5971,8 +5971,8 @@
 18099: item not found
 18100: item not found
 18101: item not found
-18105: item is not available to players: PVP TEST Alliance Ear
-18106: item is not available to players: PVP TEST Horde Ear
+18105: itemName has identifier TEST: PVP TEST Alliance Ear
+18106: itemName has identifier TEST: PVP TEST Horde Ear
 18107: item not found
 18108: item not found
 18109: item not found
@@ -6138,13 +6138,13 @@
 18748: item not found
 18750: item not found
 18751: item not found
-18763: item is not available to players: TEST GUN Alliance20
-18764: item is not available to players: TEST GUN Raid
-18765: item is not available to players: TEST GUN Horde50
-18800: item is not available to players: TEST 1H Amberseal Keeper
-18801: item is not available to players: TEST 1H Benediction
-18881: item is not available to players: TEST Ragnaros Hammer
-18882: item is not available to players: TEST Level 80 Epic
+18763: itemName has identifier TEST: TEST GUN Alliance20
+18764: itemName has identifier TEST: TEST GUN Raid
+18765: itemName has identifier TEST: TEST GUN Horde50
+18800: itemName has identifier TEST: TEST 1H Amberseal Keeper
+18801: itemName has identifier TEST: TEST 1H Benediction
+18881: itemName has identifier TEST: TEST Ragnaros Hammer
+18882: itemName has identifier TEST: TEST Level 80 Epic
 18883: item not found
 18884: item not found
 18885: item not found
@@ -6250,7 +6250,7 @@
 19082: itemName has identifier Monster: Monster - Fire Arrow
 19122: itemName has identifier DEPRECATED: Woven Ivy Necklace DEPRECATED
 19129: item is not available to players: Everglowing Robe
-19158: item is not available to players: TEST Sulfuras, Hand of Ragnaros
+19158: itemName has identifier TEST: TEST Sulfuras, Hand of Ragnaros
 19161: item not found
 19171: item not found
 19172: item not found
@@ -6425,8 +6425,8 @@
 19739: item not found
 19740: item not found
 19741: item not found
-19742: item is not available to players: Earthborn Kilt TEST
-19743: item is not available to players: Cloaked Hood TEST
+19742: itemName has identifier TEST: Earthborn Kilt TEST
+19743: itemName has identifier TEST: Cloaked Hood TEST
 19744: item not found
 19745: item not found
 19746: item not found
@@ -6889,8 +6889,8 @@
 21096: item not found
 21097: item not found
 21098: item not found
-21101: item is not available to players: Staff of Spell Penetration - Fire (TEST)
-21102: item is not available to players: Staff of Spell Penetration - Frost (TEST)
+21101: itemName has identifier (TEST): Staff of Spell Penetration - Fire (TEST)
+21102: itemName has identifier (TEST): Staff of Spell Penetration - Frost (TEST)
 21121: itemName has identifier Monster: Monster - Item, Flower - Purple
 21122: itemName has identifier Monster: Monster - Dagger, Korean A01 Black
 21123: itemName has identifier Monster: Monster - Item, Flower - White
@@ -6911,40 +6911,40 @@
 21276: item is not available to players: Blessed Qiraji Naturalist Staff UNUSED
 21286: itemName has identifier Monster: Monster - Axe, 2H Large Double Bladed, Gold
 21339: itemName has identifier [PH]: Doomcaller's Handwraps [PH]
-21419: item is not available to players: AHNQIRAJ TEST ITEM A CLOTH LEGS
-21420: item is not available to players: AHNQIRAJ TEST ITEM B LEATHER CHEST
-21421: item is not available to players: AHNQIRAJ TEST ITEM C MAIL CHEST
-21422: item is not available to players: AHNQIRAJ TEST ITEM D PLATE CHEST
-21423: item is not available to players: AHNQIRAJ TEST ITEM B LEATHER PANTS
-21424: item is not available to players: AHNQIRAJ TEST ITEM B LEATHER SHOULDER
-21425: item is not available to players: AHNQIRAJ TEST ITEM B LEATHER BELT
-21426: item is not available to players: AHNQIRAJ TEST ITEM B LEATHER HELM
-21427: item is not available to players: AHNQIRAJ TEST ITEM B LEATHER BOOTS
-21428: item is not available to players: AHNQIRAJ TEST ITEM B LEATHER GAUNTLETS
-21429: item is not available to players: AHNQIRAJ TEST ITEM A CLOTH BELT
-21430: item is not available to players: AHNQIRAJ TEST ITEM A CLOTH ROBE
-21431: item is not available to players: AHNQIRAJ TEST ITEM A CLOTH FEET
-21432: item is not available to players: AHNQIRAJ TEST ITEM B LEATHER BRACER
-21433: item is not available to players: AHNQIRAJ TEST ITEM A CLOTH BRACER
-21434: item is not available to players: AHNQIRAJ TEST ITEM A CLOTH HELM
-21435: item is not available to players: AHNQIRAJ TEST ITEM A CLOTH SHOULDERS
-21437: item is not available to players: AHNQIRAJ TEST ITEM A CLOTH GLOVES
-21439: item is not available to players: AHNQIRAJ TEST ITEM D PLATE HELM
-21440: item is not available to players: AHNQIRAJ TEST ITEM D PLATE LEGS
-21441: item is not available to players: AHNQIRAJ TEST ITEM D PLATE BELT
-21442: item is not available to players: AHNQIRAJ TEST ITEM D PLATE BOOTS
-21443: item is not available to players: AHNQIRAJ TEST ITEM D PLATE SHOULDERS
-21444: item is not available to players: AHNQIRAJ TEST ITEM D PLATE GLOVES
-21445: item is not available to players: AHNQIRAJ TEST ITEM D PLATE BRACER
-21446: item is not available to players: AHNQIRAJ TEST ITEM C MAIL HELM
-21447: item is not available to players: AHNQIRAJ TEST ITEM C MAIL SHOULDERS
-21448: item is not available to players: AHNQIRAJ TEST ITEM C MAIL LEGS
-21449: item is not available to players: AHNQIRAJ TEST ITEM C MAIL BOOTS
-21450: item is not available to players: AHNQIRAJ TEST ITEM C MAIL GLOVES
-21451: item is not available to players: AHNQIRAJ TEST ITEM C MAIL BELT
+21419: itemName has identifier TEST: AHNQIRAJ TEST ITEM A CLOTH LEGS
+21420: itemName has identifier TEST: AHNQIRAJ TEST ITEM B LEATHER CHEST
+21421: itemName has identifier TEST: AHNQIRAJ TEST ITEM C MAIL CHEST
+21422: itemName has identifier TEST: AHNQIRAJ TEST ITEM D PLATE CHEST
+21423: itemName has identifier TEST: AHNQIRAJ TEST ITEM B LEATHER PANTS
+21424: itemName has identifier TEST: AHNQIRAJ TEST ITEM B LEATHER SHOULDER
+21425: itemName has identifier TEST: AHNQIRAJ TEST ITEM B LEATHER BELT
+21426: itemName has identifier TEST: AHNQIRAJ TEST ITEM B LEATHER HELM
+21427: itemName has identifier TEST: AHNQIRAJ TEST ITEM B LEATHER BOOTS
+21428: itemName has identifier TEST: AHNQIRAJ TEST ITEM B LEATHER GAUNTLETS
+21429: itemName has identifier TEST: AHNQIRAJ TEST ITEM A CLOTH BELT
+21430: itemName has identifier TEST: AHNQIRAJ TEST ITEM A CLOTH ROBE
+21431: itemName has identifier TEST: AHNQIRAJ TEST ITEM A CLOTH FEET
+21432: itemName has identifier TEST: AHNQIRAJ TEST ITEM B LEATHER BRACER
+21433: itemName has identifier TEST: AHNQIRAJ TEST ITEM A CLOTH BRACER
+21434: itemName has identifier TEST: AHNQIRAJ TEST ITEM A CLOTH HELM
+21435: itemName has identifier TEST: AHNQIRAJ TEST ITEM A CLOTH SHOULDERS
+21437: itemName has identifier TEST: AHNQIRAJ TEST ITEM A CLOTH GLOVES
+21439: itemName has identifier TEST: AHNQIRAJ TEST ITEM D PLATE HELM
+21440: itemName has identifier TEST: AHNQIRAJ TEST ITEM D PLATE LEGS
+21441: itemName has identifier TEST: AHNQIRAJ TEST ITEM D PLATE BELT
+21442: itemName has identifier TEST: AHNQIRAJ TEST ITEM D PLATE BOOTS
+21443: itemName has identifier TEST: AHNQIRAJ TEST ITEM D PLATE SHOULDERS
+21444: itemName has identifier TEST: AHNQIRAJ TEST ITEM D PLATE GLOVES
+21445: itemName has identifier TEST: AHNQIRAJ TEST ITEM D PLATE BRACER
+21446: itemName has identifier TEST: AHNQIRAJ TEST ITEM C MAIL HELM
+21447: itemName has identifier TEST: AHNQIRAJ TEST ITEM C MAIL SHOULDERS
+21448: itemName has identifier TEST: AHNQIRAJ TEST ITEM C MAIL LEGS
+21449: itemName has identifier TEST: AHNQIRAJ TEST ITEM C MAIL BOOTS
+21450: itemName has identifier TEST: AHNQIRAJ TEST ITEM C MAIL GLOVES
+21451: itemName has identifier TEST: AHNQIRAJ TEST ITEM C MAIL BELT
 21465: itemName has identifier Monster: Monster - Axe, Insano
-21516: item is not available to players: Dagger of Spell Penetration - Fire 150 Resist (TEST)
-21518: item is not available to players: Dagger of Spell Penetration - Frost 150 Resist (TEST)
+21516: itemName has identifier (TEST): Dagger of Spell Penetration - Fire 150 Resist (TEST)
+21518: itemName has identifier (TEST): Dagger of Spell Penetration - Frost 150 Resist (TEST)
 21549: itemName has identifier Monster: Monster - Shield, Shieldguard
 21550: itemName has identifier Monster: Monster - Bow, Kaldorei
 21551: itemName has identifier Monster: Monster - Dagger, Alliance PvP
