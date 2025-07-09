@@ -13,8 +13,10 @@ class Program
     private static readonly List<string> NotAvailableNameIdentifiers = new List<string>()
     {
         "OLD",
+        "(old)",
         "DEBUG",
         "Deprecated",
+        "Deprecate",
         "Depricated", // misspelled item
         "Deptecated", // misspelled item
         "DEPRECATED",
@@ -48,7 +50,8 @@ class Program
         12218, // Monster Omelet
         8523, // Field Testing Kit
         15102, // Un'Goro Tested Sample - Incorrectly marked as Not Available to players even though it is
-        15103 // Corrupt Tested Sample - Incorrectly marked as Not Available to players even though it is
+        15103, // Corrupt Tested Sample - Incorrectly marked as Not Available to players even though it is
+        5108, // Dark Iron Leather - Marked as Deprecated but still drops
     };
 
     static async Task Main(string[] args)
@@ -86,16 +89,16 @@ class Program
             return new Item {ErrorMessage = $"{i}: itemName has identifier {identifier}: {itemName}"};
         }
 
-        // var quickFacts = htmlDocument.DocumentNode.SelectSingleNode(".//table[@class='infobox after-buttons'")?.InnerHtml;
-        // if (quickFacts != null)
-        // {
-        //     var regex = NotAvailableQuickFactsIdentifier.Find(regex =>
-        //         regex.IsMatch(quickFacts));
-        //     if (regex != null && !isException)
-        //     {
-        //         return new Item{ErrorMessage = $"{i}: item quick facts has identifier {regex}: {itemName}"};
-        //     }
-        // }
+        var quickFacts = htmlDocument.DocumentNode.SelectSingleNode(".//table[@class='infobox after-buttons']")?.InnerHtml;
+        if (quickFacts != null)
+        {
+            var regex = NotAvailableQuickFactsIdentifier.Find(regex =>
+                regex.IsMatch(quickFacts));
+            if (regex != null && !isException)
+            {
+                return new Item{ErrorMessage = $"{i}: item quick facts has identifier {regex}: {itemName}"};
+            }
+        }
         
         if (html.Contains("This item is not available to players.") && !isException)
         {
