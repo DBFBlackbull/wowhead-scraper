@@ -92,7 +92,7 @@ class Program
             var silver = sellPriceElement.SelectSingleNode(".//span[@class='moneysilver']")?.InnerText;
             var copper = sellPriceElement.SelectSingleNode(".//span[@class='moneycopper']")?.InnerText;
 
-            sellPrice = GetMoney(gold, 1000) + GetMoney(silver, 100) + GetMoney(copper, 1);
+            sellPrice = GetMoney(gold, 10000) + GetMoney(silver, 100) + GetMoney(copper, 1);
         }
 
         return new Item {Name = itemName, SellPrice = sellPrice};
