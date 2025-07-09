@@ -657,7 +657,7 @@
 734: itemName has identifier Deprecated: Deprecated Malakai's Medallion
 736: item not found
 741: itemName has identifier Deprecated: Deprecated Copper Ingot
-746: itemName has identifier \(Test\): Lord Brandon's Tabard (Test)
+746: itemName has identifier (Test): Lord Brandon's Tabard (Test)
 747: item not found
 749: item not found
 751: itemName has identifier Deprecated: Deprecated Wolf Femur
@@ -707,10 +707,10 @@
 903: itemName has identifier Deprecated: Deprecated Pinto Summoning (Mount)
 904: item not found
 905: item not found
-906: itemName has identifier \(Test\): Tan Leather Shoulderpads (Test)
-907: itemName has identifier \(Test\): Black Mail Shoulderpads of might (Test)
-908: itemName has identifier \(Test\): Plate Shoulderpad (Test)
-909: itemName has identifier \(Test\): Silver Mail Shoulderpads (Test)
+906: itemName has identifier (Test): Tan Leather Shoulderpads (Test)
+907: itemName has identifier (Test): Black Mail Shoulderpads of might (Test)
+908: itemName has identifier (Test): Plate Shoulderpad (Test)
+909: itemName has identifier (Test): Silver Mail Shoulderpads (Test)
 912: item not found
 917: itemName has identifier Deprecated: Deprecated Shadow Leather Armor
 919: item not found
@@ -721,7 +721,7 @@
 947: item not found
 949: item not found
 950: item not found
-951: itemName has identifier \(TEST\): Tome of Whirlwind (TEST)
+951: itemName has identifier (TEST): Tome of Whirlwind (TEST)
 952: item not found
 953: item not found
 956: itemName has identifier Deprecated: Deprecated Area Trigger Flag - Jasperlode mine
@@ -746,7 +746,7 @@
 991: item not found
 993: item not found
 995: item not found
-996: itemName has identifier \(TEST\): Ring of Righteous Flame (TEST)
+996: itemName has identifier (TEST): Ring of Righteous Flame (TEST)
 998: item not found
 999: item not found
 1000: item not found
@@ -756,15 +756,15 @@
 1007: item not found
 1012: item not found
 1016: itemName has identifier Deprecated: Deprecated Lurker Leg
-1018: itemName has identifier \(Test\): Chows Blade of DOOM! (Test)
-1020: itemName has identifier \(Test\): Leather Helmet D (Test)
-1021: itemName has identifier \(test\): Leather Helmet A (test)
-1022: itemName has identifier \(test\): Mail Helmet D (test)
-1023: itemName has identifier \(test\): Mail Helmet C (test)
-1024: itemName has identifier \(test\): Plate Helmet D2 (test)
-1025: itemName has identifier \(Test\): Plate Helmet D1 (Test)
-1026: itemName has identifier \(test\): Plate Helmet D3 (test)
-1027: itemName has identifier \(Test\): Mail Helmet A (Test)
+1018: itemName has identifier (Test): Chows Blade of DOOM! (Test)
+1020: itemName has identifier (Test): Leather Helmet D (Test)
+1021: itemName has identifier (test): Leather Helmet A (test)
+1022: itemName has identifier (test): Mail Helmet D (test)
+1023: itemName has identifier (test): Mail Helmet C (test)
+1024: itemName has identifier (test): Plate Helmet D2 (test)
+1025: itemName has identifier (Test): Plate Helmet D1 (Test)
+1026: itemName has identifier (test): Plate Helmet D3 (test)
+1027: itemName has identifier (Test): Mail Helmet A (Test)
 1028: itemName has identifier Deprecated: Deprecated Dented Skullcap
 1039: item not found
 1040: item not found
@@ -824,8 +824,8 @@
 1153: item not found
 1157: itemName has identifier Deprecated: Deprecated Militia Handaxe
 1160: item not found
-1162: itemName has identifier \(Test\): Pirates Patch (Test)
-1163: itemName has identifier \(Test\): Dwarven Explorer's Monocle (Test)
+1162: itemName has identifier (Test): Pirates Patch (Test)
+1163: itemName has identifier (Test): Dwarven Explorer's Monocle (Test)
 1165: itemName has identifier Test: Test Food
 1170: itemName has identifier Deprecated: Deprecated Brown Leather Vest
 1174: itemName has identifier Deprecated: Deprecated Light Soldier Boots
@@ -1216,7 +1216,7 @@
 2183: itemName has identifier Monster: Monster - Axe, Metal Badass
 2184: itemName has identifier Monster: Monster - Dagger Basic
 2185: item not found
-2189: itemName has identifier \(TEST\): Tigole's Boomstick (TEST)
+2189: itemName has identifier (TEST): Tigole's Boomstick (TEST)
 2190: item not found
 2191: itemName has identifier Deprecated: Deprecated End Spawn Ticket
 2192: item not found
@@ -1626,7 +1626,7 @@
 4912: itemName has identifier Test: Test Wand JChow
 4927: itemName has identifier Deprecated: Deprecated Keg of Chen's Stormstout
 4934: itemName has identifier Deprecated: Deprecated Heavy Cord Shoulderpads
-4943: itemName has identifier \[UNUSED\]: Torka's Egg Cracker [UNUSED]
+4943: itemName has identifier [UNUSED]: Torka's Egg Cracker [UNUSED]
 4950: itemName has identifier Deprecated: Deprecated Orc Protector
 4955: itemName has identifier Deprecated: Deprecated Nomadic Shoulderpads
 4956: itemName has identifier Test: Test Totem
@@ -1709,8 +1709,8 @@
 5408: itemName has identifier Deprecated: Deprecated Minor Bloodstone
 5409: itemName has identifier Deprecated: Deprecated Lesser Bloodstone
 5410: itemName has identifier OLD: OLDCeremonial Club
-5417: itemName has identifier \(test\): Weapon of Massive Destruction (test)
-5418: itemName has identifier \(test\): Weapon of Mass Destruction (test)
+5417: itemName has identifier (test): Weapon of Massive Destruction (test)
+5418: itemName has identifier (test): Weapon of Mass Destruction (test)
 5434: itemName has identifier Deprecated: Deprecated Pickpocket Water 31-40
 5436: itemName has identifier Deprecated: Deprecated Pickpocket Undead 41-50
 5438: itemName has identifier OLD: OLDPlague Vials
@@ -1762,7 +1762,7 @@
 5745: itemName has identifier Monster: Monster - Trident, Wood Handle
 5746: itemName has identifier Monster: Monster - Trident, Copper
 5747: itemName has identifier Monster: Monster - Trident, Ornate
-5828: itemName has identifier \(TEST\): Ring of Uber Resists (TEST)
+5828: itemName has identifier (TEST): Ring of Uber Resists (TEST)
 5856: itemName has identifier Monster: Monster - Throwing Axe
 5870: itemName has identifier Monster: Monster - Throwing Spear
 5885: item not found
@@ -3144,7 +3144,7 @@
 10557: item not found
 10568: itemName has identifier Monster: Monster - Mace2H, Pacifier
 10591: itemName has identifier Monster: Monster - Mace, Stormhammer
-10594: itemName has identifier \[PH\]: [PH] Hakkar'i Urn
+10594: itemName has identifier [PH]: [PH] Hakkar'i Urn
 10596: itemName has identifier Deprecated: Deprecated Rose Colored Goggles
 10611: itemName has identifier Monster: Monster - Axe, Horde Badass 01
 10612: itemName has identifier Monster: Monster - Axe, Horde Badass 02
@@ -3696,18 +3696,18 @@
 11659: item not found
 11660: item not found
 11661: item not found
-11663: itemName has identifier \[PH\]: [PH] Greater Arcane Amalgamation (MANA/FR)
-11664: itemName has identifier \[PH\]: [PH] Greater Arcane Amalgamation (HP/FR)
-11666: itemName has identifier \[PH\]: [PH] Greater Arcane Amalgamation (AC/FR)
-11667: itemName has identifier \[PH\]: [PH] Greater Arcane Amalgamation (STR/FR)
-11670: itemName has identifier \[PH\]: [PH] Greater Arcane Amalgamation (STA/FR)
-11671: itemName has identifier \[PH\]: [PH] Greater Arcane Amalgamation (AGI/FR)
-11672: itemName has identifier \[PH\]: [PH] Greater Arcane Amalgamation (SPI/FR)
-11673: itemName has identifier \[PH\]: [PH] Greater Arcane Amalgamation (INT/FR)
-11676: itemName has identifier \[PH\]: [PH] Legendary Arcane Amalgamation (Melee)
+11663: itemName has identifier [PH]: [PH] Greater Arcane Amalgamation (MANA/FR)
+11664: itemName has identifier [PH]: [PH] Greater Arcane Amalgamation (HP/FR)
+11666: itemName has identifier [PH]: [PH] Greater Arcane Amalgamation (AC/FR)
+11667: itemName has identifier [PH]: [PH] Greater Arcane Amalgamation (STR/FR)
+11670: itemName has identifier [PH]: [PH] Greater Arcane Amalgamation (STA/FR)
+11671: itemName has identifier [PH]: [PH] Greater Arcane Amalgamation (AGI/FR)
+11672: itemName has identifier [PH]: [PH] Greater Arcane Amalgamation (SPI/FR)
+11673: itemName has identifier [PH]: [PH] Greater Arcane Amalgamation (INT/FR)
+11676: itemName has identifier [PH]: [PH] Legendary Arcane Amalgamation (Melee)
 11680: item not found
 11681: item not found
-11683: itemName has identifier \[PH\]: [PH] Legendary Arcane Amalgamation (Caster)
+11683: itemName has identifier [PH]: [PH] Legendary Arcane Amalgamation (Caster)
 11687: item not found
 11688: item not found
 11689: item not found
@@ -4006,10 +4006,10 @@
 12421: itemName has identifier Monster: Monster - Staff, White Jeweled
 12423: item not found
 12439: item not found
-12440: itemName has identifier \(DND\): Magic Knucklebone (DND)
+12440: itemName has identifier (DND): Magic Knucklebone (DND)
 12441: item not found
-12442: itemName has identifier \(DND\): Charm Pouch (DND)
-12443: itemName has identifier \(DND\): Knucklebone Pouch (DND)
+12442: itemName has identifier (DND): Charm Pouch (DND)
+12443: itemName has identifier (DND): Knucklebone Pouch (DND)
 12452: itemName has identifier Monster: Monster - Shield, Horde A02 Silver
 12453: itemName has identifier Monster: Monster - Shield, Horde A03 Triangle
 12454: itemName has identifier Monster: Monster - Shield, Horde B01 Brown
@@ -4146,7 +4146,7 @@
 12786: itemName has identifier Monster: Monster - Mace, Horde Skull Club
 12787: itemName has identifier Monster: Monster - Mace, Horde Bone Claw Hammer
 12788: itemName has identifier Monster: Monster - Mace, Horde Bone Spike Hammer
-12789: itemName has identifier \(test\): Horn of Uber Buffing (test)
+12789: itemName has identifier (test): Horn of Uber Buffing (test)
 12801: itemName has identifier Monster: Monster - Item, Bucket - Wood
 12850: itemName has identifier Monster: Monster - Item, Bag - Black
 12851: itemName has identifier Monster: Monster - Item, Bag - Black Offhand
@@ -4508,81 +4508,81 @@
 13721: itemName has identifier Monster: Monster - Staff, Wooden Handle Spiral Head White
 13722: itemName has identifier Monster: Monster - Staff, Demon Skull Staff Low Purple Flame
 13723: itemName has identifier Monster: Monster - Staff, Wood w/ Spiral Head White Low Purple Glow
-13726: itemName has identifier \[PH\]: [PH] Rising Dawn Gloves
-13727: itemName has identifier \[PH\]: [PH] Brilliant Dawn Gloves
-13728: itemName has identifier \[PH\]: [PH] Shining Dawn Gloves
-13729: itemName has identifier \[PH\]: [PH] Brilliant Dawn Mitts
-13730: itemName has identifier \[PH\]: [PH] Brilliant Dawn Fists
-13731: itemName has identifier \[PH\]: [PH] Brilliant Dawn Gauntlets
-13732: itemName has identifier \[PH\]: [PH] Rising Dawn Mitts
-13733: itemName has identifier \[PH\]: [PH] Rising Dawn Fists
-13734: itemName has identifier \[PH\]: [PH] Rising Dawn Gauntlets
-13735: itemName has identifier \[PH\]: [PH] Shining Dawn Mitts
-13736: itemName has identifier \[PH\]: [PH] Shining Dawn Fists
-13737: itemName has identifier \[PH\]: [PH] Shining Dawn Gauntlets
-13738: itemName has identifier \[PH\]: [PH] Cloth Bracers of the Brilliant Dawn
-13739: itemName has identifier \[PH\]: [PH] Cloth Bracers of the Rising Dawn
-13740: itemName has identifier \[PH\]: [PH] Cloth Bracers of the Shining Dawn
-13741: itemName has identifier \[PH\]: [PH] Leather Bracers of the Brilliant Dawn
-13742: itemName has identifier \[PH\]: [PH] Mail Bracers of the Brilliant Dawn
-13743: itemName has identifier \[PH\]: [PH] Plate Bracers of the Brilliant Dawn
-13744: itemName has identifier \[PH\]: [PH] Plate Bracers of the Rising Dawn
-13745: itemName has identifier \[PH\]: [PH] Plate Bracers of the Shining Dawn
-13746: itemName has identifier \[PH\]: [PH] Mail Bracers of the Rising Dawn
-13747: itemName has identifier \[PH\]: [PH] Mail Bracers of the Shining Dawn
-13748: itemName has identifier \[PH\]: [PH] Leather Bracers of the Shining Dawn
-13749: itemName has identifier \[PH\]: [PH] Leather Bracers of the Rising Dawn
+13726: itemName has identifier [PH]: [PH] Rising Dawn Gloves
+13727: itemName has identifier [PH]: [PH] Brilliant Dawn Gloves
+13728: itemName has identifier [PH]: [PH] Shining Dawn Gloves
+13729: itemName has identifier [PH]: [PH] Brilliant Dawn Mitts
+13730: itemName has identifier [PH]: [PH] Brilliant Dawn Fists
+13731: itemName has identifier [PH]: [PH] Brilliant Dawn Gauntlets
+13732: itemName has identifier [PH]: [PH] Rising Dawn Mitts
+13733: itemName has identifier [PH]: [PH] Rising Dawn Fists
+13734: itemName has identifier [PH]: [PH] Rising Dawn Gauntlets
+13735: itemName has identifier [PH]: [PH] Shining Dawn Mitts
+13736: itemName has identifier [PH]: [PH] Shining Dawn Fists
+13737: itemName has identifier [PH]: [PH] Shining Dawn Gauntlets
+13738: itemName has identifier [PH]: [PH] Cloth Bracers of the Brilliant Dawn
+13739: itemName has identifier [PH]: [PH] Cloth Bracers of the Rising Dawn
+13740: itemName has identifier [PH]: [PH] Cloth Bracers of the Shining Dawn
+13741: itemName has identifier [PH]: [PH] Leather Bracers of the Brilliant Dawn
+13742: itemName has identifier [PH]: [PH] Mail Bracers of the Brilliant Dawn
+13743: itemName has identifier [PH]: [PH] Plate Bracers of the Brilliant Dawn
+13744: itemName has identifier [PH]: [PH] Plate Bracers of the Rising Dawn
+13745: itemName has identifier [PH]: [PH] Plate Bracers of the Shining Dawn
+13746: itemName has identifier [PH]: [PH] Mail Bracers of the Rising Dawn
+13747: itemName has identifier [PH]: [PH] Mail Bracers of the Shining Dawn
+13748: itemName has identifier [PH]: [PH] Leather Bracers of the Shining Dawn
+13749: itemName has identifier [PH]: [PH] Leather Bracers of the Rising Dawn
 13750: itemName has identifier Monster: Monster - Staff, Jeweled Blue Staff
 13751: itemName has identifier Monster: Monster - Staff, Jeweled Yellow Staff
 13753: itemName has identifier Monster: Monster - Staff, Jeweled Green Staff
-13762: itemName has identifier \[PH\]: [PH] Robe of the Brilliant Dawn
-13763: itemName has identifier \[PH\]: [PH] Robe of the Rising Dawn
-13764: itemName has identifier \[PH\]: [PH] Robe of the Shining Dawn
-13765: itemName has identifier \[PH\]: [PH] Leather Chestguard of the Brilliant Dawn
-13766: itemName has identifier \[PH\]: [PH] Leather Chestguard of the Shining Dawn
-13767: itemName has identifier \[PH\]: [PH] Leather Chestguard of the Rising Dawn
-13768: itemName has identifier \[PH\]: [PH] Mail Chestguard of the Brilliant Dawn
-13769: itemName has identifier \[PH\]: [PH] Mail Chestguard of the Shining Dawn
-13770: itemName has identifier \[PH\]: [PH] Mail Chestguard of the Rising Dawn
-13771: itemName has identifier \[PH\]: [PH] Plate Chestguard of the Brilliant Dawn
-13772: itemName has identifier \[PH\]: [PH] Plate Chestguard of the Rising Dawn
-13773: itemName has identifier \[PH\]: [PH] Plate Chestguard of the Shining Dawn
-13774: itemName has identifier \[PH\]: [PH] Cloth Leggings of the Brilliant Dawn
-13775: itemName has identifier \[PH\]: [PH] Cloth Leggings of the Rising Dawn
-13776: itemName has identifier \[PH\]: [PH] Cloth Leggings of the Shining Dawn
-13777: itemName has identifier \[PH\]: [PH] Leather Leggings of the Brilliant Dawn
-13778: itemName has identifier \[PH\]: [PH] Leather Leggings of the Rising Dawn
-13779: itemName has identifier \[PH\]: [PH] Leather Leggings of the Shining Dawn
-13780: itemName has identifier \[PH\]: [PH] Mail Leggings of the Brilliant Dawn
-13781: itemName has identifier \[PH\]: [PH] Mail Leggings of the Rising Dawn
-13782: itemName has identifier \[PH\]: [PH] Mail Leggings of the Shining Dawn
-13783: itemName has identifier \[PH\]: [PH] Plate Leggings of the Brilliant Dawn
-13784: itemName has identifier \[PH\]: [PH] Plate Leggings of the Rising Dawn
-13785: itemName has identifier \[PH\]: [PH] Plate Leggings of the Shining Dawn
-13786: itemName has identifier \[PH\]: [PH] Brilliant Dawn Hat
-13787: itemName has identifier \[PH\]: [PH] Rising Dawn Hat
-13788: itemName has identifier \[PH\]: [PH] Shining Dawn Hat
-13789: itemName has identifier \[PH\]: [PH] Brilliant Dawn Cap
-13790: itemName has identifier \[PH\]: [PH] Rising Dawn Cap
-13791: itemName has identifier \[PH\]: [PH] Shining Dawn Cap
-13792: itemName has identifier \[PH\]: [PH] Brilliant Dawn Coif
-13793: itemName has identifier \[PH\]: [PH] Rising Dawn Coif
-13794: itemName has identifier \[PH\]: [PH] Shining Dawn Coif
-13795: itemName has identifier \[PH\]: [PH] Brilliant Dawn Helm
-13796: itemName has identifier \[PH\]: [PH] Rising Dawn Helm
-13797: itemName has identifier \[PH\]: [PH] Shining Dawn Helm
-13798: itemName has identifier \[PH\]: [PH] Cloth Boots of the Brilliant Dawn
-13799: itemName has identifier \[PH\]: [PH] Cloth Boots of the Rising Dawn
-13800: itemName has identifier \[PH\]: [PH] Cloth Boots of the Shining Dawn
-13801: itemName has identifier \[PH\]: [PH] Leather Boots of the Brilliant Dawn
-13802: itemName has identifier \[PH\]: [PH] Leather Boots of the Rising Dawn
-13803: itemName has identifier \[PH\]: [PH] Leather Boots of the Shining Dawn
-13804: itemName has identifier \[PH\]: [PH] Mail Boots of the Brilliant Dawn
-13805: itemName has identifier \[PH\]: [PH] Mail Boots of the Rising Dawn
-13806: itemName has identifier \[PH\]: [PH] Mail Boots of the Shining Dawn
-13807: itemName has identifier \[PH\]: [PH] Plate Boots of the Brilliant Dawn
-13808: itemName has identifier \[PH\]: [PH] Plate Boots of the Rising Dawn
-13809: itemName has identifier \[PH\]: [PH] Plate Boots of the Shining Dawn
+13762: itemName has identifier [PH]: [PH] Robe of the Brilliant Dawn
+13763: itemName has identifier [PH]: [PH] Robe of the Rising Dawn
+13764: itemName has identifier [PH]: [PH] Robe of the Shining Dawn
+13765: itemName has identifier [PH]: [PH] Leather Chestguard of the Brilliant Dawn
+13766: itemName has identifier [PH]: [PH] Leather Chestguard of the Shining Dawn
+13767: itemName has identifier [PH]: [PH] Leather Chestguard of the Rising Dawn
+13768: itemName has identifier [PH]: [PH] Mail Chestguard of the Brilliant Dawn
+13769: itemName has identifier [PH]: [PH] Mail Chestguard of the Shining Dawn
+13770: itemName has identifier [PH]: [PH] Mail Chestguard of the Rising Dawn
+13771: itemName has identifier [PH]: [PH] Plate Chestguard of the Brilliant Dawn
+13772: itemName has identifier [PH]: [PH] Plate Chestguard of the Rising Dawn
+13773: itemName has identifier [PH]: [PH] Plate Chestguard of the Shining Dawn
+13774: itemName has identifier [PH]: [PH] Cloth Leggings of the Brilliant Dawn
+13775: itemName has identifier [PH]: [PH] Cloth Leggings of the Rising Dawn
+13776: itemName has identifier [PH]: [PH] Cloth Leggings of the Shining Dawn
+13777: itemName has identifier [PH]: [PH] Leather Leggings of the Brilliant Dawn
+13778: itemName has identifier [PH]: [PH] Leather Leggings of the Rising Dawn
+13779: itemName has identifier [PH]: [PH] Leather Leggings of the Shining Dawn
+13780: itemName has identifier [PH]: [PH] Mail Leggings of the Brilliant Dawn
+13781: itemName has identifier [PH]: [PH] Mail Leggings of the Rising Dawn
+13782: itemName has identifier [PH]: [PH] Mail Leggings of the Shining Dawn
+13783: itemName has identifier [PH]: [PH] Plate Leggings of the Brilliant Dawn
+13784: itemName has identifier [PH]: [PH] Plate Leggings of the Rising Dawn
+13785: itemName has identifier [PH]: [PH] Plate Leggings of the Shining Dawn
+13786: itemName has identifier [PH]: [PH] Brilliant Dawn Hat
+13787: itemName has identifier [PH]: [PH] Rising Dawn Hat
+13788: itemName has identifier [PH]: [PH] Shining Dawn Hat
+13789: itemName has identifier [PH]: [PH] Brilliant Dawn Cap
+13790: itemName has identifier [PH]: [PH] Rising Dawn Cap
+13791: itemName has identifier [PH]: [PH] Shining Dawn Cap
+13792: itemName has identifier [PH]: [PH] Brilliant Dawn Coif
+13793: itemName has identifier [PH]: [PH] Rising Dawn Coif
+13794: itemName has identifier [PH]: [PH] Shining Dawn Coif
+13795: itemName has identifier [PH]: [PH] Brilliant Dawn Helm
+13796: itemName has identifier [PH]: [PH] Rising Dawn Helm
+13797: itemName has identifier [PH]: [PH] Shining Dawn Helm
+13798: itemName has identifier [PH]: [PH] Cloth Boots of the Brilliant Dawn
+13799: itemName has identifier [PH]: [PH] Cloth Boots of the Rising Dawn
+13800: itemName has identifier [PH]: [PH] Cloth Boots of the Shining Dawn
+13801: itemName has identifier [PH]: [PH] Leather Boots of the Brilliant Dawn
+13802: itemName has identifier [PH]: [PH] Leather Boots of the Rising Dawn
+13803: itemName has identifier [PH]: [PH] Leather Boots of the Shining Dawn
+13804: itemName has identifier [PH]: [PH] Mail Boots of the Brilliant Dawn
+13805: itemName has identifier [PH]: [PH] Mail Boots of the Rising Dawn
+13806: itemName has identifier [PH]: [PH] Mail Boots of the Shining Dawn
+13807: itemName has identifier [PH]: [PH] Plate Boots of the Brilliant Dawn
+13808: itemName has identifier [PH]: [PH] Plate Boots of the Rising Dawn
+13809: itemName has identifier [PH]: [PH] Plate Boots of the Shining Dawn
 13814: itemName has identifier Monster: Monster - Shield, Stromgarde B03
 13826: item not found
 13827: item not found
@@ -6888,14 +6888,14 @@
 21096: item not found
 21097: item not found
 21098: item not found
-21101: itemName has identifier \(TEST\): Staff of Spell Penetration - Fire (TEST)
-21102: itemName has identifier \(TEST\): Staff of Spell Penetration - Frost (TEST)
+21101: itemName has identifier (TEST): Staff of Spell Penetration - Fire (TEST)
+21102: itemName has identifier (TEST): Staff of Spell Penetration - Frost (TEST)
 21121: itemName has identifier Monster: Monster - Item, Flower - Purple
 21122: itemName has identifier Monster: Monster - Dagger, Korean A01 Black
 21123: itemName has identifier Monster: Monster - Item, Flower - White
-21124: itemName has identifier \[PH\]: Ahn'Qiraj Wand [PH]
-21125: itemName has identifier \[PH\]: Ahn'Qiraj Staff [PH]
-21127: itemName has identifier \[PH\]: Ahn'Qiraj Mace [PH]
+21124: itemName has identifier [PH]: Ahn'Qiraj Wand [PH]
+21125: itemName has identifier [PH]: Ahn'Qiraj Staff [PH]
+21127: itemName has identifier [PH]: Ahn'Qiraj Mace [PH]
 21129: itemName has identifier Monster: Monster - Axe, Doctor Weavil
 21169: item not found
 21170: item not found
@@ -6909,7 +6909,7 @@
 21274: itemName has identifier Test: Test Stackable Items
 21276: itemName has identifier UNUSED: Blessed Qiraji Naturalist Staff UNUSED
 21286: itemName has identifier Monster: Monster - Axe, 2H Large Double Bladed, Gold
-21339: itemName has identifier \[PH\]: Doomcaller's Handwraps [PH]
+21339: itemName has identifier [PH]: Doomcaller's Handwraps [PH]
 21419: itemName has identifier TEST: AHNQIRAJ TEST ITEM A CLOTH LEGS
 21420: itemName has identifier TEST: AHNQIRAJ TEST ITEM B LEATHER CHEST
 21421: itemName has identifier TEST: AHNQIRAJ TEST ITEM C MAIL CHEST
@@ -6942,8 +6942,8 @@
 21450: itemName has identifier TEST: AHNQIRAJ TEST ITEM C MAIL GLOVES
 21451: itemName has identifier TEST: AHNQIRAJ TEST ITEM C MAIL BELT
 21465: itemName has identifier Monster: Monster - Axe, Insano
-21516: itemName has identifier \(TEST\): Dagger of Spell Penetration - Fire 150 Resist (TEST)
-21518: itemName has identifier \(TEST\): Dagger of Spell Penetration - Frost 150 Resist (TEST)
+21516: itemName has identifier (TEST): Dagger of Spell Penetration - Fire 150 Resist (TEST)
+21518: itemName has identifier (TEST): Dagger of Spell Penetration - Frost 150 Resist (TEST)
 21549: itemName has identifier Monster: Monster - Shield, Shieldguard
 21550: itemName has identifier Monster: Monster - Bow, Kaldorei
 21551: itemName has identifier Monster: Monster - Dagger, Alliance PvP
@@ -7038,7 +7038,7 @@
 21799: item not found
 21807: item not found
 21808: item not found
-21811: itemName has identifier \[PH\]: [PH] Object of Affection
+21811: itemName has identifier [PH]: [PH] Object of Affection
 21824: item not found
 21825: item not found
 21826: item not found
@@ -7123,11 +7123,11 @@
 21918: item not found
 21919: item not found
 21922: item not found
-21923: itemName has identifier \[PH\]: [PH] Picnic Parcel
+21923: itemName has identifier [PH]: [PH] Picnic Parcel
 21924: item not found
 21927: item not found
 21929: item not found
-21930: itemName has identifier \[PH\]: [PH] Valentine Lockbox, Quest, Common
+21930: itemName has identifier [PH]: [PH] Valentine Lockbox, Quest, Common
 21931: item not found
 21932: item not found
 21933: item not found
@@ -7152,9 +7152,9 @@
 21958: item not found
 21959: item not found
 21961: item not found
-21962: itemName has identifier \[PH\]: [PH] Valentine Quest Item, UncommonStormwind
-21963: itemName has identifier \[PH\]: [PH] Valentine Quest Item, UncommonIronforge
-21964: itemName has identifier \[PH\]: [PH] Valentine Quest Item, UncommonDarnassus
+21962: itemName has identifier [PH]: [PH] Valentine Quest Item, UncommonStormwind
+21963: itemName has identifier [PH]: [PH] Valentine Quest Item, UncommonIronforge
+21964: itemName has identifier [PH]: [PH] Valentine Quest Item, UncommonDarnassus
 21965: item not found
 21966: item not found
 21967: item not found
@@ -7268,8 +7268,8 @@
 22473: item not found
 22474: item not found
 22475: item not found
-22485: itemName has identifier \[UNUSED\]: [UNUSED] Scourge Invasion Focus Object
-22486: itemName has identifier \[UNUSED\]: [UNUSED] Scourge Invasion Boss Summoner
+22485: itemName has identifier [UNUSED]: [UNUSED] Scourge Invasion Focus Object
+22486: itemName has identifier [UNUSED]: [UNUSED] Scourge Invasion Boss Summoner
 22487: item not found
 22521: item not found
 22522: item not found
@@ -7388,9 +7388,9 @@
 22795: item not found
 22796: item not found
 22797: item not found
-22805: itemName has identifier \[PH\]: Naxxramas Sword 1H 1 [PH]
-22814: itemName has identifier \[PH\]: Naxxramas Sword 2H 2 [PH]
-22817: itemName has identifier \[PH\]: Naxxramas Polearm [PH]
+22805: itemName has identifier [PH]: Naxxramas Sword 1H 1 [PH]
+22814: itemName has identifier [PH]: Naxxramas Sword 2H 2 [PH]
+22817: itemName has identifier [PH]: Naxxramas Polearm [PH]
 22823: item not found
 22824: item not found
 22825: item not found
@@ -7462,7 +7462,7 @@
 22928: item not found
 22929: item not found
 22931: item not found
-22933: itemName has identifier \[UNUSED\]: [UNUSED] Abom Stoone
+22933: itemName has identifier [UNUSED]: [UNUSED] Abom Stoone
 22934: item not found
 22951: item not found
 22952: item not found
@@ -7509,7 +7509,7 @@
 23077: item not found
 23079: item not found
 23080: item not found
-23086: itemName has identifier \[UNUSED\]: [UNUSED] Letter Cookie
+23086: itemName has identifier [UNUSED]: [UNUSED] Letter Cookie
 23094: item not found
 23095: item not found
 23096: item not found
@@ -7603,7 +7603,7 @@
 23239: item not found
 23240: item not found
 23241: item not found
-23245: itemName has identifier \[PH\]: [PH] Everburning Elixir
+23245: itemName has identifier [PH]: [PH] Everburning Elixir
 23248: item not found
 23249: item not found
 23265: item not found
@@ -7615,7 +7615,7 @@
 23271: itemName has identifier QA: QATest Darkmoon Faire Tickets
 23321: item not found
 23322: item not found
-23325: itemName has identifier \[PH\]: [PH] Picnic Parcel
+23325: itemName has identifier [PH]: [PH] Picnic Parcel
 23328: itemName has identifier Monster: Monster - Sword2H, Instructor Razuvious
 23329: item not found
 23330: item not found
@@ -7834,7 +7834,7 @@
 23564: item not found
 23565: item not found
 23566: item not found
-23567: itemName has identifier \[DEP\]: [PH] Silithus PvP Dust [DEP]
+23567: itemName has identifier [DEP]: [PH] Silithus PvP Dust [DEP]
 23568: item not found
 23569: item not found
 23571: item not found
@@ -7949,12 +7949,12 @@
 23693: item not found
 23694: item not found
 23695: item not found
-23696: itemName has identifier \[DEP\]: [PH] Potion of Heightened Senses [DEP]
+23696: itemName has identifier [DEP]: [PH] Potion of Heightened Senses [DEP]
 23697: item not found
-23698: itemName has identifier \[DEP\]: [PH] Nature Resist Potion [DEP]
-23699: itemName has identifier \[DEP\]: [PH] Light Consumable [DEP]
-23700: itemName has identifier \[DEP\]: [PH] Glorious Standard of the Alliance [DEP]
-23701: itemName has identifier \[DEP\]: [PH] Victorious Standard of the Horde [DEP]
+23698: itemName has identifier [DEP]: [PH] Nature Resist Potion [DEP]
+23699: itemName has identifier [DEP]: [PH] Light Consumable [DEP]
+23700: itemName has identifier [DEP]: [PH] Glorious Standard of the Alliance [DEP]
+23701: itemName has identifier [DEP]: [PH] Victorious Standard of the Horde [DEP]
 23702: item not found
 23703: item not found
 23704: item not found

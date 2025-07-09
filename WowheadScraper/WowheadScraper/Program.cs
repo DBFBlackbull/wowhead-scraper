@@ -10,30 +10,36 @@ class Program
     public static readonly HttpClient HttpClient = new HttpClient();
     private const int LastItemIdInClassic = 24283;
 
-    public static readonly List<Regex> NotAvailableIdentifiers = new List<Regex>()
+    private static readonly List<string> NotAvailableNameIdentifiers = new List<string>()
     {
-        new Regex(@"OLD"),
-        new Regex(@"DEBUG"),
-        new Regex(@"Deprecated"),
-        new Regex(@"Depricated"), // misspelled item
-        new Regex(@"Deptecated"), // misspelled item
-        new Regex(@"DEPRECATED"),
-        new Regex(@"\[DEP\]"),
-        new Regex(@"DEP"),
-        new Regex(@"\(DND\)"),
-        new Regex(@"Monster"),
-        new Regex(@"\[PH\]"),
-        new Regex(@"PH"),
-        new Regex(@"QA"),
-        new Regex(@"\(test\)"),
-        new Regex(@"\(Test\)"),
-        new Regex(@"\(TEST\)"),
-        new Regex(@"Test"),
-        new Regex(@"TEST"),
-        new Regex(@"Unused"),
-        new Regex(@"<UNUSED>"),
-        new Regex(@"\[UNUSED\]"),
-        new Regex(@"UNUSED"),
+        "OLD",
+        "DEBUG",
+        "Deprecated",
+        "Depricated", // misspelled item
+        "Deptecated", // misspelled item
+        "DEPRECATED",
+        "[DEP]",
+        "DEP",
+        "(DND)",
+        "Monster",
+        "[PH]",
+        "PH",
+        "QA",
+        "(test)",
+        "(Test)",
+        "(TEST)",
+        "Test",
+        "TEST",
+        "Unused",
+        "<UNUSED>",
+        "[UNUSED]",
+        "UNUSED",
+    };
+
+    private static readonly List<Regex> NotAvailableQuickFactsIdentifier = new List<Regex>()
+    {
+        new Regex("Added in patch.*Season of Discovery"),
+        new Regex("Deprecated"),
     };
 
     public static readonly List<int> NotAvailableExceptions = new List<int>()
@@ -72,14 +78,25 @@ class Program
             return new Item {ErrorMessage = $"{i}: item not found"};
         }
 
-        var identifier = Program.NotAvailableIdentifiers.Find(identifier =>
-            identifier.IsMatch(itemName));
-        var isException = Program.NotAvailableExceptions.Contains(i);
+        var identifier = NotAvailableNameIdentifiers.Find(identifier =>
+            itemName.Contains(identifier, StringComparison.InvariantCulture));
+        var isException = NotAvailableExceptions.Contains(i);
         if (identifier != null && !isException)
         {
             return new Item {ErrorMessage = $"{i}: itemName has identifier {identifier}: {itemName}"};
         }
 
+        // var quickFacts = htmlDocument.DocumentNode.SelectSingleNode(".//table[@class='infobox after-buttons'")?.InnerHtml;
+        // if (quickFacts != null)
+        // {
+        //     var regex = NotAvailableQuickFactsIdentifier.Find(regex =>
+        //         regex.IsMatch(quickFacts));
+        //     if (regex != null && !isException)
+        //     {
+        //         return new Item{ErrorMessage = $"{i}: item quick facts has identifier {regex}: {itemName}"};
+        //     }
+        // }
+        
         if (html.Contains("This item is not available to players.") && !isException)
         {
             return new Item {ErrorMessage = $"{i}: item is not available to players: {itemName}"};
