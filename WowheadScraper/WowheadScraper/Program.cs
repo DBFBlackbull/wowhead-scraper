@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using System.Text.RegularExpressions;
 using HtmlAgilityPack;
 
 namespace WowheadScraper;
@@ -9,30 +10,30 @@ class Program
     public static readonly HttpClient HttpClient = new HttpClient();
     private const int LastItemIdInClassic = 24283;
 
-    public static readonly List<string> NotAvailableIdentifiers = new List<string>()
+    public static readonly List<Regex> NotAvailableIdentifiers = new List<Regex>()
     {
-        "OLD",
-        "DEBUG",
-        "Deprecated",
-        "Depricated", // misspelled item
-        "Deptecated", // misspelled item
-        "DEPRECATED",
-        "[DEP]",
-        "DEP",
-        "(DND)",
-        "Monster",
-        "[PH]",
-        "PH",
-        "QA",
-        "(test)",
-        "(Test)",
-        "(TEST)",
-        "Test",
-        "TEST",
-        "Unused",
-        "<UNUSED>",
-        "[UNUSED]",
-        "UNUSED",
+        new Regex(@"OLD"),
+        new Regex(@"DEBUG"),
+        new Regex(@"Deprecated"),
+        new Regex(@"Depricated"), // misspelled item
+        new Regex(@"Deptecated"), // misspelled item
+        new Regex(@"DEPRECATED"),
+        new Regex(@"\[DEP\]"),
+        new Regex(@"DEP"),
+        new Regex(@"\(DND\)"),
+        new Regex(@"Monster"),
+        new Regex(@"\[PH\]"),
+        new Regex(@"PH"),
+        new Regex(@"QA"),
+        new Regex(@"\(test\)"),
+        new Regex(@"\(Test\)"),
+        new Regex(@"\(TEST\)"),
+        new Regex(@"Test"),
+        new Regex(@"TEST"),
+        new Regex(@"Unused"),
+        new Regex(@"<UNUSED>"),
+        new Regex(@"\[UNUSED\]"),
+        new Regex(@"UNUSED"),
     };
 
     public static readonly List<int> NotAvailableExceptions = new List<int>()
@@ -72,7 +73,7 @@ class Program
         }
 
         var identifier = Program.NotAvailableIdentifiers.Find(identifier =>
-            itemName.Contains(identifier, StringComparison.InvariantCulture));
+            identifier.IsMatch(itemName));
         var isException = Program.NotAvailableExceptions.Contains(i);
         if (identifier != null && !isException)
         {

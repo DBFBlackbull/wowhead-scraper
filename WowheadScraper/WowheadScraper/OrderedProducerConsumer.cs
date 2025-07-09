@@ -131,56 +131,12 @@ public class OrderedProducerConsumer
                 return new Item {ErrorMessage = $"{i}: failed to get item: {response.StatusCode}"};
             }
 
-            if (response.RequestMessage?.RequestUri != null)
-            {
-                var request = response.RequestMessage.RequestUri;
-                var query = System.Web.HttpUtility.ParseQueryString(request.Query);
-                if (query["notFound"] != null)
-                {
-                    return new Item {ErrorMessage = $"{i}: item not found"};
-                }
-            }
-
             using (var responseContent = response.Content)
             {
                 html = await responseContent.ReadAsStringAsync();
             }
         }
 
-        var htmlDocument = new HtmlDocument();
-        htmlDocument.LoadHtml(html);
-
-        var itemName = htmlDocument.DocumentNode.SelectSingleNode(".//h1[@class='heading-size-1']")?.InnerText;
-        if (string.IsNullOrWhiteSpace(itemName))
-        {
-            return new Item {ErrorMessage = $"{i}: itemName was empty"};
-        }
-
-        itemName = WebUtility.HtmlDecode(itemName);
-        var identifier = Program.NotAvailableIdentifiers.Find(identifier =>
-            itemName.Contains(identifier, StringComparison.InvariantCulture));
-        var isException = Program.NotAvailableExceptions.Contains(i);
-        if (identifier != null && !isException)
-        {
-            return new Item {ErrorMessage = $"{i}: itemName has identifier {identifier}: {itemName}"};
-        }
-
-        if (html.Contains("This item is not available to players."))
-        {
-            return new Item {ErrorMessage = $"{i}: item is not available to players: {itemName}"};
-        }
-
-        var sellPrice = 0;
-        var sellPriceElement = htmlDocument.DocumentNode.SelectSingleNode(".//div[@class='whtt-sellprice']");
-        if (sellPriceElement != null)
-        {
-            var gold = sellPriceElement.SelectSingleNode(".//span[@class='moneygold']")?.InnerText;
-            var silver = sellPriceElement.SelectSingleNode(".//span[@class='moneysilver']")?.InnerText;
-            var copper = sellPriceElement.SelectSingleNode(".//span[@class='moneycopper']")?.InnerText;
-
-            sellPrice = Program.GetMoney(gold, 1000) + Program.GetMoney(silver, 100) + Program.GetMoney(copper, 1);
-        }
-
-        return new Item {Name = itemName, SellPrice = sellPrice};
+        return Program.GetItem(i, html);
     }
 }
