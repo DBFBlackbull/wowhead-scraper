@@ -10,8 +10,8 @@ public class ConsumerRunner
         totalStopwatch.Start();
         Console.WriteLine($"Starting consuming {itemsToProcess} items...");
         
-        var available = Path.Join(Program.SolutionDirectory(), "availableItems.txt");
-        var notAvailable = Path.Join(Program.SolutionDirectory(), "notAvailableItems.txt");
+        var available = Path.Join(Program.SolutionDirectory(), "tsv-files", "availableItems.txt");
+        var notAvailable = Path.Join(Program.SolutionDirectory(), "tsv-files", "notAvailableItems.txt");
 
         await using (var availableStream = new StreamWriter(File.Create(available)))
         {
@@ -20,6 +20,9 @@ public class ConsumerRunner
             {
                 notAvailableStream.AutoFlush = true;
 
+                await availableStream.WriteLineAsync("id\tname\tsellPriceCopper");
+                await notAvailableStream.WriteLineAsync("id\tname\treason");
+                
                 var stopwatch = new Stopwatch();
                 stopwatch.Start();
                 for (int key = 1; key <= itemsToProcess; key++)
@@ -31,11 +34,11 @@ public class ConsumerRunner
                     var item = Program.GetItem(key, html);
                     if (item.IsAvailable)
                     {
-                        await availableStream.WriteLineAsync($"[\"item:{key}\"] = {item.SellPrice},\t//{item.Name}");
+                        await availableStream.WriteLineAsync($"{key}\t{item.Name}\t{item.SellPrice}");
                     }
                     else
                     {
-                        await notAvailableStream.WriteLineAsync(item.ErrorMessage);
+                        await notAvailableStream.WriteLineAsync($"{key}\t{item.Name}\t{item.ErrorMessage}");
                     }
 
                     if (key % 1000 == 0)

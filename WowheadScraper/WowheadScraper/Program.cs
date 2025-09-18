@@ -96,7 +96,7 @@ class Program
                 regex.IsMatch(quickFacts));
             if (regex != null && !isException)
             {
-                return new Item{ErrorMessage = $"{i}: item quick facts has identifier {regex}: {itemName}"};
+                return new Item{ErrorMessage = $"{i}: item quick facts has identifier {regex.Replace(".*", " ")}: {itemName}"};
             }
         }
         
