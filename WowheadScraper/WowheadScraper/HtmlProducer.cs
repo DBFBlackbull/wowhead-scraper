@@ -10,7 +10,7 @@ public class HtmlProducer
 
     public async Task Run(int producerCount, int itemsToProcess, string prefix)
     {
-        Directory.CreateDirectory(Item.HtmlFolder);
+        Directory.CreateDirectory(Item.HtmlFolderPath);
         
         Console.WriteLine($"Starting {producerCount} producers...");
         var stopwatch = new Stopwatch();
@@ -49,7 +49,7 @@ public class HtmlProducer
             }
 
             var html = await GetItemHtml(key, prefix);
-            var filePath = Path.Join(Item.HtmlFolder, $"{prefix}-{key}.html");
+            var filePath = Path.Join(Item.HtmlFolderPath, $"{prefix}-{key}.html");
             await File.WriteAllTextAsync(filePath, html, Encoding.UTF8);
             
             Program.LogProgress(key, Item.LastItemIdInClassic);

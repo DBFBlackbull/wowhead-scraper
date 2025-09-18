@@ -13,9 +13,8 @@ public class OrderedItemProducerConsumer
 
     public async Task Run(int producerCount)
     {
-        var stopwatch = new Stopwatch();
-        stopwatch.Start();
         Console.WriteLine($"Starting with {producerCount} producers to process {Item.LastItemIdInClassic} items IN ORDER.");
+        Console.WriteLine();
 
         // 1. Create all the "promise" tasks BEFORE starting the work.
         for (int i = 1; i <= Item.LastItemIdInClassic; i++)
@@ -38,8 +37,5 @@ public class OrderedItemProducerConsumer
         // Wait for all tasks to complete
         await Task.WhenAll(producers);
         await consumer;
-
-        Console.WriteLine();
-        Console.WriteLine($@"Processing complete. Elapsed Time: {stopwatch.Elapsed:T}");
     }
 }

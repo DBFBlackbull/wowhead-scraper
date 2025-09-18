@@ -18,7 +18,7 @@ public class ItemProducer
                 break;
             }
 
-            var filePath = Path.Join(Item.HtmlFolder, $"item-{id}.html");
+            var filePath = Path.Join(Item.HtmlFolderPath, $"item-{id}.html");
             var html = await File.ReadAllTextAsync(filePath);
             var item = Item.GetItem(id, html);
 

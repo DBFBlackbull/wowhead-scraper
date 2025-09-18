@@ -6,9 +6,9 @@ namespace WowheadScraper;
 public class Item
 {
     public const int LastItemIdInClassic = 24283;
-    public static readonly string HtmlFolder = Path.Join(Program.SolutionDirectory(), "classic", "items");
-    public static readonly string AvailableItemsTsv = Path.Join(Program.TsvFolder, "availableItems.tsv");
-    public static readonly string NotAvailableItemsTsv = Path.Join(Program.TsvFolder, "notAvailableItems.tsv");
+    public static readonly string HtmlFolderPath = Path.Join(Program.SolutionDirectory(), "classic", "items");
+    public static readonly string AvailableItemsTsvFilePath = Path.Join(Program.TsvFolder, "items-available.tsv");
+    public static readonly string NotAvailableItemsTsvFilePath = Path.Join(Program.TsvFolder, "items-not-available.tsv");
 
     public int Id { get; set; }
     public string Name { get; set; }

@@ -50,7 +50,7 @@ class Program
         HttpClient.BaseAddress = BaseUrl;
 
         var wowheadScraper = new OrderedItemProducerConsumer();
-        await wowheadScraper.Run(40);
+        await wowheadScraper.Run(50);
     }
 
     public static int GetMoney(string? money, int factor)

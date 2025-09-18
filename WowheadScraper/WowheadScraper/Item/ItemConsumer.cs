@@ -8,17 +8,15 @@ public class ItemConsumer
     public static async Task Run(ConcurrentDictionary<int, TaskCompletionSource<Item>> tasks)
     {
         Directory.CreateDirectory(Program.TsvFolder);
-        var available = Path.Join(Program.TsvFolder, "availableItems.tsv");
-        var notAvailable = Path.Join(Program.TsvFolder, "notAvailableItems.tsv");
         
         var totalStopwatch = new Stopwatch();
         totalStopwatch.Start();
         Console.WriteLine($"Starting consuming {Item.LastItemIdInClassic} items...");
         
-        await using (var availableStream = new StreamWriter(File.Create(available)))
+        await using (var availableStream = new StreamWriter(File.Create(Item.AvailableItemsTsvFilePath)))
         {
             availableStream.AutoFlush = true;
-            await using (var notAvailableStream = new StreamWriter(File.Create(notAvailable)))
+            await using (var notAvailableStream = new StreamWriter(File.Create(Item.NotAvailableItemsTsvFilePath)))
             {
                 notAvailableStream.AutoFlush = true;
 
