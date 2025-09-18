@@ -1,18 +1,20 @@
+using System.Collections.Concurrent;
 using System.Diagnostics;
 
 namespace WowheadScraper;
 
-public class ConsumerRunner
+public class ItemConsumer
 {
-    public async Task Run(int itemsToProcess)
+    public static async Task Run(ConcurrentDictionary<int, TaskCompletionSource<Item>> tasks)
     {
+        Directory.CreateDirectory(Program.TsvFolder);
+        var available = Path.Join(Program.TsvFolder, "availableItems.tsv");
+        var notAvailable = Path.Join(Program.TsvFolder, "notAvailableItems.tsv");
+        
         var totalStopwatch = new Stopwatch();
         totalStopwatch.Start();
-        Console.WriteLine($"Starting consuming {itemsToProcess} items...");
+        Console.WriteLine($"Starting consuming {Item.LastItemIdInClassic} items...");
         
-        var available = Path.Join(Program.SolutionDirectory(), "tsv-files", "availableItems.tsv");
-        var notAvailable = Path.Join(Program.SolutionDirectory(), "tsv-files", "notAvailableItems.tsv");
-
         await using (var availableStream = new StreamWriter(File.Create(available)))
         {
             availableStream.AutoFlush = true;
@@ -25,28 +27,23 @@ public class ConsumerRunner
                 
                 var stopwatch = new Stopwatch();
                 stopwatch.Start();
-                for (int key = 1; key <= itemsToProcess; key++)
+                for (int id = 1; id <= Item.LastItemIdInClassic; id++)
                 {
                     // Get the promise for the key we need
-                    var filePath = Path.Join(Program.SolutionDirectory(), "classic", $"item-{key}.html");
-                    var html = await File.ReadAllTextAsync(filePath);
-
-                    var item = Program.GetItem(key, html);
+                    var tcs = tasks[id];
+                    
+                    // If the producer is already done, this completes instantly.
+                    Item item = await tcs.Task;
                     if (item.IsAvailable)
                     {
-                        await availableStream.WriteLineAsync($"{key}\t{item.Name}\t{item.SellPrice}");
+                        await availableStream.WriteLineAsync($"{item.Id}\t{item.Name}\t{item.SellPrice}");
                     }
                     else
                     {
-                        await notAvailableStream.WriteLineAsync($"{key}\t{item.Name}\t{item.ErrorMessage}");
+                        await notAvailableStream.WriteLineAsync($"{item.Id}\t{item.Name}\t{item.ErrorMessage}");
                     }
 
-                    if (key % 1000 == 0)
-                    {
-                        Console.WriteLine(
-                            $"[{DateTime.Now:t}] {key} / {itemsToProcess} completed. Elapsed {stopwatch.Elapsed.Seconds} seconds");
-                        stopwatch.Restart();
-                    }
+                    Program.LogProgress(id, Item.LastItemIdInClassic, stopwatch);
                     // ------------------------------------
                 }
             }
@@ -55,4 +52,5 @@ public class ConsumerRunner
         Console.WriteLine();
         Console.WriteLine($"All items consumed. Elapsed {totalStopwatch.Elapsed:g}");
     }
+
 }
