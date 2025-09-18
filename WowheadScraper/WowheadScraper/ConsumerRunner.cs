@@ -10,8 +10,8 @@ public class ConsumerRunner
         totalStopwatch.Start();
         Console.WriteLine($"Starting consuming {itemsToProcess} items...");
         
-        var available = Path.Join(Program.SolutionDirectory(), "tsv-files", "availableItems.txt");
-        var notAvailable = Path.Join(Program.SolutionDirectory(), "tsv-files", "notAvailableItems.txt");
+        var available = Path.Join(Program.SolutionDirectory(), "tsv-files", "availableItems.tsv");
+        var notAvailable = Path.Join(Program.SolutionDirectory(), "tsv-files", "notAvailableItems.tsv");
 
         await using (var availableStream = new StreamWriter(File.Create(available)))
         {
