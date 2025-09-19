@@ -1,4 +1,5 @@
 using System.Net;
+using System.Text.RegularExpressions;
 using HtmlAgilityPack;
 
 namespace WowheadScraper;
@@ -21,6 +22,40 @@ public class Item : IHtmlProducerPaths
     public string ErrorMessage { get; set; }
     
     public bool IsAvailable => string.IsNullOrWhiteSpace(ErrorMessage);
+    
+    private static readonly List<string> NotAvailableNameIdentifiers = new List<string>()
+    {
+        "OLD",
+        "(old)",
+        "DEBUG",
+        "Deprecated",
+        "Deprecate",
+        "Depricated", // misspelled item
+        "Deptecated", // misspelled item
+        "DEPRECATED",
+        "[DEP]",
+        "DEP",
+        "(DND)",
+        "Monster",
+        "[PH]",
+        "PH",
+        "QA",
+        "(test)",
+        "(Test)",
+        "(TEST)",
+        "Test",
+        "TEST",
+        "Unused",
+        "<UNUSED>",
+        "[UNUSED]",
+        "UNUSED",
+    };
+
+    private static readonly List<Regex> NotAvailableQuickFactsIdentifier = new List<Regex>()
+    {
+        new Regex("Added in patch.*Season of Discovery"),
+        new Regex("Deprecated"),
+    };
     
     private static readonly List<int> NotAvailableExceptions = new List<int>()
     {
@@ -51,7 +86,7 @@ public class Item : IHtmlProducerPaths
             return new Item {Id = id, ErrorMessage = "item not found"};
         }
 
-        var identifier = Program.NotAvailableNameIdentifiers.Find(identifier =>
+        var identifier = NotAvailableNameIdentifiers.Find(identifier =>
             itemName.Contains(identifier, StringComparison.InvariantCulture));
         var isException = NotAvailableExceptions.Contains(id);
         if (identifier != null && !isException)
@@ -62,7 +97,7 @@ public class Item : IHtmlProducerPaths
         var quickFacts = htmlDocument.DocumentNode.SelectSingleNode(".//table[@class='infobox after-buttons']")?.InnerHtml;
         if (quickFacts != null)
         {
-            var regex = Program.NotAvailableQuickFactsIdentifier.Find(regex =>
+            var regex = NotAvailableQuickFactsIdentifier.Find(regex =>
                 regex.IsMatch(quickFacts));
             if (regex != null && !isException)
             {

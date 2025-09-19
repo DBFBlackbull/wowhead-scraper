@@ -1,11 +1,65 @@
 id	name	reason
+1	The "Chow" Quest (123)aa	questName has identifier (123)aa
 3		quest not found
 4		quest not found
 41		quest not found
 42		quest not found
 43		quest not found
 44		quest not found
+73	<TXT> No Reward	questName has identifier <TXT>
+108	<TXT> Mystery Reward	questName has identifier <TXT>
+137	<NYI> <TXT> Stormwind Commendation	questName has identifier <NYI>
+241	<TEST> HEY MISTER WILSON!	questName has identifier <TEST>
+242	<UNUSED>	questName has identifier <UNUSED>
+259	<UNUSED>	questName has identifier <UNUSED>
+260	<UNUSED>	questName has identifier <UNUSED>
 300		quest not found
+316	<UNUSED>	questName has identifier <UNUSED>
+326	<UNUSED>	questName has identifier <UNUSED>
+327	<UNUSED>	questName has identifier <UNUSED>
+352	<UNUSED>	questName has identifier <UNUSED>
+390	<UNUSED>	questName has identifier <UNUSED>
+406	<UNUSED>	questName has identifier <UNUSED>
+462	<UNUSED>	questName has identifier <UNUSED>
+490	<UNUSED>	questName has identifier <UNUSED>
+497	<UNUSED>	questName has identifier <UNUSED>
+534	<UNUSED>	questName has identifier <UNUSED>
+548	<NYI> <TXT> Bloodstone Pendant	questName has identifier <NYI>
+612	<UNUSED>	questName has identifier <UNUSED>
+636	Legends of the Earth <NYI>	questName has identifier <NYI>
+740	<UNUSED>	questName has identifier <UNUSED>
+774	<UNUSED>	questName has identifier <UNUSED>
+796	<UNUSED>	questName has identifier <UNUSED>
+797	<UNUSED>	questName has identifier <UNUSED>
+798	<UNUSED>	questName has identifier <UNUSED>
+799	<UNUSED>	questName has identifier <UNUSED>
+800	<UNUSED>	questName has identifier <UNUSED>
+801	<UNUSED>	questName has identifier <UNUSED>
+802	<UNUSED>	questName has identifier <UNUSED>
+803	<UNUSED>	questName has identifier <UNUSED>
+807	<UNUSED>	questName has identifier <UNUSED>
+810	<UNUSED>	questName has identifier <UNUSED>
+811	<UNUSED>	questName has identifier <UNUSED>
+814	<UNUSED>	questName has identifier <UNUSED>
+820	<UNUSED>	questName has identifier <UNUSED>
+839	<UNUSED>	questName has identifier <UNUSED>
+856	<UNUSED>	questName has identifier <UNUSED>
+859	<UNUSED>	questName has identifier <UNUSED>
+904	<UNUSED>	questName has identifier <UNUSED>
+946	<UNUSED>	questName has identifier <UNUSED>
+987	<UNUSED>	questName has identifier <UNUSED>
+988	<UNUSED>	questName has identifier <UNUSED>
+989	<UNUSED>	questName has identifier <UNUSED>
+1128	<NYI> The Gnome Pit Crew is Thirsty	questName has identifier <NYI>
+1129	<NYI> The Goblin Pit Crew is Thirsty	questName has identifier <NYI>
+1155	<NYI> <TXT> bug crystal side quest	questName has identifier <NYI>
+1156	<NYI> <TXT> speak to alchemist pestlezugg	questName has identifier <NYI>
+1157	<NYI> <TXT> pestlezugg needs items	questName has identifier <NYI>
+1158	<NYI> <TXT> speak to rabine saturna	questName has identifier <NYI>
+1161	<NYI> <TXT> gossip shade of ambermoon	questName has identifier <NYI>
+1162	<NYI> <TXT> speak to hamuul runetotem	questName has identifier <NYI>
+1163	<NYI> <TXT> speak to tyrande whisperwind	questName has identifier <NYI>
+1165	<NYI> Ore for the Races	questName has identifier <NYI>
 1207		quest not found
 1208		quest not found
 1209		quest not found
@@ -36,6 +90,26 @@ id	name	reason
 1255		quest not found
 1256		quest not found
 1257		quest not found
+1263	The Burning Inn <CHANGE TO GOSSIP>	questName has identifier <CHANGE TO GOSSIP>
+1272	Finding Reethe <CHANGE INTO GOSSIP>	questName has identifier <CHANGE INTO GOSSIP>
+1277	<nyi> <TXT> The Centaur Hoofprints	questName has identifier <nyi>
+1278	<nyi> <TXT> The Grim Totem Clan	questName has identifier <nyi>
+1279	<nyi> <TXT>The Centaur Hoofprints	questName has identifier <nyi>
+1280	<nyi> <TXT>The Centaur Hoofprints	questName has identifier <nyi>
+1281	Jim's Song <CHANGE TO GOSSIP>	questName has identifier <CHANGE TO GOSSIP>
+1283	Fire at the Shady Rest <CHANGE TO GOSSIP>	questName has identifier <CHANGE TO GOSSIP>
+1289	<nyi> Vimes's Report	questName has identifier <nyi>
+1290	<nyi> Investigating Mosarn	questName has identifier <nyi>
+1291	<nyi> <TXT> Centaur Hoofprints	questName has identifier <nyi>
+1292	<nyi><TXT> Centaur Hoofprints	questName has identifier <nyi>
+1293	<nyi> <TXT> Centaur Hoofprints	questName has identifier <nyi>
+1294	<nyi> <TXT>Centaur Sympathies	questName has identifier <nyi>
+1295	<nyi> <TXT> Course of Action	questName has identifier <nyi>
+1296	<nyi> <TXT> Course of Action	questName has identifier <nyi>
+1297	<nyi> <TXT> Course of Action	questName has identifier <nyi>
+1298	<nyi> <TXT> Thrall's Dirty Work	questName has identifier <nyi>
+1299	<nyi> <TXT> Thrall's Dirty Work	questName has identifier <nyi>
+1300	<nyi> <TXT> Lorn Grim Totem	questName has identifier <nyi>
 1303		quest not found
 1304		quest not found
 1305		quest not found
@@ -86,6 +160,8 @@ id	name	reason
 1377		quest not found
 1378		quest not found
 1379		quest not found
+1390	<nyi> Oops, We Killed Them Again.	questName has identifier <nyi>
+1397	<nyi> Saved!	questName has identifier <nyi>
 1399		quest not found
 1400		quest not found
 1401		quest not found
@@ -105,11 +181,18 @@ id	name	reason
 1415		quest not found
 1416		quest not found
 1417		quest not found
+1441	<UNUSED>	questName has identifier <UNUSED>
+1443	<nyi> The Shakedown	questName has identifier <nyi>
+1460	<UNUSED>	questName has identifier <UNUSED>
+1461	<UNUSED>	questName has identifier <UNUSED>
 1493		quest not found
 1494		quest not found
 1495		quest not found
 1496		quest not found
 1497		quest not found
+1533	<NYI> Call of Air	questName has identifier <NYI>
+1537	<NYI> Call of Air	questName has identifier <NYI>
+1538	<NYI> Call of Air	questName has identifier <NYI>
 1539		quest not found
 1540		quest not found
 1541		quest not found
@@ -198,6 +281,11 @@ id	name	reason
 1635		quest not found
 1636		quest not found
 1637		quest not found
+1659	<UNUSED>	questName has identifier <UNUSED>
+1660	<UNUSED>	questName has identifier <UNUSED>
+1662	<UNUSED>	questName has identifier <UNUSED>
+1663	<UNUSED>	questName has identifier <UNUSED>
+1664	<UNUSED>	questName has identifier <UNUSED>
 1668		quest not found
 1669		quest not found
 1670		quest not found
@@ -410,6 +498,7 @@ id	name	reason
 2015		quest not found
 2016		quest not found
 2017		quest not found
+2020	<UNUSED>	questName has identifier <UNUSED>
 2021		quest not found
 2022		quest not found
 2023		quest not found
@@ -443,6 +532,8 @@ id	name	reason
 2055		quest not found
 2056		quest not found
 2057		quest not found
+2058	<UNUSED>	questName has identifier <UNUSED>
+2059	<UNUSED>	questName has identifier <UNUSED>
 2060		quest not found
 2061		quest not found
 2062		quest not found
@@ -1081,6 +1172,7 @@ id	name	reason
 2838		quest not found
 2839		quest not found
 2840		quest not found
+2868	<TXT> The Shriveled Heart	questName has identifier <TXT>
 2883		quest not found
 2884		quest not found
 2885		quest not found
@@ -1124,6 +1216,7 @@ id	name	reason
 2959		quest not found
 2960		quest not found
 2961		quest not found
+2971	<UNUSED>	questName has identifier <UNUSED>
 3003		quest not found
 3004		quest not found
 3005		quest not found
@@ -1143,6 +1236,7 @@ id	name	reason
 3019		quest not found
 3020		quest not found
 3021		quest not found
+3023	<UNUSED>	questName has identifier <UNUSED>
 3024		quest not found
 3025		quest not found
 3026		quest not found
@@ -1180,6 +1274,7 @@ id	name	reason
 3059		quest not found
 3060		quest not found
 3061		quest not found
+3064	<NYI> <TXT> Pirate Hats	questName has identifier <NYI>
 3066		quest not found
 3067		quest not found
 3068		quest not found
@@ -1196,6 +1291,7 @@ id	name	reason
 3079		quest not found
 3080		quest not found
 3081		quest not found
+3111	<UNUSED> [DEPRECATED]	questName has identifier [DEPRECATED]
 3131		quest not found
 3132		quest not found
 3133		quest not found
@@ -1300,6 +1396,7 @@ id	name	reason
 3238		quest not found
 3239		quest not found
 3240		quest not found
+3241	<NYI> <TXT><redux> Dreadmist Peak	questName has identifier <NYI>
 3242		quest not found
 3243		quest not found
 3244		quest not found
@@ -1414,6 +1511,8 @@ id	name	reason
 3358		quest not found
 3359		quest not found
 3360		quest not found
+3383	<UNUSED>	questName has identifier <UNUSED>
+3384	<UNUSED>	questName has identifier <UNUSED>
 3386		quest not found
 3387		quest not found
 3388		quest not found
@@ -1429,6 +1528,10 @@ id	name	reason
 3398		quest not found
 3399		quest not found
 3400		quest not found
+3401	<UNUSED>	questName has identifier <UNUSED>
+3403	<UNUSED>	questName has identifier <UNUSED>
+3404	<UNUSED>	questName has identifier <UNUSED>
+3405	<UNUSED>	questName has identifier <UNUSED>
 3406		quest not found
 3407		quest not found
 3408		quest not found
@@ -1444,6 +1547,10 @@ id	name	reason
 3418		quest not found
 3419		quest not found
 3420		quest not found
+3422	<UNUSED>	questName has identifier <UNUSED>
+3423	<UNUSED>	questName has identifier <UNUSED>
+3424	<UNUSED>	questName has identifier <UNUSED>
+3425	<UNUSED>	questName has identifier <UNUSED>
 3426		quest not found
 3427		quest not found
 3428		quest not found
@@ -1482,6 +1589,7 @@ id	name	reason
 3478		quest not found
 3479		quest not found
 3480		quest not found
+3482	<NYI> <TXT> The Pocked Black Box	questName has identifier <NYI>
 3484		quest not found
 3485		quest not found
 3486		quest not found
@@ -1499,6 +1607,11 @@ id	name	reason
 3498		quest not found
 3499		quest not found
 3500		quest not found
+3515	<UNUSED>	questName has identifier <UNUSED>
+3516	<UNUSED>	questName has identifier <UNUSED>
+3529	<UNUSED>	questName has identifier <UNUSED>
+3530	<UNUSED>	questName has identifier <UNUSED>
+3531	<UNUSED>	questName has identifier <UNUSED>
 3532		quest not found
 3533		quest not found
 3534		quest not found
@@ -1536,6 +1649,7 @@ id	name	reason
 3578		quest not found
 3579		quest not found
 3580		quest not found
+3581	<UNUSED>	questName has identifier <UNUSED>
 3582		quest not found
 3583		quest not found
 3584		quest not found
@@ -1573,6 +1687,9 @@ id	name	reason
 3618		quest not found
 3619		quest not found
 3620		quest not found
+3622	<UNUSED>	questName has identifier <UNUSED>
+3623	<UNUSED>	questName has identifier <UNUSED>
+3624	<UNUSED>	questName has identifier <UNUSED>
 3648		quest not found
 3649		quest not found
 3650		quest not found
@@ -1768,6 +1885,7 @@ id	name	reason
 3878		quest not found
 3879		quest not found
 3880		quest not found
+3885	<NYI> <TXT> The Gadgetzan Run	questName has identifier <NYI>
 3886		quest not found
 3887		quest not found
 3888		quest not found
@@ -1783,6 +1901,7 @@ id	name	reason
 3898		quest not found
 3899		quest not found
 3900		quest not found
+3910	<NYI> <TXT> The Un'Goro Run	questName has identifier <NYI>
 3915		quest not found
 3916		quest not found
 3917		quest not found
@@ -2054,6 +2173,7 @@ id	name	reason
 4278		quest not found
 4279		quest not found
 4280		quest not found
+4299	<NYI> <TXT>The Tomb of the Seven	questName has identifier <NYI>
 4302		quest not found
 4303		quest not found
 4304		quest not found
@@ -2073,6 +2193,7 @@ id	name	reason
 4318		quest not found
 4319		quest not found
 4320		quest not found
+4323	<NYI> <TXT> Get those Hyenas!!!	questName has identifier <NYI>
 4325		quest not found
 4326		quest not found
 4327		quest not found
@@ -2225,6 +2346,7 @@ id	name	reason
 4538		quest not found
 4539		quest not found
 4540		quest not found
+4541	<NYI> <TXT>	questName has identifier <NYI>
 4543		quest not found
 4544		quest not found
 4545		quest not found
@@ -2500,6 +2622,7 @@ id	name	reason
 4898		quest not found
 4899		quest not found
 4900		quest not found
+4905	<UNUSED>	questName has identifier <UNUSED>
 4908		quest not found
 4909		quest not found
 4910		quest not found
@@ -2603,6 +2726,7 @@ id	name	reason
 5038		quest not found
 5039		quest not found
 5040		quest not found
+5053	<UNUSED>	questName has identifier <UNUSED>
 5069		quest not found
 5070		quest not found
 5071		quest not found
@@ -2617,6 +2741,7 @@ id	name	reason
 5080		quest not found
 5099		quest not found
 5100		quest not found
+5101	Lee's Ultimate Test Quest... of Doom!	questName has identifier .*
 5104		quest not found
 5105		quest not found
 5106		quest not found
@@ -2677,6 +2802,10 @@ id	name	reason
 5198		quest not found
 5199		quest not found
 5200		quest not found
+5205	<UNUSED>	questName has identifier <UNUSED>
+5207	<NYI> <TXT> The True Summoner	questName has identifier <NYI>
+5208	<NYI> <TXT> The Blessing of Evil	questName has identifier <NYI>
+5209	<UNUSED>	questName has identifier <UNUSED>
 5239		quest not found
 5240		quest not found
 5254		quest not found
@@ -2717,6 +2846,8 @@ id	name	reason
 5298		quest not found
 5299		quest not found
 5300		quest not found
+5303	<UNUSED>	questName has identifier <UNUSED>
+5304	<UNUSED>	questName has identifier <UNUSED>
 5308		quest not found
 5309		quest not found
 5310		quest not found
@@ -2880,6 +3011,13 @@ id	name	reason
 5498		quest not found
 5499		quest not found
 5500		quest not found
+5506	<UNUSED>	questName has identifier <UNUSED>
+5512	<UNUSED>	questName has identifier <UNUSED>
+5516	<UNUSED>	questName has identifier <UNUSED>
+5520	<UNUSED>	questName has identifier <UNUSED>
+5523	<UNUSED>	questName has identifier <UNUSED>
+5530	<NYI> <TXT> Necklace of the Dawn	questName has identifier <NYI>
+5532	<NYI> <TXT> Ring of the Dawn	questName has identifier <NYI>
 5539		quest not found
 5540		quest not found
 5546		quest not found
@@ -2953,6 +3091,48 @@ id	name	reason
 5618		quest not found
 5619		quest not found
 5620		quest not found
+5653	<NYI> Hex of Weakness	questName has identifier <NYI>
+5659	<NYI> Touch of Weakness	questName has identifier <NYI>
+5664	<UNUSED>	questName has identifier <UNUSED>
+5665	<UNUSED>	questName has identifier <UNUSED>
+5666	<UNUSED>	questName has identifier <UNUSED>
+5667	<UNUSED>	questName has identifier <UNUSED>
+5668	<NYI> A Blessing of Light	questName has identifier <NYI>
+5669	<NYI> A Blessing of Light	questName has identifier <NYI>
+5670	<NYI> A Blessing of Light	questName has identifier <NYI>
+5671	<NYI> A Blessing of Light	questName has identifier <NYI>
+5681	<UNUSED>	questName has identifier <UNUSED>
+5682	<UNUSED>	questName has identifier <UNUSED>
+5683	<UNUSED>	questName has identifier <UNUSED>
+5684	<UNUSED>	questName has identifier <UNUSED>
+5685	<NYI> <TXT> The Light Protects You	questName has identifier <NYI>
+5686	<NYI> The Light Protects You	questName has identifier <NYI>
+5687	<NYI> The Light Protects You	questName has identifier <NYI>
+5688	<NYI> <TXT> A Touch of Voodoo	questName has identifier <NYI>
+5689	<NYI> A Touch of Voodoo	questName has identifier <NYI>
+5690	<NYI> <TXT> A Touch of Voodoo	questName has identifier <NYI>
+5691	<NYI> <TXT> In the Dark it was Created	questName has identifier <NYI>
+5692	<NYI> In the Dark It was Created	questName has identifier <NYI>
+5693	<NYI> In the Dark It was Created	questName has identifier <NYI>
+5694	<UNUSED>	questName has identifier <UNUSED>
+5695	<UNUSED>	questName has identifier <UNUSED>
+5696	<UNUSED>	questName has identifier <UNUSED>
+5697	<UNUSED>	questName has identifier <UNUSED>
+5698	<NYI> <TXT> A Small Amount of Hope	questName has identifier <NYI>
+5699	<NYI> A Small Amount of Hope	questName has identifier <NYI>
+5700	<NYI> A Small Amount of Hope	questName has identifier <NYI>
+5701	<NYI> <TXT> The Rites of Old	questName has identifier <NYI>
+5702	<NYI> The Rites of Old	questName has identifier <NYI>
+5703	<NYI> The Rites of Old	questName has identifier <NYI>
+5704	<NYI> <TXT> Undead Priest Robe	questName has identifier <NYI>
+5705	<NYI> No Longer a Shadow	questName has identifier <NYI>
+5706	<NYI> No Longer a Shadow	questName has identifier <NYI>
+5707	<NYI> <TXT> Flirting With Darkness	questName has identifier <NYI>
+5708	<NYI> Flirting With Darkness	questName has identifier <NYI>
+5709	<NYI> Flirting With Darkness	questName has identifier <NYI>
+5710	<NYI> <TXT> Troll Priest Robe	questName has identifier <NYI>
+5711	<NYI> The Lost Ways	questName has identifier <NYI>
+5712	<NYI> The Lost Ways	questName has identifier <NYI>
 5714		quest not found
 5715		quest not found
 5716		quest not found
@@ -3172,6 +3352,7 @@ id	name	reason
 5998		quest not found
 5999		quest not found
 6000		quest not found
+6003	<nyi> <txt> Green With Envy	questName has identifier <nyi>
 6005		quest not found
 6006		quest not found
 6007		quest not found
@@ -3262,6 +3443,7 @@ id	name	reason
 6158		quest not found
 6159		quest not found
 6160		quest not found
+6165	<NYI> <TXT> Archmage Timolain's Remains	questName has identifier <NYI>
 6166		quest not found
 6167		quest not found
 6168		quest not found
@@ -3290,6 +3472,8 @@ id	name	reason
 6198		quest not found
 6199		quest not found
 6200		quest not found
+6201	<UNUSED> The Legacy of the Ashbringer	questName has identifier <UNUSED>
+6202	<UNUSED> Good and Evil	questName has identifier <UNUSED>
 6203		quest not found
 6204		quest not found
 6205		quest not found
@@ -3680,6 +3864,16 @@ id	name	reason
 6698		quest not found
 6699		quest not found
 6700		quest not found
+6702	[DEPRECATED] <TXT> SF, RFK, GNOMER, BF	questName has identifier [DEPRECATED]
+6703	[DEPRECATED] <TXT> SF, RFK, GNOMER, BF - Repeatable	questName has identifier [DEPRECATED]
+6704	[DEPRECATED] <TXT> SM, RFD, ULD	questName has identifier [DEPRECATED]
+6705	[DEPRECATED] <TXT> SM, RFD, ULD - Repeatable	questName has identifier [DEPRECATED]
+6706	[DEPRECATED] <TXT> ZUL, ST, MAR	questName has identifier [DEPRECATED]
+6707	[DEPRECATED] <TXT> ZUL, ST, MAR - Repeatable	questName has identifier [DEPRECATED]
+6708	[DEPRECATED] <TXT> BRD, DM, BRS	questName has identifier [DEPRECATED]
+6709	[DEPRECATED] <TXT> BRD, DM, BRS - Repeatable	questName has identifier [DEPRECATED]
+6710	[DEPRECATED] <TXT> UBRS, STRATH, SCHOL	questName has identifier [DEPRECATED]
+6711	[DEPRECATED] <TXT> UBRS, STRATH, SCHOL - Repeatable	questName has identifier [DEPRECATED]
 6712		quest not found
 6713		quest not found
 6714		quest not found
@@ -3793,6 +3987,8 @@ id	name	reason
 6838		quest not found
 6839		quest not found
 6840		quest not found
+6841	<UNUSED>	questName has identifier <UNUSED>
+6842	<UNUSED>	questName has identifier <UNUSED>
 6849		quest not found
 6850		quest not found
 6851		quest not found
@@ -3969,6 +4165,7 @@ id	name	reason
 7058		quest not found
 7059		quest not found
 7060		quest not found
+7069	<UNUSED>	questName has identifier <UNUSED>
 7071		quest not found
 7072		quest not found
 7073		quest not found
@@ -4233,6 +4430,7 @@ id	name	reason
 7378		quest not found
 7379		quest not found
 7380		quest not found
+7384	<nyi> <txt> The Scale Crafters	questName has identifier <nyi>
 7387		quest not found
 7388		quest not found
 7389		quest not found
@@ -4411,6 +4609,8 @@ id	name	reason
 7620		quest not found
 7679		quest not found
 7680		quest not found
+7681	Hunter test quest	questName has identifier .*
+7682	Hunter test quest2	questName has identifier .*
 7683		quest not found
 7684		quest not found
 7685		quest not found
@@ -4447,6 +4647,7 @@ id	name	reason
 7720		quest not found
 7739		quest not found
 7740		quest not found
+7741	Praise from the Emerald Circle <NYI> <TXT>	questName has identifier <NYI>
 7742		quest not found
 7743		quest not found
 7744		quest not found
@@ -4485,6 +4686,7 @@ id	name	reason
 7778		quest not found
 7779		quest not found
 7780		quest not found
+7790	REUSE	questName has identifier REUSE
 7851		quest not found
 7852		quest not found
 7853		quest not found
@@ -4495,9 +4697,12 @@ id	name	reason
 7858		quest not found
 7859		quest not found
 7860		quest not found
+7869	test quest - do not use	questName has identifier .*
+7870	test quest2 - do not use	questName has identifier .*
 7878		quest not found
 7879		quest not found
 7880		quest not found
+7904	<UNUSED>	questName has identifier <UNUSED>
 7909		quest not found
 7910		quest not found
 7911		quest not found
@@ -4561,3 +4766,210 @@ id	name	reason
 7998		quest not found
 7999		quest not found
 8000		quest not found
+8001	Warsong Outriders <NYI> <TXT>	questName has identifier <NYI>
+8002	Silverwing Sentinels <NYI> <TXT>	questName has identifier <NYI>
+8003		quest not found
+8004		quest not found
+8005		quest not found
+8006		quest not found
+8007		quest not found
+8008		quest not found
+8009		quest not found
+8010		quest not found
+8011		quest not found
+8012		quest not found
+8013		quest not found
+8014		quest not found
+8015		quest not found
+8016		quest not found
+8017		quest not found
+8018		quest not found
+8019		quest not found
+8020		quest not found
+8027		quest not found
+8028		quest not found
+8029		quest not found
+8030		quest not found
+8031		quest not found
+8032		quest not found
+8033		quest not found
+8034		quest not found
+8035		quest not found
+8036		quest not found
+8037		quest not found
+8038		quest not found
+8039		quest not found
+8040		quest not found
+8082		quest not found
+8083		quest not found
+8084		quest not found
+8085		quest not found
+8086		quest not found
+8087		quest not found
+8088		quest not found
+8089		quest not found
+8090		quest not found
+8091		quest not found
+8092		quest not found
+8093		quest not found
+8094		quest not found
+8095		quest not found
+8096		quest not found
+8097		quest not found
+8098		quest not found
+8099		quest not found
+8100		quest not found
+8125		quest not found
+8126		quest not found
+8127		quest not found
+8128		quest not found
+8129		quest not found
+8130		quest not found
+8131		quest not found
+8132		quest not found
+8133		quest not found
+8134		quest not found
+8135		quest not found
+8136		quest not found
+8137		quest not found
+8138		quest not found
+8139		quest not found
+8140		quest not found
+8152	REUSE	questName has identifier REUSE
+8172		quest not found
+8173		quest not found
+8174		quest not found
+8175		quest not found
+8176		quest not found
+8177		quest not found
+8178		quest not found
+8179		quest not found
+8180		quest not found
+8197		quest not found
+8198		quest not found
+8199		quest not found
+8200		quest not found
+8202		quest not found
+8203		quest not found
+8204		quest not found
+8205		quest not found
+8206		quest not found
+8207		quest not found
+8208		quest not found
+8209		quest not found
+8210		quest not found
+8211		quest not found
+8212		quest not found
+8213		quest not found
+8214		quest not found
+8215		quest not found
+8216		quest not found
+8217		quest not found
+8218		quest not found
+8219		quest not found
+8220		quest not found
+8230	Collin's Test Quest	questName has identifier .*
+8237	REUSE	questName has identifier REUSE
+8244	<UNUSED>	questName has identifier <UNUSED>
+8245	<UNUSED>	questName has identifier <UNUSED>
+8247	<UNUSED>	questName has identifier <UNUSED>
+8248	<UNUSED>	questName has identifier <UNUSED>
+8270	test copy quest	questName has identifier .*
+8274	Test Kill Quest	questName has identifier .*
+8330	[DEPRECATED]Solanian's Belongings	questName has identifier [DEPRECATED]
+8336	[DEPRECATED]A Fistful of Slivers	questName has identifier [DEPRECATED]
+8337	<UNUSED>	questName has identifier <UNUSED>
+8339	Royalty of the Council <NYI> <TXT> UNUSED	questName has identifier <NYI>
+8340	Twilight Signet Ring <NYI> <TXT>	questName has identifier <NYI>
+8345	[DEPRECATED]The Shrine of Dath'Remar	questName has identifier [DEPRECATED]
+8346	[DEPRECATED]Thirst Unending	questName has identifier [DEPRECATED]
+8444	<NYI> <TXT> gossip shade of ambermoon	questName has identifier <NYI>
+8445	<NYI> <TXT> gossip shade of ambermoon	questName has identifier <NYI>
+8448	<TXT> Mystery Reward	questName has identifier <TXT>
+8449	<TXT> Mystery Reward	questName has identifier <TXT>
+8450	<TXT> Mystery Reward	questName has identifier <TXT>
+8451	<TXT> Mystery Reward	questName has identifier <TXT>
+8452	<TXT> Mystery Reward	questName has identifier <TXT>
+8453	<TXT> Mystery Reward	questName has identifier <TXT>
+8454	<TXT> Mystery Reward	questName has identifier <TXT>
+8455		quest not found
+8456		quest not found
+8457		quest not found
+8458	<UNUSED>	questName has identifier <UNUSED>
+8459	<UNUSED>	questName has identifier <UNUSED>
+8571	<UNUSED> Armor Kits	questName has identifier <UNUSED>
+8971	REUSE	questName has identifier REUSE
+8972	REUSE	questName has identifier REUSE
+8973	REUSE	questName has identifier REUSE
+8974	REUSE	questName has identifier REUSE
+8975	REUSE	questName has identifier REUSE
+8976	REUSE	questName has identifier REUSE
+9031	<TXT>Anthion's Parting Words	questName has identifier <TXT>
+9035		quest not found
+9062		quest not found
+9064		quest not found
+9065	The "Chow" Quest (123)aa	questName has identifier (123)aa
+9066		quest not found
+9067		quest not found
+9076		quest not found
+9119		quest not found
+9130		quest not found
+9133		quest not found
+9134		quest not found
+9135		quest not found
+9138		quest not found
+9139		quest not found
+9140		quest not found
+9143		quest not found
+9144		quest not found
+9145		quest not found
+9146		quest not found
+9147		quest not found
+9148		quest not found
+9149		quest not found
+9150		quest not found
+9151		quest not found
+9152		quest not found
+9155		quest not found
+9156		quest not found
+9157		quest not found
+9158		quest not found
+9159		quest not found
+9160		quest not found
+9161		quest not found
+9162		quest not found
+9163		quest not found
+9164		quest not found
+9166		quest not found
+9167		quest not found
+9168		quest not found
+9169		quest not found
+9170		quest not found
+9171		quest not found
+9172		quest not found
+9173		quest not found
+9174		quest not found
+9175		quest not found
+9176		quest not found
+9177		quest not found
+9180		quest not found
+9189		quest not found
+9192		quest not found
+9193		quest not found
+9199		quest not found
+9207		quest not found
+9212		quest not found
+9214		quest not found
+9215		quest not found
+9216		quest not found
+9217		quest not found
+9218		quest not found
+9219		quest not found
+9220		quest not found
+9231		quest not found
+9252		quest not found
+9253		quest not found
+9254		quest not found
+9255		quest not found
+9256		quest not found
+9258		quest not found

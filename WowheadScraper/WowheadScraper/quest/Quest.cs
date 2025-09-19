@@ -1,5 +1,6 @@
 using System.Net;
 using System.Text.Json;
+using System.Text.RegularExpressions;
 using HtmlAgilityPack;
 
 namespace WowheadScraper;
@@ -21,15 +22,35 @@ public class Quest : IHtmlProducerPaths
     public bool IsRepeatable { get; set; }
     public MoneyReward Money { get; set; }
     public ExperienceReward Experience { get; set; }
-    public List<Reputation> Reputations { get; set; }
+    public List<ReputationReward> Reputations { get; set; }
     public string ErrorMessage { get; set; }
 
     public Quest()
     {
-        Reputations = new List<Reputation>();
+        Reputations = new List<ReputationReward>();
     }
     
     public bool IsAvailable => string.IsNullOrWhiteSpace(ErrorMessage);
+    
+    private static readonly List<string> NotAvailableNameIdentifiers = new List<string>()
+    {
+        "(123)aa",
+        "<CHANGE INTO GOSSIP>",
+        "<CHANGE TO GOSSIP>",
+        "[DEPRECATED]",
+        "<nyi>",
+        "<NYI>",
+        "REUSE",
+        "<TEST>",
+        "<TXT>",
+        "<UNUSED>",
+    };
+
+    private static readonly List<Regex> NotAvailableNameRegexIdentifier = new List<Regex>()
+    {
+        new Regex("test.*quest", RegexOptions.IgnoreCase),
+    };
+
     
     public static async Task<Quest> GetQuest(int id)
     {
@@ -51,23 +72,18 @@ public class Quest : IHtmlProducerPaths
         }
 
         var isException = false; //NotAvailableExceptions.Contains(id);
-        // var identifier = Program.NotAvailableNameIdentifiers.Find(identifier =>
-        //     questName.Contains(identifier, StringComparison.InvariantCulture));
-        // if (identifier != null && !isException)
-        // {
-        //     return new Quest {Id = id, Name = questName, ErrorMessage = $"questName has identifier {identifier}"};
-        // }
-
-        
-        var quickFacts = htmlDocument.DocumentNode.SelectSingleNode(".//table[@class='infobox after-buttons']")?.InnerHtml;
-        if (quickFacts != null)
+        var identifier = NotAvailableNameIdentifiers.Find(identifier =>
+            questName.Contains(identifier, StringComparison.InvariantCulture));
+        if (identifier != null && !isException)
         {
-            var regex = Program.NotAvailableQuickFactsIdentifier.Find(regex =>
-                regex.IsMatch(quickFacts));
-            if (regex != null && !isException)
-            {
-                return new Quest {Id = id, Name = questName, ErrorMessage = $"quest quick facts has identifier {regex.Replace(".*", " ")}"};
-            }
+            return new Quest {Id = id, Name = questName, ErrorMessage = $"questName has identifier {identifier}"};
+        }
+
+
+        var regexIdentifier = NotAvailableNameRegexIdentifier.Find(regex => regex.IsMatch(questName));
+        if (regexIdentifier != null && !isException)
+        {
+            return new Quest {Id = id, Name = questName, ErrorMessage = $"questName has identifier {regexIdentifier.Replace(".*", " ")}"};
         }
         
         // if (html.Contains("This item is not available to players.") && !isException)
@@ -77,39 +93,82 @@ public class Quest : IHtmlProducerPaths
 
         var money = new MoneyReward();
         var experience = new ExperienceReward();
-        var questDetailsScript = htmlDocument.DocumentNode.SelectSingleNode(".//div[@class='quest-reward-slider']")
-            ?.NextSibling?.InnerHtml;
-        if (questDetailsScript != null)
+        var questRewardScript = htmlDocument.GetElementbyId("quest-reward-slider")?
+                .NextSibling?
+                .InnerHtml;
+        if (questRewardScript != null)
         {
-            var jsonQuestDetails = questDetailsScript
+            var jsonQuestDetails = questRewardScript
                 .Replace("WH.Wow.Quest.setupScalingRewards", "")
                 .Replace("(", "")
                 .Replace(")", "")
                 .Replace(";", "");
 
-            var questDetails  = JsonSerializer.Deserialize<QuestDetails>(jsonQuestDetails);
-            if (questDetails != null)
+            try
             {
-                money = new MoneyReward
+                var questDetails  = JsonSerializer.Deserialize<QuestDetails>(jsonQuestDetails);
+                if (questDetails != null)
                 {
-                    QuestReward = questDetails.Coin.GetLevelsReward(),
-                    ExperienceToMoney = questDetails.Coin.RewardAtCap
-                };
+                    money = new MoneyReward
+                    {
+                        QuestReward = questDetails.Coin.GetLevelsReward(),
+                        ExperienceToMoney = questDetails.Coin.RewardAtCap
+                    };
 
-                experience = new ExperienceReward
-                {
-                    Level = questDetails.Xp.Levels.Keys.FirstOrDefault(),
-                    Experience = questDetails.Xp.Levels.Values.FirstOrDefault()
-                };
+                    experience = new ExperienceReward
+                    {
+                        Level = questDetails.Xp.Levels.Keys.FirstOrDefault(),
+                        Experience = questDetails.Xp.Levels.Values.FirstOrDefault()
+                    };
+                }
+            }
+            catch (Exception e)
+            {
+                // ignored
             }
         }
 
-        return new Quest {Id = id, Name = questName, Experience = experience, Money = money};
+        var reputations = new List<ReputationReward>();
+        var reputationNodes =
+            htmlDocument.DocumentNode.SelectNodes(".//ul/li/div[contains(normalize-space(.), 'reputation with')]");
+        if (reputationNodes != null)
+        {
+            foreach (var reputationNode in reputationNodes)
+            {
+                var reputation = new ReputationReward();                
+                
+                var repString = reputationNode.SelectSingleNode(".//span")?.InnerText;
+                if (int.TryParse(repString, out var amount))
+                {
+                    reputation.Amount = amount;
+                }
+
+                var reputationLink = reputationNode.SelectSingleNode(".//a");
+                if (reputationLink != null)
+                {
+                    if (!string.IsNullOrWhiteSpace(reputationLink.InnerText))
+                    {
+                        reputation.Name = reputationLink.InnerText;
+                    }
+                    
+                    var factionLink = reputationLink.GetAttributeValue("href", "");
+                    var factionIdMatch = new Regex("faction=(\\d+)", RegexOptions.Compiled).Match(factionLink);
+                    if (factionIdMatch.Success)
+                    {
+                        reputation.Id = int.Parse(factionIdMatch.Groups[1].Value);
+                    }
+                }
+                
+                reputations.Add(reputation);
+            }
+        }
+
+        return new Quest {Id = id, Name = questName, Experience = experience, Money = money, Reputations = reputations};
     }
 
 }
 
-public class Reputation
+public class ReputationReward
 {
     public int Id { get; set; }
     public string Name { get; set; }

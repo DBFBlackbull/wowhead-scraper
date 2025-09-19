@@ -11,49 +11,15 @@ class Program
     public static readonly HttpClient HttpClient = new HttpClient();
     public static readonly string TsvFolderPath = Path.Join(SolutionDirectory(), "tsv-files");
 
-    public static readonly List<string> NotAvailableNameIdentifiers = new List<string>()
-    {
-        "OLD",
-        "(old)",
-        "DEBUG",
-        "Deprecated",
-        "Deprecate",
-        "Depricated", // misspelled item
-        "Deptecated", // misspelled item
-        "DEPRECATED",
-        "[DEP]",
-        "DEP",
-        "(DND)",
-        "Monster",
-        "[PH]",
-        "PH",
-        "QA",
-        "(test)",
-        "(Test)",
-        "(TEST)",
-        "Test",
-        "TEST",
-        "Unused",
-        "<UNUSED>",
-        "[UNUSED]",
-        "UNUSED",
-    };
-
-    public static readonly List<Regex> NotAvailableQuickFactsIdentifier = new List<Regex>()
-    {
-        new Regex("Added in patch.*Season of Discovery"),
-        new Regex("Deprecated"),
-    };
-
     static async Task Main(string[] args)
     {
         HttpClient.BaseAddress = BaseUrl;
 
-        // var htmlProducer = new HtmlProducer();
-        // await htmlProducer.Run(40, Quest.LastIdInClassic, new Quest());
+        // await new HtmlProducer().Run(40, Quest.LastIdInClassic, new Quest());
         
-        var wowheadScraper = new OrderedQuestProducerConsumer();
-        await wowheadScraper.Run(40, 8000);
+        await new OrderedQuestProducerConsumer().Run(40);
+
+        // await QuestConsumer.Run(new HtmlQuestGetter(), 1);
     }
 
     public static int GetMoney(string? money, int factor)

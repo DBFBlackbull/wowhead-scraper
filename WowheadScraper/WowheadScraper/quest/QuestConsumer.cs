@@ -27,11 +27,18 @@ public class QuestConsumer
                     "experience",
                     "moneyFlatReward",
                     "moneyExperienceReward",
-                    "moneyTotalReward",
-                    "reputationId",
-                    "reputationName",
-                    "reputationAmount"
+                    "moneyTotalReward"
                 );
+                for (int i = 1; i <= 10; i++)
+                {
+                    questHeaders = string.Join("\t",
+                        questHeaders,
+                        $"reputationId{i}",
+                        $"reputationName{i}",
+                        $"reputationAmount{i}"
+                    );
+                }
+                
                 await availableStream.WriteLineAsync(questHeaders);
                 await notAvailableStream.WriteLineAsync("id\tname\treason");
                 
@@ -42,17 +49,6 @@ public class QuestConsumer
                     var quest = await questGetter.GetQuest(id);
                     if (quest.IsAvailable)
                     {
-                        var reputation = "";
-                        if (quest.Reputations.Count > 0)
-                        {
-                            var questReputation = quest.Reputations[0];
-                            reputation = string.Join("\t",
-                                questReputation.Id,
-                                questReputation.Name,
-                                questReputation.Amount
-                            );
-                        }
-
                         var questProperties = string.Join("\t",
                             quest.Id, 
                             quest.Name,
@@ -60,9 +56,18 @@ public class QuestConsumer
                             quest.Experience.Experience,
                             quest.Money.QuestReward,
                             quest.Money.ExperienceToMoney,
-                            quest.Money.Total,
-                            reputation
+                            quest.Money.Total
                         );
+
+                        foreach (var reputation in quest.Reputations)
+                        {
+                            questProperties = string.Join("\t",
+                                questProperties,
+                                reputation.Id,
+                                reputation.Name,
+                                reputation.Amount
+                            );
+                        }
                         await availableStream.WriteLineAsync(questProperties);
                     }
                     else
