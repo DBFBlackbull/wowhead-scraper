@@ -3,13 +3,18 @@ using HtmlAgilityPack;
 
 namespace WowheadScraper;
 
-public class Item
+public class Item : IHtmlProducerPaths
 {
-    public const int LastItemIdInClassic = 24283;
+    public const int LastIdInClassic = 24283;
     public static readonly string HtmlFolderPath = Path.Join(Program.SolutionDirectory(), "classic", "items");
-    public static readonly string AvailableTsvFilePath = Path.Join(Program.TsvFolder, "items-available.tsv");
-    public static readonly string NotAvailableTsvFilePath = Path.Join(Program.TsvFolder, "items-not-available.tsv");
-
+    public static readonly string AvailableTsvFilePath = Path.Join(Program.TsvFolderPath, "items-available.tsv");
+    public static readonly string NotAvailableTsvFilePath = Path.Join(Program.TsvFolderPath, "items-not-available.tsv");
+    private static string HtmlFilePath(int id) => Path.Join(HtmlFolderPath, $"item-{id}.html");
+    
+    public Uri GetUri(int id) => new Uri($"classic/item={id}", UriKind.Relative);
+    public string GetHtmlFolderPath() => HtmlFolderPath;
+    public string GetHtmlFilePath(int id) => HtmlFilePath(id);
+    
     public int Id { get; set; }
     public string Name { get; set; }
     public int SellPrice { get; set; }
@@ -27,8 +32,10 @@ public class Item
         5108, // Dark Iron Leather - Marked as Deprecated but still drops
     };
     
-    public static Item GetItem(int id, string html)
+    public static async Task<Item> GetItem(int id)
     {
+        var html = await File.ReadAllTextAsync(HtmlFilePath(id));
+        
         var htmlDocument = new HtmlDocument();
         htmlDocument.LoadHtml(html);
 
@@ -81,5 +88,4 @@ public class Item
 
         return new Item {Id = id, Name = itemName, SellPrice = sellPrice};
     }
-
 }

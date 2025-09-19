@@ -9,7 +9,7 @@ class Program
 {
     private static readonly Uri BaseUrl = new Uri("https://www.wowhead.com/", UriKind.Absolute);
     public static readonly HttpClient HttpClient = new HttpClient();
-    public static readonly string TsvFolder = Path.Join(SolutionDirectory(), "tsv-files");
+    public static readonly string TsvFolderPath = Path.Join(SolutionDirectory(), "tsv-files");
 
     public static readonly List<string> NotAvailableNameIdentifiers = new List<string>()
     {
@@ -49,10 +49,11 @@ class Program
     {
         HttpClient.BaseAddress = BaseUrl;
 
-        // var wowheadScraper = new OrderedItemProducerConsumer();
-        // await wowheadScraper.Run(40);
-        var htmlProducer = new HtmlProducer();
-        await htmlProducer.Run(40, Quest.LastQuestIdInClassic, Quest.HtmlFolderPath, "quest");
+        // var htmlProducer = new HtmlProducer();
+        // await htmlProducer.Run(40, Quest.LastIdInClassic, new Quest());
+        
+        var wowheadScraper = new OrderedQuestProducerConsumer();
+        await wowheadScraper.Run(40, 8000);
     }
 
     public static int GetMoney(string? money, int factor)
@@ -67,7 +68,7 @@ class Program
 
     public static void LogProgress(int key, int itemsToProcess, Stopwatch? stopwatch = null)
     {
-        if (key % 100 == 0)
+        if (key % 100 == 0 || key == itemsToProcess)
         {
             var percentageComplete = key / (double)itemsToProcess * 100;
             var elapsedTime = "";

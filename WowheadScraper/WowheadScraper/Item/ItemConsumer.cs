@@ -5,13 +5,13 @@ namespace WowheadScraper;
 
 public class ItemConsumer
 {
-    public static async Task Run(ConcurrentDictionary<int, TaskCompletionSource<Item>> tasks)
+    public static async Task Run(IItemGetter itemGetter, int itemsToProcess = Item.LastIdInClassic)
     {
-        Directory.CreateDirectory(Program.TsvFolder);
+        Directory.CreateDirectory(Program.TsvFolderPath);
         
         var totalStopwatch = new Stopwatch();
         totalStopwatch.Start();
-        Console.WriteLine($"Starting consuming {Item.LastItemIdInClassic} items...");
+        Console.WriteLine($"Starting consuming {itemsToProcess} items...");
         
         await using (var availableStream = new StreamWriter(File.Create(Item.AvailableTsvFilePath)))
         {
@@ -25,13 +25,9 @@ public class ItemConsumer
                 
                 var stopwatch = new Stopwatch();
                 stopwatch.Start();
-                for (int id = 1; id <= Item.LastItemIdInClassic; id++)
+                for (int id = 1; id <= itemsToProcess; id++)
                 {
-                    // Get the promise for the key we need
-                    var tcs = tasks[id];
-                    
-                    // If the producer is already done, this completes instantly.
-                    Item item = await tcs.Task;
+                    var item = await itemGetter.GetItem(id);
                     if (item.IsAvailable)
                     {
                         await availableStream.WriteLineAsync($"{item.Id}\t{item.Name}\t{item.SellPrice}");
@@ -41,7 +37,7 @@ public class ItemConsumer
                         await notAvailableStream.WriteLineAsync($"{item.Id}\t{item.Name}\t{item.ErrorMessage}");
                     }
 
-                    Program.LogProgress(id, Item.LastItemIdInClassic, stopwatch);
+                    Program.LogProgress(id, itemsToProcess, stopwatch);
                     // ------------------------------------
                 }
             }
@@ -50,5 +46,4 @@ public class ItemConsumer
         Console.WriteLine();
         Console.WriteLine($"All items consumed. Elapsed {totalStopwatch.Elapsed:g}");
     }
-
 }
