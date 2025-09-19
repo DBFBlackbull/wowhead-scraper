@@ -13,10 +13,10 @@ public class ItemConsumer
         totalStopwatch.Start();
         Console.WriteLine($"Starting consuming {Item.LastItemIdInClassic} items...");
         
-        await using (var availableStream = new StreamWriter(File.Create(Item.AvailableItemsTsvFilePath)))
+        await using (var availableStream = new StreamWriter(File.Create(Item.AvailableTsvFilePath)))
         {
             availableStream.AutoFlush = true;
-            await using (var notAvailableStream = new StreamWriter(File.Create(Item.NotAvailableItemsTsvFilePath)))
+            await using (var notAvailableStream = new StreamWriter(File.Create(Item.NotAvailableTsvFilePath)))
             {
                 notAvailableStream.AutoFlush = true;
 

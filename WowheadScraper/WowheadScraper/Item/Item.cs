@@ -7,8 +7,8 @@ public class Item
 {
     public const int LastItemIdInClassic = 24283;
     public static readonly string HtmlFolderPath = Path.Join(Program.SolutionDirectory(), "classic", "items");
-    public static readonly string AvailableItemsTsvFilePath = Path.Join(Program.TsvFolder, "items-available.tsv");
-    public static readonly string NotAvailableItemsTsvFilePath = Path.Join(Program.TsvFolder, "items-not-available.tsv");
+    public static readonly string AvailableTsvFilePath = Path.Join(Program.TsvFolder, "items-available.tsv");
+    public static readonly string NotAvailableTsvFilePath = Path.Join(Program.TsvFolder, "items-not-available.tsv");
 
     public int Id { get; set; }
     public string Name { get; set; }

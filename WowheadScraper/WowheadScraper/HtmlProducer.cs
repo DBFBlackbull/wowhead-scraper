@@ -6,13 +6,13 @@ namespace WowheadScraper;
 public class HtmlProducer
 {
     // Use a thread-safe counter to give each producer a unique ID for its work
-    private int _currentItemId = 0;
+    private int _currentId = 0;
 
-    public async Task Run(int producerCount, int itemsToProcess, string prefix)
+    public async Task Run(int producerCount, int itemsToProcess, string directory, string prefix)
     {
-        Directory.CreateDirectory(Item.HtmlFolderPath);
+        Directory.CreateDirectory(directory);
         
-        Console.WriteLine($"Starting {producerCount} producers...");
+        Console.WriteLine($"Starting {producerCount} html producers...");
         var stopwatch = new Stopwatch();
         stopwatch.Start();
 
@@ -23,7 +23,7 @@ public class HtmlProducer
         for (int i = 0; i < producerCount; i++)
         {
             // Task.Run() starts the work on a background thread from the thread pool.
-            producerTasks.Add(Task.Run(() => GetAndSaveHtml(prefix)));
+            producerTasks.Add(Task.Run(() => GetAndSaveHtml(itemsToProcess, directory, prefix)));
         }
 
         // 3. Wait for ALL tasks in the list to complete. 🏁
@@ -37,28 +37,28 @@ public class HtmlProducer
     /// This is the method each producer thread will run.
     /// It gets a unique piece of work, processes it, and saves it to disk.
     /// </summary>
-    private async Task GetAndSaveHtml(string prefix)
+    private async Task GetAndSaveHtml(int itemsToProcess, string directory, string prefix)
     {
         while (true)
         {
             // Get a unique ID for this piece of work
-            int key = Interlocked.Increment(ref _currentItemId);
-            if (key > Item.LastItemIdInClassic)
+            int id = Interlocked.Increment(ref _currentId);
+            if (id > itemsToProcess)
             {
                 break;
             }
 
-            var html = await GetItemHtml(key, prefix);
-            var filePath = Path.Join(Item.HtmlFolderPath, $"{prefix}-{key}.html");
+            var html = await GetItemHtml(id, prefix);
+            var filePath = Path.Join(directory, $"{prefix}-{id}.html");
             await File.WriteAllTextAsync(filePath, html, Encoding.UTF8);
             
-            Program.LogProgress(key, Item.LastItemIdInClassic);
+            Program.LogProgress(id, itemsToProcess);
         }
     }
     
-    private static async Task<string> GetItemHtml(int i, string prefix)
+    private static async Task<string> GetItemHtml(int id, string prefix)
     {
-        using var response = await Program.HttpClient.GetAsync(new Uri($"classic/{prefix}={i}", UriKind.Relative));
+        using var response = await Program.HttpClient.GetAsync(new Uri($"classic/{prefix}={id}", UriKind.Relative));
         using var content = response.Content;
         return await content.ReadAsStringAsync();
     }

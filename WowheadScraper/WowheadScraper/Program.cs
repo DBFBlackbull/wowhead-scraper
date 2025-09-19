@@ -49,8 +49,10 @@ class Program
     {
         HttpClient.BaseAddress = BaseUrl;
 
-        var wowheadScraper = new OrderedItemProducerConsumer();
-        await wowheadScraper.Run(50);
+        // var wowheadScraper = new OrderedItemProducerConsumer();
+        // await wowheadScraper.Run(40);
+        var htmlProducer = new HtmlProducer();
+        await htmlProducer.Run(40, Quest.LastQuestIdInClassic, Quest.HtmlFolderPath, "quest");
     }
 
     public static int GetMoney(string? money, int factor)
