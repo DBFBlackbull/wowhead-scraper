@@ -17,7 +17,7 @@ class Program
 
         // await new HtmlProducer().Run(40, Quest.LastIdInClassic, new Quest());
         
-        await new OrderedQuestProducerConsumer().Run(40);
+        await new OrderedItemProducerConsumer().Run(40);
 
         // await QuestConsumer.Run(new HtmlQuestGetter(), 1);
     }

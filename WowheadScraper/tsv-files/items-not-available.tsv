@@ -664,7 +664,7 @@ id	name	reason
 751	Deprecated Wolf Femur	itemName has identifier Deprecated
 757		item not found
 758		item not found
-759	Peacebloom	item quick facts has identifier .*
+759	Peacebloom	item quick facts has identifier Added in patch Season of Discovery
 760		item not found
 761	Deprecated Elwynn Trout	itemName has identifier Deprecated
 762		item not found
@@ -733,43 +733,43 @@ id	name	reason
 963		item not found
 964	Deprecated Red Linen Shirt	itemName has identifier Deprecated
 965	Deprecated Red Linen Sack	itemName has identifier Deprecated
-966	Tome of Frost Shield	item quick facts has identifier .*
-967	Tome of Frost Ward	item quick facts has identifier .*
-968	Tome of Fire Blast	item quick facts has identifier .*
+966	Tome of Frost Shield	item quick facts has identifier Deprecated
+967	Tome of Frost Ward	item quick facts has identifier Deprecated
+968	Tome of Fire Blast	item quick facts has identifier Deprecated
 969		item not found
 970		item not found
 971		item not found
 972		item not found
-973	Tome of Fireball II	item quick facts has identifier .*
-974	Tome of Frost Armor II	item quick facts has identifier .*
-975	Tome of Chains of Ice	item quick facts has identifier .*
-976	Tome of Remove Curse	item quick facts has identifier .*
+973	Tome of Fireball II	item quick facts has identifier Deprecated
+974	Tome of Frost Armor II	item quick facts has identifier Deprecated
+975	Tome of Chains of Ice	item quick facts has identifier Deprecated
+976	Tome of Remove Curse	item quick facts has identifier Deprecated
 977		item not found
 978		item not found
 979		item not found
-980	Tome of Frost Shield II	item quick facts has identifier .*
+980	Tome of Frost Shield II	item quick facts has identifier Deprecated
 982		item not found
 984		item not found
-985	Tome of Khadgar's Unlocking	item quick facts has identifier .*
-986	Tome of Frostbolt II	item quick facts has identifier .*
+985	Tome of Khadgar's Unlocking	item quick facts has identifier Deprecated
+986	Tome of Frostbolt II	item quick facts has identifier Deprecated
 987		item not found
 988		item not found
-989	Tome of Frost Nova	item quick facts has identifier .*
+989	Tome of Frost Nova	item quick facts has identifier Deprecated
 990		item not found
 991		item not found
-992	Tome of Fireball III	item quick facts has identifier .*
+992	Tome of Fireball III	item quick facts has identifier Deprecated
 993		item not found
-994	Tome of Ice Armor	item quick facts has identifier .*
+994	Tome of Ice Armor	item quick facts has identifier Deprecated
 995		item not found
 996	Ring of Righteous Flame (TEST)	itemName has identifier (TEST)
-997	Fire Sword of Crippling	item quick facts has identifier .*
+997	Fire Sword of Crippling	item quick facts has identifier Deprecated
 998		item not found
 999		item not found
 1000		item not found
 1001		item not found
-1002	Tome of Lesser Invisibility	item quick facts has identifier .*
+1002	Tome of Lesser Invisibility	item quick facts has identifier Deprecated
 1003		item not found
-1004	Tome of Chains of Ice II	item quick facts has identifier .*
+1004	Tome of Chains of Ice II	item quick facts has identifier Deprecated
 1005		item not found
 1007		item not found
 1012		item not found
@@ -785,16 +785,16 @@ id	name	reason
 1026	Plate Helmet D3 (test)	itemName has identifier (test)
 1027	Mail Helmet A (Test)	itemName has identifier (Test)
 1028	Deprecated Dented Skullcap	itemName has identifier Deprecated
-1029	Tablet of Serpent Totem	item quick facts has identifier .*
-1030	Tablet of Unyielding Will	item quick facts has identifier .*
-1031	Tablet of Molten Blast	item quick facts has identifier .*
-1032	Tablet of Agitating Totem	item quick facts has identifier .*
-1033	Tablet of Nullify Poison	item quick facts has identifier .*
-1034	Tablet of Undying Strength	item quick facts has identifier .*
-1035	Tablet of Call Spirit	item quick facts has identifier .*
-1036	Tablet of Nullify Disease	item quick facts has identifier .*
-1037	Tablet of Lightning Bolt II	item quick facts has identifier .*
-1038	Tablet of Restoration II	item quick facts has identifier .*
+1029	Tablet of Serpent Totem	item quick facts has identifier Deprecated
+1030	Tablet of Unyielding Will	item quick facts has identifier Deprecated
+1031	Tablet of Molten Blast	item quick facts has identifier Deprecated
+1032	Tablet of Agitating Totem	item quick facts has identifier Deprecated
+1033	Tablet of Nullify Poison	item quick facts has identifier Deprecated
+1034	Tablet of Undying Strength	item quick facts has identifier Deprecated
+1035	Tablet of Call Spirit	item quick facts has identifier Deprecated
+1036	Tablet of Nullify Disease	item quick facts has identifier Deprecated
+1037	Tablet of Lightning Bolt II	item quick facts has identifier Deprecated
+1038	Tablet of Restoration II	item quick facts has identifier Deprecated
 1039		item not found
 1040		item not found
 1042	Deprecated Summon Winter Wolf (Mount)	itemName has identifier Deprecated
@@ -803,22 +803,22 @@ id	name	reason
 1045		item not found
 1046	Deprecated Light Blunderbuss	itemName has identifier Deprecated
 1047	Deprecated Heavy Blunderbuss	itemName has identifier Deprecated
-1048	Tablet of Lightning Shield II	item quick facts has identifier .*
-1049	Tablet of Purge	item quick facts has identifier .*
+1048	Tablet of Lightning Shield II	item quick facts has identifier Deprecated
+1049	Tablet of Purge	item quick facts has identifier Deprecated
 1050		item not found
 1051		item not found
-1052	Tablet of Spirit Armor II	item quick facts has identifier .*
-1053	Tablet of Molten Blast II	item quick facts has identifier .*
+1052	Tablet of Spirit Armor II	item quick facts has identifier Deprecated
+1053	Tablet of Molten Blast II	item quick facts has identifier Deprecated
 1054		item not found
 1055		item not found
 1056		item not found
-1057	Tablet of Restoration III	item quick facts has identifier .*
-1058	Tablet of Lightning Bolt III	item quick facts has identifier .*
+1057	Tablet of Restoration III	item quick facts has identifier Deprecated
+1058	Tablet of Lightning Bolt III	item quick facts has identifier Deprecated
 1059		item not found
 1060		item not found
-1061	Tablet of Nullify Poison II	item quick facts has identifier .*
+1061	Tablet of Nullify Poison II	item quick facts has identifier Deprecated
 1062		item not found
-1063	Tablet of Nullify Disease II	item quick facts has identifier .*
+1063	Tablet of Nullify Disease II	item quick facts has identifier Deprecated
 1064		item not found
 1065		item not found
 1066		item not found
@@ -827,43 +827,43 @@ id	name	reason
 1069		item not found
 1070		item not found
 1071		item not found
-1072	Full Moonshine	item quick facts has identifier .*
+1072	Full Moonshine	item quick facts has identifier Deprecated
 1073		item not found
 1078	Deprecated Writ of Lakeshire	itemName has identifier Deprecated
 1079		item not found
-1084	Codex of Renew	item quick facts has identifier .*
-1085	Codex of Mind Vision	item quick facts has identifier .*
-1086	Codex of Inner Fire	item quick facts has identifier .*
-1087	Codex of Shadow Word: Pain	item quick facts has identifier .*
-1088	Codex of Renew II	item quick facts has identifier .*
-1089	Codex of Nullify Disease	item quick facts has identifier .*
-1090	Codex of Resurrection	item quick facts has identifier .*
-1091	Codex of Holy Smite II	item quick facts has identifier .*
-1092	Codex of Lesser Heal II	item quick facts has identifier .*
-1093	Codex of Remove Curse	item quick facts has identifier .*
+1084	Codex of Renew	item quick facts has identifier Deprecated
+1085	Codex of Mind Vision	item quick facts has identifier Deprecated
+1086	Codex of Inner Fire	item quick facts has identifier Deprecated
+1087	Codex of Shadow Word: Pain	item quick facts has identifier Deprecated
+1088	Codex of Renew II	item quick facts has identifier Deprecated
+1089	Codex of Nullify Disease	item quick facts has identifier Deprecated
+1090	Codex of Resurrection	item quick facts has identifier Deprecated
+1091	Codex of Holy Smite II	item quick facts has identifier Deprecated
+1092	Codex of Lesser Heal II	item quick facts has identifier Deprecated
+1093	Codex of Remove Curse	item quick facts has identifier Deprecated
 1094		item not found
-1095	Codex of Dispel Magic	item quick facts has identifier .*
-1096	Codex of Shadow Word: Pain II	item quick facts has identifier .*
+1095	Codex of Dispel Magic	item quick facts has identifier Deprecated
+1096	Codex of Shadow Word: Pain II	item quick facts has identifier Deprecated
 1097		item not found
 1098		item not found
 1099	Deprecated Codex of Sustenance II	itemName has identifier Deprecated
-1100	Codex of Holy Smite III	item quick facts has identifier .*
-1101	Codex of Renew V	item quick facts has identifier .*
-1102	Codex of Lesser Heal III	item quick facts has identifier .*
+1100	Codex of Holy Smite III	item quick facts has identifier Deprecated
+1101	Codex of Renew V	item quick facts has identifier Deprecated
+1102	Codex of Lesser Heal III	item quick facts has identifier Deprecated
 1103		item not found
 1104		item not found
-1105	Codex of Renew VI	item quick facts has identifier .*
+1105	Codex of Renew VI	item quick facts has identifier Deprecated
 1106		item not found
 1107		item not found
-1108	Codex of Renew III	item quick facts has identifier .*
-1109	Codex of Dominate	item quick facts has identifier .*
+1108	Codex of Renew III	item quick facts has identifier Deprecated
+1109	Codex of Dominate	item quick facts has identifier Deprecated
 1110		item not found
-1111	Codex of Sleep	item quick facts has identifier .*
-1112	Codex of Holy Word: Fortitude II	item quick facts has identifier .*
+1111	Codex of Sleep	item quick facts has identifier Deprecated
+1112	Codex of Holy Word: Fortitude II	item quick facts has identifier Deprecated
 1115	Deprecated Ragged Scalp	itemName has identifier Deprecated
 1117	Monster - Item, Fishing Pole	itemName has identifier Monster
 1118		item not found
-1119	Bottled Spirits	item quick facts has identifier .*
+1119	Bottled Spirits	item quick facts has identifier Deprecated
 1120		item not found
 1122	Deprecated Amulet of the White Stallion	itemName has identifier Deprecated
 1123	Deprecated Amulet of the Pinto	itemName has identifier Deprecated
@@ -872,22 +872,22 @@ id	name	reason
 1126		item not found
 1128	Deprecated [PH] Redridge Rye	itemName has identifier Deprecated
 1135		item not found
-1136	Libram: Divine Favor II	item quick facts has identifier .*
+1136	Libram: Divine Favor II	item quick facts has identifier Deprecated
 1137		item not found
-1138	Libram: Divine Favor	item quick facts has identifier .*
-1139	Libram: Cleanse	item quick facts has identifier .*
+1138	Libram: Divine Favor	item quick facts has identifier Deprecated
+1139	Libram: Cleanse	item quick facts has identifier Deprecated
 1140		item not found
-1141	Libram: Holy Light II	item quick facts has identifier .*
+1141	Libram: Holy Light II	item quick facts has identifier Deprecated
 1142		item not found
 1143		item not found
-1144	Libram: Divine Shield	item quick facts has identifier .*
+1144	Libram: Divine Shield	item quick facts has identifier Deprecated
 1145		item not found
-1146	Libram: Resurrection	item quick facts has identifier .*
+1146	Libram: Resurrection	item quick facts has identifier Deprecated
 1147		item not found
 1148		item not found
-1149	Libram: Seal of Might II	item quick facts has identifier .*
-1150	Libram: Purify	item quick facts has identifier .*
-1151	Libram: Holy Light III	item quick facts has identifier .*
+1149	Libram: Seal of Might II	item quick facts has identifier Deprecated
+1150	Libram: Purify	item quick facts has identifier Deprecated
+1151	Libram: Holy Light III	item quick facts has identifier Deprecated
 1152		item not found
 1153		item not found
 1157	Deprecated Militia Handaxe	itemName has identifier Deprecated
@@ -895,47 +895,47 @@ id	name	reason
 1162	Pirates Patch (Test)	itemName has identifier (Test)
 1163	Dwarven Explorer's Monocle (Test)	itemName has identifier (Test)
 1165	Test Food	itemName has identifier Test
-1166	Dented Buckler	item quick facts has identifier .*
-1167	Small Targe	item quick facts has identifier .*
+1166	Dented Buckler	item quick facts has identifier Deprecated
+1167	Small Targe	item quick facts has identifier Deprecated
 1170	Deprecated Brown Leather Vest	itemName has identifier Deprecated
 1174	Deprecated Light Soldier Boots	itemName has identifier Deprecated
-1176	Smelling Salts	item quick facts has identifier .*
+1176	Smelling Salts	item quick facts has identifier Deprecated
 1184	Deprecated Scarlet Badge	itemName has identifier Deprecated
 1185		item not found
 1186	Deprecated Gnoll Taskmaster Whip	itemName has identifier Deprecated
 1188		item not found
 1192	Deprecated Overseer's Helm	itemName has identifier Deprecated
-1193	Banded Buckler	item quick facts has identifier .*
-1199	Charged Soulstone	item quick facts has identifier .*
+1193	Banded Buckler	item quick facts has identifier Deprecated
+1199	Charged Soulstone	item quick facts has identifier Deprecated
 1209		item not found
 1223		item not found
-1224	Grimoire of Sense Demons	item quick facts has identifier .*
+1224	Grimoire of Sense Demons	item quick facts has identifier Deprecated
 1225		item not found
 1226		item not found
 1227		item not found
-1228	Grimoire of Blood Boil	item quick facts has identifier .*
-1229	Grimoire of Create Soulstone	item quick facts has identifier .*
+1228	Grimoire of Blood Boil	item quick facts has identifier Deprecated
+1229	Grimoire of Create Soulstone	item quick facts has identifier Deprecated
 1230		item not found
-1231	Grimoire of Shadow Bolt II	item quick facts has identifier .*
-1232	Grimoire of Demon Skin II	item quick facts has identifier .*
+1231	Grimoire of Shadow Bolt II	item quick facts has identifier Deprecated
+1232	Grimoire of Demon Skin II	item quick facts has identifier Deprecated
 1233		item not found
 1234		item not found
 1235		item not found
 1236		item not found
 1237		item not found
-1238	Grimoire of Fear	item quick facts has identifier .*
-1239	Grimoire of Siphon Mana	item quick facts has identifier .*
+1238	Grimoire of Fear	item quick facts has identifier Deprecated
+1239	Grimoire of Siphon Mana	item quick facts has identifier Deprecated
 1240		item not found
 1241		item not found
 1242		item not found
-1243	Grimoire of Shadow Bolt III	item quick facts has identifier .*
-1244	Grimoire of Demon Armor	item quick facts has identifier .*
-1245	Grimoire of Immolate II	item quick facts has identifier .*
-1246	Grimoire of Demon Breath	item quick facts has identifier .*
+1243	Grimoire of Shadow Bolt III	item quick facts has identifier Deprecated
+1244	Grimoire of Demon Armor	item quick facts has identifier Deprecated
+1245	Grimoire of Immolate II	item quick facts has identifier Deprecated
+1246	Grimoire of Demon Breath	item quick facts has identifier Deprecated
 1247		item not found
 1248		item not found
 1249		item not found
-1250	Grimoire of Detect Lesser Invisibility	item quick facts has identifier .*
+1250	Grimoire of Detect Lesser Invisibility	item quick facts has identifier Deprecated
 1253	Deprecated Summoned Lockpick	itemName has identifier Deprecated
 1255	Deprecated Conjured Mana Gem	itemName has identifier Deprecated
 1258	Bind On Use Test Item	itemName has identifier Test
@@ -968,20 +968,20 @@ id	name	reason
 1321	Deprecated Broiled Sunfish	itemName has identifier Deprecated
 1323	Deprecated [PH] Recipe: Broiled Sunfish	itemName has identifier Deprecated
 1324	Deprecated Parker's Lunch	itemName has identifier Deprecated
-1328	Book of Faerie Fire	item quick facts has identifier .*
+1328	Book of Faerie Fire	item quick facts has identifier Deprecated
 1329		item not found
 1330		item not found
 1331		item not found
-1332	Book of Cure Poison	item quick facts has identifier .*
+1332	Book of Cure Poison	item quick facts has identifier Deprecated
 1333		item not found
-1334	Book of Rejuvenation II	item quick facts has identifier .*
+1334	Book of Rejuvenation II	item quick facts has identifier Deprecated
 1335	Deprecated Book of Nullify Disease	itemName has identifier Deprecated
 1336		item not found
 1337		item not found
 1338		item not found
-1339	Book of Entangling Roots	item quick facts has identifier .*
+1339	Book of Entangling Roots	item quick facts has identifier Deprecated
 1340		item not found
-1341	Book of Moonfire	item quick facts has identifier .*
+1341	Book of Moonfire	item quick facts has identifier Deprecated
 1342		item not found
 1343		item not found
 1344		item not found
@@ -1003,8 +1003,8 @@ id	name	reason
 1393		item not found
 1397	Deprecated Orc Acolyte's Pants	itemName has identifier Deprecated
 1398	Deprecated Dwarven Novice's Pants	itemName has identifier Deprecated
-1400	Swiftfeather Token	item quick facts has identifier .*
-1402	Brimstone	item quick facts has identifier .*
+1400	Swiftfeather Token	item quick facts has identifier Deprecated
+1402	Brimstone	item quick facts has identifier Deprecated
 1403	Deprecated Capstone	itemName has identifier Deprecated
 1424	Deprecated Worn Leather Shoulderpads	itemName has identifier Deprecated
 1426		item not found
@@ -1035,9 +1035,9 @@ id	name	reason
 1530		item not found
 1531		item not found
 1533	Deprecated Bloodscalp Idol	itemName has identifier Deprecated
-1534	Libram: Holy Light IV	item quick facts has identifier .*
+1534	Libram: Holy Light IV	item quick facts has identifier Deprecated
 1535	Deprecated Bloodscalp Vest	itemName has identifier Deprecated
-1536	Libram: Seal of Wrath	item quick facts has identifier .*
+1536	Libram: Seal of Wrath	item quick facts has identifier Deprecated
 1538		item not found
 1540		item not found
 1541		item not found
@@ -1052,23 +1052,23 @@ id	name	reason
 1551		item not found
 1552		item not found
 1553		item not found
-1554	Tome of Frostbolt III	item quick facts has identifier .*
+1554	Tome of Frostbolt III	item quick facts has identifier Deprecated
 1555		item not found
 1556		item not found
 1558		item not found
-1559	Tome of Arcane Missiles II	item quick facts has identifier .*
+1559	Tome of Arcane Missiles II	item quick facts has identifier Deprecated
 1562		item not found
 1563		item not found
 1564		item not found
 1565		item not found
-1567	Tome of Khadgar's Unlocking II	item quick facts has identifier .*
-1568	Tome of Water Elemental	item quick facts has identifier .*
+1567	Tome of Khadgar's Unlocking II	item quick facts has identifier Deprecated
+1568	Tome of Water Elemental	item quick facts has identifier Deprecated
 1569		item not found
 1570		item not found
-1571	Tome of Frost Nova II	item quick facts has identifier .*
+1571	Tome of Frost Nova II	item quick facts has identifier Deprecated
 1572		item not found
 1573		item not found
-1574	Tome of Fire Ward	item quick facts has identifier .*
+1574	Tome of Fire Ward	item quick facts has identifier Deprecated
 1575		item not found
 1576		item not found
 1577		item not found
@@ -1082,19 +1082,19 @@ id	name	reason
 1585		item not found
 1586		item not found
 1587		item not found
-1588	Tablet of Molten Blast III	item quick facts has identifier .*
-1589	Tablet of Spirit Armor III	item quick facts has identifier .*
+1588	Tablet of Molten Blast III	item quick facts has identifier Deprecated
+1589	Tablet of Spirit Armor III	item quick facts has identifier Deprecated
 1590		item not found
-1591	Tablet of Lightning Shield III	item quick facts has identifier .*
+1591	Tablet of Lightning Shield III	item quick facts has identifier Deprecated
 1592		item not found
 1593		item not found
 1594		item not found
 1595		item not found
-1597	Tablet of Lightning Storm	item quick facts has identifier .*
+1597	Tablet of Lightning Storm	item quick facts has identifier Deprecated
 1599	Deprecated [PH] Recipe: Zombie Juice	itemName has identifier Deprecated
 1600		item not found
 1601		item not found
-1603	Tablet of Call Spirit II	item quick facts has identifier .*
+1603	Tablet of Call Spirit II	item quick facts has identifier Deprecated
 1605		item not found
 1606		item not found
 1609		item not found
@@ -1106,11 +1106,11 @@ id	name	reason
 1616		item not found
 1617		item not found
 1618		item not found
-1619	Tablet of Lightning Storm II	item quick facts has identifier .*
+1619	Tablet of Lightning Storm II	item quick facts has identifier Deprecated
 1620		item not found
 1621		item not found
 1622	Deprecated Foreman's Whip	itemName has identifier Deprecated
-1623	Raptor Skin Pouch	item quick facts has identifier .*
+1623	Raptor Skin Pouch	item quick facts has identifier Deprecated
 1626		item not found
 1627		item not found
 1628		item not found
@@ -1122,21 +1122,21 @@ id	name	reason
 1635		item not found
 1636		item not found
 1638	Deprecated Thornstone Chunk	itemName has identifier Deprecated
-1641	Codex of Shadow Word: Pain III	item quick facts has identifier .*
+1641	Codex of Shadow Word: Pain III	item quick facts has identifier Deprecated
 1642		item not found
 1643		item not found
 1644		item not found
 1646		item not found
 1647		item not found
-1648	Codex of Heal IV	item quick facts has identifier .*
+1648	Codex of Heal IV	item quick facts has identifier Deprecated
 1649	Deprecated Ham Sandwich	itemName has identifier Deprecated
 1650		item not found
-1651	Codex of Holy Word: Shield VI	item quick facts has identifier .*
+1651	Codex of Holy Word: Shield VI	item quick facts has identifier Deprecated
 1653		item not found
 1654	Deprecated Strangleslash Metal	itemName has identifier Deprecated
 1655	Deprecated Codex of Sustenance III	itemName has identifier Deprecated
-1657	Codex of Resurrection II	item quick facts has identifier .*
-1658	Codex of Shadow Word: Pain IV	item quick facts has identifier .*
+1657	Codex of Resurrection II	item quick facts has identifier Deprecated
+1658	Codex of Shadow Word: Pain IV	item quick facts has identifier Deprecated
 1660		item not found
 1661		item not found
 1662		item not found
@@ -1152,8 +1152,8 @@ id	name	reason
 1673		item not found
 1674		item not found
 1675		item not found
-1676	Codex of Sleep II	item quick facts has identifier .*
-1681	Grimoire of Cripple	item quick facts has identifier .*
+1676	Codex of Sleep II	item quick facts has identifier Deprecated
+1681	Grimoire of Cripple	item quick facts has identifier Deprecated
 1682		item not found
 1683		item not found
 1684	Deprecated Totemic Headpiece	itemName has identifier Deprecated
@@ -1210,16 +1210,16 @@ id	name	reason
 1873		item not found
 1874		item not found
 1876		item not found
-1877	Book of Rejuvenation III	item quick facts has identifier .*
+1877	Book of Rejuvenation III	item quick facts has identifier Deprecated
 1878	Deprecated Book of Nullify Poison II	itemName has identifier Deprecated
 1879		item not found
 1880	Deprecated Book of Nullify Disease II	itemName has identifier Deprecated
 1881		item not found
-1882	Book of Moonfire III	item quick facts has identifier .*
+1882	Book of Moonfire III	item quick facts has identifier Deprecated
 1883		item not found
 1884		item not found
 1885		item not found
-1886	Book of Moonfire II	item quick facts has identifier .*
+1886	Book of Moonfire II	item quick facts has identifier Deprecated
 1887		item not found
 1888		item not found
 1889		item not found
@@ -1269,7 +1269,7 @@ id	name	reason
 1966		item not found
 1967		item not found
 1969	Deprecated Stormwind Guard Belt	itemName has identifier Deprecated
-1977	20-slot Bag	item quick facts has identifier .*
+1977	20-slot Bag	item quick facts has identifier Deprecated
 1983	Monster - Sword2H, Basic	itemName has identifier Monster
 1984	Monster - Shield, Kite Metal	itemName has identifier Monster
 1985	Monster - Shield, Large Wooden	itemName has identifier Monster
@@ -1317,8 +1317,8 @@ id	name	reason
 2115	Deprecated Small White Pouch	itemName has identifier Deprecated
 2116		item not found
 2118		item not found
-2128	Scratched Claymore	item quick facts has identifier .*
-2133	Small Shield	item quick facts has identifier .*
+2128	Scratched Claymore	item quick facts has identifier Deprecated
+2133	Small Shield	item quick facts has identifier Deprecated
 2135		item not found
 2147	Monster - Sword, Falchion	itemName has identifier Monster
 2155		item not found
@@ -1409,39 +1409,39 @@ id	name	reason
 2363	Deprecated Skeleton Key	itemName has identifier Deprecated
 2365		item not found
 2368		item not found
-2377	Round Buckler	item quick facts has identifier .*
+2377	Round Buckler	item quick facts has identifier Deprecated
 2404	Deprecated Pattern: Light Winter Cloak	itemName has identifier Deprecated
 2405	Deprecated Pattern: Light Winter Boots	itemName has identifier Deprecated
 2412	Deprecated Nightmare Bridle	itemName has identifier Deprecated
-2413	Palomino	item quick facts has identifier .*
-2415	White Stallion	item quick facts has identifier .*
+2413	Palomino	item quick facts has identifier Deprecated
+2415	White Stallion	item quick facts has identifier Deprecated
 2416		item not found
 2430		item not found
 2433		item not found
 2436		item not found
 2439		item not found
-2441	Ringed Buckler	item quick facts has identifier .*
-2442	Reinforced Targe	item quick facts has identifier .*
-2443	Metal Buckler	item quick facts has identifier .*
-2444	Ornate Buckler	item quick facts has identifier .*
+2441	Ringed Buckler	item quick facts has identifier Deprecated
+2442	Reinforced Targe	item quick facts has identifier Deprecated
+2443	Metal Buckler	item quick facts has identifier Deprecated
+2444	Ornate Buckler	item quick facts has identifier Deprecated
 2461	Deprecated Elemental Resistance Potion	itemName has identifier Deprecated
 2462	Deprecated Potion of Lesser Invulnerability (Fix)	itemName has identifier Deprecated
 2478	Deprecated Replenishing Font	itemName has identifier Deprecated
-2481	Peon Sword	item quick facts has identifier .*
-2482	Inferior Tomahawk	item quick facts has identifier .*
-2483	Rough Broad Axe	item quick facts has identifier .*
-2484	Small Knife	item quick facts has identifier .*
-2485	Splintered Board	item quick facts has identifier .*
-2486	Large Stone Mace	item quick facts has identifier .*
-2487	Acolyte Staff	item quick facts has identifier .*
-2496	Raider Shortsword	item quick facts has identifier .*
-2497	Rusted Claymore	item quick facts has identifier .*
-2498	Small Tomahawk	item quick facts has identifier .*
-2499	Double-bladed Axe	item quick facts has identifier .*
-2500	Light Hammer	item quick facts has identifier .*
-2501	Wooden Warhammer	item quick facts has identifier .*
-2502	Scuffed Dagger	item quick facts has identifier .*
-2503	Adept Short Staff	item quick facts has identifier .*
+2481	Peon Sword	item quick facts has identifier Deprecated
+2482	Inferior Tomahawk	item quick facts has identifier Deprecated
+2483	Rough Broad Axe	item quick facts has identifier Deprecated
+2484	Small Knife	item quick facts has identifier Deprecated
+2485	Splintered Board	item quick facts has identifier Deprecated
+2486	Large Stone Mace	item quick facts has identifier Deprecated
+2487	Acolyte Staff	item quick facts has identifier Deprecated
+2496	Raider Shortsword	item quick facts has identifier Deprecated
+2497	Rusted Claymore	item quick facts has identifier Deprecated
+2498	Small Tomahawk	item quick facts has identifier Deprecated
+2499	Double-bladed Axe	item quick facts has identifier Deprecated
+2500	Light Hammer	item quick facts has identifier Deprecated
+2501	Wooden Warhammer	item quick facts has identifier Deprecated
+2502	Scuffed Dagger	item quick facts has identifier Deprecated
+2503	Adept Short Staff	item quick facts has identifier Deprecated
 2513	Deprecated Iron Shot	itemName has identifier Deprecated
 2514	Depricated Sharp Arrow	itemName has identifier Depricated
 2517	Deprecated Standard Arrow	itemName has identifier Deprecated
@@ -1522,7 +1522,7 @@ id	name	reason
 2796		item not found
 2803	Deprecated Static Charm	itemName has identifier Deprecated
 2804	Deprecated Freezing Talisman	itemName has identifier Deprecated
-2808	Torch of Flame	item quick facts has identifier .*
+2808	Torch of Flame	item quick facts has identifier Deprecated
 2809	Monster - Mace, Spiked Basic	itemName has identifier Monster
 2810	Monster - Mace, Standard Serpent	itemName has identifier Monster
 2811	Deprecated Lightforge Staff	itemName has identifier Deprecated
@@ -1535,19 +1535,19 @@ id	name	reason
 2861		item not found
 2873		item not found
 2884	Monster - Dynamite, Lit	itemName has identifier Monster
-2887	Ruined Wolf Pelt	item quick facts has identifier .*
-2890	Ruined Boar Pelt	item quick facts has identifier .*
+2887	Ruined Wolf Pelt	item quick facts has identifier Deprecated
+2890	Ruined Boar Pelt	item quick facts has identifier Deprecated
 2897		item not found
 2914		item not found
 2918	Deprecated Coif of Inner Strength	itemName has identifier Deprecated
-2919	Relic of the Ancients	item quick facts has identifier .*
-2920	Sacred Relic	item quick facts has identifier .*
-2921	Blessed Relic	item quick facts has identifier .*
-2922	Spirit Relic	item quick facts has identifier .*
-2923	Relic of Righteousness	item quick facts has identifier .*
-2929	Tomb Rot	item quick facts has identifier .*
+2919	Relic of the Ancients	item quick facts has identifier Deprecated
+2920	Sacred Relic	item quick facts has identifier Deprecated
+2921	Blessed Relic	item quick facts has identifier Deprecated
+2922	Spirit Relic	item quick facts has identifier Deprecated
+2923	Relic of Righteousness	item quick facts has identifier Deprecated
+2929	Tomb Rot	item quick facts has identifier Deprecated
 2931	Deprecated Maiden's Anguish	itemName has identifier Deprecated
-2932	Torment Vine	item quick facts has identifier .*
+2932	Torment Vine	item quick facts has identifier Deprecated
 2935		item not found
 2936		item not found
 2937		item not found
@@ -1559,11 +1559,11 @@ id	name	reason
 2994	Deprecated Seer's Monocle	itemName has identifier Deprecated
 2995	Deprecated Burnished Chain Coif	itemName has identifier Deprecated
 3001	Deprecated Medivh's Folly	itemName has identifier Deprecated
-3002	Relic Horn of Justice	item quick facts has identifier .*
-3003	Relic of the Eye	item quick facts has identifier .*
-3004	Relic of the Dead	item quick facts has identifier .*
-3005	Relic of Truth	item quick facts has identifier .*
-3006	Holy Relic Shard	item quick facts has identifier .*
+3002	Relic Horn of Justice	item quick facts has identifier Deprecated
+3003	Relic of the Eye	item quick facts has identifier Deprecated
+3004	Relic of the Dead	item quick facts has identifier Deprecated
+3005	Relic of Truth	item quick facts has identifier Deprecated
+3006	Holy Relic Shard	item quick facts has identifier Deprecated
 3007	Deprecated Dark Iron Pauldrons	itemName has identifier Deprecated
 3009		item not found
 3015	Deprecated Chatter's Rock	itemName has identifier Deprecated
@@ -1587,56 +1587,56 @@ id	name	reason
 3064	Deprecated Deepwood Pants	itemName has identifier Deprecated
 3068	Deprecated Silver-thread Cowl	itemName has identifier Deprecated
 3077	Deprecated Stonecloth Cowl	itemName has identifier Deprecated
-3088	Book of Rejuvenation IV	item quick facts has identifier .*
-3089	Tome of Flamestrike	item quick facts has identifier .*
-3090	Tome of Frostbolt	item quick facts has identifier .*
-3091	Tome of Arcane Intellect II	item quick facts has identifier .*
-3092	Tome of Flamestrike III	item quick facts has identifier .*
-3093	Tome of Flamestrike II	item quick facts has identifier .*
-3094	Tome of Fire Blast II	item quick facts has identifier .*
-3095	Tome of Fire Blast III	item quick facts has identifier .*
-3096	Tome of Feather Fall	item quick facts has identifier .*
-3097	Tome of Conjure Water II	item quick facts has identifier .*
-3098	Tome of Slow	item quick facts has identifier .*
-3099	Tome of Ice Armor II	item quick facts has identifier .*
-3100	Tome of Blizzard II	item quick facts has identifier .*
-3101	Tome of Frost Nova III	item quick facts has identifier .*
-3102	Tome of Arcane Intellect III	item quick facts has identifier .*
+3088	Book of Rejuvenation IV	item quick facts has identifier Deprecated
+3089	Tome of Flamestrike	item quick facts has identifier Deprecated
+3090	Tome of Frostbolt	item quick facts has identifier Deprecated
+3091	Tome of Arcane Intellect II	item quick facts has identifier Deprecated
+3092	Tome of Flamestrike III	item quick facts has identifier Deprecated
+3093	Tome of Flamestrike II	item quick facts has identifier Deprecated
+3094	Tome of Fire Blast II	item quick facts has identifier Deprecated
+3095	Tome of Fire Blast III	item quick facts has identifier Deprecated
+3096	Tome of Feather Fall	item quick facts has identifier Deprecated
+3097	Tome of Conjure Water II	item quick facts has identifier Deprecated
+3098	Tome of Slow	item quick facts has identifier Deprecated
+3099	Tome of Ice Armor II	item quick facts has identifier Deprecated
+3100	Tome of Blizzard II	item quick facts has identifier Deprecated
+3101	Tome of Frost Nova III	item quick facts has identifier Deprecated
+3102	Tome of Arcane Intellect III	item quick facts has identifier Deprecated
 3104		item not found
 3105		item not found
 3106		item not found
 3109	(OLD)Wicked Throwing Dagger	itemName has identifier OLD
 3112		item not found
-3113	Codex of Holy Word: Shield	item quick facts has identifier .*
-3114	Codex of Shadow Word: Befuddle	item quick facts has identifier .*
-3115	Codex of Renew IV	item quick facts has identifier .*
-3116	Codex of Holy Word: Shield II	item quick facts has identifier .*
-3118	Codex of Greater Heal	item quick facts has identifier .*
-3119	Codex of Holy Word: Shield V	item quick facts has identifier .*
-3120	Codex of Holy Smite IV	item quick facts has identifier .*
-3121	Codex of Levitate	item quick facts has identifier .*
-3122	Codex of Holy Word: Shield III	item quick facts has identifier .*
-3123	Codex of Holy Word: Fortitude III	item quick facts has identifier .*
-3124	Codex of Inner Fire III	item quick facts has identifier .*
-3125	Tablet of Serpent Totem II	item quick facts has identifier .*
-3126	Tablet of Shock II	item quick facts has identifier .*
-3127	Tablet of Shock III	item quick facts has identifier .*
+3113	Codex of Holy Word: Shield	item quick facts has identifier Deprecated
+3114	Codex of Shadow Word: Befuddle	item quick facts has identifier Deprecated
+3115	Codex of Renew IV	item quick facts has identifier Deprecated
+3116	Codex of Holy Word: Shield II	item quick facts has identifier Deprecated
+3118	Codex of Greater Heal	item quick facts has identifier Deprecated
+3119	Codex of Holy Word: Shield V	item quick facts has identifier Deprecated
+3120	Codex of Holy Smite IV	item quick facts has identifier Deprecated
+3121	Codex of Levitate	item quick facts has identifier Deprecated
+3122	Codex of Holy Word: Shield III	item quick facts has identifier Deprecated
+3123	Codex of Holy Word: Fortitude III	item quick facts has identifier Deprecated
+3124	Codex of Inner Fire III	item quick facts has identifier Deprecated
+3125	Tablet of Serpent Totem II	item quick facts has identifier Deprecated
+3126	Tablet of Shock II	item quick facts has identifier Deprecated
+3127	Tablet of Shock III	item quick facts has identifier Deprecated
 3128	(OLD)Medium Throwing Axe	itemName has identifier OLD
-3129	Tablet of Lightning Bolt IV	item quick facts has identifier .*
-3130	Tablet of Restoration IV	item quick facts has identifier .*
-3132	Tablet of Molten Blast IV	item quick facts has identifier .*
-3133	Tablet of Mana Totem	item quick facts has identifier .*
-3134	Grimoire of Curse of Mannoroth	item quick facts has identifier .*
+3129	Tablet of Lightning Bolt IV	item quick facts has identifier Deprecated
+3130	Tablet of Restoration IV	item quick facts has identifier Deprecated
+3132	Tablet of Molten Blast IV	item quick facts has identifier Deprecated
+3133	Tablet of Mana Totem	item quick facts has identifier Deprecated
+3134	Grimoire of Curse of Mannoroth	item quick facts has identifier Deprecated
 3136	(OLD)Heavy Throwing Axe	itemName has identifier OLD
-3138	Grimoire of Shadow Bolt IV	item quick facts has identifier .*
-3139	Grimoire of Demon Armor II	item quick facts has identifier .*
-3140	Grimoire of Blood Boil II	item quick facts has identifier .*
-3141	Grimoire of Life Drain	item quick facts has identifier .*
-3142	Grimoire of Curse of Sargeras	item quick facts has identifier .*
-3143	Grimoire of Burning Spirit	item quick facts has identifier .*
-3144	Grimoire of Burning Spirit II	item quick facts has identifier .*
+3138	Grimoire of Shadow Bolt IV	item quick facts has identifier Deprecated
+3139	Grimoire of Demon Armor II	item quick facts has identifier Deprecated
+3140	Grimoire of Blood Boil II	item quick facts has identifier Deprecated
+3141	Grimoire of Life Drain	item quick facts has identifier Deprecated
+3142	Grimoire of Curse of Sargeras	item quick facts has identifier Deprecated
+3143	Grimoire of Burning Spirit	item quick facts has identifier Deprecated
+3144	Grimoire of Burning Spirit II	item quick facts has identifier Deprecated
 3145	Off Hand Test Dagger	itemName has identifier Test
-3146	Grimoire of Burning Spirit III	item quick facts has identifier .*
+3146	Grimoire of Burning Spirit III	item quick facts has identifier Deprecated
 3147	Deprecated Tattered Shirt	itemName has identifier Deprecated
 3148	Deprecated Work Shirt	itemName has identifier Deprecated
 3149	Deprecated Ripped Vest	itemName has identifier Deprecated
@@ -1655,7 +1655,7 @@ id	name	reason
 3246	OLDMonster - Shoulder, Plate Silver	itemName has identifier OLD
 3247	OLDMonster - Waist, Plate Silver	itemName has identifier OLD
 3249	Conjured test Item	item is not available to players
-3259	Ruined Bat Hide	item quick facts has identifier .*
+3259	Ruined Bat Hide	item quick facts has identifier Deprecated
 3271	Deprecated Flax Mantle	itemName has identifier Deprecated
 3298	Deprecated Grizzled Bearskin Pouch	itemName has identifier Deprecated
 3320	Bonecaster Sash	item is not available to players
@@ -1677,7 +1677,7 @@ id	name	reason
 3432	Monster - Glaive - 1 Blade Basic	itemName has identifier Monster
 3433	Monster - Spear, Badass	itemName has identifier Monster
 3436	Deprecated Quilted Mantle	itemName has identifier Deprecated
-3438	Ankh of Resurrection	item quick facts has identifier .*
+3438	Ankh of Resurrection	item quick facts has identifier Deprecated
 3441	Deprecated Crippling Agent	itemName has identifier Deprecated
 3459	Deprecated Weathered Shoulderpads	itemName has identifier Deprecated
 3479		item not found
@@ -1690,27 +1690,27 @@ id	name	reason
 3512		item not found
 3513	Deprecated Contract for the Magistrate	itemName has identifier Deprecated
 3519	Deprecated DEFAULT QUEST ITEM - Scroll	itemName has identifier Deprecated
-3522	Black Night Elf Breastplate	item quick facts has identifier .*
+3522	Black Night Elf Breastplate	item quick facts has identifier Deprecated
 3523	Unused Black Night Elf Pants	itemName has identifier Unused
 3524	Unused Black Night Elf Boots	itemName has identifier Unused
 3525	Unused Black Night Elf Bracers	itemName has identifier Unused
-3526	Black Night Elf Gloves	item quick facts has identifier .*
-3527	White Night Elf Breastplate	item quick facts has identifier .*
+3526	Black Night Elf Gloves	item quick facts has identifier Deprecated
+3527	White Night Elf Breastplate	item quick facts has identifier Deprecated
 3528	Red Leather C03 Breastplate	item is not available to players
-3529	Black Night Elf Helm	item quick facts has identifier .*
+3529	Black Night Elf Helm	item quick facts has identifier Deprecated
 3532	Unused Red Leather C03 Pants	itemName has identifier Unused
 3533	Red Leather C03 Boots	item is not available to players
 3534	Unused Red Leather C03 Gloves	itemName has identifier Unused
-3536	Demon Hunter Blindfold	item quick facts has identifier .*
+3536	Demon Hunter Blindfold	item quick facts has identifier Deprecated
 3537	Black Leather D02 Breastplate	item is not available to players
-3538	Gray Leather D02 Breastplate	item quick facts has identifier .*
+3538	Gray Leather D02 Breastplate	item quick facts has identifier Deprecated
 3539	Unused Black Leather D02 Pants	itemName has identifier Unused
 3540	Unused Gray Leather D02 Pants	itemName has identifier Unused
 3541	Black Leather D02 Boots	item is not available to players
-3542	Gray Leather D02 Boots	item quick facts has identifier .*
+3542	Gray Leather D02 Boots	item quick facts has identifier Deprecated
 3543	Unused Black Leather D02 Gloves	itemName has identifier Unused
 3544	Unused Gray Leather D02 Gloves	itemName has identifier Unused
-3546	Gray Leather D02 Bracers	item quick facts has identifier .*
+3546	Gray Leather D02 Bracers	item quick facts has identifier Deprecated
 3547	White Leather D03 Breastplate	item is not available to players
 3548	Unused White Leather D03 Pants	itemName has identifier Unused
 3549	Unused White Leather D03 Gloves	itemName has identifier Unused
@@ -1721,8 +1721,8 @@ id	name	reason
 3584	Deprecated Perenolde's Head	itemName has identifier Deprecated
 3624	Deprecated QDROP - Ma'ruk Wyrmscale	itemName has identifier Deprecated
 3646	Deprecated Stonecloth Bracers	itemName has identifier Deprecated
-3648	Warrior's Buckler	item quick facts has identifier .*
-3675	Burnt Out Torch	item quick facts has identifier .*
+3648	Warrior's Buckler	item quick facts has identifier Deprecated
+3675	Burnt Out Torch	item quick facts has identifier Deprecated
 3677	Deprecated Remington's List	itemName has identifier Deprecated
 3686	Deprecated Jkaplan TEST	itemName has identifier Deprecated
 3687	Deprecated Unholy Avenger	itemName has identifier Deprecated
@@ -1738,14 +1738,14 @@ id	name	reason
 3746	Deprecated Test Strongbox	itemName has identifier Deprecated
 3756	Monster - Item, Bottle - Black Offhand	itemName has identifier Monster
 3757	Monster - Item, Bottle - Green Offhand	itemName has identifier Monster
-3762	Librarian's Satchel	item quick facts has identifier .*
+3762	Librarian's Satchel	item quick facts has identifier Deprecated
 3768	Deprecated Anti-magic Potion	itemName has identifier Deprecated
 3773	Deprecated Murkwood Sap	itemName has identifier Deprecated
 3774	Monster - Dynamite, Unlit	itemName has identifier Monster
-3788	Soul Crystal Relic	item quick facts has identifier .*
-3789	Relic Stone of Piety	item quick facts has identifier .*
-3790	Consecrated Relic Parchment	item quick facts has identifier .*
-3791	Relic of the Light	item quick facts has identifier .*
+3788	Soul Crystal Relic	item quick facts has identifier Deprecated
+3789	Relic Stone of Piety	item quick facts has identifier Deprecated
+3790	Consecrated Relic Parchment	item quick facts has identifier Deprecated
+3791	Relic of the Light	item quick facts has identifier Deprecated
 3865	Test Offhand Weapon	itemName has identifier Test
 3878	Deprecated Conjured Mana Jewel	itemName has identifier Deprecated
 3881	Deprecated Kurzen's Head	itemName has identifier Deprecated
@@ -1760,119 +1760,119 @@ id	name	reason
 3903		item not found
 3933	Deprecated Moon Glaive	itemName has identifier Deprecated
 3934	Deprecated Warden Blade	itemName has identifier Deprecated
-4030	Holy Relic Water	item quick facts has identifier .*
-4031	Hallowed Relic Charm	item quick facts has identifier .*
-4032	Radiant Relic Hammer	item quick facts has identifier .*
-4033	Dawn's Glow	item quick facts has identifier .*
+4030	Holy Relic Water	item quick facts has identifier Deprecated
+4031	Hallowed Relic Charm	item quick facts has identifier Deprecated
+4032	Radiant Relic Hammer	item quick facts has identifier Deprecated
+4033	Dawn's Glow	item quick facts has identifier Deprecated
 4081		item not found
 4095	Deprecate Snare Kit	itemName has identifier Deprecate
-4110	Master Hunter's Bow	item quick facts has identifier .*
-4111	Master Hunter's Rifle	item quick facts has identifier .*
-4141	Tome of Conjure Food	item quick facts has identifier .*
-4143	Tome of Conjure Food II	item quick facts has identifier .*
-4145	Tome of Conjure Mana Gem	item quick facts has identifier .*
-4146	Tome of Polymorph: Sheep	item quick facts has identifier .*
-4147	Tome of Conjure Food III	item quick facts has identifier .*
-4148	Tome of Counterspell	item quick facts has identifier .*
-4149	Tome of Frost Shield III	item quick facts has identifier .*
-4150	Tome of Conjure Water IV	item quick facts has identifier .*
-4151	Tome of Frostbolt IV	item quick facts has identifier .*
-4152	Tome of Conjure Food IV	item quick facts has identifier .*
-4153	Tome of Arcane Missiles III	item quick facts has identifier .*
-4154	Tome of Slow II	item quick facts has identifier .*
-4155	Tome of Water Elemental II	item quick facts has identifier .*
+4110	Master Hunter's Bow	item quick facts has identifier Deprecated
+4111	Master Hunter's Rifle	item quick facts has identifier Deprecated
+4141	Tome of Conjure Food	item quick facts has identifier Deprecated
+4143	Tome of Conjure Food II	item quick facts has identifier Deprecated
+4145	Tome of Conjure Mana Gem	item quick facts has identifier Deprecated
+4146	Tome of Polymorph: Sheep	item quick facts has identifier Deprecated
+4147	Tome of Conjure Food III	item quick facts has identifier Deprecated
+4148	Tome of Counterspell	item quick facts has identifier Deprecated
+4149	Tome of Frost Shield III	item quick facts has identifier Deprecated
+4150	Tome of Conjure Water IV	item quick facts has identifier Deprecated
+4151	Tome of Frostbolt IV	item quick facts has identifier Deprecated
+4152	Tome of Conjure Food IV	item quick facts has identifier Deprecated
+4153	Tome of Arcane Missiles III	item quick facts has identifier Deprecated
+4154	Tome of Slow II	item quick facts has identifier Deprecated
+4155	Tome of Water Elemental II	item quick facts has identifier Deprecated
 4156	Deprecated Tome of Conjure Mana Jewel	itemName has identifier Deprecated
-4157	Tome of Dampen Magic	item quick facts has identifier .*
-4158	Tome of Khadgar's Unlocking III	item quick facts has identifier .*
-4159	Tome of Arcane Missiles	item quick facts has identifier .*
-4160	Tome of Invisibility	item quick facts has identifier .*
-4161	Tome of Fireball IV	item quick facts has identifier .*
-4162	Tome of Blink II	item quick facts has identifier .*
+4157	Tome of Dampen Magic	item quick facts has identifier Deprecated
+4158	Tome of Khadgar's Unlocking III	item quick facts has identifier Deprecated
+4159	Tome of Arcane Missiles	item quick facts has identifier Deprecated
+4160	Tome of Invisibility	item quick facts has identifier Deprecated
+4161	Tome of Fireball IV	item quick facts has identifier Deprecated
+4162	Tome of Blink II	item quick facts has identifier Deprecated
 4163	Deprecated Libram: Seal of Fury	itemName has identifier Deprecated
-4164	Libram: Holy Light V	item quick facts has identifier .*
-4165	Libram: Holy Light VI	item quick facts has identifier .*
-4166	Libram: Seal of Protection	item quick facts has identifier .*
-4167	Libram: Judgement	item quick facts has identifier .*
-4168	Tablet of Ensnaring Totem	item quick facts has identifier .*
-4169	Tablet of Unyielding Will II	item quick facts has identifier .*
-4170	Tablet of Astral Recall	item quick facts has identifier .*
-4171	Tablet of Agitating Totem III	item quick facts has identifier .*
-4172	Tablet of Thunderclap II	item quick facts has identifier .*
-4173	Tablet of Shock IV	item quick facts has identifier .*
-4174	Tablet of Shock V	item quick facts has identifier .*
-4175	Tablet of Lightning Shield IV	item quick facts has identifier .*
-4176	Tablet of Undying Strength II	item quick facts has identifier .*
-4177	Tablet of Nature Resistance	item quick facts has identifier .*
-4178	Tablet of Lightning Bolt V	item quick facts has identifier .*
-4179	Tablet of Restoration V	item quick facts has identifier .*
-4180	Tablet of Ethereal Form II	item quick facts has identifier .*
-4181	Tablet of Agitating Totem IV	item quick facts has identifier .*
-4182	Tablet of Unyielding Will III	item quick facts has identifier .*
-4183	Tablet of Healing Totem V	item quick facts has identifier .*
-4184	Tablet of Molten Blast V	item quick facts has identifier .*
-4185	Tablet of Group Astral Recall	item quick facts has identifier .*
-4186	Tablet of Fire Resistance	item quick facts has identifier .*
-4187	Tablet of Serpent Totem V	item quick facts has identifier .*
-4188	Tablet of Invisibility Totem	item quick facts has identifier .*
-4189	Tablet of Chain Lightning	item quick facts has identifier .*
+4164	Libram: Holy Light V	item quick facts has identifier Deprecated
+4165	Libram: Holy Light VI	item quick facts has identifier Deprecated
+4166	Libram: Seal of Protection	item quick facts has identifier Deprecated
+4167	Libram: Judgement	item quick facts has identifier Deprecated
+4168	Tablet of Ensnaring Totem	item quick facts has identifier Deprecated
+4169	Tablet of Unyielding Will II	item quick facts has identifier Deprecated
+4170	Tablet of Astral Recall	item quick facts has identifier Deprecated
+4171	Tablet of Agitating Totem III	item quick facts has identifier Deprecated
+4172	Tablet of Thunderclap II	item quick facts has identifier Deprecated
+4173	Tablet of Shock IV	item quick facts has identifier Deprecated
+4174	Tablet of Shock V	item quick facts has identifier Deprecated
+4175	Tablet of Lightning Shield IV	item quick facts has identifier Deprecated
+4176	Tablet of Undying Strength II	item quick facts has identifier Deprecated
+4177	Tablet of Nature Resistance	item quick facts has identifier Deprecated
+4178	Tablet of Lightning Bolt V	item quick facts has identifier Deprecated
+4179	Tablet of Restoration V	item quick facts has identifier Deprecated
+4180	Tablet of Ethereal Form II	item quick facts has identifier Deprecated
+4181	Tablet of Agitating Totem IV	item quick facts has identifier Deprecated
+4182	Tablet of Unyielding Will III	item quick facts has identifier Deprecated
+4183	Tablet of Healing Totem V	item quick facts has identifier Deprecated
+4184	Tablet of Molten Blast V	item quick facts has identifier Deprecated
+4185	Tablet of Group Astral Recall	item quick facts has identifier Deprecated
+4186	Tablet of Fire Resistance	item quick facts has identifier Deprecated
+4187	Tablet of Serpent Totem V	item quick facts has identifier Deprecated
+4188	Tablet of Invisibility Totem	item quick facts has identifier Deprecated
+4189	Tablet of Chain Lightning	item quick facts has identifier Deprecated
 4191	Unused Feathered Leggings	itemName has identifier Unused
 4192	Unused Feathered Gauntlets	itemName has identifier Unused
 4193	Deprecated Feathered Helm	itemName has identifier Deprecated
-4196	Feathered Mantle	item quick facts has identifier .*
-4198	Grimoire of Soul Funnel	item quick facts has identifier .*
-4199	Grimoire of Soul Funnel II	item quick facts has identifier .*
-4200	Grimoire of Immolate III	item quick facts has identifier .*
-4201	Grimoire of Eye of Kilrogg	item quick facts has identifier .*
-4202	Grimoire of Fear II	item quick facts has identifier .*
-4203	Grimoire of Pestilence II	item quick facts has identifier .*
-4204	Grimoire of Soul Funnel III	item quick facts has identifier .*
-4205	Grimoire of Immolate IV	item quick facts has identifier .*
-4206	Grimoire of Curse of Sargeras II	item quick facts has identifier .*
-4207	Grimoire of Curse of Archimonde	item quick facts has identifier .*
-4208	Grimoire of Mind Bomb	item quick facts has identifier .*
-4209	Grimoire of Shadow Ward	item quick facts has identifier .*
-4210	Grimoire of Create Lesser Bloodstone	item quick facts has identifier .*
-4211	Grimoire of Pestilence	item quick facts has identifier .*
-4212	Grimoire of Curse of Mannoroth III	item quick facts has identifier .*
-4214	Grimoire of Life Drain III	item quick facts has identifier .*
-4215	Grimoire of Rain of Fire	item quick facts has identifier .*
-4216	Grimoire of Holy Ward	item quick facts has identifier .*
-4217	Grimoire of Soul Funnel IV	item quick facts has identifier .*
-4218	Grimoire of Create Bloodstone	item quick facts has identifier .*
-4219	Grimoire of Burning Spirit IV	item quick facts has identifier .*
-4220	Grimoire of Blood Boil III	item quick facts has identifier .*
-4221	Grimoire of Detect Invisibility	item quick facts has identifier .*
+4196	Feathered Mantle	item quick facts has identifier Deprecated
+4198	Grimoire of Soul Funnel	item quick facts has identifier Deprecated
+4199	Grimoire of Soul Funnel II	item quick facts has identifier Deprecated
+4200	Grimoire of Immolate III	item quick facts has identifier Deprecated
+4201	Grimoire of Eye of Kilrogg	item quick facts has identifier Deprecated
+4202	Grimoire of Fear II	item quick facts has identifier Deprecated
+4203	Grimoire of Pestilence II	item quick facts has identifier Deprecated
+4204	Grimoire of Soul Funnel III	item quick facts has identifier Deprecated
+4205	Grimoire of Immolate IV	item quick facts has identifier Deprecated
+4206	Grimoire of Curse of Sargeras II	item quick facts has identifier Deprecated
+4207	Grimoire of Curse of Archimonde	item quick facts has identifier Deprecated
+4208	Grimoire of Mind Bomb	item quick facts has identifier Deprecated
+4209	Grimoire of Shadow Ward	item quick facts has identifier Deprecated
+4210	Grimoire of Create Lesser Bloodstone	item quick facts has identifier Deprecated
+4211	Grimoire of Pestilence	item quick facts has identifier Deprecated
+4212	Grimoire of Curse of Mannoroth III	item quick facts has identifier Deprecated
+4214	Grimoire of Life Drain III	item quick facts has identifier Deprecated
+4215	Grimoire of Rain of Fire	item quick facts has identifier Deprecated
+4216	Grimoire of Holy Ward	item quick facts has identifier Deprecated
+4217	Grimoire of Soul Funnel IV	item quick facts has identifier Deprecated
+4218	Grimoire of Create Bloodstone	item quick facts has identifier Deprecated
+4219	Grimoire of Burning Spirit IV	item quick facts has identifier Deprecated
+4220	Grimoire of Blood Boil III	item quick facts has identifier Deprecated
+4221	Grimoire of Detect Invisibility	item quick facts has identifier Deprecated
 4222	Deprecated Book of Rejuvenation V	itemName has identifier Deprecated
-4223	Book of Abolish Magic	item quick facts has identifier .*
+4223	Book of Abolish Magic	item quick facts has identifier Deprecated
 4224	Deprecated Book of Nullify Disease III	itemName has identifier Deprecated
-4225	Book of Entangling Roots III	item quick facts has identifier .*
-4226	Book of Wrath VI	item quick facts has identifier .*
+4225	Book of Entangling Roots III	item quick facts has identifier Deprecated
+4226	Book of Wrath VI	item quick facts has identifier Deprecated
 4227	Deprecated Book of Nullify Poison III	itemName has identifier Deprecated
-4228	Book of Moonfire IV	item quick facts has identifier .*
+4228	Book of Moonfire IV	item quick facts has identifier Deprecated
 4229	Deprecated Book of Rejuvenation VI	itemName has identifier Deprecated
-4230	Book of Healing Touch VI	item quick facts has identifier .*
-4266	Codex of Inner Fire II	item quick facts has identifier .*
-4267	Codex of Shadow Word: Fumble	item quick facts has identifier .*
-4268	Codex of Heal II	item quick facts has identifier .*
-4269	Codex of Prayer of Healing	item quick facts has identifier .*
-4270	Codex of Heal III	item quick facts has identifier .*
-4271	Codex of Holy Smite V	item quick facts has identifier .*
-4272	Codex of Holy Protection	item quick facts has identifier .*
-4273	Codex of Heal	item quick facts has identifier .*
-4274	Codex of Divine Escape	item quick facts has identifier .*
-4275	Codex of Mind Rot	item quick facts has identifier .*
-4276	Codex of Shadow Word: Fumble II	item quick facts has identifier .*
-4277	Codex of Shadow Word: Befuddle II	item quick facts has identifier .*
-4279	Codex of Shadow Word: Pain V	item quick facts has identifier .*
-4280	Codex of Holy Word: Shield IV	item quick facts has identifier .*
-4281	Codex of Shadow Protection	item quick facts has identifier .*
-4282	Codex of Dispel Magic II	item quick facts has identifier .*
-4283	Codex of Sleep III	item quick facts has identifier .*
-4284	Codex of Holy Smite VI	item quick facts has identifier .*
-4285	Codex of Holy Word: Fortitude IV	item quick facts has identifier .*
-4286	Codex of Prayer of Healing II	item quick facts has identifier .*
-4287	Codex of Nullify Disease II	item quick facts has identifier .*
-4288	Codex of Remove Curse II	item quick facts has identifier .*
+4230	Book of Healing Touch VI	item quick facts has identifier Deprecated
+4266	Codex of Inner Fire II	item quick facts has identifier Deprecated
+4267	Codex of Shadow Word: Fumble	item quick facts has identifier Deprecated
+4268	Codex of Heal II	item quick facts has identifier Deprecated
+4269	Codex of Prayer of Healing	item quick facts has identifier Deprecated
+4270	Codex of Heal III	item quick facts has identifier Deprecated
+4271	Codex of Holy Smite V	item quick facts has identifier Deprecated
+4272	Codex of Holy Protection	item quick facts has identifier Deprecated
+4273	Codex of Heal	item quick facts has identifier Deprecated
+4274	Codex of Divine Escape	item quick facts has identifier Deprecated
+4275	Codex of Mind Rot	item quick facts has identifier Deprecated
+4276	Codex of Shadow Word: Fumble II	item quick facts has identifier Deprecated
+4277	Codex of Shadow Word: Befuddle II	item quick facts has identifier Deprecated
+4279	Codex of Shadow Word: Pain V	item quick facts has identifier Deprecated
+4280	Codex of Holy Word: Shield IV	item quick facts has identifier Deprecated
+4281	Codex of Shadow Protection	item quick facts has identifier Deprecated
+4282	Codex of Dispel Magic II	item quick facts has identifier Deprecated
+4283	Codex of Sleep III	item quick facts has identifier Deprecated
+4284	Codex of Holy Smite VI	item quick facts has identifier Deprecated
+4285	Codex of Holy Word: Fortitude IV	item quick facts has identifier Deprecated
+4286	Codex of Prayer of Healing II	item quick facts has identifier Deprecated
+4287	Codex of Nullify Disease II	item quick facts has identifier Deprecated
+4288	Codex of Remove Curse II	item quick facts has identifier Deprecated
 4295	Pattern: Double-stitched Leather Gloves OLD	itemName has identifier OLD
 4418	Deprecated Creeper Cakes	itemName has identifier Deprecated
 4420		item not found
@@ -1911,11 +1911,11 @@ id	name	reason
 4730	Deprecated Prospector's Pick	itemName has identifier Deprecated
 4750	OLDWinterhoof Cleansing Totem	itemName has identifier OLD
 4754	Deprecated Empty Skin	itemName has identifier Deprecated
-4756	Ruined Cat Pelt	item quick facts has identifier .*
+4756	Ruined Cat Pelt	item quick facts has identifier Deprecated
 4760	OLDThunderhorn Cleansing Totem	itemName has identifier OLD
 4761	Deprecated Pearled Chain Pants	itemName has identifier Deprecated
 4762	OLDWildmane Cleansing Totem	itemName has identifier OLD
-4763	Blackwood Recurve Bow	item quick facts has identifier .*
+4763	Blackwood Recurve Bow	item quick facts has identifier Deprecated
 4764	Deprecated Avenger Shoulders	itemName has identifier Deprecated
 4773	Deprecated Blessed Bracers	itemName has identifier Deprecated
 4774	Deprecated Heavy Bracers	itemName has identifier Deprecated
@@ -1923,7 +1923,7 @@ id	name	reason
 4812	Deprecated Crimson Shoulders	itemName has identifier Deprecated
 4815	Deprecated Heavy Brass Shoulder	itemName has identifier Deprecated
 4839	Deprecated Demon Scarred Pelt	itemName has identifier Deprecated
-4842	test	item quick facts has identifier .*
+4842	test	item quick facts has identifier Deprecated
 4853	TEST QUEST HELM	itemName has identifier TEST
 4855	Unused Cloth Shoulder A01 Gray	itemName has identifier Unused
 4856	Unused Cloth Shoulder A02 Yellow	itemName has identifier Unused
@@ -1939,25 +1939,25 @@ id	name	reason
 4902	Deprecated Apprentice Wand	itemName has identifier Deprecated
 4912	Test Wand JChow	itemName has identifier Test
 4927	Deprecated Keg of Chen's Stormstout	itemName has identifier Deprecated
-4930	Handmade Leather Bag	item quick facts has identifier .*
+4930	Handmade Leather Bag	item quick facts has identifier Deprecated
 4934	Deprecated Heavy Cord Shoulderpads	itemName has identifier Deprecated
 4943	Torka's Egg Cracker [UNUSED]	itemName has identifier [UNUSED]
 4950	Deprecated Orc Protector	itemName has identifier Deprecated
 4955	Deprecated Nomadic Shoulderpads	itemName has identifier Deprecated
 4956	Test Totem	itemName has identifier Test
-4959	Throwing Tomahawk	item quick facts has identifier .*
-4965	Bloodhoof Hand Axe	item quick facts has identifier .*
-4966	Mazzranache's Head	item quick facts has identifier .*
-4981	Agmond's Belt Pouch	item quick facts has identifier .*
+4959	Throwing Tomahawk	item quick facts has identifier Deprecated
+4965	Bloodhoof Hand Axe	item quick facts has identifier Deprecated
+4966	Mazzranache's Head	item quick facts has identifier Deprecated
+4981	Agmond's Belt Pouch	item quick facts has identifier Deprecated
 4985	Test Proc Wand	itemName has identifier Test
 4991	Monster - Sword2H, Broadsword	itemName has identifier Monster
 4993	Monster - Item, Skull	itemName has identifier Monster
 4994	Monster - Item, Gizmo	itemName has identifier Monster
 4996	Test Item 1	itemName has identifier Test
 4997	Deprecated Recipe: Kodo Skin Bag	itemName has identifier Deprecated
-5000	Coral Band	item quick facts has identifier .*
-5008	Quicksilver Ring	item quick facts has identifier .*
-5024	Frost Vial	item quick facts has identifier .*
+5000	Coral Band	item quick facts has identifier Deprecated
+5008	Quicksilver Ring	item quick facts has identifier Deprecated
+5024	Frost Vial	item quick facts has identifier Deprecated
 5031		item not found
 5032		item not found
 5033		item not found
@@ -1970,48 +1970,48 @@ id	name	reason
 5053	Deprecated Plain Brown Robe	itemName has identifier Deprecated
 5070		item not found
 5090	Deprecated Torn Shirt	itemName has identifier Deprecated
-5091	test Eric Shirt	item quick facts has identifier .*
-5105	Explosive Shell	item quick facts has identifier .*
+5091	test Eric Shirt	item quick facts has identifier Deprecated
+5105	Explosive Shell	item quick facts has identifier Deprecated
 5106	Deprecated Red Mask	itemName has identifier Deprecated
-5139	Book of Thorns	item quick facts has identifier .*
-5141	Book of Regrowth	item quick facts has identifier .*
-5142	Book of Wrath II	item quick facts has identifier .*
+5139	Book of Thorns	item quick facts has identifier Deprecated
+5141	Book of Regrowth	item quick facts has identifier Deprecated
+5142	Book of Wrath II	item quick facts has identifier Deprecated
 5144	Deprecated Book of Cyclone	itemName has identifier Deprecated
-5145	Book of Healing Touch II	item quick facts has identifier .*
+5145	Book of Healing Touch II	item quick facts has identifier Deprecated
 5146	Deprecated Book of Barkskin	itemName has identifier Deprecated
-5147	Book of Entangling Roots II	item quick facts has identifier .*
-5148	Book of Thorns II	item quick facts has identifier .*
-5149	Book of Wrath III	item quick facts has identifier .*
-5150	Book of Healing Touch III	item quick facts has identifier .*
-5151	Book of Wrath IV	item quick facts has identifier .*
-5152	Book of Healing Touch IV	item quick facts has identifier .*
-5153	Book of Mark of the Wild IV	item quick facts has identifier .*
-5154	Book of Thorns III	item quick facts has identifier .*
-5155	Book of Mark of the Wild II	item quick facts has identifier .*
-5156	Book of Wrath V	item quick facts has identifier .*
+5147	Book of Entangling Roots II	item quick facts has identifier Deprecated
+5148	Book of Thorns II	item quick facts has identifier Deprecated
+5149	Book of Wrath III	item quick facts has identifier Deprecated
+5150	Book of Healing Touch III	item quick facts has identifier Deprecated
+5151	Book of Wrath IV	item quick facts has identifier Deprecated
+5152	Book of Healing Touch IV	item quick facts has identifier Deprecated
+5153	Book of Mark of the Wild IV	item quick facts has identifier Deprecated
+5154	Book of Thorns III	item quick facts has identifier Deprecated
+5155	Book of Mark of the Wild II	item quick facts has identifier Deprecated
+5156	Book of Wrath V	item quick facts has identifier Deprecated
 5157	Deprecated Book of Cyclone II	itemName has identifier Deprecated
-5158	Book of Tranquility	item quick facts has identifier .*
+5158	Book of Tranquility	item quick facts has identifier Deprecated
 5159	Deprecated Book of Entangling Roots IV	itemName has identifier Deprecated
-5160	Book of Healing Touch V	item quick facts has identifier .*
+5160	Book of Healing Touch V	item quick facts has identifier Deprecated
 5161	Deprecated Book of Barkskin II	itemName has identifier Deprecated
 5162	Deprecated Book of Battle Roar II	itemName has identifier Deprecated
-5163	Book of Mark of the Wild III	item quick facts has identifier .*
+5163	Book of Mark of the Wild III	item quick facts has identifier Deprecated
 5171	Deprecated Neeru's Power Stone	itemName has identifier Deprecated
 5222	Deprecated Mana Gem	itemName has identifier Deprecated
 5224		item not found
 5225		item not found
 5226	Deprecated Conjured Mana Jewel	itemName has identifier Deprecated
-5227	Empty Mana Jewel	item quick facts has identifier .*
+5227	Empty Mana Jewel	item quick facts has identifier Deprecated
 5228	Deprecated Empty Bloodstone	itemName has identifier Deprecated
 5230	Deprecated Bloodstone	itemName has identifier Deprecated
 5231	Deprecated Greater Bloodstone	itemName has identifier Deprecated
-5235	Alchemist's Wand	item quick facts has identifier .*
+5235	Alchemist's Wand	item quick facts has identifier Deprecated
 5258	Monster - Bow, Black	itemName has identifier Monster
 5259	Monster - Bow, Red	itemName has identifier Monster
 5260	Monster - Bow, Brown	itemName has identifier Monster
 5261	Monster - Bow, Gray	itemName has identifier Monster
 5262	Monster - Bow, Dark Brown	itemName has identifier Monster
-5265	Watered-down Beer	item quick facts has identifier .*
+5265	Watered-down Beer	item quick facts has identifier Deprecated
 5276	Monster - Staff, 3 Piece Taped Staff	itemName has identifier Monster
 5277	Monster - Staff, Metal /w Spike Crystal	itemName has identifier Monster
 5278	Monster - Dagger, Bowie Knife	itemName has identifier Monster
@@ -2048,10 +2048,10 @@ id	name	reason
 5372	Deprecated Glowing Shrunken Skull	itemName has identifier Deprecated
 5378	Shane Test (DELETE ME)	itemName has identifier Test
 5384	Deprecated Tower of Althalaxx Key	itemName has identifier Deprecated
-5400	Blood of Cobrahn	item quick facts has identifier .*
-5401	Blood of Pythas	item quick facts has identifier .*
-5402	Blood of Anacondra	item quick facts has identifier .*
-5403	Blood of Serpentis	item quick facts has identifier .*
+5400	Blood of Cobrahn	item quick facts has identifier Deprecated
+5401	Blood of Pythas	item quick facts has identifier Deprecated
+5402	Blood of Anacondra	item quick facts has identifier Deprecated
+5403	Blood of Serpentis	item quick facts has identifier Deprecated
 5407	Deprecated Empty Lesser Bloodstone	itemName has identifier Deprecated
 5408	Deprecated Minor Bloodstone	itemName has identifier Deprecated
 5409	Deprecated Lesser Bloodstone	itemName has identifier Deprecated
@@ -2100,76 +2100,76 @@ id	name	reason
 5598	Monster - Glaive - 3 Blade	itemName has identifier Monster
 5599	Monster - Glaive - 4 Blade	itemName has identifier Monster
 5600	Monster - Claw - Bear	itemName has identifier Monster
-5603	Wizbang's Gunnysack	item quick facts has identifier .*
+5603	Wizbang's Gunnysack	item quick facts has identifier Deprecated
 5607	Deprecated Graystone Shoulders	itemName has identifier Deprecated
 5625	Deprecated Band of the Order	itemName has identifier Deprecated
-5644	Tome of Conjure Water	item quick facts has identifier .*
-5647	Tome of Blink	item quick facts has identifier .*
-5648	Tome of Frost Armor III	item quick facts has identifier .*
-5649	Tome of Blizzard	item quick facts has identifier .*
-5650	Tome of Conjure Water III	item quick facts has identifier .*
+5644	Tome of Conjure Water	item quick facts has identifier Deprecated
+5647	Tome of Blink	item quick facts has identifier Deprecated
+5648	Tome of Frost Armor III	item quick facts has identifier Deprecated
+5649	Tome of Blizzard	item quick facts has identifier Deprecated
+5650	Tome of Conjure Water III	item quick facts has identifier Deprecated
 5651	Deprecated Dull Razormane Backstabber	itemName has identifier Deprecated
 5652	Deprecated Cracked Razormane Wand	itemName has identifier Deprecated
 5653	Deprecated Broken Razormane War Shield	itemName has identifier Deprecated
-5658	Libram: Seal of Might	item quick facts has identifier .*
-5660	Libram: Seal of Righteousness	item quick facts has identifier .*
-5661	Libram: Seal of Righteousness II	item quick facts has identifier .*
-5662	Libram: Seal of Righteousness III	item quick facts has identifier .*
-5663	Horn of the Red Wolf	item quick facts has identifier .*
-5666	Libram: Seal of Wrath II	item quick facts has identifier .*
-5667	Libram: Seal of Wisdom II	item quick facts has identifier .*
-5670	Libram: Seal of Wrath IV	item quick facts has identifier .*
-5671	Libram: Seal of Might III	item quick facts has identifier .*
-5672	Libram: Exorcism	item quick facts has identifier .*
-5673	Libram: Exorcism II	item quick facts has identifier .*
-5674	Libram: Exorcism III	item quick facts has identifier .*
-5676	Libram: Sense Undead	item quick facts has identifier .*
-5677	Libram: Turn Undead	item quick facts has identifier .*
-5678	Libram: Seal of Sacrifice	item quick facts has identifier .*
-5679	Libram: Seal of Wisdom III	item quick facts has identifier .*
-5680	Libram: Seal of Protection II	item quick facts has identifier .*
-5682	Libram: Turn Undead II	item quick facts has identifier .*
-5683	Libram: Divine Shield II	item quick facts has identifier .*
-5684	Libram: Seal of Salvation	item quick facts has identifier .*
-5685	Libram: Redemption	item quick facts has identifier .*
+5658	Libram: Seal of Might	item quick facts has identifier Deprecated
+5660	Libram: Seal of Righteousness	item quick facts has identifier Deprecated
+5661	Libram: Seal of Righteousness II	item quick facts has identifier Deprecated
+5662	Libram: Seal of Righteousness III	item quick facts has identifier Deprecated
+5663	Horn of the Red Wolf	item quick facts has identifier Deprecated
+5666	Libram: Seal of Wrath II	item quick facts has identifier Deprecated
+5667	Libram: Seal of Wisdom II	item quick facts has identifier Deprecated
+5670	Libram: Seal of Wrath IV	item quick facts has identifier Deprecated
+5671	Libram: Seal of Might III	item quick facts has identifier Deprecated
+5672	Libram: Exorcism	item quick facts has identifier Deprecated
+5673	Libram: Exorcism II	item quick facts has identifier Deprecated
+5674	Libram: Exorcism III	item quick facts has identifier Deprecated
+5676	Libram: Sense Undead	item quick facts has identifier Deprecated
+5677	Libram: Turn Undead	item quick facts has identifier Deprecated
+5678	Libram: Seal of Sacrifice	item quick facts has identifier Deprecated
+5679	Libram: Seal of Wisdom III	item quick facts has identifier Deprecated
+5680	Libram: Seal of Protection II	item quick facts has identifier Deprecated
+5682	Libram: Turn Undead II	item quick facts has identifier Deprecated
+5683	Libram: Divine Shield II	item quick facts has identifier Deprecated
+5684	Libram: Seal of Salvation	item quick facts has identifier Deprecated
+5685	Libram: Redemption	item quick facts has identifier Deprecated
 5688	Test Language Item	itemName has identifier Test
-5696	Tablet of Shock	item quick facts has identifier .*
-5697	Tablet of Healing Totem	item quick facts has identifier .*
-5698	Tablet of Lightning Shield	item quick facts has identifier .*
-5699	Tablet of Ghost Wolf	item quick facts has identifier .*
-5700	Tablet of Healing Totem II	item quick facts has identifier .*
-5701	Tablet of Sentry Totem	item quick facts has identifier .*
-5702	Tablet of Agitating Totem II	item quick facts has identifier .*
-5703	Tablet of Thunderclap	item quick facts has identifier .*
-5704	Tablet of Water Breathing	item quick facts has identifier .*
-5705	Tablet of Healing Totem III	item quick facts has identifier .*
-5706	Tablet of Serpent Totem III	item quick facts has identifier .*
-5707	Tablet of Far Sight	item quick facts has identifier .*
-5708	Tablet of Ethereal Form	item quick facts has identifier .*
-5709	Tablet of Water Walking	item quick facts has identifier .*
-5710	Tablet of Healing Totem IV	item quick facts has identifier .*
-5711	Tablet of Ghost Wolf II	item quick facts has identifier .*
-5712	Tablet of Serpent Totem IV	item quick facts has identifier .*
-5713	Tablet of Thunderbolt	item quick facts has identifier .*
-5714	Tablet of Ensnaring Totem II	item quick facts has identifier .*
-5715	Tablet of Lightning Storm III	item quick facts has identifier .*
-5716	Tablet of Restoration VI	item quick facts has identifier .*
-5719	Grimoire of Life Drain II	item quick facts has identifier .*
-5720	Grimoire of Curse of Mannoroth II	item quick facts has identifier .*
-5721	Grimoire of Create Spellstone	item quick facts has identifier .*
-5722	Grimoire of Siphon Mana II	item quick facts has identifier .*
-5723	Grimoire of Curse of Sargeras III	item quick facts has identifier .*
-5724	Grimoire of Curse of Tongues	item quick facts has identifier .*
-5725	Grimoire of Pestilence III	item quick facts has identifier .*
-5726	Grimoire of Create Greater Bloodstone	item quick facts has identifier .*
-5727	Grimoire of Mana Funnel	item quick facts has identifier .*
-5728	Grimoire of Rain of Fire II	item quick facts has identifier .*
-5729	Grimoire of Fear III	item quick facts has identifier .*
-5730	Book of Rejuvenation	item quick facts has identifier .*
+5696	Tablet of Shock	item quick facts has identifier Deprecated
+5697	Tablet of Healing Totem	item quick facts has identifier Deprecated
+5698	Tablet of Lightning Shield	item quick facts has identifier Deprecated
+5699	Tablet of Ghost Wolf	item quick facts has identifier Deprecated
+5700	Tablet of Healing Totem II	item quick facts has identifier Deprecated
+5701	Tablet of Sentry Totem	item quick facts has identifier Deprecated
+5702	Tablet of Agitating Totem II	item quick facts has identifier Deprecated
+5703	Tablet of Thunderclap	item quick facts has identifier Deprecated
+5704	Tablet of Water Breathing	item quick facts has identifier Deprecated
+5705	Tablet of Healing Totem III	item quick facts has identifier Deprecated
+5706	Tablet of Serpent Totem III	item quick facts has identifier Deprecated
+5707	Tablet of Far Sight	item quick facts has identifier Deprecated
+5708	Tablet of Ethereal Form	item quick facts has identifier Deprecated
+5709	Tablet of Water Walking	item quick facts has identifier Deprecated
+5710	Tablet of Healing Totem IV	item quick facts has identifier Deprecated
+5711	Tablet of Ghost Wolf II	item quick facts has identifier Deprecated
+5712	Tablet of Serpent Totem IV	item quick facts has identifier Deprecated
+5713	Tablet of Thunderbolt	item quick facts has identifier Deprecated
+5714	Tablet of Ensnaring Totem II	item quick facts has identifier Deprecated
+5715	Tablet of Lightning Storm III	item quick facts has identifier Deprecated
+5716	Tablet of Restoration VI	item quick facts has identifier Deprecated
+5719	Grimoire of Life Drain II	item quick facts has identifier Deprecated
+5720	Grimoire of Curse of Mannoroth II	item quick facts has identifier Deprecated
+5721	Grimoire of Create Spellstone	item quick facts has identifier Deprecated
+5722	Grimoire of Siphon Mana II	item quick facts has identifier Deprecated
+5723	Grimoire of Curse of Sargeras III	item quick facts has identifier Deprecated
+5724	Grimoire of Curse of Tongues	item quick facts has identifier Deprecated
+5725	Grimoire of Pestilence III	item quick facts has identifier Deprecated
+5726	Grimoire of Create Greater Bloodstone	item quick facts has identifier Deprecated
+5727	Grimoire of Mana Funnel	item quick facts has identifier Deprecated
+5728	Grimoire of Rain of Fire II	item quick facts has identifier Deprecated
+5729	Grimoire of Fear III	item quick facts has identifier Deprecated
+5730	Book of Rejuvenation	item quick facts has identifier Deprecated
 5745	Monster - Trident, Wood Handle	itemName has identifier Monster
 5746	Monster - Trident, Copper	itemName has identifier Monster
 5747	Monster - Trident, Ornate	itemName has identifier Monster
-5823	Poisonous Mushroom	item quick facts has identifier .*
+5823	Poisonous Mushroom	item quick facts has identifier Deprecated
 5828	Ring of Uber Resists (TEST)	itemName has identifier (TEST)
 5856	Monster - Throwing Axe	itemName has identifier Monster
 5870	Monster - Throwing Spear	itemName has identifier Monster
@@ -2298,10 +2298,10 @@ id	name	reason
 6114		item not found
 6115		item not found
 6128		item not found
-6130	Trapper's Shirt	item quick facts has identifier .*
-6131	Trapper's Pants	item quick facts has identifier .*
-6132	Libram: Seal of Wisdom	item quick facts has identifier .*
-6133	Libram: Seal of Fury	item quick facts has identifier .*
+6130	Trapper's Shirt	item quick facts has identifier Deprecated
+6131	Trapper's Pants	item quick facts has identifier Deprecated
+6132	Libram: Seal of Wisdom	item quick facts has identifier Deprecated
+6133	Libram: Seal of Fury	item quick facts has identifier Deprecated
 6141		item not found
 6142		item not found
 6143		item not found
@@ -2322,7 +2322,7 @@ id	name	reason
 6165		item not found
 6213	Test Sharpening Stone	itemName has identifier Test
 6221		item not found
-6222	Formula: Imbue Chest - Minor Spirit	item quick facts has identifier .*
+6222	Formula: Imbue Chest - Minor Spirit	item quick facts has identifier Deprecated
 6224	Monster - Sword2H, Black Metal Hilt	itemName has identifier Monster
 6225	Monster - Item, Fish - Blue	itemName has identifier Monster
 6227	Monster - Item, Fish - Green	itemName has identifier Monster
@@ -2336,33 +2336,33 @@ id	name	reason
 6235	Monster - Item, Flower - Rose (Black)	itemName has identifier Monster
 6236	Monster - Item, Flower - Rose (White)	itemName has identifier Monster
 6237	Monster - Item, Flowers  - Boquet Roses (Black)	itemName has identifier Monster
-6244	ggggfg	item quick facts has identifier .*
+6244	ggggfg	item quick facts has identifier Deprecated
 6254	Monster - Shield, Ironforge	itemName has identifier Monster
 6255	Fishing Pole (JEFFTEST)	itemName has identifier TEST
 6322	Monster - Staff, Arugal	itemName has identifier Monster
 6334	Monster - Mace, Green	itemName has identifier Monster
-6343	Formula: Imbue Chest - Spirit	item quick facts has identifier .*
-6345	Formula: Imbue Cloak - Protection	item quick facts has identifier .*
-6376	Formula: Enchant Boots - Minor Stamina	item quick facts has identifier .*
+6343	Formula: Imbue Chest - Spirit	item quick facts has identifier Deprecated
+6345	Formula: Imbue Cloak - Protection	item quick facts has identifier Deprecated
+6376	Formula: Enchant Boots - Minor Stamina	item quick facts has identifier Deprecated
 6434	Monster - Shield, Stromgarde	itemName has identifier Monster
 6437	Flayed Demon Skin (old)	itemName has identifier (old)
 6483		item not found
 6484		item not found
 6485		item not found
-6497	Simple Parchment	item quick facts has identifier .*
-6589	Viridian Band	item quick facts has identifier .*
+6497	Simple Parchment	item quick facts has identifier Deprecated
+6589	Viridian Band	item quick facts has identifier Deprecated
 6606		item not found
 6618	Monster - Orb	itemName has identifier Monster
-6619	Manual: The Path of Defense	item quick facts has identifier .*
-6621	Manual of Taunt	item quick facts has identifier .*
+6619	Manual: The Path of Defense	item quick facts has identifier Deprecated
+6621	Manual of Taunt	item quick facts has identifier Deprecated
 6639	Deprecated Rough Pebble	itemName has identifier Deprecated
-6644	Bloated Mackerel	item quick facts has identifier .*
-6646	Bloated Albacore	item quick facts has identifier .*
+6644	Bloated Mackerel	item quick facts has identifier Deprecated
+6646	Bloated Albacore	item quick facts has identifier Deprecated
 6673	Test HP Ring	itemName has identifier Test
 6674	Test MP Ring	itemName has identifier Test
 6680	Monster - Spear, Sharp Thin	itemName has identifier Monster
 6683	Tyranis' Pendant (old)	itemName has identifier (old)
-6698	Stone of Pierce	item quick facts has identifier .*
+6698	Stone of Pierce	item quick facts has identifier Deprecated
 6699		item not found
 6700		item not found
 6701		item not found
@@ -2371,12 +2371,12 @@ id	name	reason
 6704		item not found
 6705		item not found
 6706		item not found
-6707	Stone of Lapidis	item quick facts has identifier .*
-6708	Stone of Goodman	item quick facts has identifier .*
-6711	Stone of Kurtz	item quick facts has identifier .*
-6724	Stone of Backus	item quick facts has identifier .*
-6728	Stone of Brownell	item quick facts has identifier .*
-6754	Large Moneybag	item quick facts has identifier .*
+6707	Stone of Lapidis	item quick facts has identifier Deprecated
+6708	Stone of Goodman	item quick facts has identifier Deprecated
+6711	Stone of Kurtz	item quick facts has identifier Deprecated
+6724	Stone of Backus	item quick facts has identifier Deprecated
+6728	Stone of Brownell	item quick facts has identifier Deprecated
+6754	Large Moneybag	item quick facts has identifier Deprecated
 6758		item not found
 6759		item not found
 6760		item not found
@@ -2403,7 +2403,7 @@ id	name	reason
 6823		item not found
 6824		item not found
 6825		item not found
-6837	Wedding Dress	item quick facts has identifier .*
+6837	Wedding Dress	item quick facts has identifier Deprecated
 6853		item not found
 6854		item not found
 6855		item not found
@@ -2438,8 +2438,8 @@ id	name	reason
 6885		item not found
 6886	Monster - Throwing Knife	itemName has identifier Monster
 6896	Twain Component Test	itemName has identifier Test
-6897	Manual: Path of the Berserker	item quick facts has identifier .*
-6899	Warlock Orb 35	item quick facts has identifier .*
+6897	Manual: Path of the Berserker	item quick facts has identifier Deprecated
+6899	Warlock Orb 35	item quick facts has identifier Deprecated
 6917		item not found
 6918		item not found
 6919		item not found
@@ -2570,7 +2570,7 @@ id	name	reason
 7185		item not found
 7186		item not found
 7187	VanCleef's Boots	item is not available to players
-7192	Schematic: Goblin Rocket Boots	item quick facts has identifier .*
+7192	Schematic: Goblin Rocket Boots	item quick facts has identifier Deprecated
 7193		item not found
 7194		item not found
 7195		item not found
@@ -2675,18 +2675,18 @@ id	name	reason
 7403		item not found
 7404		item not found
 7405		item not found
-7426	Cerulean Ring	item quick facts has identifier .*
-7427	Cerulean Talisman	item quick facts has identifier .*
-7466	Vermilion Band	item quick facts has identifier .*
-7467	Vermilion Necklace	item quick facts has identifier .*
-7497	Ivory Band	item quick facts has identifier .*
+7426	Cerulean Ring	item quick facts has identifier Deprecated
+7427	Cerulean Talisman	item quick facts has identifier Deprecated
+7466	Vermilion Band	item quick facts has identifier Deprecated
+7467	Vermilion Necklace	item quick facts has identifier Deprecated
+7497	Ivory Band	item quick facts has identifier Deprecated
 7501		item not found
 7502		item not found
 7503		item not found
 7504		item not found
 7505		item not found
-7547	Onyx Ring	item quick facts has identifier .*
-7548	Onyx Choker	item quick facts has identifier .*
+7547	Onyx Ring	item quick facts has identifier Deprecated
+7548	Onyx Choker	item quick facts has identifier Deprecated
 7562		item not found
 7563		item not found
 7564		item not found
@@ -2774,7 +2774,7 @@ id	name	reason
 7664		item not found
 7665		item not found
 7677		item not found
-7678	Recipe: Thistle Tea	item quick facts has identifier .*
+7678	Recipe: Thistle Tea	item quick facts has identifier Deprecated
 7692		item not found
 7693		item not found
 7694		item not found
@@ -2796,7 +2796,7 @@ id	name	reason
 7743		item not found
 7744		item not found
 7745		item not found
-7748	Forcestone Buckler	item quick facts has identifier .*
+7748	Forcestone Buckler	item quick facts has identifier Deprecated
 7762		item not found
 7763		item not found
 7764		item not found
@@ -2833,7 +2833,7 @@ id	name	reason
 7803		item not found
 7804		item not found
 7805		item not found
-7809	Easter Dress	item quick facts has identifier .*
+7809	Easter Dress	item quick facts has identifier Deprecated
 7814		item not found
 7815		item not found
 7816		item not found
@@ -2883,7 +2883,7 @@ id	name	reason
 7863		item not found
 7864		item not found
 7865		item not found
-7868	Thieven' Kit	item quick facts has identifier .*
+7868	Thieven' Kit	item quick facts has identifier Deprecated
 7873		item not found
 7874		item not found
 7875		item not found
@@ -3139,9 +3139,9 @@ id	name	reason
 8540		item not found
 8541		item not found
 8542		item not found
-8543	Underwater Mushroom Cap	item quick facts has identifier .*
-8546	Powerful Smelling Salts	item quick facts has identifier .*
-8547	Formula: Powerful Smelling Salts	item quick facts has identifier .*
+8543	Underwater Mushroom Cap	item quick facts has identifier Deprecated
+8546	Powerful Smelling Salts	item quick facts has identifier Deprecated
+8547	Formula: Powerful Smelling Salts	item quick facts has identifier Deprecated
 8549		item not found
 8550		item not found
 8551		item not found
@@ -3174,8 +3174,8 @@ id	name	reason
 8580		item not found
 8581		item not found
 8582		item not found
-8589	Old Whistle of the Ivory Raptor	item quick facts has identifier .*
-8590	Old Whistle of the Obsidian Raptor	item quick facts has identifier .*
+8589	Old Whistle of the Ivory Raptor	item quick facts has identifier Deprecated
+8590	Old Whistle of the Obsidian Raptor	item quick facts has identifier Deprecated
 8596		item not found
 8597		item not found
 8598		item not found
@@ -3202,7 +3202,7 @@ id	name	reason
 8620		item not found
 8621		item not found
 8622		item not found
-8627	Reins of the Night saber	item quick facts has identifier .*
+8627	Reins of the Night saber	item quick facts has identifier Deprecated
 8634		item not found
 8635		item not found
 8636		item not found
@@ -3294,328 +3294,328 @@ id	name	reason
 8740		item not found
 8741		item not found
 8742		item not found
-8743	Book of Mark of the Wild	item quick facts has identifier .*
-8744	Book of Wrath	item quick facts has identifier .*
-8745	Book of Healing Touch	item quick facts has identifier .*
-8756	Book of Regrowth II	item quick facts has identifier .*
-8757	Book of Starfire	item quick facts has identifier .*
-8758	Book of Remove Curse	item quick facts has identifier .*
-8759	Book of Regrowth III	item quick facts has identifier .*
-8760	Book of Abolish Poison	item quick facts has identifier .*
-8761	Book of Starfire II	item quick facts has identifier .*
-8762	Book of Rejuvenation V	item quick facts has identifier .*
-8763	Book of Moonfire V	item quick facts has identifier .*
-8764	Book of Faerie Fire II	item quick facts has identifier .*
-8765	Book of Regrowth IV	item quick facts has identifier .*
+8743	Book of Mark of the Wild	item quick facts has identifier Deprecated
+8744	Book of Wrath	item quick facts has identifier Deprecated
+8745	Book of Healing Touch	item quick facts has identifier Deprecated
+8756	Book of Regrowth II	item quick facts has identifier Deprecated
+8757	Book of Starfire	item quick facts has identifier Deprecated
+8758	Book of Remove Curse	item quick facts has identifier Deprecated
+8759	Book of Regrowth III	item quick facts has identifier Deprecated
+8760	Book of Abolish Poison	item quick facts has identifier Deprecated
+8761	Book of Starfire II	item quick facts has identifier Deprecated
+8762	Book of Rejuvenation V	item quick facts has identifier Deprecated
+8763	Book of Moonfire V	item quick facts has identifier Deprecated
+8764	Book of Faerie Fire II	item quick facts has identifier Deprecated
+8765	Book of Regrowth IV	item quick facts has identifier Deprecated
 8767		item not found
-8768	Book of Starfire III	item quick facts has identifier .*
-8769	Book of Thorns IV	item quick facts has identifier .*
-8770	Book of Moonfire VI	item quick facts has identifier .*
-8771	Book of Rejuvenation VI	item quick facts has identifier .*
-8772	Book of Regrowth V	item quick facts has identifier .*
-8773	Book of Entangling Roots V	item quick facts has identifier .*
-8774	Book of Healing Touch VII	item quick facts has identifier .*
-8775	Book of Tranquility II	item quick facts has identifier .*
-8776	Book of Mark of the Wild VI	item quick facts has identifier .*
-8777	Book of Moonfire IX	item quick facts has identifier .*
-8778	Book of Rejuvenation VII	item quick facts has identifier .*
-8779	Book of Faerie Fire III	item quick facts has identifier .*
-8780	Book of Starfire V	item quick facts has identifier .*
-8781	Book of Regrowth VII	item quick facts has identifier .*
-8782	Book of Thorns V	item quick facts has identifier .*
-8783	Book of Healing Touch IX	item quick facts has identifier .*
-8784	Book of Wrath VII	item quick facts has identifier .*
-8785	Book of Rejuvenation IX	item quick facts has identifier .*
-8786	Book of Tranquility III	item quick facts has identifier .*
-8787	Book of Soothe Animal	item quick facts has identifier .*
-8788	Book of Soothe Animal II	item quick facts has identifier .*
-8789	Book of Soothe Animal III	item quick facts has identifier .*
-8790	Book of Faerie Fire IV	item quick facts has identifier .*
-8791	Book of Regrowth VIII	item quick facts has identifier .*
-8792	Book of Thorns VI	item quick facts has identifier .*
-8793	Book of Wrath VIII	item quick facts has identifier .*
-8794	Book of Healing Touch X	item quick facts has identifier .*
-8795	Book of Entangling Roots VI	item quick facts has identifier .*
-8796	Book of Moonfire X	item quick facts has identifier .*
-8797	Book of Rejuvenation X	item quick facts has identifier .*
-8798	Book of Starfire VI	item quick facts has identifier .*
-8799	Book of Mark of the Wild VII	item quick facts has identifier .*
-8800	Book of Regrowth IX	item quick facts has identifier .*
-8801	Book of Tranquility IV	item quick facts has identifier .*
-8802	Tome of Arcane Intellect	item quick facts has identifier .*
-8803	Tome of Fireball	item quick facts has identifier .*
-8804	Tome of Arcane Explosion	item quick facts has identifier .*
-8805	Tome of Detect Magic	item quick facts has identifier .*
-8806	Tome of Remove Lesser Curse	item quick facts has identifier .*
-8807	Tome of Amplify Magic	item quick facts has identifier .*
-8808	Tome of Mana Shield	item quick facts has identifier .*
-8809	Tome of Sleep	item quick facts has identifier .*
-8810	Tome of Sleep II	item quick facts has identifier .*
-8811	Tome of Scorch	item quick facts has identifier .*
-8812	Tome of Arcane Explosion II	item quick facts has identifier .*
-8813	Tome of Dampen Magic II	item quick facts has identifier .*
-8814	Tome of Fireball V	item quick facts has identifier .*
-8815	Tome of Cone of Cold	item quick facts has identifier .*
-8816	Tome of Frostbolt V	item quick facts has identifier .*
+8768	Book of Starfire III	item quick facts has identifier Deprecated
+8769	Book of Thorns IV	item quick facts has identifier Deprecated
+8770	Book of Moonfire VI	item quick facts has identifier Deprecated
+8771	Book of Rejuvenation VI	item quick facts has identifier Deprecated
+8772	Book of Regrowth V	item quick facts has identifier Deprecated
+8773	Book of Entangling Roots V	item quick facts has identifier Deprecated
+8774	Book of Healing Touch VII	item quick facts has identifier Deprecated
+8775	Book of Tranquility II	item quick facts has identifier Deprecated
+8776	Book of Mark of the Wild VI	item quick facts has identifier Deprecated
+8777	Book of Moonfire IX	item quick facts has identifier Deprecated
+8778	Book of Rejuvenation VII	item quick facts has identifier Deprecated
+8779	Book of Faerie Fire III	item quick facts has identifier Deprecated
+8780	Book of Starfire V	item quick facts has identifier Deprecated
+8781	Book of Regrowth VII	item quick facts has identifier Deprecated
+8782	Book of Thorns V	item quick facts has identifier Deprecated
+8783	Book of Healing Touch IX	item quick facts has identifier Deprecated
+8784	Book of Wrath VII	item quick facts has identifier Deprecated
+8785	Book of Rejuvenation IX	item quick facts has identifier Deprecated
+8786	Book of Tranquility III	item quick facts has identifier Deprecated
+8787	Book of Soothe Animal	item quick facts has identifier Deprecated
+8788	Book of Soothe Animal II	item quick facts has identifier Deprecated
+8789	Book of Soothe Animal III	item quick facts has identifier Deprecated
+8790	Book of Faerie Fire IV	item quick facts has identifier Deprecated
+8791	Book of Regrowth VIII	item quick facts has identifier Deprecated
+8792	Book of Thorns VI	item quick facts has identifier Deprecated
+8793	Book of Wrath VIII	item quick facts has identifier Deprecated
+8794	Book of Healing Touch X	item quick facts has identifier Deprecated
+8795	Book of Entangling Roots VI	item quick facts has identifier Deprecated
+8796	Book of Moonfire X	item quick facts has identifier Deprecated
+8797	Book of Rejuvenation X	item quick facts has identifier Deprecated
+8798	Book of Starfire VI	item quick facts has identifier Deprecated
+8799	Book of Mark of the Wild VII	item quick facts has identifier Deprecated
+8800	Book of Regrowth IX	item quick facts has identifier Deprecated
+8801	Book of Tranquility IV	item quick facts has identifier Deprecated
+8802	Tome of Arcane Intellect	item quick facts has identifier Deprecated
+8803	Tome of Fireball	item quick facts has identifier Deprecated
+8804	Tome of Arcane Explosion	item quick facts has identifier Deprecated
+8805	Tome of Detect Magic	item quick facts has identifier Deprecated
+8806	Tome of Remove Lesser Curse	item quick facts has identifier Deprecated
+8807	Tome of Amplify Magic	item quick facts has identifier Deprecated
+8808	Tome of Mana Shield	item quick facts has identifier Deprecated
+8809	Tome of Sleep	item quick facts has identifier Deprecated
+8810	Tome of Sleep II	item quick facts has identifier Deprecated
+8811	Tome of Scorch	item quick facts has identifier Deprecated
+8812	Tome of Arcane Explosion II	item quick facts has identifier Deprecated
+8813	Tome of Dampen Magic II	item quick facts has identifier Deprecated
+8814	Tome of Fireball V	item quick facts has identifier Deprecated
+8815	Tome of Cone of Cold	item quick facts has identifier Deprecated
+8816	Tome of Frostbolt V	item quick facts has identifier Deprecated
 8817		item not found
-8818	Tome of Mana Shield II	item quick facts has identifier .*
-8819	Tome of Scorch II	item quick facts has identifier .*
-8820	Tome of Fire Ward II	item quick facts has identifier .*
-8821	Tome of Amplify Magic II	item quick facts has identifier .*
-8822	Tome of Arcane Explosion III	item quick facts has identifier .*
-8823	Tome of Fire Blast IV	item quick facts has identifier .*
-8824	Tome of Fireball VI	item quick facts has identifier .*
-8825	Tome of Frost Ward III	item quick facts has identifier .*
-8826	Tome of Arcane Missiles IV	item quick facts has identifier .*
+8818	Tome of Mana Shield II	item quick facts has identifier Deprecated
+8819	Tome of Scorch II	item quick facts has identifier Deprecated
+8820	Tome of Fire Ward II	item quick facts has identifier Deprecated
+8821	Tome of Amplify Magic II	item quick facts has identifier Deprecated
+8822	Tome of Arcane Explosion III	item quick facts has identifier Deprecated
+8823	Tome of Fire Blast IV	item quick facts has identifier Deprecated
+8824	Tome of Fireball VI	item quick facts has identifier Deprecated
+8825	Tome of Frost Ward III	item quick facts has identifier Deprecated
+8826	Tome of Arcane Missiles IV	item quick facts has identifier Deprecated
 8827	Elixir of Water Walking	item is not available to players
-8828	Tome of Frostbolt VI	item quick facts has identifier .*
-8829	Tome of Cone of Cold II	item quick facts has identifier .*
-8830	Tome of Scorch III	item quick facts has identifier .*
-8832	Tome of Blizzard III	item quick facts has identifier .*
-8833	Tome of Mana Shield III	item quick facts has identifier .*
-8834	Tome of Dampen Magic III	item quick facts has identifier .*
-8835	Tome of Fireball VII	item quick facts has identifier .*
-8837	Tome of Arcane Explosion V	item quick facts has identifier .*
-8840	Tome of Conjure Mana Gem II	item quick facts has identifier .*
-8841	Tome of Fire Blast V	item quick facts has identifier .*
-8842	Tome of Frostbolt VII	item quick facts has identifier .*
-8843	Tome of Fire Ward III	item quick facts has identifier .*
-8844	Tome of Sleep III	item quick facts has identifier .*
-8847	Tome of Scorch V	item quick facts has identifier .*
-8848	Tome of Flamestrike IV	item quick facts has identifier .*
-8849	Tome of Arcane Missiles V	item quick facts has identifier .*
-8850	Tome of Conjure Water V	item quick facts has identifier .*
-8851	Tome of Fireball VIII	item quick facts has identifier .*
-8852	Tome of Arcane Intellect IV	item quick facts has identifier .*
-8853	Tome of Conjure Food V	item quick facts has identifier .*
-8854	Tome of Cone of Cold III	item quick facts has identifier .*
-8855	Tome of Amplify Magic III	item quick facts has identifier .*
-8856	Tome of Frostbolt VIII	item quick facts has identifier .*
-8857	Tome of Blizzard IV	item quick facts has identifier .*
-8858	Tome of Mana Shield IV	item quick facts has identifier .*
-8859	Tome of Fire Blast VI	item quick facts has identifier .*
-8860	Tome of Fireball IX	item quick facts has identifier .*
-8861	Tome of Conjure Mana Gem III	item quick facts has identifier .*
-8862	Tome of Arcane Missiles VI	item quick facts has identifier .*
-8863	Tome of Dampen Magic IV	item quick facts has identifier .*
-8864	Tome of Flamestrike V	item quick facts has identifier .*
-8865	Tome of Ice Armor III	item quick facts has identifier .*
-8866	Tome of Cone of Cold IV	item quick facts has identifier .*
-8867	Tome of Frostbolt IX	item quick facts has identifier .*
-8868	Tome of Conjure Water VI	item quick facts has identifier .*
-8869	Tome of Fire Ward IV	item quick facts has identifier .*
-8870	Tome of Greater Invisibility	item quick facts has identifier .*
-8871	Tome of Conjure Food VI	item quick facts has identifier .*
-8872	Tome of Blizzard V	item quick facts has identifier .*
-8873	Tome of Mana Shield V	item quick facts has identifier .*
-8874	Tome of Scorch VI	item quick facts has identifier .*
-8875	Tome of Frost Ward IV	item quick facts has identifier .*
-8876	Tome of Frost Ward II	item quick facts has identifier .*
-8877	Tome of Fireball X	item quick facts has identifier .*
-8878	Tome of Fire Blast VII	item quick facts has identifier .*
-8879	Tome of Frost Nova IV	item quick facts has identifier .*
-8880	Tome of Arcane Explosion VI	item quick facts has identifier .*
-8881	Tome of Khadgar's Unlocking IV	item quick facts has identifier .*
-8882	Tome of Amplify Magic IV	item quick facts has identifier .*
-8883	Tome of Arcane Intellect V	item quick facts has identifier .*
-8884	Tome of Frostbolt X	item quick facts has identifier .*
-8885	Tome of Arcane Missiles VII	item quick facts has identifier .*
-8886	Tome of Flamestrike VI	item quick facts has identifier .*
-8887	Tome of Scorch VII	item quick facts has identifier .*
-8888	Tome of Cone of Cold V	item quick facts has identifier .*
-8889	Tome of Conjure Mana Gem IV	item quick facts has identifier .*
-8890	Tome of Fireball XI	item quick facts has identifier .*
-8891	Tome of Ice Armor IV	item quick facts has identifier .*
-8892	Tome of Conjure Water VII	item quick facts has identifier .*
-8893	Tome of Sleep IV	item quick facts has identifier .*
-8894	Tome of Dampen Magic V	item quick facts has identifier .*
-8895	Tome of Blizzard VI	item quick facts has identifier .*
-8896	Tome of Mana Shield VI	item quick facts has identifier .*
-8897	Tome of Fire Ward V	item quick facts has identifier .*
-8898	Tome of Arcane Explosion IV	item quick facts has identifier .*
-8899	Tome of Scorch IV	item quick facts has identifier .*
-8900	Book of Entangling Roots IV	item quick facts has identifier .*
-8901	Book of Healing Touch VIII	item quick facts has identifier .*
-8902	Book of Mark of the Wild V	item quick facts has identifier .*
-8903	Book of Moonfire VII	item quick facts has identifier .*
-8904	Book of Moonfire VIII	item quick facts has identifier .*
-8905	Book of Regrowth VI	item quick facts has identifier .*
-8906	Book of Rejuvenation VIII	item quick facts has identifier .*
-8907	Book of Starfire IV	item quick facts has identifier .*
+8828	Tome of Frostbolt VI	item quick facts has identifier Deprecated
+8829	Tome of Cone of Cold II	item quick facts has identifier Deprecated
+8830	Tome of Scorch III	item quick facts has identifier Deprecated
+8832	Tome of Blizzard III	item quick facts has identifier Deprecated
+8833	Tome of Mana Shield III	item quick facts has identifier Deprecated
+8834	Tome of Dampen Magic III	item quick facts has identifier Deprecated
+8835	Tome of Fireball VII	item quick facts has identifier Deprecated
+8837	Tome of Arcane Explosion V	item quick facts has identifier Deprecated
+8840	Tome of Conjure Mana Gem II	item quick facts has identifier Deprecated
+8841	Tome of Fire Blast V	item quick facts has identifier Deprecated
+8842	Tome of Frostbolt VII	item quick facts has identifier Deprecated
+8843	Tome of Fire Ward III	item quick facts has identifier Deprecated
+8844	Tome of Sleep III	item quick facts has identifier Deprecated
+8847	Tome of Scorch V	item quick facts has identifier Deprecated
+8848	Tome of Flamestrike IV	item quick facts has identifier Deprecated
+8849	Tome of Arcane Missiles V	item quick facts has identifier Deprecated
+8850	Tome of Conjure Water V	item quick facts has identifier Deprecated
+8851	Tome of Fireball VIII	item quick facts has identifier Deprecated
+8852	Tome of Arcane Intellect IV	item quick facts has identifier Deprecated
+8853	Tome of Conjure Food V	item quick facts has identifier Deprecated
+8854	Tome of Cone of Cold III	item quick facts has identifier Deprecated
+8855	Tome of Amplify Magic III	item quick facts has identifier Deprecated
+8856	Tome of Frostbolt VIII	item quick facts has identifier Deprecated
+8857	Tome of Blizzard IV	item quick facts has identifier Deprecated
+8858	Tome of Mana Shield IV	item quick facts has identifier Deprecated
+8859	Tome of Fire Blast VI	item quick facts has identifier Deprecated
+8860	Tome of Fireball IX	item quick facts has identifier Deprecated
+8861	Tome of Conjure Mana Gem III	item quick facts has identifier Deprecated
+8862	Tome of Arcane Missiles VI	item quick facts has identifier Deprecated
+8863	Tome of Dampen Magic IV	item quick facts has identifier Deprecated
+8864	Tome of Flamestrike V	item quick facts has identifier Deprecated
+8865	Tome of Ice Armor III	item quick facts has identifier Deprecated
+8866	Tome of Cone of Cold IV	item quick facts has identifier Deprecated
+8867	Tome of Frostbolt IX	item quick facts has identifier Deprecated
+8868	Tome of Conjure Water VI	item quick facts has identifier Deprecated
+8869	Tome of Fire Ward IV	item quick facts has identifier Deprecated
+8870	Tome of Greater Invisibility	item quick facts has identifier Deprecated
+8871	Tome of Conjure Food VI	item quick facts has identifier Deprecated
+8872	Tome of Blizzard V	item quick facts has identifier Deprecated
+8873	Tome of Mana Shield V	item quick facts has identifier Deprecated
+8874	Tome of Scorch VI	item quick facts has identifier Deprecated
+8875	Tome of Frost Ward IV	item quick facts has identifier Deprecated
+8876	Tome of Frost Ward II	item quick facts has identifier Deprecated
+8877	Tome of Fireball X	item quick facts has identifier Deprecated
+8878	Tome of Fire Blast VII	item quick facts has identifier Deprecated
+8879	Tome of Frost Nova IV	item quick facts has identifier Deprecated
+8880	Tome of Arcane Explosion VI	item quick facts has identifier Deprecated
+8881	Tome of Khadgar's Unlocking IV	item quick facts has identifier Deprecated
+8882	Tome of Amplify Magic IV	item quick facts has identifier Deprecated
+8883	Tome of Arcane Intellect V	item quick facts has identifier Deprecated
+8884	Tome of Frostbolt X	item quick facts has identifier Deprecated
+8885	Tome of Arcane Missiles VII	item quick facts has identifier Deprecated
+8886	Tome of Flamestrike VI	item quick facts has identifier Deprecated
+8887	Tome of Scorch VII	item quick facts has identifier Deprecated
+8888	Tome of Cone of Cold V	item quick facts has identifier Deprecated
+8889	Tome of Conjure Mana Gem IV	item quick facts has identifier Deprecated
+8890	Tome of Fireball XI	item quick facts has identifier Deprecated
+8891	Tome of Ice Armor IV	item quick facts has identifier Deprecated
+8892	Tome of Conjure Water VII	item quick facts has identifier Deprecated
+8893	Tome of Sleep IV	item quick facts has identifier Deprecated
+8894	Tome of Dampen Magic V	item quick facts has identifier Deprecated
+8895	Tome of Blizzard VI	item quick facts has identifier Deprecated
+8896	Tome of Mana Shield VI	item quick facts has identifier Deprecated
+8897	Tome of Fire Ward V	item quick facts has identifier Deprecated
+8898	Tome of Arcane Explosion IV	item quick facts has identifier Deprecated
+8899	Tome of Scorch IV	item quick facts has identifier Deprecated
+8900	Book of Entangling Roots IV	item quick facts has identifier Deprecated
+8901	Book of Healing Touch VIII	item quick facts has identifier Deprecated
+8902	Book of Mark of the Wild V	item quick facts has identifier Deprecated
+8903	Book of Moonfire VII	item quick facts has identifier Deprecated
+8904	Book of Moonfire VIII	item quick facts has identifier Deprecated
+8905	Book of Regrowth VI	item quick facts has identifier Deprecated
+8906	Book of Rejuvenation VIII	item quick facts has identifier Deprecated
+8907	Book of Starfire IV	item quick facts has identifier Deprecated
 8908		item not found
-8909	Libram: Holy Strike II	item quick facts has identifier .*
-8910	Libram: Lay on Hands	item quick facts has identifier .*
-8911	Libram: Fist of Justice	item quick facts has identifier .*
-8912	Libram: Crusader Strike	item quick facts has identifier .*
-8913	Libram: Holy Strike III	item quick facts has identifier .*
-8914	Libram: Crusader Strike II	item quick facts has identifier .*
-8915	Libram: Holy Strike IV	item quick facts has identifier .*
-8916	Libram: Fist of Justice II	item quick facts has identifier .*
-8917	Libram: Lay on Hands II	item quick facts has identifier .*
-8918	Libram: Seal of Protection III	item quick facts has identifier .*
-8919	Libram: Holy Strike V	item quick facts has identifier .*
-8920	Libram: Crusader Strike III	item quick facts has identifier .*
-8921	Libram: Fist of Justice III	item quick facts has identifier .*
-8922	Libram: Holy Strike VI	item quick facts has identifier .*
-8929	Libram: Exorcism IV	item quick facts has identifier .*
-8930	Libram: Seal of Righteousness IV	item quick facts has identifier .*
-8931	Libram: Crusader Strike IV	item quick facts has identifier .*
-8933	Libram: Holy Light VII	item quick facts has identifier .*
-8934	Libram: Holy Strike VII	item quick facts has identifier .*
-8935	Libram: Judgement II	item quick facts has identifier .*
-8936	Libram: Seal of Wrath III	item quick facts has identifier .*
-8937	Libram: Lay on Hands III	item quick facts has identifier .*
-8938	Libram: Turn Undead III	item quick facts has identifier .*
-8939	Libram: Exorcism V	item quick facts has identifier .*
-8940	Libram: Fist of Justice IV	item quick facts has identifier .*
-8941	Libram: Holy Light VIII	item quick facts has identifier .*
-8942	Libram: Seal of Righteousness V	item quick facts has identifier .*
-8943	Libram: Holy Strike VIII	item quick facts has identifier .*
-8944	Libram: Crusader Strike V	item quick facts has identifier .*
-8945	Libram: Judgement III	item quick facts has identifier .*
+8909	Libram: Holy Strike II	item quick facts has identifier Deprecated
+8910	Libram: Lay on Hands	item quick facts has identifier Deprecated
+8911	Libram: Fist of Justice	item quick facts has identifier Deprecated
+8912	Libram: Crusader Strike	item quick facts has identifier Deprecated
+8913	Libram: Holy Strike III	item quick facts has identifier Deprecated
+8914	Libram: Crusader Strike II	item quick facts has identifier Deprecated
+8915	Libram: Holy Strike IV	item quick facts has identifier Deprecated
+8916	Libram: Fist of Justice II	item quick facts has identifier Deprecated
+8917	Libram: Lay on Hands II	item quick facts has identifier Deprecated
+8918	Libram: Seal of Protection III	item quick facts has identifier Deprecated
+8919	Libram: Holy Strike V	item quick facts has identifier Deprecated
+8920	Libram: Crusader Strike III	item quick facts has identifier Deprecated
+8921	Libram: Fist of Justice III	item quick facts has identifier Deprecated
+8922	Libram: Holy Strike VI	item quick facts has identifier Deprecated
+8929	Libram: Exorcism IV	item quick facts has identifier Deprecated
+8930	Libram: Seal of Righteousness IV	item quick facts has identifier Deprecated
+8931	Libram: Crusader Strike IV	item quick facts has identifier Deprecated
+8933	Libram: Holy Light VII	item quick facts has identifier Deprecated
+8934	Libram: Holy Strike VII	item quick facts has identifier Deprecated
+8935	Libram: Judgement II	item quick facts has identifier Deprecated
+8936	Libram: Seal of Wrath III	item quick facts has identifier Deprecated
+8937	Libram: Lay on Hands III	item quick facts has identifier Deprecated
+8938	Libram: Turn Undead III	item quick facts has identifier Deprecated
+8939	Libram: Exorcism V	item quick facts has identifier Deprecated
+8940	Libram: Fist of Justice IV	item quick facts has identifier Deprecated
+8941	Libram: Holy Light VIII	item quick facts has identifier Deprecated
+8942	Libram: Seal of Righteousness V	item quick facts has identifier Deprecated
+8943	Libram: Holy Strike VIII	item quick facts has identifier Deprecated
+8944	Libram: Crusader Strike V	item quick facts has identifier Deprecated
+8945	Libram: Judgement III	item quick facts has identifier Deprecated
 8946		item not found
-8947	Libram: Exorcism VI	item quick facts has identifier .*
-8954	Codex of Holy Word: Fortitude	item quick facts has identifier .*
-8955	Codex of Fade	item quick facts has identifier .*
-8958	Codex of Mind Blast	item quick facts has identifier .*
-8960	Codex of Cure Disease	item quick facts has identifier .*
-8961	Codex of Psychic Scream	item quick facts has identifier .*
-8962	Codex of Mind Blast II	item quick facts has identifier .*
-8963	Codex of Mind Soothe	item quick facts has identifier .*
-8964	Codex of Flash Heal	item quick facts has identifier .*
-8965	Codex of Fade II	item quick facts has identifier .*
-8966	Codex of Shackle Undead	item quick facts has identifier .*
-8967	Codex of Mind Blast III	item quick facts has identifier .*
-8968	Codex of Mana Burn	item quick facts has identifier .*
-8969	Codex of Flash Heal II	item quick facts has identifier .*
+8947	Libram: Exorcism VI	item quick facts has identifier Deprecated
+8954	Codex of Holy Word: Fortitude	item quick facts has identifier Deprecated
+8955	Codex of Fade	item quick facts has identifier Deprecated
+8958	Codex of Mind Blast	item quick facts has identifier Deprecated
+8960	Codex of Cure Disease	item quick facts has identifier Deprecated
+8961	Codex of Psychic Scream	item quick facts has identifier Deprecated
+8962	Codex of Mind Blast II	item quick facts has identifier Deprecated
+8963	Codex of Mind Soothe	item quick facts has identifier Deprecated
+8964	Codex of Flash Heal	item quick facts has identifier Deprecated
+8965	Codex of Fade II	item quick facts has identifier Deprecated
+8966	Codex of Shackle Undead	item quick facts has identifier Deprecated
+8967	Codex of Mind Blast III	item quick facts has identifier Deprecated
+8968	Codex of Mana Burn	item quick facts has identifier Deprecated
+8969	Codex of Flash Heal II	item quick facts has identifier Deprecated
 8970		item not found
-8971	Codex of Psychic Scream II	item quick facts has identifier .*
-8972	Codex of Mind Blast IV	item quick facts has identifier .*
-8974	Codex of Mind Control	item quick facts has identifier .*
-8975	Codex of Fade III	item quick facts has identifier .*
-8976	Codex of Abolish Disease	item quick facts has identifier .*
-8977	Codex of Mana Burn II	item quick facts has identifier .*
-8978	Codex of Flash Heal III	item quick facts has identifier .*
+8971	Codex of Psychic Scream II	item quick facts has identifier Deprecated
+8972	Codex of Mind Blast IV	item quick facts has identifier Deprecated
+8974	Codex of Mind Control	item quick facts has identifier Deprecated
+8975	Codex of Fade III	item quick facts has identifier Deprecated
+8976	Codex of Abolish Disease	item quick facts has identifier Deprecated
+8977	Codex of Mana Burn II	item quick facts has identifier Deprecated
+8978	Codex of Flash Heal III	item quick facts has identifier Deprecated
 8979		item not found
-8980	Codex of Mind Blast V	item quick facts has identifier .*
-8981	Codex of Mind Soothe II	item quick facts has identifier .*
+8980	Codex of Mind Blast V	item quick facts has identifier Deprecated
+8981	Codex of Mind Soothe II	item quick facts has identifier Deprecated
 8982		item not found
-8983	Codex of Flash Heal IV	item quick facts has identifier .*
-8986	Codex of Shackle Undead II	item quick facts has identifier .*
-8987	Codex of Holy Protection II	item quick facts has identifier .*
-8988	Codex of Mana Burn III	item quick facts has identifier .*
-8989	Codex of Fade IV	item quick facts has identifier .*
-8990	Codex of Mind Blast VI	item quick facts has identifier .*
-8991	Codex of Inner Fire IV	item quick facts has identifier .*
-8992	Codex of Psychic Scream III	item quick facts has identifier .*
-8993	Codex of Shadow Protection II	item quick facts has identifier .*
-8994	Codex of Shadow Word: Pain VI	item quick facts has identifier .*
-8995	Codex of Holy Word: Shield VII	item quick facts has identifier .*
-8996	Codex of Resurrection III	item quick facts has identifier .*
-8997	Codex of Mind Control II	item quick facts has identifier .*
-8998	Codex of Mind Vision II	item quick facts has identifier .*
-8999	Codex of Flash Heal V	item quick facts has identifier .*
-9000	Codex of Renew VII	item quick facts has identifier .*
-9001	Codex of Greater Heal II	item quick facts has identifier .*
-9002	Codex of Mind Blast VII	item quick facts has identifier .*
-9003	Codex of Holy Smite VII	item quick facts has identifier .*
-9004	Codex of Holy Word: Fortitude V	item quick facts has identifier .*
-9005	Codex of Mana Burn IV	item quick facts has identifier .*
-9006	Codex of Holy Word: Shield VIII	item quick facts has identifier .*
-9007	Codex of Fade V	item quick facts has identifier .*
-9008	Codex of Prayer of Healing III	item quick facts has identifier .*
-9009	Codex of Inner Fire V	item quick facts has identifier .*
-9010	Codex of Flash Heal VI	item quick facts has identifier .*
-9011	Codex of Shadow Word: Pain VII	item quick facts has identifier .*
-9012	Codex of Renew VIII	item quick facts has identifier .*
-9013	Codex of Greater Heal III	item quick facts has identifier .*
-9014	Codex of Mind Soothe III	item quick facts has identifier .*
-9015	Codex of Mind Blast VIII	item quick facts has identifier .*
-9016	Codex of Holy Smite VIII	item quick facts has identifier .*
-9017	Codex of Holy Protection III	item quick facts has identifier .*
-9018	Codex of Holy Word: Shield IX	item quick facts has identifier .*
-9019	Codex of Renew IX	item quick facts has identifier .*
-9020	Codex of Psychic Scream IV	item quick facts has identifier .*
-9021	Codex of Mana Burn V	item quick facts has identifier .*
-9022	Codex of Flash Heal VII	item quick facts has identifier .*
-9023	Codex of Shadow Protection III	item quick facts has identifier .*
-9024	Codex of Mind Control III	item quick facts has identifier .*
-9025	Codex of Greater Heal IV	item quick facts has identifier .*
-9026	Codex of Resurrection IV	item quick facts has identifier .*
-9027	Codex of Mind Blast IX	item quick facts has identifier .*
-9028	Codex of Shadow Word: Pain VIII	item quick facts has identifier .*
-9029	Codex of Fade VI	item quick facts has identifier .*
-9031	Codex of Shackle Undead III	item quick facts has identifier .*
-9032	Codex of Prayer of Healing IV	item quick facts has identifier .*
-9033	Codex of Inner Fire VI	item quick facts has identifier .*
-9034	Codex of Holy Word: Fortitude VI	item quick facts has identifier .*
-9035	Codex of Holy Word: Shield X	item quick facts has identifier .*
-9037	Tablet of Rockbiter Weapon	item quick facts has identifier .*
+8983	Codex of Flash Heal IV	item quick facts has identifier Deprecated
+8986	Codex of Shackle Undead II	item quick facts has identifier Deprecated
+8987	Codex of Holy Protection II	item quick facts has identifier Deprecated
+8988	Codex of Mana Burn III	item quick facts has identifier Deprecated
+8989	Codex of Fade IV	item quick facts has identifier Deprecated
+8990	Codex of Mind Blast VI	item quick facts has identifier Deprecated
+8991	Codex of Inner Fire IV	item quick facts has identifier Deprecated
+8992	Codex of Psychic Scream III	item quick facts has identifier Deprecated
+8993	Codex of Shadow Protection II	item quick facts has identifier Deprecated
+8994	Codex of Shadow Word: Pain VI	item quick facts has identifier Deprecated
+8995	Codex of Holy Word: Shield VII	item quick facts has identifier Deprecated
+8996	Codex of Resurrection III	item quick facts has identifier Deprecated
+8997	Codex of Mind Control II	item quick facts has identifier Deprecated
+8998	Codex of Mind Vision II	item quick facts has identifier Deprecated
+8999	Codex of Flash Heal V	item quick facts has identifier Deprecated
+9000	Codex of Renew VII	item quick facts has identifier Deprecated
+9001	Codex of Greater Heal II	item quick facts has identifier Deprecated
+9002	Codex of Mind Blast VII	item quick facts has identifier Deprecated
+9003	Codex of Holy Smite VII	item quick facts has identifier Deprecated
+9004	Codex of Holy Word: Fortitude V	item quick facts has identifier Deprecated
+9005	Codex of Mana Burn IV	item quick facts has identifier Deprecated
+9006	Codex of Holy Word: Shield VIII	item quick facts has identifier Deprecated
+9007	Codex of Fade V	item quick facts has identifier Deprecated
+9008	Codex of Prayer of Healing III	item quick facts has identifier Deprecated
+9009	Codex of Inner Fire V	item quick facts has identifier Deprecated
+9010	Codex of Flash Heal VI	item quick facts has identifier Deprecated
+9011	Codex of Shadow Word: Pain VII	item quick facts has identifier Deprecated
+9012	Codex of Renew VIII	item quick facts has identifier Deprecated
+9013	Codex of Greater Heal III	item quick facts has identifier Deprecated
+9014	Codex of Mind Soothe III	item quick facts has identifier Deprecated
+9015	Codex of Mind Blast VIII	item quick facts has identifier Deprecated
+9016	Codex of Holy Smite VIII	item quick facts has identifier Deprecated
+9017	Codex of Holy Protection III	item quick facts has identifier Deprecated
+9018	Codex of Holy Word: Shield IX	item quick facts has identifier Deprecated
+9019	Codex of Renew IX	item quick facts has identifier Deprecated
+9020	Codex of Psychic Scream IV	item quick facts has identifier Deprecated
+9021	Codex of Mana Burn V	item quick facts has identifier Deprecated
+9022	Codex of Flash Heal VII	item quick facts has identifier Deprecated
+9023	Codex of Shadow Protection III	item quick facts has identifier Deprecated
+9024	Codex of Mind Control III	item quick facts has identifier Deprecated
+9025	Codex of Greater Heal IV	item quick facts has identifier Deprecated
+9026	Codex of Resurrection IV	item quick facts has identifier Deprecated
+9027	Codex of Mind Blast IX	item quick facts has identifier Deprecated
+9028	Codex of Shadow Word: Pain VIII	item quick facts has identifier Deprecated
+9029	Codex of Fade VI	item quick facts has identifier Deprecated
+9031	Codex of Shackle Undead III	item quick facts has identifier Deprecated
+9032	Codex of Prayer of Healing IV	item quick facts has identifier Deprecated
+9033	Codex of Inner Fire VI	item quick facts has identifier Deprecated
+9034	Codex of Holy Word: Fortitude VI	item quick facts has identifier Deprecated
+9035	Codex of Holy Word: Shield X	item quick facts has identifier Deprecated
+9037	Tablet of Rockbiter Weapon	item quick facts has identifier Deprecated
 9038		item not found
-9039	Tablet of Earth Shock	item quick facts has identifier .*
-9040	Tablet of Healing Wave II	item quick facts has identifier .*
-9041	Tablet of Earthbind Totem	item quick facts has identifier .*
+9039	Tablet of Earth Shock	item quick facts has identifier Deprecated
+9040	Tablet of Healing Wave II	item quick facts has identifier Deprecated
+9041	Tablet of Earthbind Totem	item quick facts has identifier Deprecated
 9042		item not found
-9043	Tablet of Stoneclaw Totem	item quick facts has identifier .*
-9044	Tablet of Earth Shock II	item quick facts has identifier .*
+9043	Tablet of Stoneclaw Totem	item quick facts has identifier Deprecated
+9044	Tablet of Earth Shock II	item quick facts has identifier Deprecated
 9045		item not found
-9046	Tablet of Strength of Earth Totem	item quick facts has identifier .*
-9047	Tablet of Flame Shock	item quick facts has identifier .*
-9048	Tablet of Rebirth	item quick facts has identifier .*
-9049	Tablet of Fire Nova Totem	item quick facts has identifier .*
-9050	Tablet of Healing Wave III	item quick facts has identifier .*
-9051	Tablet of Earth Shock III	item quick facts has identifier .*
-9052	Tablet of Stoneskin Totem II	item quick facts has identifier .*
-9053	Tablet of Rockbiter Weapon II	item quick facts has identifier .*
-9054	Tablet of Flame Shock II	item quick facts has identifier .*
-9055	Tablet of Stoneclaw Totem II	item quick facts has identifier .*
-9056	Tablet of Healing Wave IV	item quick facts has identifier .*
-9057	Tablet of Frostbrand Weapon	item quick facts has identifier .*
-9058	Tablet of Frost Shock	item quick facts has identifier .*
-9059	Tablet of Flametongue Weapon	item quick facts has identifier .*
-9062	Tablet of Cure Disease	item quick facts has identifier .*
-9063	Tablet of Poison Cleansing Totem	item quick facts has identifier .*
-9064	Tablet of Flametongue Weapon II	item quick facts has identifier .*
-9065	Tablet of Fire Nova Totem II	item quick facts has identifier .*
-9066	Tablet of Frost Resistance Totem	item quick facts has identifier .*
-9067	Tablet of Strength of Earth Totem II	item quick facts has identifier .*
-9068	Tablet of Stoneskin Totem III	item quick facts has identifier .*
-9069	Tablet of Earth Shock IV	item quick facts has identifier .*
-9070	Tablet of Healing Wave V	item quick facts has identifier .*
-9071	Tablet of Mana Font Totem	item quick facts has identifier .*
-9072	Tablet of Flametongue Totem	item quick facts has identifier .*
-9073	Tablet of Windfury Weapon	item quick facts has identifier .*
-9074	Tablet of Flame Shock III	item quick facts has identifier .*
-9075	Tablet of Fire Resistance Totem	item quick facts has identifier .*
-9076	Tablet of Magma Totem	item quick facts has identifier .*
-9077	Tablet of Stoneclaw Totem III	item quick facts has identifier .*
-9078	Tablet of Grounding Totem	item quick facts has identifier .*
-9079	Tablet of Lightning Shock	item quick facts has identifier .*
-9080	Tablet of Nature Resistance Totem	item quick facts has identifier .*
-9081	Tablet of Healing Stream Totem II	item quick facts has identifier .*
-9082	Tablet of Rockbiter Weapon III	item quick facts has identifier .*
-9083	Tablet of Searing Totem III	item quick facts has identifier .*
-9084	Tablet of Windfury Totem	item quick facts has identifier .*
-9085	Tablet of Fire Nova Totem III	item quick facts has identifier .*
-9086	Tablet of Healing Wave VI	item quick facts has identifier .*
-9087	Tablet of Purge II	item quick facts has identifier .*
-9089	Tablet of Frost Shock II	item quick facts has identifier .*
-9090	Tablet of Frostbrand Weapon II	item quick facts has identifier .*
-9091	Tablet of Stoneskin Totem IV	item quick facts has identifier .*
-9092	Tablet of Sentry Totem	item quick facts has identifier .*
-9093	Tablet of Mana Font Totem II	item quick facts has identifier .*
-9094	Tablet of Flametongue Weapon III	item quick facts has identifier .*
-9095	Tablet of Earth Shock V	item quick facts has identifier .*
-9096	Tablet of Disease Cleansing Totem	item quick facts has identifier .*
-9097	Tablet of Magma Totem II	item quick facts has identifier .*
-9098	Tablet of Strength of Earth Totem III	item quick facts has identifier .*
-9099	Tablet of Stoneclaw Totem IV	item quick facts has identifier .*
-9100	Tablet of Lightning Shield V	item quick facts has identifier .*
-9101	Tablet of Windfury Weapon II	item quick facts has identifier .*
-9102	Tablet of Chain Lightning II	item quick facts has identifier .*
-9103	Tablet of Healing Stream Totem III	item quick facts has identifier .*
-9104	Tablet of Searing Totem IV	item quick facts has identifier .*
-9105	Tablet of Healing Wave VII	item quick facts has identifier .*
+9046	Tablet of Strength of Earth Totem	item quick facts has identifier Deprecated
+9047	Tablet of Flame Shock	item quick facts has identifier Deprecated
+9048	Tablet of Rebirth	item quick facts has identifier Deprecated
+9049	Tablet of Fire Nova Totem	item quick facts has identifier Deprecated
+9050	Tablet of Healing Wave III	item quick facts has identifier Deprecated
+9051	Tablet of Earth Shock III	item quick facts has identifier Deprecated
+9052	Tablet of Stoneskin Totem II	item quick facts has identifier Deprecated
+9053	Tablet of Rockbiter Weapon II	item quick facts has identifier Deprecated
+9054	Tablet of Flame Shock II	item quick facts has identifier Deprecated
+9055	Tablet of Stoneclaw Totem II	item quick facts has identifier Deprecated
+9056	Tablet of Healing Wave IV	item quick facts has identifier Deprecated
+9057	Tablet of Frostbrand Weapon	item quick facts has identifier Deprecated
+9058	Tablet of Frost Shock	item quick facts has identifier Deprecated
+9059	Tablet of Flametongue Weapon	item quick facts has identifier Deprecated
+9062	Tablet of Cure Disease	item quick facts has identifier Deprecated
+9063	Tablet of Poison Cleansing Totem	item quick facts has identifier Deprecated
+9064	Tablet of Flametongue Weapon II	item quick facts has identifier Deprecated
+9065	Tablet of Fire Nova Totem II	item quick facts has identifier Deprecated
+9066	Tablet of Frost Resistance Totem	item quick facts has identifier Deprecated
+9067	Tablet of Strength of Earth Totem II	item quick facts has identifier Deprecated
+9068	Tablet of Stoneskin Totem III	item quick facts has identifier Deprecated
+9069	Tablet of Earth Shock IV	item quick facts has identifier Deprecated
+9070	Tablet of Healing Wave V	item quick facts has identifier Deprecated
+9071	Tablet of Mana Font Totem	item quick facts has identifier Deprecated
+9072	Tablet of Flametongue Totem	item quick facts has identifier Deprecated
+9073	Tablet of Windfury Weapon	item quick facts has identifier Deprecated
+9074	Tablet of Flame Shock III	item quick facts has identifier Deprecated
+9075	Tablet of Fire Resistance Totem	item quick facts has identifier Deprecated
+9076	Tablet of Magma Totem	item quick facts has identifier Deprecated
+9077	Tablet of Stoneclaw Totem III	item quick facts has identifier Deprecated
+9078	Tablet of Grounding Totem	item quick facts has identifier Deprecated
+9079	Tablet of Lightning Shock	item quick facts has identifier Deprecated
+9080	Tablet of Nature Resistance Totem	item quick facts has identifier Deprecated
+9081	Tablet of Healing Stream Totem II	item quick facts has identifier Deprecated
+9082	Tablet of Rockbiter Weapon III	item quick facts has identifier Deprecated
+9083	Tablet of Searing Totem III	item quick facts has identifier Deprecated
+9084	Tablet of Windfury Totem	item quick facts has identifier Deprecated
+9085	Tablet of Fire Nova Totem III	item quick facts has identifier Deprecated
+9086	Tablet of Healing Wave VI	item quick facts has identifier Deprecated
+9087	Tablet of Purge II	item quick facts has identifier Deprecated
+9089	Tablet of Frost Shock II	item quick facts has identifier Deprecated
+9090	Tablet of Frostbrand Weapon II	item quick facts has identifier Deprecated
+9091	Tablet of Stoneskin Totem IV	item quick facts has identifier Deprecated
+9092	Tablet of Sentry Totem	item quick facts has identifier Deprecated
+9093	Tablet of Mana Font Totem II	item quick facts has identifier Deprecated
+9094	Tablet of Flametongue Weapon III	item quick facts has identifier Deprecated
+9095	Tablet of Earth Shock V	item quick facts has identifier Deprecated
+9096	Tablet of Disease Cleansing Totem	item quick facts has identifier Deprecated
+9097	Tablet of Magma Totem II	item quick facts has identifier Deprecated
+9098	Tablet of Strength of Earth Totem III	item quick facts has identifier Deprecated
+9099	Tablet of Stoneclaw Totem IV	item quick facts has identifier Deprecated
+9100	Tablet of Lightning Shield V	item quick facts has identifier Deprecated
+9101	Tablet of Windfury Weapon II	item quick facts has identifier Deprecated
+9102	Tablet of Chain Lightning II	item quick facts has identifier Deprecated
+9103	Tablet of Healing Stream Totem III	item quick facts has identifier Deprecated
+9104	Tablet of Searing Totem IV	item quick facts has identifier Deprecated
+9105	Tablet of Healing Wave VII	item quick facts has identifier Deprecated
 9106		item not found
 9107		item not found
 9108		item not found
@@ -3633,100 +3633,100 @@ id	name	reason
 9120		item not found
 9121		item not found
 9122		item not found
-9123	Tablet of Lightning Bolt VI	item quick facts has identifier .*
-9124	Tablet of Lightning Shock II	item quick facts has identifier .*
-9125	Tablet of Grace of Air Totem	item quick facts has identifier .*
-9126	Tablet of Flametongue Totem II	item quick facts has identifier .*
-9127	Tablet of Fire Resistance Totem II	item quick facts has identifier .*
-9128	Tablet of Fire Nova Totem IV	item quick facts has identifier .*
-9129	Tablet of Rockbiter Weapon IV	item quick facts has identifier .*
-9130	Tablet of Nature Resistance Totem II	item quick facts has identifier .*
-9131	Tablet of Stoneskin Totem V	item quick facts has identifier .*
-9132	Tablet of Molten Blast VI	item quick facts has identifier .*
-9133	Tablet of Chain Heal II	item quick facts has identifier .*
-9134	Tablet of Windfury Totem II	item quick facts has identifier .*
-9135	Tablet of Frost Shock III	item quick facts has identifier .*
-9136	Tablet of Mana Font Totem III	item quick facts has identifier .*
-9137	Tablet of Lightning Shield VI	item quick facts has identifier .*
-9138	Tablet of Magma Totem III	item quick facts has identifier .*
-9139	Tablet of Frostbrand Weapon III	item quick facts has identifier .*
-9140	Tablet of Chain Lightning III	item quick facts has identifier .*
-9141	Tablet of Stoneclaw Totem V	item quick facts has identifier .*
-9142	Tablet of Earth Shock VI	item quick facts has identifier .*
-9143	Tablet of Healing Wave VIII	item quick facts has identifier .*
-9145	Tablet of Lightning Bolt VII	item quick facts has identifier .*
-9146	Tablet of Searing Totem V	item quick facts has identifier .*
-9147	Tablet of Healing Stream Totem IV	item quick facts has identifier .*
-9148	Tablet of Flametongue Weapon IV	item quick facts has identifier .*
-9150	Tablet of Strength of Earth Totem IV	item quick facts has identifier .*
-9151	Tablet of Flame Shock V	item quick facts has identifier .*
-9152	Tablet of Fire Nova Totem V	item quick facts has identifier .*
-9156	Tablet of Molten Blast VII	item quick facts has identifier .*
-9157	Tablet of Chain Heal III	item quick facts has identifier .*
-9158	Tablet of Frost Resistance Totem III	item quick facts has identifier .*
-9159	Tablet of Lightning Shock III	item quick facts has identifier .*
-9160	Tablet of Windfury Weapon III	item quick facts has identifier .*
-9161	Tablet of Stoneskin Totem VI	item quick facts has identifier .*
-9162	Tablet of Lightning Shield VII	item quick facts has identifier .*
+9123	Tablet of Lightning Bolt VI	item quick facts has identifier Deprecated
+9124	Tablet of Lightning Shock II	item quick facts has identifier Deprecated
+9125	Tablet of Grace of Air Totem	item quick facts has identifier Deprecated
+9126	Tablet of Flametongue Totem II	item quick facts has identifier Deprecated
+9127	Tablet of Fire Resistance Totem II	item quick facts has identifier Deprecated
+9128	Tablet of Fire Nova Totem IV	item quick facts has identifier Deprecated
+9129	Tablet of Rockbiter Weapon IV	item quick facts has identifier Deprecated
+9130	Tablet of Nature Resistance Totem II	item quick facts has identifier Deprecated
+9131	Tablet of Stoneskin Totem V	item quick facts has identifier Deprecated
+9132	Tablet of Molten Blast VI	item quick facts has identifier Deprecated
+9133	Tablet of Chain Heal II	item quick facts has identifier Deprecated
+9134	Tablet of Windfury Totem II	item quick facts has identifier Deprecated
+9135	Tablet of Frost Shock III	item quick facts has identifier Deprecated
+9136	Tablet of Mana Font Totem III	item quick facts has identifier Deprecated
+9137	Tablet of Lightning Shield VI	item quick facts has identifier Deprecated
+9138	Tablet of Magma Totem III	item quick facts has identifier Deprecated
+9139	Tablet of Frostbrand Weapon III	item quick facts has identifier Deprecated
+9140	Tablet of Chain Lightning III	item quick facts has identifier Deprecated
+9141	Tablet of Stoneclaw Totem V	item quick facts has identifier Deprecated
+9142	Tablet of Earth Shock VI	item quick facts has identifier Deprecated
+9143	Tablet of Healing Wave VIII	item quick facts has identifier Deprecated
+9145	Tablet of Lightning Bolt VII	item quick facts has identifier Deprecated
+9146	Tablet of Searing Totem V	item quick facts has identifier Deprecated
+9147	Tablet of Healing Stream Totem IV	item quick facts has identifier Deprecated
+9148	Tablet of Flametongue Weapon IV	item quick facts has identifier Deprecated
+9150	Tablet of Strength of Earth Totem IV	item quick facts has identifier Deprecated
+9151	Tablet of Flame Shock V	item quick facts has identifier Deprecated
+9152	Tablet of Fire Nova Totem V	item quick facts has identifier Deprecated
+9156	Tablet of Molten Blast VII	item quick facts has identifier Deprecated
+9157	Tablet of Chain Heal III	item quick facts has identifier Deprecated
+9158	Tablet of Frost Resistance Totem III	item quick facts has identifier Deprecated
+9159	Tablet of Lightning Shock III	item quick facts has identifier Deprecated
+9160	Tablet of Windfury Weapon III	item quick facts has identifier Deprecated
+9161	Tablet of Stoneskin Totem VI	item quick facts has identifier Deprecated
+9162	Tablet of Lightning Shield VII	item quick facts has identifier Deprecated
 9163		item not found
-9164	Tablet of Grace of Air Totem II	item quick facts has identifier .*
-9165	Tablet of Flametongue Totem III	item quick facts has identifier .*
-9166	Tablet of Mana Font Totem IV	item quick facts has identifier .*
-9167	Tablet of Chain Lightning IV	item quick facts has identifier .*
-9168	Tablet of Healing Wave IX	item quick facts has identifier .*
-9169	Tablet of Lightning Bolt VIII	item quick facts has identifier .*
-9170	Tablet of Fire Resistance Totem III	item quick facts has identifier .*
-9171	Tablet of Magma Totem IV	item quick facts has identifier .*
-9174	Tablet of Frost Shock IV	item quick facts has identifier .*
-9175	Tablet of Rockbiter Weapon V	item quick facts has identifier .*
-9176	Tablet of Stoneclaw Totem VI	item quick facts has identifier .*
-9177	Tablet of Earth Shock VII	item quick facts has identifier .*
-9178	Tablet of Nature Resistance Totem III	item quick facts has identifier .*
-9180	Tablet of Windfury Totem III	item quick facts has identifier .*
-9181	Tablet of Healing Stream Totem V	item quick facts has identifier .*
-9182	Tablet of Searing Totem VI	item quick facts has identifier .*
-9183	Tablet of Chain Heal	item quick facts has identifier .*
-9184	Tablet of Flame Shock IV	item quick facts has identifier .*
-9185	Tablet of Frost Resistance Totem II	item quick facts has identifier .*
-9188	Tablet of Searing Totem II	item quick facts has identifier .*
-9190	Grimoire of Immolate	item quick facts has identifier .*
-9191	Grimoire of Curse of Weakness	item quick facts has identifier .*
-9192	Grimoire of Corruption	item quick facts has identifier .*
-9193	Grimoire of Life Tap	item quick facts has identifier .*
-9194	Grimoire of Curse of Agony	item quick facts has identifier .*
-9195	Grimoire of Drain Soul	item quick facts has identifier .*
+9164	Tablet of Grace of Air Totem II	item quick facts has identifier Deprecated
+9165	Tablet of Flametongue Totem III	item quick facts has identifier Deprecated
+9166	Tablet of Mana Font Totem IV	item quick facts has identifier Deprecated
+9167	Tablet of Chain Lightning IV	item quick facts has identifier Deprecated
+9168	Tablet of Healing Wave IX	item quick facts has identifier Deprecated
+9169	Tablet of Lightning Bolt VIII	item quick facts has identifier Deprecated
+9170	Tablet of Fire Resistance Totem III	item quick facts has identifier Deprecated
+9171	Tablet of Magma Totem IV	item quick facts has identifier Deprecated
+9174	Tablet of Frost Shock IV	item quick facts has identifier Deprecated
+9175	Tablet of Rockbiter Weapon V	item quick facts has identifier Deprecated
+9176	Tablet of Stoneclaw Totem VI	item quick facts has identifier Deprecated
+9177	Tablet of Earth Shock VII	item quick facts has identifier Deprecated
+9178	Tablet of Nature Resistance Totem III	item quick facts has identifier Deprecated
+9180	Tablet of Windfury Totem III	item quick facts has identifier Deprecated
+9181	Tablet of Healing Stream Totem V	item quick facts has identifier Deprecated
+9182	Tablet of Searing Totem VI	item quick facts has identifier Deprecated
+9183	Tablet of Chain Heal	item quick facts has identifier Deprecated
+9184	Tablet of Flame Shock IV	item quick facts has identifier Deprecated
+9185	Tablet of Frost Resistance Totem II	item quick facts has identifier Deprecated
+9188	Tablet of Searing Totem II	item quick facts has identifier Deprecated
+9190	Grimoire of Immolate	item quick facts has identifier Deprecated
+9191	Grimoire of Curse of Weakness	item quick facts has identifier Deprecated
+9192	Grimoire of Corruption	item quick facts has identifier Deprecated
+9193	Grimoire of Life Tap	item quick facts has identifier Deprecated
+9194	Grimoire of Curse of Agony	item quick facts has identifier Deprecated
+9195	Grimoire of Drain Soul	item quick facts has identifier Deprecated
 9196		item not found
-9198	Grimoire of Health Funnel	item quick facts has identifier .*
-9199	Grimoire of Curse of Recklessness	item quick facts has identifier .*
-9200	Grimoire of Curse of Weakness II	item quick facts has identifier .*
-9201	Grimoire of Corruption II	item quick facts has identifier .*
-9202	Grimoire of Life Tap II	item quick facts has identifier .*
-9203	Grimoire of Ritual of Summoning	item quick facts has identifier .*
-9204	Grimoire of Health Funnel II	item quick facts has identifier .*
-9205	Grimoire of Curse of Agony II	item quick facts has identifier .*
-9207	Grimoire of Create Bloodstone II	item quick facts has identifier .*
-9208	Grimoire of Drain Soul II	item quick facts has identifier .*
-9209	Grimoire of Curse of Weakness III	item quick facts has identifier .*
-9211	Grimoire of Curse of Recklessness II	item quick facts has identifier .*
-9212	Grimoire of Shadow Bolt V	item quick facts has identifier .*
+9198	Grimoire of Health Funnel	item quick facts has identifier Deprecated
+9199	Grimoire of Curse of Recklessness	item quick facts has identifier Deprecated
+9200	Grimoire of Curse of Weakness II	item quick facts has identifier Deprecated
+9201	Grimoire of Corruption II	item quick facts has identifier Deprecated
+9202	Grimoire of Life Tap II	item quick facts has identifier Deprecated
+9203	Grimoire of Ritual of Summoning	item quick facts has identifier Deprecated
+9204	Grimoire of Health Funnel II	item quick facts has identifier Deprecated
+9205	Grimoire of Curse of Agony II	item quick facts has identifier Deprecated
+9207	Grimoire of Create Bloodstone II	item quick facts has identifier Deprecated
+9208	Grimoire of Drain Soul II	item quick facts has identifier Deprecated
+9209	Grimoire of Curse of Weakness III	item quick facts has identifier Deprecated
+9211	Grimoire of Curse of Recklessness II	item quick facts has identifier Deprecated
+9212	Grimoire of Shadow Bolt V	item quick facts has identifier Deprecated
 9213		item not found
-9215	Grimoire of Health Funnel III	item quick facts has identifier .*
-9216	Grimoire of Corruption III	item quick facts has identifier .*
-9217	Grimoire of Life Tap III	item quick facts has identifier .*
-9218	Grimoire of Enslave Demon	item quick facts has identifier .*
-9219	Grimoire of Hellfire	item quick facts has identifier .*
+9215	Grimoire of Health Funnel III	item quick facts has identifier Deprecated
+9216	Grimoire of Corruption III	item quick facts has identifier Deprecated
+9217	Grimoire of Life Tap III	item quick facts has identifier Deprecated
+9218	Grimoire of Enslave Demon	item quick facts has identifier Deprecated
+9219	Grimoire of Hellfire	item quick facts has identifier Deprecated
 9220		item not found
-9221	Grimoire of Curse of Agony III	item quick facts has identifier .*
-9222	Grimoire of Curse of the Elements	item quick facts has identifier .*
-9223	Grimoire of Curse of Weakness IV	item quick facts has identifier .*
-9225	Grimoire of Shadow Bolt VI	item quick facts has identifier .*
-9226	Grimoire of Health Funnel IV	item quick facts has identifier .*
-9227	Grimoire of Drain Soul III	item quick facts has identifier .*
-9228	Grimoire of Create Bloodstone III	item quick facts has identifier .*
-9229	Grimoire of Life Drain IV	item quick facts has identifier .*
-9230	Grimoire of Curse of Recklessness III	item quick facts has identifier .*
-9231	Grimoire of Corruption IV	item quick facts has identifier .*
-9232	Elixir of Demonslaying	item quick facts has identifier .*
+9221	Grimoire of Curse of Agony III	item quick facts has identifier Deprecated
+9222	Grimoire of Curse of the Elements	item quick facts has identifier Deprecated
+9223	Grimoire of Curse of Weakness IV	item quick facts has identifier Deprecated
+9225	Grimoire of Shadow Bolt VI	item quick facts has identifier Deprecated
+9226	Grimoire of Health Funnel IV	item quick facts has identifier Deprecated
+9227	Grimoire of Drain Soul III	item quick facts has identifier Deprecated
+9228	Grimoire of Create Bloodstone III	item quick facts has identifier Deprecated
+9229	Grimoire of Life Drain IV	item quick facts has identifier Deprecated
+9230	Grimoire of Curse of Recklessness III	item quick facts has identifier Deprecated
+9231	Grimoire of Corruption IV	item quick facts has identifier Deprecated
+9232	Elixir of Demonslaying	item quick facts has identifier Added in patch Season of Discovery
 9239		item not found
 9267		item not found
 9268		item not found
@@ -3759,8 +3759,8 @@ id	name	reason
 9374		item not found
 9376		item not found
 9377		item not found
-9380	Jang'thraze the Protector	item quick facts has identifier .*
-9417	Archaedic Shard	item quick facts has identifier .*
+9380	Jang'thraze the Protector	item quick facts has identifier Deprecated
+9417	Archaedic Shard	item quick facts has identifier Deprecated
 9443	Used Monster Sample	itemName has identifier Monster
 9464	Deprecated Orwin's Shovel	itemName has identifier Deprecated
 9493		item not found
@@ -3787,7 +3787,7 @@ id	name	reason
 9584		item not found
 9585		item not found
 9586		item not found
-9602	Brushwood Blade	item quick facts has identifier .*
+9602	Brushwood Blade	item quick facts has identifier Deprecated
 9610		item not found
 9611		item not found
 9612		item not found
@@ -3808,7 +3808,7 @@ id	name	reason
 9675		item not found
 9676		item not found
 9677		item not found
-9685	Will of the Mountain Giant	item quick facts has identifier .*
+9685	Will of the Mountain Giant	item quick facts has identifier Deprecated
 9688		item not found
 9689		item not found
 9690		item not found
@@ -3882,7 +3882,7 @@ id	name	reason
 10016		item not found
 10017		item not found
 10037		item not found
-10049	Diabolist's Blade	item quick facts has identifier .*
+10049	Diabolist's Blade	item quick facts has identifier Deprecated
 10114		item not found
 10115		item not found
 10116		item not found
@@ -3998,7 +3998,7 @@ id	name	reason
 10568	Monster - Mace2H, Pacifier	itemName has identifier Monster
 10591	Monster - Mace, Stormhammer	itemName has identifier Monster
 10594	[PH] Hakkar'i Urn	itemName has identifier [PH]
-10595	Kum'isha's Junk	item quick facts has identifier .*
+10595	Kum'isha's Junk	item quick facts has identifier Deprecated
 10596	Deprecated Rose Colored Goggles	itemName has identifier Deprecated
 10611	Monster - Axe, Horde Badass 01	itemName has identifier Monster
 10612	Monster - Axe, Horde Badass 02	itemName has identifier Monster
@@ -4009,7 +4009,7 @@ id	name	reason
 10617	Monster - Dagger, Curved Bone Bloody	itemName has identifier Monster
 10618	Monster - Dagger, Tanto Blade	itemName has identifier Monster
 10619	Monster - Dagger, Badass Red	itemName has identifier Monster
-10650	Plague-Infested Quilboar Mane	item quick facts has identifier .*
+10650	Plague-Infested Quilboar Mane	item quick facts has identifier Deprecated
 10665		item not found
 10666		item not found
 10667		item not found
@@ -4023,7 +4023,7 @@ id	name	reason
 10675		item not found
 10676		item not found
 10677		item not found
-10683	Explorer's Knapsack	item quick facts has identifier .*
+10683	Explorer's Knapsack	item quick facts has identifier Deprecated
 10685	Monster - Mace2H, Kazon's Maul	itemName has identifier Monster
 10729		item not found
 10730		item not found
@@ -4260,7 +4260,7 @@ id	name	reason
 11095		item not found
 11096		item not found
 11097		item not found
-11099	Dark Iron Ore	item quick facts has identifier .*
+11099	Dark Iron Ore	item quick facts has identifier Deprecated
 11100		item not found
 11117		item not found
 11132	Unused Scraping Vial	itemName has identifier Unused
@@ -4382,7 +4382,7 @@ id	name	reason
 11359		item not found
 11360		item not found
 11361		item not found
-11364	Tabard of Stormwind	item quick facts has identifier .*
+11364	Tabard of Stormwind	item quick facts has identifier Deprecated
 11365	Monster - Staff, Badass Red Staff	itemName has identifier Monster
 11369	Monster - Mace, Thaurissan Hammer	itemName has identifier Monster
 11372		item not found
@@ -5075,7 +5075,7 @@ id	name	reason
 12959	Monster - Staff, Demon Skull Staff	itemName has identifier Monster
 12961	JEFF TEST SHIELD	itemName has identifier TEST
 12962	JEFF TEST GLOVES	itemName has identifier TEST
-12970	General's Ceremonial Plate	item quick facts has identifier .*
+12970	General's Ceremonial Plate	item quick facts has identifier Deprecated
 12971	JEFF TEST SWORD	itemName has identifier TEST
 12972	JEFF TEST SWORD II	itemName has identifier TEST
 12980	Monster - Shield, Wall Metal Silver	itemName has identifier Monster
@@ -5576,7 +5576,7 @@ id	name	reason
 14080		item not found
 14081		item not found
 14082	Monster - Mace2H, Tirion Fordring	itemName has identifier Monster
-14083	Tyrande's Staff	item quick facts has identifier .*
+14083	Tyrande's Staff	item quick facts has identifier Deprecated
 14084	Monster - Mace2H, Cairne Totem	itemName has identifier Monster
 14085	Monster - Glaive Vol'jin	itemName has identifier Monster
 14092	Monster - Staff, Holy Staff Archbishop Benedictus	itemName has identifier Monster
@@ -5602,19 +5602,19 @@ id	name	reason
 14361		item not found
 14362		item not found
 14363	Deprecated Runic Cloth Pants	itemName has identifier Deprecated
-14382	Durability Chestpiece	item quick facts has identifier .*
-14383	Durability Bracers	item quick facts has identifier .*
-14384	Durability Boots	item quick facts has identifier .*
-14385	Durability Cloak	item quick facts has identifier .*
-14386	Durability Hat	item quick facts has identifier .*
-14387	Durability Gloves	item quick facts has identifier .*
-14388	Durability Leggings	item quick facts has identifier .*
-14389	Durability Shoulderpads	item quick facts has identifier .*
-14390	Durability Belt	item quick facts has identifier .*
-14391	Durability Sword	item quick facts has identifier .*
-14392	Durability Staff	item quick facts has identifier .*
-14393	Durability Shield	item quick facts has identifier .*
-14394	Durability Bow	item quick facts has identifier .*
+14382	Durability Chestpiece	item quick facts has identifier Deprecated
+14383	Durability Bracers	item quick facts has identifier Deprecated
+14384	Durability Boots	item quick facts has identifier Deprecated
+14385	Durability Cloak	item quick facts has identifier Deprecated
+14386	Durability Hat	item quick facts has identifier Deprecated
+14387	Durability Gloves	item quick facts has identifier Deprecated
+14388	Durability Leggings	item quick facts has identifier Deprecated
+14389	Durability Shoulderpads	item quick facts has identifier Deprecated
+14390	Durability Belt	item quick facts has identifier Deprecated
+14391	Durability Sword	item quick facts has identifier Deprecated
+14392	Durability Staff	item quick facts has identifier Deprecated
+14393	Durability Shield	item quick facts has identifier Deprecated
+14394	Durability Bow	item quick facts has identifier Deprecated
 14475	Monster - Axe, 2H War A03 White	itemName has identifier Monster
 14515		item not found
 14516		item not found
@@ -5851,7 +5851,7 @@ id	name	reason
 16034	PVP Plate Cloak Alliance	item is not available to players
 16035	PVP Cloth Helm Horde	item is not available to players
 16038	PVP Cloth Shoulder Horde	item is not available to players
-16057	Explorer's Knapsack	item quick facts has identifier .*
+16057	Explorer's Knapsack	item quick facts has identifier Deprecated
 16061	Test Fire Res Shoulders Cloth	itemName has identifier Test
 16062	Test Fire Res Waist Cloth	itemName has identifier Test
 16063	Test Fire Res Hands Cloth	itemName has identifier Test
@@ -6035,11 +6035,11 @@ id	name	reason
 16301		item not found
 16334		item not found
 16340		item not found
-16404	Knight-Captain's Plate Wristguards	item quick facts has identifier .*
-16407	Knight-Captain's Plate Girdle	item quick facts has identifier .*
-16511	Legionnaire's Plate Cinch	item quick facts has identifier .*
-16512	Legionnaire's Plate Bracers	item quick facts has identifier .*
-16520	Legionnaire's Mail Cinch	item quick facts has identifier .*
+16404	Knight-Captain's Plate Wristguards	item quick facts has identifier Deprecated
+16407	Knight-Captain's Plate Girdle	item quick facts has identifier Deprecated
+16511	Legionnaire's Plate Cinch	item quick facts has identifier Deprecated
+16512	Legionnaire's Plate Bracers	item quick facts has identifier Deprecated
+16520	Legionnaire's Mail Cinch	item quick facts has identifier Deprecated
 16582	Monster - Wand, Horde Green Feathered	itemName has identifier Monster
 16584		item not found
 16585		item not found
@@ -6091,7 +6091,7 @@ id	name	reason
 16640		item not found
 16641		item not found
 16657		item not found
-16664	Ornate Bracers	item quick facts has identifier .*
+16664	Ornate Bracers	item quick facts has identifier Deprecated
 16749		item not found
 16750		item not found
 16751		item not found
@@ -6118,7 +6118,7 @@ id	name	reason
 16780		item not found
 16781		item not found
 16785	Rexxar's Testament	itemName has identifier Test
-16792	Giant Club	item quick facts has identifier .*
+16792	Giant Club	item quick facts has identifier Deprecated
 16874		item not found
 16875		item not found
 16876		item not found
@@ -6127,7 +6127,7 @@ id	name	reason
 16879		item not found
 16880		item not found
 16881		item not found
-16999	Royal Seal of Alexis	item quick facts has identifier .*
+16999	Royal Seal of Alexis	item quick facts has identifier Deprecated
 17040	Monster - Mace, Frying Pan	itemName has identifier Monster
 17041	Monster - Mace, Frying Pan w/ Eggs	itemName has identifier Monster
 17079		item not found
@@ -6561,10 +6561,10 @@ id	name	reason
 17700		item not found
 17701		item not found
 17729		item not found
-17733	Fist of Stone	item quick facts has identifier .*
-17769	Sagebrush Spaulders	item quick facts has identifier .*
-17782	Talisman of Binding Shard	item quick facts has identifier .*
-17783	Talisman of Binding Fragment	item quick facts has identifier .*
+17733	Fist of Stone	item quick facts has identifier Deprecated
+17769	Sagebrush Spaulders	item quick facts has identifier Deprecated
+17782	Talisman of Binding Shard	item quick facts has identifier Deprecated
+17783	Talisman of Binding Fragment	item quick facts has identifier Deprecated
 17784		item not found
 17785		item not found
 17786		item not found
@@ -7364,131 +7364,131 @@ id	name	reason
 20003	Devilsaur Claws	item is not available to players
 20005	Devilsaur Claws	item is not available to players
 20133		item not found
-20135	90 Epic Warrior Bracelets	item quick facts has identifier .*
-20136	90 Epic Warrior Breastplate	item quick facts has identifier .*
-20137	90 Epic Warrior Gauntlets	item quick facts has identifier .*
-20138	90 Epic Warrior Helm	item quick facts has identifier .*
-20139	90 Epic Warrior Legplates	item quick facts has identifier .*
-20140	90 Epic Warrior Pauldrons	item quick facts has identifier .*
-20141	90 Epic Warrior Sabatons	item quick facts has identifier .*
-20142	90 Epic Warrior Waistband	item quick facts has identifier .*
-20143	90 Epic Warrior Neck	item quick facts has identifier .*
-20144	90 Epic Warrior Ring	item quick facts has identifier .*
-20145	90 Epic Warrior Cloak	item quick facts has identifier .*
-20146	90 Epic Warrior Gun	item quick facts has identifier .*
+20135	90 Epic Warrior Bracelets	item quick facts has identifier Deprecated
+20136	90 Epic Warrior Breastplate	item quick facts has identifier Deprecated
+20137	90 Epic Warrior Gauntlets	item quick facts has identifier Deprecated
+20138	90 Epic Warrior Helm	item quick facts has identifier Deprecated
+20139	90 Epic Warrior Legplates	item quick facts has identifier Deprecated
+20140	90 Epic Warrior Pauldrons	item quick facts has identifier Deprecated
+20141	90 Epic Warrior Sabatons	item quick facts has identifier Deprecated
+20142	90 Epic Warrior Waistband	item quick facts has identifier Deprecated
+20143	90 Epic Warrior Neck	item quick facts has identifier Deprecated
+20144	90 Epic Warrior Ring	item quick facts has identifier Deprecated
+20145	90 Epic Warrior Cloak	item quick facts has identifier Deprecated
+20146	90 Epic Warrior Gun	item quick facts has identifier Deprecated
 20147		item not found
 20148		item not found
-20149	90 Epic Warrior Axe	item quick facts has identifier .*
-20238	90 Green Warrior Axe	item quick facts has identifier .*
-20239	90 Green Warrior Bracelets	item quick facts has identifier .*
-20240	90 Green Warrior Breastplate	item quick facts has identifier .*
-20241	90 Green Warrior Cloak	item quick facts has identifier .*
-20242	90 Green Warrior Gauntlets	item quick facts has identifier .*
-20245	90 Green Warrior Gun	item quick facts has identifier .*
-20246	90 Green Warrior Helm	item quick facts has identifier .*
-20247	90 Green Warrior Legplates	item quick facts has identifier .*
-20248	90 Green Warrior Neck	item quick facts has identifier .*
-20249	90 Green Warrior Pauldrons	item quick facts has identifier .*
-20250	90 Green Warrior Ring	item quick facts has identifier .*
-20251	90 Green Warrior Sabatons	item quick facts has identifier .*
-20252	90 Green Warrior Waistband	item quick facts has identifier .*
-20267	90 Epic Rogue Belt	item quick facts has identifier .*
-20268	90 Epic Rogue Boots	item quick facts has identifier .*
-20269	90 Epic Rogue Bracers	item quick facts has identifier .*
-20270	90 Epic Rogue Cap	item quick facts has identifier .*
-20271	90 Epic Rogue Gloves	item quick facts has identifier .*
-20272	90 Epic Rogue Pants	item quick facts has identifier .*
-20273	90 Epic Rogue Spaulders	item quick facts has identifier .*
-20274	90 Epic Rogue Tunic	item quick facts has identifier .*
-20275	90 Epic Rogue Neck	item quick facts has identifier .*
-20276	90 Epic Rogue Cloak	item quick facts has identifier .*
-20277	90 Epic Rogue Ring	item quick facts has identifier .*
-20278	90 Epic Rogue Bow	item quick facts has identifier .*
-20279	90 Epic Rogue Dagger	item quick facts has identifier .*
-20280	63 Green Warrior Axe	item quick facts has identifier .*
-20281	63 Green Warrior Bracelets	item quick facts has identifier .*
-20282	63 Green Warrior Breastplate	item quick facts has identifier .*
-20283	63 Green Warrior Cloak	item quick facts has identifier .*
-20284	63 Green Warrior Gauntlets	item quick facts has identifier .*
-20285	63 Green Warrior Gun	item quick facts has identifier .*
-20286	63 Green Warrior Helm	item quick facts has identifier .*
-20287	63 Green Warrior Legplates	item quick facts has identifier .*
-20288	63 Green Warrior Neck	item quick facts has identifier .*
-20289	63 Green Warrior Pauldrons	item quick facts has identifier .*
-20290	63 Green Warrior Ring	item quick facts has identifier .*
-20291	63 Green Warrior Sabatons	item quick facts has identifier .*
-20292	63 Green Warrior Waistband	item quick facts has identifier .*
+20149	90 Epic Warrior Axe	item quick facts has identifier Deprecated
+20238	90 Green Warrior Axe	item quick facts has identifier Deprecated
+20239	90 Green Warrior Bracelets	item quick facts has identifier Deprecated
+20240	90 Green Warrior Breastplate	item quick facts has identifier Deprecated
+20241	90 Green Warrior Cloak	item quick facts has identifier Deprecated
+20242	90 Green Warrior Gauntlets	item quick facts has identifier Deprecated
+20245	90 Green Warrior Gun	item quick facts has identifier Deprecated
+20246	90 Green Warrior Helm	item quick facts has identifier Deprecated
+20247	90 Green Warrior Legplates	item quick facts has identifier Deprecated
+20248	90 Green Warrior Neck	item quick facts has identifier Deprecated
+20249	90 Green Warrior Pauldrons	item quick facts has identifier Deprecated
+20250	90 Green Warrior Ring	item quick facts has identifier Deprecated
+20251	90 Green Warrior Sabatons	item quick facts has identifier Deprecated
+20252	90 Green Warrior Waistband	item quick facts has identifier Deprecated
+20267	90 Epic Rogue Belt	item quick facts has identifier Deprecated
+20268	90 Epic Rogue Boots	item quick facts has identifier Deprecated
+20269	90 Epic Rogue Bracers	item quick facts has identifier Deprecated
+20270	90 Epic Rogue Cap	item quick facts has identifier Deprecated
+20271	90 Epic Rogue Gloves	item quick facts has identifier Deprecated
+20272	90 Epic Rogue Pants	item quick facts has identifier Deprecated
+20273	90 Epic Rogue Spaulders	item quick facts has identifier Deprecated
+20274	90 Epic Rogue Tunic	item quick facts has identifier Deprecated
+20275	90 Epic Rogue Neck	item quick facts has identifier Deprecated
+20276	90 Epic Rogue Cloak	item quick facts has identifier Deprecated
+20277	90 Epic Rogue Ring	item quick facts has identifier Deprecated
+20278	90 Epic Rogue Bow	item quick facts has identifier Deprecated
+20279	90 Epic Rogue Dagger	item quick facts has identifier Deprecated
+20280	63 Green Warrior Axe	item quick facts has identifier Deprecated
+20281	63 Green Warrior Bracelets	item quick facts has identifier Deprecated
+20282	63 Green Warrior Breastplate	item quick facts has identifier Deprecated
+20283	63 Green Warrior Cloak	item quick facts has identifier Deprecated
+20284	63 Green Warrior Gauntlets	item quick facts has identifier Deprecated
+20285	63 Green Warrior Gun	item quick facts has identifier Deprecated
+20286	63 Green Warrior Helm	item quick facts has identifier Deprecated
+20287	63 Green Warrior Legplates	item quick facts has identifier Deprecated
+20288	63 Green Warrior Neck	item quick facts has identifier Deprecated
+20289	63 Green Warrior Pauldrons	item quick facts has identifier Deprecated
+20290	63 Green Warrior Ring	item quick facts has identifier Deprecated
+20291	63 Green Warrior Sabatons	item quick facts has identifier Deprecated
+20292	63 Green Warrior Waistband	item quick facts has identifier Deprecated
 20293		item not found
 20294		item not found
-20297	90 Green Rogue Belt	item quick facts has identifier .*
-20298	90 Green Rogue Boots	item quick facts has identifier .*
-20299	90 Green Rogue Bow	item quick facts has identifier .*
-20300	90 Green Rogue Bracers	item quick facts has identifier .*
-20301	90 Green Rogue Cap	item quick facts has identifier .*
-20302	90 Green Rogue Cloak	item quick facts has identifier .*
-20303	90 Green Rogue Dagger	item quick facts has identifier .*
-20304	90 Green Rogue Gloves	item quick facts has identifier .*
-20305	90 Green Rogue Neck	item quick facts has identifier .*
-20306	90 Green Rogue Pants	item quick facts has identifier .*
-20307	90 Green Rogue Ring	item quick facts has identifier .*
-20308	90 Green Rogue Spaulders	item quick facts has identifier .*
-20309	90 Green Rogue Tunic	item quick facts has identifier .*
-20311	63 Green Rogue Belt	item quick facts has identifier .*
-20312	63 Green Rogue Boots	item quick facts has identifier .*
-20313	63 Green Rogue Bow	item quick facts has identifier .*
-20314	63 Green Rogue Bracers	item quick facts has identifier .*
-20315	63 Green Rogue Cap	item quick facts has identifier .*
-20316	63 Green Rogue Cloak	item quick facts has identifier .*
-20317	63 Green Rogue Dagger	item quick facts has identifier .*
-20318	63 Green Rogue Gloves	item quick facts has identifier .*
-20319	63 Green Rogue Neck	item quick facts has identifier .*
-20320	63 Green Rogue Pants	item quick facts has identifier .*
-20321	63 Green Rogue Ring	item quick facts has identifier .*
-20322	63 Green Rogue Spaulders	item quick facts has identifier .*
-20323	63 Green Rogue Tunic	item quick facts has identifier .*
-20324	90 Epic Frost Belt	item quick facts has identifier .*
-20325	90 Epic Frost Bindings	item quick facts has identifier .*
+20297	90 Green Rogue Belt	item quick facts has identifier Deprecated
+20298	90 Green Rogue Boots	item quick facts has identifier Deprecated
+20299	90 Green Rogue Bow	item quick facts has identifier Deprecated
+20300	90 Green Rogue Bracers	item quick facts has identifier Deprecated
+20301	90 Green Rogue Cap	item quick facts has identifier Deprecated
+20302	90 Green Rogue Cloak	item quick facts has identifier Deprecated
+20303	90 Green Rogue Dagger	item quick facts has identifier Deprecated
+20304	90 Green Rogue Gloves	item quick facts has identifier Deprecated
+20305	90 Green Rogue Neck	item quick facts has identifier Deprecated
+20306	90 Green Rogue Pants	item quick facts has identifier Deprecated
+20307	90 Green Rogue Ring	item quick facts has identifier Deprecated
+20308	90 Green Rogue Spaulders	item quick facts has identifier Deprecated
+20309	90 Green Rogue Tunic	item quick facts has identifier Deprecated
+20311	63 Green Rogue Belt	item quick facts has identifier Deprecated
+20312	63 Green Rogue Boots	item quick facts has identifier Deprecated
+20313	63 Green Rogue Bow	item quick facts has identifier Deprecated
+20314	63 Green Rogue Bracers	item quick facts has identifier Deprecated
+20315	63 Green Rogue Cap	item quick facts has identifier Deprecated
+20316	63 Green Rogue Cloak	item quick facts has identifier Deprecated
+20317	63 Green Rogue Dagger	item quick facts has identifier Deprecated
+20318	63 Green Rogue Gloves	item quick facts has identifier Deprecated
+20319	63 Green Rogue Neck	item quick facts has identifier Deprecated
+20320	63 Green Rogue Pants	item quick facts has identifier Deprecated
+20321	63 Green Rogue Ring	item quick facts has identifier Deprecated
+20322	63 Green Rogue Spaulders	item quick facts has identifier Deprecated
+20323	63 Green Rogue Tunic	item quick facts has identifier Deprecated
+20324	90 Epic Frost Belt	item quick facts has identifier Deprecated
+20325	90 Epic Frost Bindings	item quick facts has identifier Deprecated
 20326	90 Epic Frost Boots	item is not available to players
-20327	90 Epic Frost Crown	item quick facts has identifier .*
-20328	90 Epic Frost Gloves	item quick facts has identifier .*
-20329	90 Epic Frost Leggings	item quick facts has identifier .*
-20330	90 Epic Frost Mantle	item quick facts has identifier .*
-20331	90 Epic Frost Robes	item quick facts has identifier .*
-20332	90 Epic Frost Neck	item quick facts has identifier .*
-20333	90 Epic Frost Ring	item quick facts has identifier .*
-20334	90 Epic Frost Staff	item quick facts has identifier .*
-20335	90 Epic Frost Wand	item quick facts has identifier .*
-20336	90 Epic Frost Shroud	item quick facts has identifier .*
-20338	90 Green Frost Belt	item quick facts has identifier .*
-20339	90 Green Frost Bindings	item quick facts has identifier .*
+20327	90 Epic Frost Crown	item quick facts has identifier Deprecated
+20328	90 Epic Frost Gloves	item quick facts has identifier Deprecated
+20329	90 Epic Frost Leggings	item quick facts has identifier Deprecated
+20330	90 Epic Frost Mantle	item quick facts has identifier Deprecated
+20331	90 Epic Frost Robes	item quick facts has identifier Deprecated
+20332	90 Epic Frost Neck	item quick facts has identifier Deprecated
+20333	90 Epic Frost Ring	item quick facts has identifier Deprecated
+20334	90 Epic Frost Staff	item quick facts has identifier Deprecated
+20335	90 Epic Frost Wand	item quick facts has identifier Deprecated
+20336	90 Epic Frost Shroud	item quick facts has identifier Deprecated
+20338	90 Green Frost Belt	item quick facts has identifier Deprecated
+20339	90 Green Frost Bindings	item quick facts has identifier Deprecated
 20340	90 Green Frost Boots	item is not available to players
-20341	90 Green Frost Crown	item quick facts has identifier .*
-20342	90 Green Frost Gloves	item quick facts has identifier .*
-20343	90 Green Frost Leggings	item quick facts has identifier .*
-20344	90 Green Frost Mantle	item quick facts has identifier .*
-20345	90 Green Frost Neck	item quick facts has identifier .*
-20346	90 Green Frost Ring	item quick facts has identifier .*
-20347	90 Green Frost Robes	item quick facts has identifier .*
-20348	90 Green Frost Shroud	item quick facts has identifier .*
-20349	90 Green Frost Staff	item quick facts has identifier .*
-20350	90 Green Frost Wand	item quick facts has identifier .*
-20351	63 Green Frost Belt	item quick facts has identifier .*
-20352	63 Green Frost Bindings	item quick facts has identifier .*
+20341	90 Green Frost Crown	item quick facts has identifier Deprecated
+20342	90 Green Frost Gloves	item quick facts has identifier Deprecated
+20343	90 Green Frost Leggings	item quick facts has identifier Deprecated
+20344	90 Green Frost Mantle	item quick facts has identifier Deprecated
+20345	90 Green Frost Neck	item quick facts has identifier Deprecated
+20346	90 Green Frost Ring	item quick facts has identifier Deprecated
+20347	90 Green Frost Robes	item quick facts has identifier Deprecated
+20348	90 Green Frost Shroud	item quick facts has identifier Deprecated
+20349	90 Green Frost Staff	item quick facts has identifier Deprecated
+20350	90 Green Frost Wand	item quick facts has identifier Deprecated
+20351	63 Green Frost Belt	item quick facts has identifier Deprecated
+20352	63 Green Frost Bindings	item quick facts has identifier Deprecated
 20353	63 Green Frost Boots	item is not available to players
-20354	63 Green Frost Crown	item quick facts has identifier .*
-20355	63 Green Frost Gloves	item quick facts has identifier .*
-20356	63 Green Frost Leggings	item quick facts has identifier .*
-20357	63 Green Frost Mantle	item quick facts has identifier .*
-20358	63 Green Frost Neck	item quick facts has identifier .*
-20359	63 Green Frost Ring	item quick facts has identifier .*
-20360	63 Green Frost Robes	item quick facts has identifier .*
-20361	63 Green Frost Shroud	item quick facts has identifier .*
-20362	63 Green Frost Staff	item quick facts has identifier .*
-20363	63 Green Frost Wand	item quick facts has identifier .*
+20354	63 Green Frost Crown	item quick facts has identifier Deprecated
+20355	63 Green Frost Gloves	item quick facts has identifier Deprecated
+20356	63 Green Frost Leggings	item quick facts has identifier Deprecated
+20357	63 Green Frost Mantle	item quick facts has identifier Deprecated
+20358	63 Green Frost Neck	item quick facts has identifier Deprecated
+20359	63 Green Frost Ring	item quick facts has identifier Deprecated
+20360	63 Green Frost Robes	item quick facts has identifier Deprecated
+20361	63 Green Frost Shroud	item quick facts has identifier Deprecated
+20362	63 Green Frost Staff	item quick facts has identifier Deprecated
+20363	63 Green Frost Wand	item quick facts has identifier Deprecated
 20364	Test Ammo Lockbox	itemName has identifier Test
 20365		item not found
 20366		item not found
-20368	Bland Bow of Steadiness	item quick facts has identifier .*
+20368	Bland Bow of Steadiness	item quick facts has identifier Deprecated
 20370	Test Staff 90 epic	itemName has identifier Test
 20372	Test Staff 77 epic	itemName has identifier Test
 20386		item not found
@@ -7497,7 +7497,7 @@ id	name	reason
 20421		item not found
 20445	Test Defense Ring +120	itemName has identifier Test
 20446	Test Defense Ring +80	itemName has identifier Test
-20460	Brann Bronzebeard's Lost Letter	item quick facts has identifier .*
+20460	Brann Bronzebeard's Lost Letter	item quick facts has identifier Deprecated
 20468	Monster - Item, Orb - A01 Green	itemName has identifier Monster
 20470		item not found
 20471		item not found

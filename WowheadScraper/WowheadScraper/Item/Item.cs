@@ -101,7 +101,7 @@ public class Item : IHtmlProducerPaths
                 regex.IsMatch(quickFacts));
             if (regex != null && !isException)
             {
-                return new Item {Id = id, Name = itemName, ErrorMessage = $"item quick facts has identifier {regex.Replace(".*", " ")}"};
+                return new Item {Id = id, Name = itemName, ErrorMessage = $"item quick facts has identifier {regex.ToString().Replace(".*", " ")}"};
             }
         }
         
