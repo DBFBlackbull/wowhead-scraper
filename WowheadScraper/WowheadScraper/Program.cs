@@ -17,9 +17,9 @@ class Program
 
         // await new HtmlProducer().Run(40, Quest.LastIdInClassic, new Quest());
         
-        await new OrderedItemProducerConsumer().Run(40);
+        await new OrderedQuestProducerConsumer().Run(40);
 
-        // await QuestConsumer.Run(new HtmlQuestGetter(), 1);
+        //await QuestConsumer.Run(new HtmlQuestGetter());
     }
 
     public static int GetMoney(string? money, int factor)
@@ -57,4 +57,15 @@ class Program
 
         return directory.FullName;
     }
+
+    // public static void TestXpRounding(int xp)
+    // {
+    //     var decimals = xp.ToString().Length;
+    //     Console.WriteLine($"{xp.ToString().PadLeft(decimals)} Full xp");
+    //     Console.WriteLine($"{Quest.RoundQuestXp(xp*0.8m).ToString().PadLeft(decimals)} 0.8 xp");
+    //     Console.WriteLine($"{Quest.RoundQuestXp(xp*0.6m).ToString().PadLeft(decimals)} 0.6 xp");
+    //     Console.WriteLine($"{Quest.RoundQuestXp(xp*0.4m).ToString().PadLeft(decimals)} 0.4 xp");
+    //     Console.WriteLine($"{Quest.RoundQuestXp(xp*0.2m).ToString().PadLeft(decimals)} 0.2 xp");
+    //     Console.WriteLine($"{Quest.RoundQuestXp(xp*0.1m).ToString().PadLeft(decimals)} 0.1 xp");
+    // }
 }

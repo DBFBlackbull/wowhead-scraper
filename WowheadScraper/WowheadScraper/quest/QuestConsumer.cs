@@ -1,5 +1,7 @@
 using System.Collections.Concurrent;
 using System.Diagnostics;
+using System.Runtime.InteropServices.JavaScript;
+using System.Text;
 
 namespace WowheadScraper;
 
@@ -20,26 +22,36 @@ public class QuestConsumer
             {
                 notAvailableStream.AutoFlush = true;
 
-                var questHeaders = string.Join("\t",
+                var headerBuilder = new StringBuilder();
+                headerBuilder.AppendJoin("\t",
                     "id",
                     "name",
                     "level",
-                    "experience",
-                    "moneyFlatReward",
-                    "moneyExperienceReward",
-                    "moneyTotalReward"
+                    "requiredLevel",
+                    "minLevel",
+                    "maxLevel"
                 );
+                
+                for (int i = 1; i <= 60; i++)
+                {
+                    headerBuilder.Append($"\txpAt{i}");
+                }
+                for (int i = 1; i <= 60; i++)
+                {
+                    headerBuilder.Append($"\tmoneyAt{i}");
+                }
+                headerBuilder.Append("\txpToMoneyAt60");
+                headerBuilder.Append("\ttotalMoneyAt60");
                 for (int i = 1; i <= 10; i++)
                 {
-                    questHeaders = string.Join("\t",
-                        questHeaders,
+                    headerBuilder.AppendJoin("\t",
+                        "",
                         $"reputationId{i}",
                         $"reputationName{i}",
-                        $"reputationAmount{i}"
-                    );
+                        $"reputationAmount{i}");
                 }
                 
-                await availableStream.WriteLineAsync(questHeaders);
+                await availableStream.WriteLineAsync(headerBuilder.ToString());
                 await notAvailableStream.WriteLineAsync("id\tname\treason");
                 
                 var stopwatch = new Stopwatch();
@@ -49,26 +61,94 @@ public class QuestConsumer
                     var quest = await questGetter.GetQuest(id);
                     if (quest.IsAvailable)
                     {
-                        var questProperties = string.Join("\t",
+                        var rowBuilder = new StringBuilder();
+                        rowBuilder.AppendJoin("\t",
                             quest.Id, 
                             quest.Name,
-                            quest.Experience.Level,
-                            quest.Experience.Experience,
-                            quest.Money.QuestReward,
-                            quest.Money.ExperienceToMoney,
-                            quest.Money.Total
+                            quest.Level,
+                            quest.RequiredLevel,
+                            quest.MinLevel,
+                            quest.MaxLevel
                         );
 
+                        var minLevel = Math.Min(quest.MinLevel, 60);
+                        var maxLevel = Math.Min(quest.MaxLevel, 60);
+
+                        if (quest.Experience.Count == 0)
+                        {
+                            for (int i = 1; i <= 60; i++)
+                            {
+                                rowBuilder.Append("\t");
+                            }
+                        }
+                        else
+                        {
+                            for (int i = 1; i < quest.RequiredLevel; i++)
+                            {
+                                rowBuilder.Append("\t");
+                            }
+                            for (int i = quest.RequiredLevel; i < minLevel; i++)
+                            {
+                                rowBuilder.Append($"\t{quest.Experience[minLevel]}");
+                            }
+                            for (int i = minLevel; i <= maxLevel; i++)
+                            {
+                                rowBuilder.Append($"\t{quest.Experience[i]}");
+                            }
+
+                            for (int i = maxLevel + 1; i <= 60; i++)
+                            {
+                                rowBuilder.Append($"\t{quest.Experience[maxLevel]}");
+                            }
+                        }
+                        
+                        if (quest.Money.QuestReward.Count == 0)
+                        {
+                            for (int i = 1; i <= 60; i++)
+                            {
+                                rowBuilder.Append("\t");
+                            }
+                        }
+                        else
+                        {
+                            for (int i = 1; i < quest.RequiredLevel; i++)
+                            {
+                                rowBuilder.Append("\t");
+                            }
+                            for (int i = quest.RequiredLevel; i < minLevel; i++)
+                            {
+                                rowBuilder.Append($"\t{quest.Money.QuestReward[minLevel]}");
+                            }
+                            for (int i = minLevel; i <= maxLevel; i++)
+                            {
+                                rowBuilder.Append($"\t{quest.Money.QuestReward[i]}");
+                            }
+
+                            for (int i = maxLevel + 1; i <= 60; i++)
+                            {
+                                rowBuilder.Append($"\t{quest.Money.QuestReward[maxLevel]}");
+                            }
+                        }
+                        
+                        rowBuilder.Append($"\t{quest.Money.ExperienceToMoney}");
+
+                        var flatMoney = 0;
+                        if (quest.Money.QuestReward.Count > 0)
+                        {
+                            flatMoney = quest.Money.QuestReward[quest.Money.QuestReward.Keys.Max()];
+                        }
+                        rowBuilder.Append($"\t{flatMoney + quest.Money.ExperienceToMoney}");
+                        
                         foreach (var reputation in quest.Reputations)
                         {
-                            questProperties = string.Join("\t",
-                                questProperties,
+                            rowBuilder.AppendJoin("\t",
+                                "",
                                 reputation.Id,
                                 reputation.Name,
                                 reputation.Amount
                             );
                         }
-                        await availableStream.WriteLineAsync(questProperties);
+                        await availableStream.WriteLineAsync(rowBuilder.ToString());
                     }
                     else
                     {

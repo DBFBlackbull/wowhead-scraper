@@ -19,14 +19,20 @@ public class Quest : IHtmlProducerPaths
     
     public int Id { get; set; }
     public string Name { get; set; }
+    public int Level { get; set; }
+    public int RequiredLevel { get; set; }
+    public int MinLevel { get; set; }
+    public int MaxLevel { get; set; }
     public bool IsRepeatable { get; set; }
     public MoneyReward Money { get; set; }
-    public ExperienceReward Experience { get; set; }
+    public Dictionary<int, int> Experience { get; set; }
     public List<ReputationReward> Reputations { get; set; }
     public string ErrorMessage { get; set; }
 
     public Quest()
     {
+        Money = new MoneyReward();
+        Experience = new Dictionary<int, int>();
         Reputations = new List<ReputationReward>();
     }
     
@@ -83,7 +89,7 @@ public class Quest : IHtmlProducerPaths
         var regexIdentifier = NotAvailableNameRegexIdentifier.Find(regex => regex.IsMatch(questName));
         if (regexIdentifier != null && !isException)
         {
-            return new Quest {Id = id, Name = questName, ErrorMessage = $"questName has identifier {regexIdentifier.Replace(".*", " ")}"};
+            return new Quest {Id = id, Name = questName, ErrorMessage = $"questName has identifier {regexIdentifier.ToString().Replace(".*", " ")}"};
         }
         
         // if (html.Contains("This item is not available to players.") && !isException)
@@ -91,8 +97,29 @@ public class Quest : IHtmlProducerPaths
         //     return new Quest {Id = id, Name = questName, ErrorMessage = "item is not available to players"};
         // }
 
+        var level = 0;
+        var requiredLevel = 0;
+        var quickFacts = htmlDocument.DocumentNode.SelectSingleNode(".//table[@class='infobox']")?
+            .SelectSingleNode(".//tr/td/script[contains(normalize-space(.), 'WH.markup.printHtml(\"[ul][li]Level:')]");
+        if (quickFacts != null)
+        {
+            var levelMatch = new Regex("Level: (\\d+)", RegexOptions.Compiled).Match(quickFacts.InnerText);
+            if (levelMatch.Success)
+            {
+                level = int.Parse(levelMatch.Groups[1].Value);
+            }
+            
+            var requiredLevelMatch = new Regex("Requires level (\\d+)", RegexOptions.Compiled).Match(quickFacts.InnerText);
+            if (requiredLevelMatch.Success)
+            {
+                requiredLevel = int.Parse(requiredLevelMatch.Groups[1].Value);
+            }
+        }
+
+        var minLevel = 0;
+        var maxLevel = 0;
         var money = new MoneyReward();
-        var experience = new ExperienceReward();
+        var experience = new Dictionary<int, int>();
         var questRewardScript = htmlDocument.GetElementbyId("quest-reward-slider")?
                 .NextSibling?
                 .InnerHtml;
@@ -109,17 +136,16 @@ public class Quest : IHtmlProducerPaths
                 var questDetails  = JsonSerializer.Deserialize<QuestDetails>(jsonQuestDetails);
                 if (questDetails != null)
                 {
+                    minLevel = questDetails.MinLevel;
+                    maxLevel = questDetails.MaxLevel;
+                    
                     money = new MoneyReward
                     {
-                        QuestReward = questDetails.Coin.GetLevelsReward(),
+                        QuestReward = questDetails.Coin.Levels.ToDictionary(),
                         ExperienceToMoney = questDetails.Coin.RewardAtCap
                     };
 
-                    experience = new ExperienceReward
-                    {
-                        Level = questDetails.Xp.Levels.Keys.FirstOrDefault(),
-                        Experience = questDetails.Xp.Levels.Values.FirstOrDefault()
-                    };
+                    experience = questDetails.Xp.Levels.ToDictionary();
                 }
             }
             catch (Exception e)
@@ -163,9 +189,44 @@ public class Quest : IHtmlProducerPaths
             }
         }
 
-        return new Quest {Id = id, Name = questName, Experience = experience, Money = money, Reputations = reputations};
+        return new Quest
+        {
+            Id = id, 
+            Name = questName, 
+            Level = level,
+            RequiredLevel = requiredLevel,
+            MinLevel = minLevel, 
+            MaxLevel = maxLevel, 
+            Experience = experience, 
+            Money = money,
+            Reputations = reputations
+        };
     }
 
+    public static int GetXpForLevel(int fullXp, int playerLevel, int questLevel)
+    {
+        var levelDifference = playerLevel - questLevel;    // quest and player level difference
+        if (levelDifference <= 5)
+        {
+            return RoundXp(fullXp);
+        }
+        
+        var xpModifier = 0.1m;
+        if (levelDifference < 10)
+        {
+            xpModifier = 1 - (levelDifference - 5) * 0.2m; // reduction function in a single statement
+        }
+        
+        var reducedXp = fullXp * xpModifier;
+        return RoundXp(reducedXp);
+    }
+
+    public static int RoundXp(decimal xp)
+    {
+        var step = xp > 1000 ? 50m : 10m;
+        var roundXp = Math.Round(xp / step, MidpointRounding.AwayFromZero) * step;
+        return decimal.ToInt32(roundXp);
+    }
 }
 
 public class ReputationReward
@@ -177,13 +238,11 @@ public class ReputationReward
 
 public class MoneyReward
 {
-    public int QuestReward { get; set; }
+    public MoneyReward()
+    {
+        QuestReward = new Dictionary<int, int>();
+    }
+    public Dictionary<int, int> QuestReward { get; set; }
     public int ExperienceToMoney { get; set; }
-    public int Total => QuestReward + ExperienceToMoney;
 }
 
-public class ExperienceReward
-{
-    public int Level { get; set; }
-    public int Experience { get; set; }
-}

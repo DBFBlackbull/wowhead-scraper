@@ -2741,7 +2741,7 @@ id	name	reason
 5080		quest not found
 5099		quest not found
 5100		quest not found
-5101	Lee's Ultimate Test Quest... of Doom!	questName has identifier .*
+5101	Lee's Ultimate Test Quest... of Doom!	questName has identifier test quest
 5104		quest not found
 5105		quest not found
 5106		quest not found
@@ -4609,8 +4609,8 @@ id	name	reason
 7620		quest not found
 7679		quest not found
 7680		quest not found
-7681	Hunter test quest	questName has identifier .*
-7682	Hunter test quest2	questName has identifier .*
+7681	Hunter test quest	questName has identifier test quest
+7682	Hunter test quest2	questName has identifier test quest
 7683		quest not found
 7684		quest not found
 7685		quest not found
@@ -4697,8 +4697,8 @@ id	name	reason
 7858		quest not found
 7859		quest not found
 7860		quest not found
-7869	test quest - do not use	questName has identifier .*
-7870	test quest2 - do not use	questName has identifier .*
+7869	test quest - do not use	questName has identifier test quest
+7870	test quest2 - do not use	questName has identifier test quest
 7878		quest not found
 7879		quest not found
 7880		quest not found
@@ -4868,14 +4868,14 @@ id	name	reason
 8218		quest not found
 8219		quest not found
 8220		quest not found
-8230	Collin's Test Quest	questName has identifier .*
+8230	Collin's Test Quest	questName has identifier test quest
 8237	REUSE	questName has identifier REUSE
 8244	<UNUSED>	questName has identifier <UNUSED>
 8245	<UNUSED>	questName has identifier <UNUSED>
 8247	<UNUSED>	questName has identifier <UNUSED>
 8248	<UNUSED>	questName has identifier <UNUSED>
-8270	test copy quest	questName has identifier .*
-8274	Test Kill Quest	questName has identifier .*
+8270	test copy quest	questName has identifier test quest
+8274	Test Kill Quest	questName has identifier test quest
 8330	[DEPRECATED]Solanian's Belongings	questName has identifier [DEPRECATED]
 8336	[DEPRECATED]A Fistful of Slivers	questName has identifier [DEPRECATED]
 8337	<UNUSED>	questName has identifier <UNUSED>
