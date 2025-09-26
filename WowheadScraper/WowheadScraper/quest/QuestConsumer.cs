@@ -22,37 +22,43 @@ public class QuestConsumer
             {
                 notAvailableStream.AutoFlush = true;
 
-                var headerBuilder = new StringBuilder();
-                headerBuilder.AppendJoin("\t",
+                var headers = new List<string>()
+                {
                     "id",
                     "name",
                     "level",
                     "requiredLevel",
                     "minLevel",
                     "maxLevel"
-                );
+                };
                 
                 for (int i = 1; i <= 60; i++)
                 {
-                    headerBuilder.Append($"\txpAt{i}");
+                    headers.Add($"xpAt{i}");
                 }
                 for (int i = 1; i <= 60; i++)
                 {
-                    headerBuilder.Append($"\tmoneyAt{i}");
+                    headers.Add($"moneyAt{i}");
                 }
-                headerBuilder.Append("\txpToMoneyAt60");
-                headerBuilder.Append("\ttotalMoneyAt60");
+                headers.Add("xpToMoneyAt60");
+                headers.Add("totalMoneyAt60");
                 for (int i = 1; i <= 10; i++)
                 {
-                    headerBuilder.AppendJoin("\t",
-                        "",
+                    headers.AddRange(
                         $"reputationId{i}",
                         $"reputationName{i}",
                         $"reputationAmount{i}");
                 }
                 
-                await availableStream.WriteLineAsync(headerBuilder.ToString());
-                await notAvailableStream.WriteLineAsync("id\tname\treason");
+                await availableStream.WriteLineAsync(string.Join("\t", headers));
+
+                var notAvailableHeaders = new List<string>()
+                {
+                    "id",
+                    "name",
+                    "reason"
+                };
+                await notAvailableStream.WriteLineAsync(string.Join("\t", notAvailableHeaders));
                 
                 var stopwatch = new Stopwatch();
                 stopwatch.Start();
@@ -61,98 +67,68 @@ public class QuestConsumer
                     var quest = await questGetter.GetQuest(id);
                     if (quest.IsAvailable)
                     {
-                        var rowBuilder = new StringBuilder();
-                        rowBuilder.AppendJoin("\t",
-                            quest.Id, 
+                        var row = new List<string>
+                        {
+                            quest.Id.ToString(), 
                             quest.Name,
-                            quest.Level,
-                            quest.RequiredLevel,
-                            quest.MinLevel,
-                            quest.MaxLevel
-                        );
+                            quest.Level.ToString(),
+                            quest.RequiredLevel.ToString(),
+                            quest.MinLevel.ToString(),
+                            quest.MaxLevel.ToString()
+                        };
 
-                        var minLevel = Math.Min(quest.MinLevel, 60);
-                        var maxLevel = Math.Min(quest.MaxLevel, 60);
-
-                        if (quest.Experience.Count == 0)
+                        for (int i = 1; i <= 60; i++)
                         {
-                            for (int i = 1; i <= 60; i++)
+                            if (quest.Experience.TryGetValue(i, out var xp))
                             {
-                                rowBuilder.Append("\t");
+                                row.Add(xp.ToString());
                             }
-                        }
-                        else
-                        {
-                            for (int i = 1; i < quest.RequiredLevel; i++)
+                            else
                             {
-                                rowBuilder.Append("\t");
-                            }
-                            for (int i = quest.RequiredLevel; i < minLevel; i++)
-                            {
-                                rowBuilder.Append($"\t{quest.Experience[minLevel]}");
-                            }
-                            for (int i = minLevel; i <= maxLevel; i++)
-                            {
-                                rowBuilder.Append($"\t{quest.Experience[i]}");
-                            }
-
-                            for (int i = maxLevel + 1; i <= 60; i++)
-                            {
-                                rowBuilder.Append($"\t{quest.Experience[maxLevel]}");
+                                row.Add("");
                             }
                         }
                         
-                        if (quest.Money.QuestReward.Count == 0)
+                        for (int i = 1; i <= 60; i++)
                         {
-                            for (int i = 1; i <= 60; i++)
+                            if (quest.Money.QuestReward.TryGetValue(i, out var coins))
                             {
-                                rowBuilder.Append("\t");
+                                row.Add(coins.ToString());
                             }
-                        }
-                        else
-                        {
-                            for (int i = 1; i < quest.RequiredLevel; i++)
+                            else
                             {
-                                rowBuilder.Append("\t");
-                            }
-                            for (int i = quest.RequiredLevel; i < minLevel; i++)
-                            {
-                                rowBuilder.Append($"\t{quest.Money.QuestReward[minLevel]}");
-                            }
-                            for (int i = minLevel; i <= maxLevel; i++)
-                            {
-                                rowBuilder.Append($"\t{quest.Money.QuestReward[i]}");
-                            }
-
-                            for (int i = maxLevel + 1; i <= 60; i++)
-                            {
-                                rowBuilder.Append($"\t{quest.Money.QuestReward[maxLevel]}");
+                                row.Add("");
                             }
                         }
                         
-                        rowBuilder.Append($"\t{quest.Money.ExperienceToMoney}");
+                        row.Add(quest.Money.ExperienceToMoney.ToString());
 
-                        var flatMoney = 0;
+                        var totalMoneyAt60 = quest.Money.ExperienceToMoney;
                         if (quest.Money.QuestReward.Count > 0)
                         {
-                            flatMoney = quest.Money.QuestReward[quest.Money.QuestReward.Keys.Max()];
+                            totalMoneyAt60 += quest.Money.QuestReward[quest.Money.QuestReward.Keys.Max()];
                         }
-                        rowBuilder.Append($"\t{flatMoney + quest.Money.ExperienceToMoney}");
+                        row.Add(totalMoneyAt60.ToString());
                         
                         foreach (var reputation in quest.Reputations)
                         {
-                            rowBuilder.AppendJoin("\t",
-                                "",
-                                reputation.Id,
+                            row.AddRange(
+                                reputation.Id.ToString(),
                                 reputation.Name,
-                                reputation.Amount
+                                reputation.Amount.ToString()
                             );
                         }
-                        await availableStream.WriteLineAsync(rowBuilder.ToString());
+                        await availableStream.WriteLineAsync(string.Join("\t", row));
                     }
                     else
                     {
-                        await notAvailableStream.WriteLineAsync($"{quest.Id}\t{quest.Name}\t{quest.ErrorMessage}");
+                        var row = new List<string>()
+                        {
+                            quest.Id.ToString(),
+                            quest.Name,
+                            quest.ErrorMessage
+                        };
+                        await notAvailableStream.WriteLineAsync(string.Join("\t", row));
                     }
 
                     Program.LogProgress(id, itemsToProcess, stopwatch);
