@@ -15,13 +15,19 @@ class Program
     {
         HttpClient.BaseAddress = BaseUrl;
 
+        try
+        {
+            //await new OrderedProducerConsumer<Item>().Run(40, Item.LastIdInClassic, ItemProducer.Run, ItemConsumer.Run);
 
-        //await new OrderedProducerConsumer<Item>().Run(40, Item.LastIdInClassic, ItemProducer.Run, ItemConsumer.Run);
-        await new HtmlProducer().Run(40, Quest.LastIdInClassic, new Quest());
-        
-        //await new OrderedProducerConsumer<Quest>().Run(40, Item.LastIdInClassic, QuestProducer.Run, QuestConsumer.Run);
+            await new HtmlProducer().Run(20, Quest.LastIdInClassic, new Quest());
+            //await new OrderedProducerConsumer<Quest>().Run(40, Quest.LastIdInClassic, QuestProducer.Run, QuestConsumer.Run);
 
-        //await QuestConsumer.Run(new HtmlQuestGetter());
+            //await QuestConsumer.Run(new HtmlQuestGetter());            
+        }
+        catch(Exception e)
+        {
+            Console.WriteLine(e.ToString());
+        }
     }
 
     public static int GetMoney(string? money, int factor)

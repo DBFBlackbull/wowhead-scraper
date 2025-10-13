@@ -206,6 +206,13 @@ public class Quest : IHtmlProducerPaths
         var htmlDocument = new HtmlDocument();
         htmlDocument.LoadHtml(html);
 
+        var title = htmlDocument.DocumentNode.SelectSingleNode(".//title");
+        var h1 = htmlDocument.DocumentNode.SelectSingleNode(".//h1");
+        if (title?.InnerText == "ERROR: The request could not be satisfied" || h1?.InnerText == "504 Gateway Timeout ERROR")
+        {
+            throw new Exception("Error reading from wowhead.com. Fetch HTML again.");
+        }
+
         var questName = htmlDocument.DocumentNode.SelectSingleNode(".//h1[@class='heading-size-1']")?.InnerText;
         if (string.IsNullOrWhiteSpace(questName))
         {
