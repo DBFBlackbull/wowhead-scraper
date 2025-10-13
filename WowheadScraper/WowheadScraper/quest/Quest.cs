@@ -76,96 +76,88 @@ public class Quest : IHtmlProducerPaths
 
     private static readonly HashSet<int> ManuallyTaggedRepeatable = new HashSet<int>()
     {
-        // Corrupted Windblossom
-        1514, 
-        4115,
-        4221,
-        4222,
-        4343,
-        4403,
-        4466,
-        4467,
-        // Corrupted Songflower
-        2878,
-        4113,
-        4114,
-        4116,
-        4118,
-        4401,
-        4464,
-        4465,
-        // Corrupted Whipper Root
-        4444,
-        4445,
-        4446,
-        4461,
-        // Corrupted Night Dragon
-        4448,
-        4462,
+        1514, // Corrupted Windblossom 
+        4115, // Corrupted Windblossom
+        4221, // Corrupted Windblossom
+        4222, // Corrupted Windblossom
+        4343, // Corrupted Windblossom
+        4403, // Corrupted Windblossom
+        4466, // Corrupted Windblossom
+        4467, // Corrupted Windblossom
+        2878, // Corrupted Songflower
+        4113, // Corrupted Songflower
+        4114, // Corrupted Songflower
+        4116, // Corrupted Songflower
+        4118, // Corrupted Songflower
+        4401, // Corrupted Songflower
+        4464, // Corrupted Songflower
+        4465, // Corrupted Songflower
+        4444, // Corrupted Whipper Root
+        4445, // Corrupted Whipper Root
+        4446, // Corrupted Whipper Root
+        4461, // Corrupted Whipper Root
+        4448, // Corrupted Night Dragon
+        4462, // Corrupted Night Dragon
         2881, // Troll Necklace Bounty repeatable
         // PVP Quests
-        // Battle of Warsong Gulch
-        8389,
-        8431,
-        8432,
-        8433,
-        8434,
-        8435,
-        // Fight for Warsong Gulch
-        8386,
-        8404,
-        8405,
-        8406,
-        8407,
-        8408,
-        // Claiming Arathi Basin
-        8384,
-        8391,
-        8392,
-        8397,
-        8398,
-        // Conquering Arathi Basin
-        8390,
-        8440,
-        8441,
-        8442,
-        8443,
+        8389, // Battle of Warsong Gulch lvl 19
+        8431, // Battle of Warsong Gulch lvl 29
+        8432, // Battle of Warsong Gulch lvl 39
+        8433, // Battle of Warsong Gulch lvl 49
+        8434, // Battle of Warsong Gulch lvl 59
+        8435, // Battle of Warsong Gulch lvl 60
+        8386, // Fight for Warsong Gulch lvl 19
+        8404, // Fight for Warsong Gulch lvl 29
+        8405, // Fight for Warsong Gulch lvl 39
+        8406, // Fight for Warsong Gulch lvl 49
+        8407, // Fight for Warsong Gulch lvl 59
+        8408, // Fight for Warsong Gulch lvl 60
+        8384, // Claiming Arathi Basin lvl 29
+        8391, // Claiming Arathi Basin lvl 39
+        8392, // Claiming Arathi Basin lvl 49
+        8397, // Claiming Arathi Basin lvl 59
+        8398, // Claiming Arathi Basin lvl 60
+        8390, // Conquering Arathi Basin lvl 29
+        8440, // Conquering Arathi Basin lvl 39
+        8441, // Conquering Arathi Basin lvl 49
+        8442, // Conquering Arathi Basin lvl 59
+        8443, // Conquering Arathi Basin lvl 60
         8387, // Invaders of Alterac Valley
         8383, // Remember Alterac Valley!
         8385, // Concerted Efforts
         8388, // For Great Honor
-        // 8493, // The Alliance Needs More Copper Bars!
-        // 8495, // The Alliance Needs More Iron Bars!
-        // 8500, // The Alliance Needs More Thorium Bars!
-        // 8504, // The Alliance Needs More Stranglekelp!
-        // 8506, // The Alliance Needs More Purple Lotus!
-        // 8510, // The Alliance Needs More Arthas' Tears!
-        // 8512, // The Alliance Needs More Light Leather!
-        // 8514, // The Alliance Needs More Medium Leather!
-        // 8516, // The Alliance Needs More Thick Leather!
-        // 8518, // The Alliance Needs More Linen Bandages!
-        // 8521, // The Alliance Needs More Silk Bandages!
-        // 8523, // The Alliance Needs More Runecloth Bandages!
-        // 8525, // The Alliance Needs More Rainbow Fin Albacore!
-        // 8527, // The Alliance Needs More Roast Raptor!
-        // 8529, // The Alliance Needs More Spotted Yellowtail!
-        // 8531, // The Alliance Needs More Singed Corestones!
-        // 8533, // The Horde Needs More Copper Bars!
-        // 8543, // The Horde Needs More Tin Bars!
-        // 8546, // The Horde Needs More Mithril Bars!
-        // 8550, // The Horde Needs More Peacebloom!
-        // 8581, // The Horde Needs More Firebloom!
-        // 8583, // The Horde Needs More Purple Lotus!
-        // 8589, // The Horde Needs More Heavy Leather!
-        // 8591, // The Horde Needs More Thick Leather!
-        // 8601, // The Horde Needs More Rugged Leather!
-        // 8605, // The Horde Needs More Wool Bandages!
-        // 8608, // The Horde Needs More Mageweave Bandages!
-        // 8610, // The Horde Needs More Runecloth Bandages!
-        // 8612, // The Horde Needs More Lean Wolf Steaks!
-        // 8614, // The Horde Needs More Spotted Yellowtail!
-        // 8616, // The Horde Needs More Baked Salmon!
-        // 8618, // The Horde Needs More Singed Corestones!
+        8493, // The Alliance Needs More Copper Bars!
+        8495, // The Alliance Needs More Iron Bars!
+        8500, // The Alliance Needs More Thorium Bars!
+        8504, // The Alliance Needs More Stranglekelp!
+        8506, // The Alliance Needs More Purple Lotus!
+        8510, // The Alliance Needs More Arthas' Tears!
+        8512, // The Alliance Needs More Light Leather!
+        8514, // The Alliance Needs More Medium Leather!
+        8516, // The Alliance Needs More Thick Leather!
+        8518, // The Alliance Needs More Linen Bandages!
+        8521, // The Alliance Needs More Silk Bandages!
+        8523, // The Alliance Needs More Runecloth Bandages!
+        8525, // The Alliance Needs More Rainbow Fin Albacore!
+        8527, // The Alliance Needs More Roast Raptor!
+        8529, // The Alliance Needs More Spotted Yellowtail!
+        8531, // The Alliance Needs More Singed Corestones!
+        8533, // The Horde Needs More Copper Bars!
+        8543, // The Horde Needs More Tin Bars!
+        8546, // The Horde Needs More Mithril Bars!
+        8550, // The Horde Needs More Peacebloom!
+        8581, // The Horde Needs More Firebloom!
+        8583, // The Horde Needs More Purple Lotus!
+        8589, // The Horde Needs More Heavy Leather!
+        8591, // The Horde Needs More Thick Leather!
+        8601, // The Horde Needs More Rugged Leather!
+        8605, // The Horde Needs More Wool Bandages!
+        8608, // The Horde Needs More Mageweave Bandages!
+        8610, // The Horde Needs More Runecloth Bandages!
+        8612, // The Horde Needs More Lean Wolf Steaks!
+        8614, // The Horde Needs More Spotted Yellowtail!
+        8616, // The Horde Needs More Baked Salmon!
+        8618, // The Horde Needs More Singed Corestones!
         // AQ Opening silithus quests
         8302, // The Hand of the Righteous (AQ scepter quest)
         8507, // Field Duty - Alliance
