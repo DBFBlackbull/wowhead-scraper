@@ -1,13 +1,10 @@
-using System.Collections.Concurrent;
 using System.Diagnostics;
-using System.Runtime.InteropServices.JavaScript;
-using System.Text;
 
 namespace WowheadScraper;
 
 public class QuestConsumer
 {
-    public static async Task Run(IQuestGetter questGetter, int itemsToProcess = Quest.LastIdInClassic)
+    public static async Task Run(ITaskGetter<Quest> questGetter, int itemsToProcess = Quest.LastIdInClassic)
     {
         Directory.CreateDirectory(Program.TsvFolderPath);
         
@@ -28,6 +25,8 @@ public class QuestConsumer
                     "name",
                     "level",
                     "requiredLevel",
+                    "wowheadRepeatable",
+                    "manualRepeatable",
                     "minLevel",
                     "maxLevel"
                 };
@@ -40,8 +39,13 @@ public class QuestConsumer
                 {
                     headers.Add($"moneyAt{i}");
                 }
-                headers.Add("xpToMoneyAt60");
-                headers.Add("totalMoneyAt60");
+                headers.AddRange(
+                    "xpToMoneyAt60",
+                    "turnInMoney",
+                    "goldAt60Status",
+                    "goldAt60Note",
+                    "calculatedTotalMoneyAt60"
+                );
                 for (int i = 1; i <= 10; i++)
                 {
                     headers.AddRange(
@@ -64,7 +68,7 @@ public class QuestConsumer
                 stopwatch.Start();
                 for (int id = 1; id <= itemsToProcess; id++)
                 {
-                    var quest = await questGetter.GetQuest(id);
+                    var quest = await questGetter.GetTask(id);
                     if (quest.IsAvailable)
                     {
                         var row = new List<string>
@@ -73,41 +77,48 @@ public class QuestConsumer
                             quest.Name,
                             quest.Level.ToString(),
                             quest.RequiredLevel.ToString(),
+                            quest.IsRepeatable.ToString(),
+                            quest.IsManuallyTaggedRepeatable.ToString(),
                             quest.MinLevel.ToString(),
                             quest.MaxLevel.ToString()
                         };
 
                         for (int i = 1; i <= 60; i++)
                         {
-                            if (quest.Experience.TryGetValue(i, out var xp))
-                            {
-                                row.Add(xp.ToString());
-                            }
-                            else
-                            {
-                                row.Add("");
-                            }
+                            row.Add(quest.Experience.TryGetValue(i, out var xp) 
+                                ? xp.ToString() 
+                                : ""
+                            );
                         }
                         
                         for (int i = 1; i <= 60; i++)
                         {
-                            if (quest.Money.QuestReward.TryGetValue(i, out var coins))
-                            {
-                                row.Add(coins.ToString());
-                            }
-                            else
-                            {
-                                row.Add("");
-                            }
+                            row.Add(quest.Money.QuestReward.TryGetValue(i, out var coins) 
+                                ? coins.ToString() 
+                                : ""
+                            );
                         }
-                        
-                        row.Add(quest.Money.ExperienceToMoney.ToString());
 
-                        var totalMoneyAt60 = quest.Money.ExperienceToMoney;
+                        var xpToMoneyAt60 = quest.Money.ExperienceToMoney;
+                        row.Add(xpToMoneyAt60.ToString());
+
+                        var flatMoneyAt60 = 0; 
                         if (quest.Money.QuestReward.Count > 0)
                         {
-                            totalMoneyAt60 += quest.Money.QuestReward[quest.Money.QuestReward.Keys.Max()];
+                            // PvP quests go up to level 69 giving more gold with each level
+                            // Cap at 60 to get the correct vanilla value
+                            var key = Math.Min(quest.Money.QuestReward.Keys.Max(), 60);
+                            flatMoneyAt60 = quest.Money.QuestReward[key];
                         }
+
+                        var xpToGoldStatus = XpToGoldStatus(quest);
+                        row.AddRange(
+                            quest.MoneyTurnIn.ToString(),
+                            xpToGoldStatus.Item1,
+                            xpToGoldStatus.Item2
+                        );
+                        
+                        var totalMoneyAt60 = flatMoneyAt60 + xpToMoneyAt60;
                         row.Add(totalMoneyAt60.ToString());
                         
                         foreach (var reputation in quest.Reputations)
@@ -139,5 +150,47 @@ public class QuestConsumer
         
         Console.WriteLine();
         Console.WriteLine($"All quests consumed. Elapsed {totalStopwatch.Elapsed:g}");
+    }
+
+    private static Tuple<string, string> XpToGoldStatus(Quest quest)
+    {
+        var xpToMoneyAt60 = quest.Money.ExperienceToMoney;
+        var xpAt60 = 0;
+        if (quest.Experience.Count > 0)
+        {
+            var key = Math.Min(quest.Experience.Keys.Max(), 60);
+            xpAt60 = quest.Experience[key];
+        }
+
+        if (xpAt60 == 0)
+        {
+            return xpToMoneyAt60 == 0  
+                ? new Tuple<string, string>("OK", "No xp, no gold")
+                : new Tuple<string, string>("Validate", "No xp, but still gives gold");
+        }
+
+        if (quest.MoneyTurnIn > 0)
+        {
+            return xpToMoneyAt60 == 0 
+                ? new Tuple<string, string>("OK", "Quests requiring gold, gives no gold") 
+                : new Tuple<string, string>("Validate", "Quests requiring gold gives gold back");
+        }
+        
+        var isRepeatable = quest.IsRepeatable || quest.IsManuallyTaggedRepeatable;
+        if (isRepeatable)
+        {
+            return xpToMoneyAt60 == 0 
+                ? new Tuple<string, string>("OK", "Repeatable quest gives no gold") 
+                : new Tuple<string, string>("Validate", "Repeatable quest gives gold");
+        }
+
+        if (xpAt60 > 0)
+        {
+            return xpToMoneyAt60 > 0 
+                ? new Tuple<string, string>("OK", "Quest gives gold at 60") 
+                : new Tuple<string, string>("Validate", "Quest gives no gold at 60");
+        }
+        
+        return new Tuple<string, string>("Unhandled", "");
     }
 }

@@ -15,9 +15,11 @@ class Program
     {
         HttpClient.BaseAddress = BaseUrl;
 
-        // await new HtmlProducer().Run(40, Quest.LastIdInClassic, new Quest());
+
+        //await new OrderedProducerConsumer<Item>().Run(40, Item.LastIdInClassic, ItemProducer.Run, ItemConsumer.Run);
+        await new HtmlProducer().Run(40, Quest.LastIdInClassic, new Quest());
         
-        await new OrderedQuestProducerConsumer().Run(40);
+        //await new OrderedProducerConsumer<Quest>().Run(40, Item.LastIdInClassic, QuestProducer.Run, QuestConsumer.Run);
 
         //await QuestConsumer.Run(new HtmlQuestGetter());
     }

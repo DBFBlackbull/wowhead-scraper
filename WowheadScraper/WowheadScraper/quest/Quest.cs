@@ -7,7 +7,7 @@ namespace WowheadScraper;
 
 public class Quest : IHtmlProducerPaths
 {
-    public const int LastIdInClassic = 9273; // TODO Find the real number
+    public const int LastIdInClassic = 9665;
     public static readonly string HtmlFolderPath = Path.Join(Program.SolutionDirectory(), "classic", "quests");
     public static readonly string AvailableTsvFilePath = Path.Join(Program.TsvFolderPath, "quests-available.tsv");
     public static readonly string NotAvailableTsvFilePath = Path.Join(Program.TsvFolderPath, "quests-not-available.tsv");
@@ -21,9 +21,11 @@ public class Quest : IHtmlProducerPaths
     public string Name { get; set; }
     public int Level { get; set; }
     public int RequiredLevel { get; set; }
+    public bool IsRepeatable { get; set; }
+    public bool IsManuallyTaggedRepeatable => ManuallyTaggedRepeatable.Contains(Id);
+    public int MoneyTurnIn { get; set; }
     public int MinLevel { get; set; }
     public int MaxLevel { get; set; }
-    public bool IsRepeatable { get; set; }
     public MoneyReward Money { get; set; }
     public Dictionary<int, int> Experience { get; set; }
     public List<ReputationReward> Reputations { get; set; }
@@ -50,6 +52,21 @@ public class Quest : IHtmlProducerPaths
         "<TEST>",
         "<TXT>",
         "<UNUSED>",
+        "Darkmoon Cards - Beasts", // test quest
+        "An Intact Converter", // TBC or test quest
+        "Unfortunate Measures", // TBC quest
+        "Waskily Wabbits!", // test quest
+        "Wabbit Pelts" // test quest
+    };
+    
+    private static readonly Dictionary<int, string> TestQuests = new Dictionary<int, string>()
+    {
+        {3911, "duplicate quest"}, // The Last Element
+        {7906, "test quest"}, // Darkmoon Cards - Beasts
+        {7961, "test quest"}, // Waskily Wabbits!
+        {7962, "test quest"}, // Wabbit Pelts
+        {8326, "TBC quest"}, // Unfortunate Measures
+        {8489, "TBC or test quest"}, // An Intact Converter
     };
 
     private static readonly List<Regex> NotAvailableNameRegexIdentifier = new List<Regex>()
@@ -57,6 +74,138 @@ public class Quest : IHtmlProducerPaths
         new Regex("test.*quest", RegexOptions.IgnoreCase),
     };
 
+    private static readonly HashSet<int> ManuallyTaggedRepeatable = new HashSet<int>()
+    {
+        // Corrupted Windblossom
+        1514, 
+        4115,
+        4221,
+        4222,
+        4343,
+        4403,
+        4466,
+        4467,
+        // Corrupted Songflower
+        2878,
+        4113,
+        4114,
+        4116,
+        4118,
+        4401,
+        4464,
+        4465,
+        // Corrupted Whipper Root
+        4444,
+        4445,
+        4446,
+        4461,
+        // Corrupted Night Dragon
+        4448,
+        4462,
+        2881, // Troll Necklace Bounty repeatable
+        // PVP Quests
+        // Battle of Warsong Gulch
+        8389,
+        8431,
+        8432,
+        8433,
+        8434,
+        8435,
+        // Fight for Warsong Gulch
+        8386,
+        8404,
+        8405,
+        8406,
+        8407,
+        8408,
+        // Claiming Arathi Basin
+        8384,
+        8391,
+        8392,
+        8397,
+        8398,
+        // Conquering Arathi Basin
+        8390,
+        8440,
+        8441,
+        8442,
+        8443,
+        8387, // Invaders of Alterac Valley
+        8383, // Remember Alterac Valley!
+        8385, // Concerted Efforts
+        8388, // For Great Honor
+        // 8493, // The Alliance Needs More Copper Bars!
+        // 8495, // The Alliance Needs More Iron Bars!
+        // 8500, // The Alliance Needs More Thorium Bars!
+        // 8504, // The Alliance Needs More Stranglekelp!
+        // 8506, // The Alliance Needs More Purple Lotus!
+        // 8510, // The Alliance Needs More Arthas' Tears!
+        // 8512, // The Alliance Needs More Light Leather!
+        // 8514, // The Alliance Needs More Medium Leather!
+        // 8516, // The Alliance Needs More Thick Leather!
+        // 8518, // The Alliance Needs More Linen Bandages!
+        // 8521, // The Alliance Needs More Silk Bandages!
+        // 8523, // The Alliance Needs More Runecloth Bandages!
+        // 8525, // The Alliance Needs More Rainbow Fin Albacore!
+        // 8527, // The Alliance Needs More Roast Raptor!
+        // 8529, // The Alliance Needs More Spotted Yellowtail!
+        // 8531, // The Alliance Needs More Singed Corestones!
+        // 8533, // The Horde Needs More Copper Bars!
+        // 8543, // The Horde Needs More Tin Bars!
+        // 8546, // The Horde Needs More Mithril Bars!
+        // 8550, // The Horde Needs More Peacebloom!
+        // 8581, // The Horde Needs More Firebloom!
+        // 8583, // The Horde Needs More Purple Lotus!
+        // 8589, // The Horde Needs More Heavy Leather!
+        // 8591, // The Horde Needs More Thick Leather!
+        // 8601, // The Horde Needs More Rugged Leather!
+        // 8605, // The Horde Needs More Wool Bandages!
+        // 8608, // The Horde Needs More Mageweave Bandages!
+        // 8610, // The Horde Needs More Runecloth Bandages!
+        // 8612, // The Horde Needs More Lean Wolf Steaks!
+        // 8614, // The Horde Needs More Spotted Yellowtail!
+        // 8616, // The Horde Needs More Baked Salmon!
+        // 8618, // The Horde Needs More Singed Corestones!
+        // AQ Opening silithus quests
+        8302, // The Hand of the Righteous (AQ scepter quest)
+        8507, // Field Duty - Alliance
+        8731, // Field Duty - Horde
+        8496, // Bandages for the Field - Alliance
+        8498, // Twilight Battle Orders
+        8501, // Target: Hive'Ashi Stingers
+        8502, // Target: Hive'Ashi Workers
+        8534, // Hive'Zora Scout Report
+        8535, // Hoary Templar
+        8536, // Earthen Templar
+        8537, // Crimson Templar
+        8539, // Target: Hive'Zora Hive Sisters
+        8541, // Grinding Stones for the Guard - Alliance
+        8687, // Target: Hive'Zora Tunnelers
+        8737, // Azure Templar
+        8738, // Hive'Regal Scout Report
+        8739, // Hive'Ashi Scout Report
+        8740, // Twilight Marauders
+        8770, // Target: Hive'Ashi Defenders
+        8771, // Target: Hive'Ashi Sandstalkers
+        8772, // Target: Hive'Zora Waywatchers
+        8773, // Target: Hive'Zora Reavers
+        8774, // Target: Hive'Regal Ambushers
+        8775, // Target: Hive'Regal Spitfires
+        8776, // Target: Hive'Regal Slavemakers
+        8777, // Target: Hive'Regal Burrowers
+        8778, // The Ironforge Brigade Needs Explosives!
+        8779, // Scrying Materials - Alliance
+        8780, // Armor Kits for the Field - Alliance
+        8781, // Arms for the Field - Alliance
+        8782, // Uniform Supplies - Alliance
+        8783, // Extraordinary Materials - Alliance
+        8787, // Armor Kits for the Field - Alliance
+        8804, // Desert Survival Kits - Horde
+        8805, // Boots for the Guard - Horde
+        8809, // Extraordinary Materials - Horde
+        8810, // Bandages for the Field - Horde
+        8829, // The Ultimate Deception
+    };
     
     public static async Task<Quest> GetQuest(int id)
     {
@@ -91,14 +240,32 @@ public class Quest : IHtmlProducerPaths
         {
             return new Quest {Id = id, Name = questName, ErrorMessage = $"questName has identifier {regexIdentifier.ToString().Replace(".*", " ")}"};
         }
+
+        if (TestQuests.TryGetValue(id, out var reason))
+        {
+            return new Quest{Id = id, Name = questName, ErrorMessage = reason};
+        }
         
         // if (html.Contains("This item is not available to players.") && !isException)
         // {
         //     return new Quest {Id = id, Name = questName, ErrorMessage = "item is not available to players"};
         // }
 
+        var turnInMoney = 0;
+        var turnInMoneyNode = htmlDocument.DocumentNode.SelectSingleNode(
+            ".//table[@class='icon-list']/tr/td[contains(normalize-space(.), 'Required money:')]");
+        if (turnInMoneyNode != null)
+        {
+            var gold = turnInMoneyNode.SelectSingleNode(".//span[@class='moneygold']")?.InnerText;
+            var silver = turnInMoneyNode.SelectSingleNode(".//span[@class='moneysilver']")?.InnerText;
+            var copper = turnInMoneyNode.SelectSingleNode(".//span[@class='moneycopper']")?.InnerText;
+
+            turnInMoney = Program.GetMoney(gold, 10000) + Program.GetMoney(silver, 100) + Program.GetMoney(copper, 1);
+        }
+
         var level = 0;
         var requiredLevel = 0;
+        var isRepeatable = false;
         var quickFacts = htmlDocument.DocumentNode.SelectSingleNode(".//table[@class='infobox']")?
             .SelectSingleNode(".//tr/td/script[contains(normalize-space(.), 'WH.markup.printHtml(\"[ul][li]Level:')]");
         if (quickFacts != null)
@@ -114,6 +281,8 @@ public class Quest : IHtmlProducerPaths
             {
                 requiredLevel = int.Parse(requiredLevelMatch.Groups[1].Value);
             }
+
+            isRepeatable = quickFacts.InnerText.Contains("[li]Repeatable");
         }
 
         var minLevel = 0;
@@ -195,6 +364,8 @@ public class Quest : IHtmlProducerPaths
             Name = questName, 
             Level = level,
             RequiredLevel = requiredLevel,
+            IsRepeatable = isRepeatable,
+            MoneyTurnIn = turnInMoney,
             MinLevel = minLevel, 
             MaxLevel = maxLevel, 
             Experience = experience, 

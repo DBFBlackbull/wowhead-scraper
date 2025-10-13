@@ -5,7 +5,7 @@ namespace WowheadScraper;
 
 public class ItemConsumer
 {
-    public static async Task Run(IItemGetter itemGetter, int itemsToProcess = Item.LastIdInClassic)
+    public static async Task Run(ITaskGetter<Item> itemGetter, int itemsToProcess = Item.LastIdInClassic)
     {
         Directory.CreateDirectory(Program.TsvFolderPath);
         
@@ -27,7 +27,7 @@ public class ItemConsumer
                 stopwatch.Start();
                 for (int id = 1; id <= itemsToProcess; id++)
                 {
-                    var item = await itemGetter.GetItem(id);
+                    var item = await itemGetter.GetTask(id);
                     if (item.IsAvailable)
                     {
                         await availableStream.WriteLineAsync($"{item.Id}\t{item.Name}\t{item.SellPrice}");

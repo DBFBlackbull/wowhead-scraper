@@ -10,8 +10,6 @@ public class ItemProducer
     /// </summary>
     public static async Task Run(IdGenerator idGenerator, ConcurrentDictionary<int, TaskCompletionSource<Item>> tasks, int itemsToProcess = Item.LastIdInClassic)
     {
-        var htmlItemGetter = new HtmlItemGetter();
-
         while (true)
         {
             var id = idGenerator.GetNextId();
@@ -20,7 +18,7 @@ public class ItemProducer
                 break;
             }
 
-            var item = await htmlItemGetter.GetItem(id);
+            var item = await Item.GetItem(id);
             
             // Find the "promise" for this key and set its result.
             // This unblocks the consumer if it's waiting for this specific key.

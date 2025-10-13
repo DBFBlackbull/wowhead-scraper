@@ -1,4 +1,4 @@
-id	name	rewwason
+id	name	reason
 1	The "Chow" Quest (123)aa	questName has identifier (123)aa
 3		quest not found
 4		quest not found
@@ -1902,6 +1902,7 @@ id	name	rewwason
 3899		quest not found
 3900		quest not found
 3910	<NYI> <TXT> The Un'Goro Run	questName has identifier <NYI>
+3911	The Last Element	duplicate quest
 3915		quest not found
 3916		quest not found
 3917		quest not found
@@ -4703,6 +4704,7 @@ id	name	rewwason
 7879		quest not found
 7880		quest not found
 7904	<UNUSED>	questName has identifier <UNUSED>
+7906	Darkmoon Cards - Beasts	questName has identifier Darkmoon Cards - Beasts
 7909		quest not found
 7910		quest not found
 7911		quest not found
@@ -4729,6 +4731,8 @@ id	name	rewwason
 7958		quest not found
 7959		quest not found
 7960		quest not found
+7961	Waskily Wabbits!	questName has identifier Waskily Wabbits!
+7962	Wabbit Pelts	questName has identifier Wabbit Pelts
 7963		quest not found
 7964		quest not found
 7965		quest not found
@@ -4876,6 +4880,7 @@ id	name	rewwason
 8248	<UNUSED>	questName has identifier <UNUSED>
 8270	test copy quest	questName has identifier test quest
 8274	Test Kill Quest	questName has identifier test quest
+8326	Unfortunate Measures	questName has identifier Unfortunate Measures
 8330	[DEPRECATED]Solanian's Belongings	questName has identifier [DEPRECATED]
 8336	[DEPRECATED]A Fistful of Slivers	questName has identifier [DEPRECATED]
 8337	<UNUSED>	questName has identifier <UNUSED>
@@ -4897,6 +4902,7 @@ id	name	rewwason
 8457		quest not found
 8458	<UNUSED>	questName has identifier <UNUSED>
 8459	<UNUSED>	questName has identifier <UNUSED>
+8489	An Intact Converter	questName has identifier An Intact Converter
 8571	<UNUSED> Armor Kits	questName has identifier <UNUSED>
 8971	REUSE	questName has identifier REUSE
 8972	REUSE	questName has identifier REUSE

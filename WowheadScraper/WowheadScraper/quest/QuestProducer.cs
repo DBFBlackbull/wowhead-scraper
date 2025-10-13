@@ -10,7 +10,6 @@ public class QuestProducer
     /// </summary>
     public static async Task Run(IdGenerator idGenerator, ConcurrentDictionary<int, TaskCompletionSource<Quest>> tasks, int itemsToProcess = Quest.LastIdInClassic)
     {
-        var questGetter = new HtmlQuestGetter();
         while (true)
         {
             var id = idGenerator.GetNextId();
@@ -19,7 +18,7 @@ public class QuestProducer
                 break;
             }
 
-            var quest = await questGetter.GetQuest(id);
+            var quest = await Quest.GetQuest(id);
 
             // Find the "promise" for this key and set its result.
             // This unblocks the consumer if it's waiting for this specific key.
