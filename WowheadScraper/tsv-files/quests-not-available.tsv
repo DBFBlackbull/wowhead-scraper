@@ -9,6 +9,7 @@ id	name	reason
 73	<TXT> No Reward	questName has identifier <TXT>
 108	<TXT> Mystery Reward	questName has identifier <TXT>
 137	<NYI> <TXT> Stormwind Commendation	questName has identifier <NYI>
+236	Fueling the Demolishers	Wothlk quest
 241	<TEST> HEY MISTER WILSON!	questName has identifier <TEST>
 242	<UNUSED>	questName has identifier <UNUSED>
 259	<UNUSED>	questName has identifier <UNUSED>
@@ -4630,6 +4631,7 @@ id	name	reason
 7698		quest not found
 7699		quest not found
 7700		quest not found
+7702	Kill 'Em With Sleep Deprivation	Wothlk quest
 7705		quest not found
 7706		quest not found
 7707		quest not found
@@ -4704,7 +4706,7 @@ id	name	reason
 7879		quest not found
 7880		quest not found
 7904	<UNUSED>	questName has identifier <UNUSED>
-7906	Darkmoon Cards - Beasts	questName has identifier Darkmoon Cards - Beasts
+7906	Darkmoon Cards - Beasts	test quest
 7909		quest not found
 7910		quest not found
 7911		quest not found
@@ -4731,8 +4733,8 @@ id	name	reason
 7958		quest not found
 7959		quest not found
 7960		quest not found
-7961	Waskily Wabbits!	questName has identifier Waskily Wabbits!
-7962	Wabbit Pelts	questName has identifier Wabbit Pelts
+7961	Waskily Wabbits!	test quest
+7962	Wabbit Pelts	test quest
 7963		quest not found
 7964		quest not found
 7965		quest not found
@@ -4880,14 +4882,24 @@ id	name	reason
 8248	<UNUSED>	questName has identifier <UNUSED>
 8270	test copy quest	questName has identifier test quest
 8274	Test Kill Quest	questName has identifier test quest
-8326	Unfortunate Measures	questName has identifier Unfortunate Measures
+8325	Reclaiming Sunstrider Isle	TBC quest
+8326	Unfortunate Measures	TBC quest
+8327	Report to Lanthan Perilon	TBC quest
+8328	Mage Training	TBC quest
+8329	Warrior Training	TBC test quest
 8330	[DEPRECATED]Solanian's Belongings	questName has identifier [DEPRECATED]
+8334	Aggression	TBC quest
+8335	Felendren the Banished	TBC quest
 8336	[DEPRECATED]A Fistful of Slivers	questName has identifier [DEPRECATED]
 8337	<UNUSED>	questName has identifier <UNUSED>
+8338	Tainted Arcane Sliver	TBC quest
 8339	Royalty of the Council <NYI> <TXT> UNUSED	questName has identifier <NYI>
 8340	Twilight Signet Ring <NYI> <TXT>	questName has identifier <NYI>
+8344	Windows to the Source	TBC quest
 8345	[DEPRECATED]The Shrine of Dath'Remar	questName has identifier [DEPRECATED]
 8346	[DEPRECATED]Thirst Unending	questName has identifier [DEPRECATED]
+8347	Aiding the Outrunners	TBC quest
+8350	Completing the Delivery	TBC quest
 8444	<NYI> <TXT> gossip shade of ambermoon	questName has identifier <NYI>
 8445	<NYI> <TXT> gossip shade of ambermoon	questName has identifier <NYI>
 8448	<TXT> Mystery Reward	questName has identifier <TXT>
@@ -4902,8 +4914,44 @@ id	name	reason
 8457		quest not found
 8458	<UNUSED>	questName has identifier <UNUSED>
 8459	<UNUSED>	questName has identifier <UNUSED>
-8489	An Intact Converter	questName has identifier An Intact Converter
+8463	Unstable Mana Crystals	TBC quest
+8468	WANTED: Thaelis the Hungerer	TBC quest
+8472	Major Malfunction	TBC quest
+8473	A Somber Task	TBC quest
+8474	Old Whitebark's Pendant	TBC quest
+8475	The Dead Scar	TBC quest
+8476	Amani Encroachment	TBC quest
+8477	The Spearcrafter's Hammer	TBC quest
+8478	Choose Your Weapon	TBC test quest
+8479	Zul'Marosh	TBC quest
+8480	Lost Armaments	TBC quest
+8482	Incriminating Documents	TBC quest
+8483	The Dwarven Spy	TBC quest
+8486	Arcane Instability	TBC quest
+8487	Corrupted Soil	TBC quest
+8488	Unexpected Results	TBC quest
+8489	An Intact Converter	TBC test quest
+8490	Powering our Defenses	TBC quest
+8491	Pelt Collection	TBC quest
+8530	The Alliance Needs Singed Corestones!	test quest
+8531	The Alliance Needs More Singed Corestones!	test quest
+8563	Warlock Training	TBC quest
+8564	Priest Training	TBC quest
 8571	<UNUSED> Armor Kits	questName has identifier <UNUSED>
+8617	The Horde Needs Singed Corestones!	test quest
+8618	The Horde Needs More Singed Corestones!	test quest
+8884	Fish Heads, Fish Heads...	TBC quest
+8885	The Ring of Mmmrrrggglll	TBC quest
+8886	Grimscale Pirates!	TBC quest
+8887	Captain Kelisendra's Lost Rutters	TBC quest
+8888	The Magister's Apprentice	TBC quest
+8889	Deactivating the Spire	TBC quest
+8890	Word from the Spire	TBC quest
+8891	Abandoned Investigations	TBC quest
+8892	Situation at Sunsail Anchorage	TBC quest
+8894	Cleaning up the Grounds	TBC quest
+8895	Delivery to the North Sanctum	TBC quest
+8896	The Dwarven Spy	TBC quest
 8971	REUSE	questName has identifier REUSE
 8972	REUSE	questName has identifier REUSE
 8973	REUSE	questName has identifier REUSE
@@ -4979,3 +5027,349 @@ id	name	reason
 9255		quest not found
 9256		quest not found
 9258		quest not found
+9274		quest not found
+9275		quest not found
+9276		quest not found
+9277		quest not found
+9278		quest not found
+9279		quest not found
+9280		quest not found
+9281		quest not found
+9282		quest not found
+9283		quest not found
+9284		quest not found
+9285		quest not found
+9286		quest not found
+9287		quest not found
+9288		quest not found
+9289		quest not found
+9290		quest not found
+9291		quest not found
+9293		quest not found
+9294		quest not found
+9296	reuse	questName has identifier reuse
+9297	reuse	questName has identifier reuse
+9298	reuse	questName has identifier reuse
+9303		quest not found
+9305		quest not found
+9306		quest not found
+9307		quest not found
+9308		quest not found
+9309		quest not found
+9311		quest not found
+9312		quest not found
+9313		quest not found
+9314		quest not found
+9315		quest not found
+9316		quest not found
+9327		quest not found
+9328		quest not found
+9329		quest not found
+9340		quest not found
+9342		quest not found
+9344		quest not found
+9345		quest not found
+9346		quest not found
+9347		quest not found
+9348		quest not found
+9349		quest not found
+9350		quest not found
+9351		quest not found
+9352		quest not found
+9354		quest not found
+9355		quest not found
+9356		quest not found
+9357		quest not found
+9358		quest not found
+9359		quest not found
+9360		quest not found
+9361		quest not found
+9363		quest not found
+9366		quest not found
+9369		quest not found
+9370		quest not found
+9371		quest not found
+9372		quest not found
+9373		quest not found
+9374		quest not found
+9375		quest not found
+9376		quest not found
+9377		quest not found
+9378		quest not found
+9379		quest not found
+9380		quest not found
+9381		quest not found
+9382		quest not found
+9383		quest not found
+9384		quest not found
+9385		quest not found
+9387		quest not found
+9390		quest not found
+9391		quest not found
+9392		quest not found
+9393		quest not found
+9394		quest not found
+9395		quest not found
+9396		quest not found
+9397		quest not found
+9398		quest not found
+9399		quest not found
+9400		quest not found
+9401		quest not found
+9402		quest not found
+9403		quest not found
+9404		quest not found
+9405		quest not found
+9406		quest not found
+9407		quest not found
+9408		quest not found
+9409		quest not found
+9410		quest not found
+9411	<UNUSED>Infused Bandages	questName has identifier <UNUSED>
+9412	<UNUSED>Crystal Flake Throat Lozenge	questName has identifier <UNUSED>
+9413	<UNUSED>Crystal Flake Throat Lozenge	questName has identifier <UNUSED>
+9414	<UNUSED>Infused Bandages	questName has identifier <UNUSED>
+9417		quest not found
+9418		quest not found
+9420		quest not found
+9421		quest not found
+9423		quest not found
+9424		quest not found
+9425		quest not found
+9426		quest not found
+9427		quest not found
+9428		quest not found
+9429		quest not found
+9430		quest not found
+9431		quest not found
+9432		quest not found
+9433		quest not found
+9434		quest not found
+9435		quest not found
+9436		quest not found
+9437		quest not found
+9438		quest not found
+9439		quest not found
+9440		quest not found
+9441		quest not found
+9442		quest not found
+9443		quest not found
+9444		quest not found
+9445		quest not found
+9446		quest not found
+9447		quest not found
+9448		quest not found
+9449		quest not found
+9450		quest not found
+9451		quest not found
+9452		quest not found
+9453		quest not found
+9454		quest not found
+9455		quest not found
+9456		quest not found
+9457		quest not found
+9458	<UNUSED>Potion of Heightened Senses	questName has identifier <UNUSED>
+9459	<UNUSED>Anti-crit Potion	questName has identifier <UNUSED>
+9460		quest not found
+9461		quest not found
+9462		quest not found
+9463		quest not found
+9464		quest not found
+9465		quest not found
+9466		quest not found
+9467		quest not found
+9468		quest not found
+9469		quest not found
+9470		quest not found
+9471		quest not found
+9472		quest not found
+9473		quest not found
+9474		quest not found
+9475		quest not found
+9476		quest not found
+9477	<UNUSED>Potion of Nature's Armor	questName has identifier <UNUSED>
+9478	<UNUSED>Portable Healing Font	questName has identifier <UNUSED>
+9479	<UNUSED>Glorious Standard of the Alliance	questName has identifier <UNUSED>
+9480	<UNUSED>Debuff Banner	questName has identifier <UNUSED>
+9481	<UNUSED>Light Consumable	questName has identifier <UNUSED>
+9482	<UNUSED>Nature Resist Potion	questName has identifier <UNUSED>
+9483		quest not found
+9484		quest not found
+9485		quest not found
+9486		quest not found
+9487		quest not found
+9488		quest not found
+9489		quest not found
+9490		quest not found
+9491		quest not found
+9492		quest not found
+9493		quest not found
+9494		quest not found
+9495		quest not found
+9496		quest not found
+9497		quest not found
+9498		quest not found
+9499		quest not found
+9500		quest not found
+9501		quest not found
+9502		quest not found
+9503		quest not found
+9504		quest not found
+9505		quest not found
+9506		quest not found
+9507		quest not found
+9508		quest not found
+9509		quest not found
+9510		quest not found
+9511		quest not found
+9512		quest not found
+9513		quest not found
+9514		quest not found
+9515		quest not found
+9516		quest not found
+9517		quest not found
+9518		quest not found
+9519		quest not found
+9520		quest not found
+9521		quest not found
+9522		quest not found
+9523		quest not found
+9524		quest not found
+9525		quest not found
+9526		quest not found
+9527		quest not found
+9528		quest not found
+9529		quest not found
+9530		quest not found
+9531		quest not found
+9532		quest not found
+9533		quest not found
+9534		quest not found
+9535		quest not found
+9536		quest not found
+9537		quest not found
+9538		quest not found
+9539		quest not found
+9540		quest not found
+9541		quest not found
+9542		quest not found
+9543		quest not found
+9544		quest not found
+9545		quest not found
+9546		quest not found
+9547		quest not found
+9548		quest not found
+9549		quest not found
+9550		quest not found
+9551		quest not found
+9552		quest not found
+9553		quest not found
+9554		quest not found
+9555		quest not found
+9557		quest not found
+9558		quest not found
+9559		quest not found
+9560		quest not found
+9561		quest not found
+9562		quest not found
+9563		quest not found
+9564		quest not found
+9565		quest not found
+9566		quest not found
+9567		quest not found
+9568		quest not found
+9569		quest not found
+9570		quest not found
+9571		quest not found
+9572		quest not found
+9573		quest not found
+9574		quest not found
+9575		quest not found
+9576		quest not found
+9577		quest not found
+9578		quest not found
+9579		quest not found
+9580		quest not found
+9581		quest not found
+9582		quest not found
+9583		quest not found
+9584		quest not found
+9585		quest not found
+9586		quest not found
+9587		quest not found
+9588		quest not found
+9589		quest not found
+9590		quest not found
+9591		quest not found
+9592		quest not found
+9593		quest not found
+9594		quest not found
+9595		quest not found
+9596		quest not found
+9597		quest not found
+9598		quest not found
+9599		quest not found
+9600		quest not found
+9601		quest not found
+9602		quest not found
+9603		quest not found
+9604		quest not found
+9605		quest not found
+9606		quest not found
+9607		quest not found
+9608		quest not found
+9609		quest not found
+9610		quest not found
+9611		quest not found
+9612		quest not found
+9613		quest not found
+9614		quest not found
+9615		quest not found
+9616		quest not found
+9617		quest not found
+9618		quest not found
+9619		quest not found
+9620		quest not found
+9621		quest not found
+9622		quest not found
+9623		quest not found
+9624		quest not found
+9625		quest not found
+9626		quest not found
+9627		quest not found
+9628		quest not found
+9629		quest not found
+9630		quest not found
+9631		quest not found
+9632		quest not found
+9633		quest not found
+9634		quest not found
+9635		quest not found
+9636		quest not found
+9637		quest not found
+9638		quest not found
+9639		quest not found
+9640		quest not found
+9641		quest not found
+9642		quest not found
+9643		quest not found
+9644		quest not found
+9645		quest not found
+9646		quest not found
+9647		quest not found
+9648		quest not found
+9649		quest not found
+9650		quest not found
+9651		quest not found
+9652		quest not found
+9653		quest not found
+9654		quest not found
+9655		quest not found
+9656		quest not found
+9657		quest not found
+9658		quest not found
+9659		quest not found
+9660		quest not found
+9661		quest not found
+9662		quest not found
+9663		quest not found

@@ -48,25 +48,71 @@ public class Quest : IHtmlProducerPaths
         "[DEPRECATED]",
         "<nyi>",
         "<NYI>",
+        "reuse",
         "REUSE",
         "<TEST>",
         "<TXT>",
         "<UNUSED>",
-        "Darkmoon Cards - Beasts", // test quest
-        "An Intact Converter", // TBC or test quest
-        "Unfortunate Measures", // TBC quest
-        "Waskily Wabbits!", // test quest
-        "Wabbit Pelts" // test quest
     };
-    
-    private static readonly Dictionary<int, string> TestQuests = new Dictionary<int, string>()
+
+    private static readonly Dictionary<int, string> NotAvailableQuests = new Dictionary<int, string>()
     {
         {3911, "duplicate quest"}, // The Last Element
         {7906, "test quest"}, // Darkmoon Cards - Beasts
         {7961, "test quest"}, // Waskily Wabbits!
         {7962, "test quest"}, // Wabbit Pelts
+        {8530, "test quest"}, // The Alliance Needs Singed Corestones!
+        {8531, "test quest"}, // The Alliance Needs More Singed Corestones!
+        {8617, "test quest"}, // The Horde Needs Singed Corestones!
+        {8618, "test quest"}, // The Horde Needs More Singed Corestones!
+        {8325, "TBC quest"}, // Reclaiming Sunstrider Isle
         {8326, "TBC quest"}, // Unfortunate Measures
-        {8489, "TBC or test quest"}, // An Intact Converter
+        {8327, "TBC quest"}, // Report to Lanthan Perilon
+        {8328, "TBC quest"}, // Mage Training
+        {8329, "TBC test quest"}, // Warrior Training
+        {8563, "TBC quest"}, // Warlock Training
+        {8564, "TBC quest"}, // Priest Training
+        {9393, "TBC quest"}, // Hunter Training
+        {9676, "TBC quest"}, // Paladin Training
+        {8334, "TBC quest"}, // Aggression
+        {8335, "TBC quest"}, // Felendren the Banished
+        {8338, "TBC quest"}, // Tainted Arcane Sliver
+        {8344, "TBC quest"}, // Windows to the Source
+        {8347, "TBC quest"}, // Aiding the Outrunners
+        {8350, "TBC quest"}, // Completing the Delivery
+        {8463, "TBC quest"}, // Unstable Mana Crystals
+        {8468, "TBC quest"}, // Wanted: Thaelis the Hungerer
+        {8472, "TBC quest"}, // Major Malfunction
+        {8473, "TBC quest"}, // A Somber Task
+        {8474, "TBC quest"}, // Old Whitebark's Pendant
+        {8475, "TBC quest"}, // The Dead Scar
+        {8476, "TBC quest"}, // Amani Encroachment
+        {8477, "TBC quest"}, // The Spearcrafter's Hammer
+        {8478, "TBC test quest"}, // Choose Your Weapon
+        {8479, "TBC quest"}, // Zul'Marosh
+        {8480, "TBC quest"}, // Lost Armaments
+        {8482, "TBC quest"}, // Incriminating Documents
+        {8483, "TBC quest"}, // The Dwarven Spy
+        {8486, "TBC quest"}, // Arcane Instability
+        {8487, "TBC quest"}, // Corrupted Soil
+        {8488, "TBC quest"}, // Unexpected Results
+        {8489, "TBC test quest"}, // An Intact Converter
+        {8490, "TBC quest"}, // Powering our Defenses
+        {8491, "TBC quest"}, // Pelt Collection
+        {8884, "TBC quest"}, // Fish Heads, Fish Heads...
+        {8885, "TBC quest"}, // The Ring of Mmmrrrggglll
+        {8886, "TBC quest"}, // Grimscale Pirates!
+        {8887, "TBC quest"}, // Captain Kelisendra's Lost Rutters
+        {8888, "TBC quest"}, // The Magister's Apprentice
+        {8889, "TBC quest"}, // Deactivating the Spire
+        {8890, "TBC quest"}, // Word from the Spire
+        {8891, "TBC quest"}, // Abandoned Investigations
+        {8892, "TBC quest"}, // Situation at Sunsail Anchorage
+        {8894, "TBC quest"}, // Cleaning up the Grounds
+        {8895, "TBC quest"}, // Delivery to the North Sanctum
+        {8896, "TBC quest"}, // The Dwarven Spy
+        {236, "Wothlk quest"}, // Fueling the Demolishers
+        {7702, "Wothlk quest"}, // Kill 'Em With Sleep Deprivation
     };
 
     private static readonly List<Regex> NotAvailableNameRegexIdentifier = new List<Regex>()
@@ -98,7 +144,7 @@ public class Quest : IHtmlProducerPaths
         4461, // Corrupted Whipper Root
         4448, // Corrupted Night Dragon
         4462, // Corrupted Night Dragon
-        2881, // Troll Necklace Bounty repeatable
+        2881, // Troll Necklace Bounty repeatable version of 2880
         // PVP Quests
         8389, // Battle of Warsong Gulch lvl 19
         8431, // Battle of Warsong Gulch lvl 29
@@ -197,21 +243,28 @@ public class Quest : IHtmlProducerPaths
         8809, // Extraordinary Materials - Horde
         8810, // Bandages for the Field - Horde
         8829, // The Ultimate Deception
+        // Naxxramas Necrotic runes quest
+        9317, // Consecrated Sharpening Stones - Alliance
+        9335, // Consecrated Sharpening Stones - Horde
+        9318, // Blessed Wizard Oil - Alliance
+        9334, // Blessed Wizard Oil - Horde
+        9320, // Major Mana Potion - Horde
+        9337, // Major Mana Potion - Alliance
+        9321, // Major Healing Potion - Alliance
+        9336, // Major Healing Potion - Horde
+        9094, // Argent Dawn Gloves - Alliance
+        9333, // Argent Dawn Gloves - Horde
+        9341, // Tabard of the Argent Dawn - Alliance
+        9343, // Tabard of the Argent Dawn - Horde
+        9386, // A Light in Dark Places repeatable version of 9319
     };
-    
+
     public static async Task<Quest> GetQuest(int id)
     {
         var html = await File.ReadAllTextAsync(HtmlFilePath(id));
-        
+
         var htmlDocument = new HtmlDocument();
         htmlDocument.LoadHtml(html);
-
-        var title = htmlDocument.DocumentNode.SelectSingleNode(".//title");
-        var h1 = htmlDocument.DocumentNode.SelectSingleNode(".//h1");
-        if (title?.InnerText == "ERROR: The request could not be satisfied" || h1?.InnerText == "504 Gateway Timeout ERROR")
-        {
-            throw new Exception("Error reading from wowhead.com. Fetch HTML again.");
-        }
 
         var questName = htmlDocument.DocumentNode.SelectSingleNode(".//h1[@class='heading-size-1']")?.InnerText;
         if (string.IsNullOrWhiteSpace(questName))
@@ -237,14 +290,18 @@ public class Quest : IHtmlProducerPaths
         var regexIdentifier = NotAvailableNameRegexIdentifier.Find(regex => regex.IsMatch(questName));
         if (regexIdentifier != null && !isException)
         {
-            return new Quest {Id = id, Name = questName, ErrorMessage = $"questName has identifier {regexIdentifier.ToString().Replace(".*", " ")}"};
+            return new Quest
+            {
+                Id = id, Name = questName,
+                ErrorMessage = $"questName has identifier {regexIdentifier.ToString().Replace(".*", " ")}"
+            };
         }
 
-        if (TestQuests.TryGetValue(id, out var reason))
+        if (NotAvailableQuests.TryGetValue(id, out var reason))
         {
-            return new Quest{Id = id, Name = questName, ErrorMessage = reason};
+            return new Quest {Id = id, Name = questName, ErrorMessage = reason};
         }
-        
+
         // if (html.Contains("This item is not available to players.") && !isException)
         // {
         //     return new Quest {Id = id, Name = questName, ErrorMessage = "item is not available to players"};
@@ -274,8 +331,9 @@ public class Quest : IHtmlProducerPaths
             {
                 level = int.Parse(levelMatch.Groups[1].Value);
             }
-            
-            var requiredLevelMatch = new Regex("Requires level (\\d+)", RegexOptions.Compiled).Match(quickFacts.InnerText);
+
+            var requiredLevelMatch =
+                new Regex("Requires level (\\d+)", RegexOptions.Compiled).Match(quickFacts.InnerText);
             if (requiredLevelMatch.Success)
             {
                 requiredLevel = int.Parse(requiredLevelMatch.Groups[1].Value);
@@ -289,8 +347,8 @@ public class Quest : IHtmlProducerPaths
         var money = new MoneyReward();
         var experience = new Dictionary<int, int>();
         var questRewardScript = htmlDocument.GetElementbyId("quest-reward-slider")?
-                .NextSibling?
-                .InnerHtml;
+            .NextSibling?
+            .InnerHtml;
         if (questRewardScript != null)
         {
             var jsonQuestDetails = questRewardScript
@@ -301,12 +359,12 @@ public class Quest : IHtmlProducerPaths
 
             try
             {
-                var questDetails  = JsonSerializer.Deserialize<QuestDetails>(jsonQuestDetails);
+                var questDetails = JsonSerializer.Deserialize<QuestDetails>(jsonQuestDetails);
                 if (questDetails != null)
                 {
                     minLevel = questDetails.MinLevel;
                     maxLevel = questDetails.MaxLevel;
-                    
+
                     money = new MoneyReward
                     {
                         QuestReward = questDetails.Coin.Levels.ToDictionary(),
@@ -329,8 +387,8 @@ public class Quest : IHtmlProducerPaths
         {
             foreach (var reputationNode in reputationNodes)
             {
-                var reputation = new ReputationReward();                
-                
+                var reputation = new ReputationReward();
+
                 var repString = reputationNode.SelectSingleNode(".//span")?.InnerText;
                 if (int.TryParse(repString, out var amount))
                 {
@@ -344,7 +402,7 @@ public class Quest : IHtmlProducerPaths
                     {
                         reputation.Name = reputationLink.InnerText;
                     }
-                    
+
                     var factionLink = reputationLink.GetAttributeValue("href", "");
                     var factionIdMatch = new Regex("faction=(\\d+)", RegexOptions.Compiled).Match(factionLink);
                     if (factionIdMatch.Success)
@@ -352,22 +410,22 @@ public class Quest : IHtmlProducerPaths
                         reputation.Id = int.Parse(factionIdMatch.Groups[1].Value);
                     }
                 }
-                
+
                 reputations.Add(reputation);
             }
         }
 
         return new Quest
         {
-            Id = id, 
-            Name = questName, 
+            Id = id,
+            Name = questName,
             Level = level,
             RequiredLevel = requiredLevel,
             IsRepeatable = isRepeatable,
             MoneyTurnIn = turnInMoney,
-            MinLevel = minLevel, 
-            MaxLevel = maxLevel, 
-            Experience = experience, 
+            MinLevel = minLevel,
+            MaxLevel = maxLevel,
+            Experience = experience,
             Money = money,
             Reputations = reputations
         };
@@ -375,18 +433,18 @@ public class Quest : IHtmlProducerPaths
 
     public static int GetXpForLevel(int fullXp, int playerLevel, int questLevel)
     {
-        var levelDifference = playerLevel - questLevel;    // quest and player level difference
+        var levelDifference = playerLevel - questLevel; // quest and player level difference
         if (levelDifference <= 5)
         {
             return RoundXp(fullXp);
         }
-        
+
         var xpModifier = 0.1m;
         if (levelDifference < 10)
         {
             xpModifier = 1 - (levelDifference - 5) * 0.2m; // reduction function in a single statement
         }
-        
+
         var reducedXp = fullXp * xpModifier;
         return RoundXp(reducedXp);
     }
@@ -412,7 +470,7 @@ public class MoneyReward
     {
         QuestReward = new Dictionary<int, int>();
     }
+
     public Dictionary<int, int> QuestReward { get; set; }
     public int ExperienceToMoney { get; set; }
 }
-

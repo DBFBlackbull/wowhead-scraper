@@ -51,6 +51,13 @@ public class HtmlProducer
             using var response = await Program.HttpClient.GetAsync(paths.GetUri(id));
             using var content = response.Content;
             var html = await content.ReadAsStringAsync();
+            
+            if (html.Contains("ERROR: The request could not be satisfied", StringComparison.InvariantCultureIgnoreCase) || 
+                html.Contains("504 Gateway Timeout ERROR", StringComparison.InvariantCultureIgnoreCase))
+            {
+                Console.WriteLine($"Error reading id {paths.GetUri(id).ToString()}");
+            }
+            
             var filePath = Path.Join(paths.GetHtmlFilePath(id));
             await File.WriteAllTextAsync(filePath, html, Encoding.UTF8);
             
