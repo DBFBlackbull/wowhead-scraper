@@ -58,6 +58,7 @@ public class Quest : IHtmlProducerPaths
     private static readonly Dictionary<int, string> NotAvailableQuests = new Dictionary<int, string>()
     {
         {3911, "duplicate quest"}, // The Last Element
+        //{8856, "duplicate quest"}, // Desert Survival Kits 
         {7906, "test quest"}, // Darkmoon Cards - Beasts
         {7961, "test quest"}, // Waskily Wabbits!
         {7962, "test quest"}, // Wabbit Pelts
@@ -122,6 +123,8 @@ public class Quest : IHtmlProducerPaths
 
     private static readonly HashSet<int> ManuallyTaggedRepeatable = new HashSet<int>()
     {
+        996,  // Corrupted Windblossom 
+        998,  // Corrupted Windblossom 
         1514, // Corrupted Windblossom 
         4115, // Corrupted Windblossom
         4221, // Corrupted Windblossom
@@ -130,7 +133,9 @@ public class Quest : IHtmlProducerPaths
         4403, // Corrupted Windblossom
         4466, // Corrupted Windblossom
         4467, // Corrupted Windblossom
+        2523, // Corrupted Songflower
         2878, // Corrupted Songflower
+        3363, // Corrupted Songflower
         4113, // Corrupted Songflower
         4114, // Corrupted Songflower
         4116, // Corrupted Songflower
@@ -138,10 +143,14 @@ public class Quest : IHtmlProducerPaths
         4401, // Corrupted Songflower
         4464, // Corrupted Songflower
         4465, // Corrupted Songflower
+        4117, // Corrupted Whipper Root
+        4443, // Corrupted Whipper Root
         4444, // Corrupted Whipper Root
         4445, // Corrupted Whipper Root
         4446, // Corrupted Whipper Root
         4461, // Corrupted Whipper Root
+        4119, // Corrupted Night Dragon
+        4447, // Corrupted Night Dragon
         4448, // Corrupted Night Dragon
         4462, // Corrupted Night Dragon
         2881, // Troll Necklace Bounty repeatable version of 2880
@@ -208,41 +217,77 @@ public class Quest : IHtmlProducerPaths
         8302, // The Hand of the Righteous (AQ scepter quest)
         8507, // Field Duty - Alliance
         8731, // Field Duty - Horde
-        8496, // Bandages for the Field - Alliance
-        8498, // Twilight Battle Orders
-        8501, // Target: Hive'Ashi Stingers
-        8502, // Target: Hive'Ashi Workers
-        8534, // Hive'Zora Scout Report
+        // AQ Tactics
         8535, // Hoary Templar
         8536, // Earthen Templar
         8537, // Crimson Templar
-        8539, // Target: Hive'Zora Hive Sisters
-        8541, // Grinding Stones for the Guard - Alliance
-        8687, // Target: Hive'Zora Tunnelers
         8737, // Azure Templar
-        8738, // Hive'Regal Scout Report
-        8739, // Hive'Ashi Scout Report
+        8538, // The Four Dukes
+        8498, // Twilight Battle Orders
         8740, // Twilight Marauders
+        8739, // Hive'Ashi Scout Report
+        8738, // Hive'Regal Scout Report
+        8534, // Hive'Zora Scout Report
+        // AQ Combat
+        8501, // Target: Hive'Ashi Stingers
+        8502, // Target: Hive'Ashi Workers
         8770, // Target: Hive'Ashi Defenders
         8771, // Target: Hive'Ashi Sandstalkers
+        8539, // Target: Hive'Zora Hive Sisters
+        8687, // Target: Hive'Zora Tunnelers
         8772, // Target: Hive'Zora Waywatchers
         8773, // Target: Hive'Zora Reavers
         8774, // Target: Hive'Regal Ambushers
         8775, // Target: Hive'Regal Spitfires
         8776, // Target: Hive'Regal Slavemakers
         8777, // Target: Hive'Regal Burrowers
-        8778, // The Ironforge Brigade Needs Explosives!
-        8779, // Scrying Materials - Alliance
+        // AQ Logistics
         8780, // Armor Kits for the Field - Alliance
+        8787, // Armor Kits for the Field - Horde
         8781, // Arms for the Field - Alliance
-        8782, // Uniform Supplies - Alliance
-        8783, // Extraordinary Materials - Alliance
-        8787, // Armor Kits for the Field - Alliance
-        8804, // Desert Survival Kits - Horde
-        8805, // Boots for the Guard - Horde
-        8809, // Extraordinary Materials - Horde
+        8786, // Arms for the Field - Horde
+        8496, // Bandages for the Field - Alliance
         8810, // Bandages for the Field - Horde
+        8540, // Boots for the Guard - Alliance
+        8805, // Boots for the Guard - Horde
+        8804, // Desert Survival Kits - Horde
+        8497, // Desert Survival Kits - Alliance
+        8783, // Extraordinary Materials - Alliance
+        8809, // Extraordinary Materials - Horde
+        8541, // Grinding Stones for the Guard - Alliance
+        8806, // Grinding Stones for the Guard - Horde
+        8779, // Scrying Materials - Alliance
+        8807, // Scrying Materials - Horde
+        8782, // Uniform Supplies - Alliance
+        8808, // Uniform Supplies - Horde
+        8778, // The Ironforge Brigade Needs Explosives!
+        8785, // The Orgrimmar Legion Needs Mojo!
         8829, // The Ultimate Deception
+        // Naxxramas Craftman quests
+        9178, // Craftsman's Writ - Dense Weightstone
+        9179, // Craftsman's Writ - Imperial Plate Chest
+        9181, // Craftsman's Writ - Volcanic Hammer
+        9182, // Craftsman's Writ - Huge Thorium Battleaxe
+        9183, // Craftsman's Writ - Radiant Circlet
+        9184, // Craftsman's Writ - Wicked Leather Headband
+        9185, // Craftsman's Writ - Rugged Armor Kit
+        9186, // Craftsman's Writ - Wicked Leather Belt
+        9187, // Craftsman's Writ - Runic Leather Pants
+        9188, // Craftsman's Writ - Brightcloth Pants
+        9190, // Craftsman's Writ - Runecloth Boots
+        9191, // Craftsman's Writ - Runecloth Bag
+        9194, // Craftsman's Writ - Runecloth Robe
+        9195, // Craftsman's Writ - Goblin Sapper Charge
+        9196, // Craftsman's Writ - Thorium Grenade
+        9197, // Craftsman's Writ - Gnomish Battle Chicken
+        9198, // Craftsman's Writ - Thorium Tube
+        9200, // Craftsman's Writ - Major Mana Potion
+        9201, // Craftsman's Writ - Greater Arcane Protection Potion
+        9202, // Craftsman's Writ - Major Healing Potion
+        9203, // Craftsman's Writ - Flask of Petrification
+        9204, // Craftsman's Writ - Stonescale Eel
+        9205, // Craftsman's Writ - Plated Armorfish
+        9206, // Craftsman's Writ - Lightning Eel
         // Naxxramas Necrotic runes quest
         9317, // Consecrated Sharpening Stones - Alliance
         9335, // Consecrated Sharpening Stones - Horde
