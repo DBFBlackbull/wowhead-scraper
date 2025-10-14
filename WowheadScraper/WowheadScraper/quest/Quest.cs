@@ -22,7 +22,7 @@ public class Quest : IHtmlProducerPaths
     public int Level { get; set; }
     public int RequiredLevel { get; set; }
     public bool IsRepeatable { get; set; }
-    public bool IsManuallyTaggedRepeatable => ManuallyTaggedRepeatable.Contains(Id);
+    public bool? IsManuallyRepeatableOverride { get; set; }
     public int RequiredMoney { get; set; }
     public int MinLevel { get; set; }
     public int MaxLevel { get; set; }
@@ -39,6 +39,15 @@ public class Quest : IHtmlProducerPaths
     }
     
     public bool IsAvailable => string.IsNullOrWhiteSpace(ErrorMessage);
+    
+    public bool GetIsRepeatable()
+    {
+        if (IsManuallyRepeatableOverride.HasValue)
+        {
+            return IsManuallyRepeatableOverride.Value;
+        }
+        return IsRepeatable;
+    }
     
     private static readonly List<string> NotAvailableNameIdentifiers = new List<string>()
     {
@@ -121,187 +130,189 @@ public class Quest : IHtmlProducerPaths
         new Regex("test.*quest", RegexOptions.IgnoreCase),
     };
 
-    private static readonly HashSet<int> ManuallyTaggedRepeatable = new HashSet<int>()
+    private static readonly Dictionary<int, bool> ManualRepeatableOverride = new Dictionary<int, bool>()
     {
-        996,  // Corrupted Windblossom 
-        998,  // Corrupted Windblossom 
-        1514, // Corrupted Windblossom 
-        4115, // Corrupted Windblossom
-        4221, // Corrupted Windblossom
-        4222, // Corrupted Windblossom
-        4343, // Corrupted Windblossom
-        4403, // Corrupted Windblossom
-        4466, // Corrupted Windblossom
-        4467, // Corrupted Windblossom
-        2523, // Corrupted Songflower
-        2878, // Corrupted Songflower
-        3363, // Corrupted Songflower
-        4113, // Corrupted Songflower
-        4114, // Corrupted Songflower
-        4116, // Corrupted Songflower
-        4118, // Corrupted Songflower
-        4401, // Corrupted Songflower
-        4464, // Corrupted Songflower
-        4465, // Corrupted Songflower
-        4117, // Corrupted Whipper Root
-        4443, // Corrupted Whipper Root
-        4444, // Corrupted Whipper Root
-        4445, // Corrupted Whipper Root
-        4446, // Corrupted Whipper Root
-        4461, // Corrupted Whipper Root
-        4119, // Corrupted Night Dragon
-        4447, // Corrupted Night Dragon
-        4448, // Corrupted Night Dragon
-        4462, // Corrupted Night Dragon
-        2881, // Troll Necklace Bounty repeatable version of 2880
+        {996, true},  // Corrupted Windblossom 
+        {998, true},  // Corrupted Windblossom 
+        {1514, true}, // Corrupted Windblossom 
+        {4115, true}, // Corrupted Windblossom
+        {4221, true}, // Corrupted Windblossom
+        {4222, true}, // Corrupted Windblossom
+        {4343, true}, // Corrupted Windblossom
+        {4403, true}, // Corrupted Windblossom
+        {4466, true}, // Corrupted Windblossom
+        {4467, true}, // Corrupted Windblossom
+        {2523, true}, // Corrupted Songflower
+        {2878, true}, // Corrupted Songflower
+        {3363, true}, // Corrupted Songflower
+        {4113, true}, // Corrupted Songflower
+        {4114, true}, // Corrupted Songflower
+        {4116, true}, // Corrupted Songflower
+        {4118, true}, // Corrupted Songflower
+        {4401, true}, // Corrupted Songflower
+        {4464, true}, // Corrupted Songflower
+        {4465, true}, // Corrupted Songflower
+        {4117, true}, // Corrupted Whipper Root
+        {4443, true}, // Corrupted Whipper Root
+        {4444, true}, // Corrupted Whipper Root
+        {4445, true}, // Corrupted Whipper Root
+        {4446, true}, // Corrupted Whipper Root
+        {4461, true}, // Corrupted Whipper Root
+        {4119, true}, // Corrupted Night Dragon
+        {4447, true}, // Corrupted Night Dragon
+        {4448, true}, // Corrupted Night Dragon
+        {4462, true}, // Corrupted Night Dragon
+        {2881, true}, // Troll Necklace Bounty repeatable version of 2880
         // PVP Quests
-        8389, // Battle of Warsong Gulch lvl 19
-        8431, // Battle of Warsong Gulch lvl 29
-        8432, // Battle of Warsong Gulch lvl 39
-        8433, // Battle of Warsong Gulch lvl 49
-        8434, // Battle of Warsong Gulch lvl 59
-        8435, // Battle of Warsong Gulch lvl 60
-        8386, // Fight for Warsong Gulch lvl 19
-        8404, // Fight for Warsong Gulch lvl 29
-        8405, // Fight for Warsong Gulch lvl 39
-        8406, // Fight for Warsong Gulch lvl 49
-        8407, // Fight for Warsong Gulch lvl 59
-        8408, // Fight for Warsong Gulch lvl 60
-        8384, // Claiming Arathi Basin lvl 29
-        8391, // Claiming Arathi Basin lvl 39
-        8392, // Claiming Arathi Basin lvl 49
-        8397, // Claiming Arathi Basin lvl 59
-        8398, // Claiming Arathi Basin lvl 60
-        8390, // Conquering Arathi Basin lvl 29
-        8440, // Conquering Arathi Basin lvl 39
-        8441, // Conquering Arathi Basin lvl 49
-        8442, // Conquering Arathi Basin lvl 59
-        8443, // Conquering Arathi Basin lvl 60
-        8387, // Invaders of Alterac Valley
-        8383, // Remember Alterac Valley!
-        8385, // Concerted Efforts
-        8388, // For Great Honor
-        8493, // The Alliance Needs More Copper Bars!
-        8495, // The Alliance Needs More Iron Bars!
-        8500, // The Alliance Needs More Thorium Bars!
-        8504, // The Alliance Needs More Stranglekelp!
-        8506, // The Alliance Needs More Purple Lotus!
-        8510, // The Alliance Needs More Arthas' Tears!
-        8512, // The Alliance Needs More Light Leather!
-        8514, // The Alliance Needs More Medium Leather!
-        8516, // The Alliance Needs More Thick Leather!
-        8518, // The Alliance Needs More Linen Bandages!
-        8521, // The Alliance Needs More Silk Bandages!
-        8523, // The Alliance Needs More Runecloth Bandages!
-        8525, // The Alliance Needs More Rainbow Fin Albacore!
-        8527, // The Alliance Needs More Roast Raptor!
-        8529, // The Alliance Needs More Spotted Yellowtail!
-        8531, // The Alliance Needs More Singed Corestones!
-        8533, // The Horde Needs More Copper Bars!
-        8543, // The Horde Needs More Tin Bars!
-        8546, // The Horde Needs More Mithril Bars!
-        8550, // The Horde Needs More Peacebloom!
-        8581, // The Horde Needs More Firebloom!
-        8583, // The Horde Needs More Purple Lotus!
-        8589, // The Horde Needs More Heavy Leather!
-        8591, // The Horde Needs More Thick Leather!
-        8601, // The Horde Needs More Rugged Leather!
-        8605, // The Horde Needs More Wool Bandages!
-        8608, // The Horde Needs More Mageweave Bandages!
-        8610, // The Horde Needs More Runecloth Bandages!
-        8612, // The Horde Needs More Lean Wolf Steaks!
-        8614, // The Horde Needs More Spotted Yellowtail!
-        8616, // The Horde Needs More Baked Salmon!
-        8618, // The Horde Needs More Singed Corestones!
+        {8389, true}, // Battle of Warsong Gulch lvl 19
+        {8431, true}, // Battle of Warsong Gulch lvl 29
+        {8432, true}, // Battle of Warsong Gulch lvl 39
+        {8433, true}, // Battle of Warsong Gulch lvl 49
+        {8434, true}, // Battle of Warsong Gulch lvl 59
+        {8435, true}, // Battle of Warsong Gulch lvl 60
+        {8386, true}, // Fight for Warsong Gulch lvl 19
+        {8404, true}, // Fight for Warsong Gulch lvl 29
+        {8405, true}, // Fight for Warsong Gulch lvl 39
+        {8406, true}, // Fight for Warsong Gulch lvl 49
+        {8407, true}, // Fight for Warsong Gulch lvl 59
+        {8408, true}, // Fight for Warsong Gulch lvl 60
+        {8384, true}, // Claiming Arathi Basin lvl 29
+        {8391, true}, // Claiming Arathi Basin lvl 39
+        {8392, true}, // Claiming Arathi Basin lvl 49
+        {8397, true}, // Claiming Arathi Basin lvl 59
+        {8398, true}, // Claiming Arathi Basin lvl 60
+        {8390, true}, // Conquering Arathi Basin lvl 29
+        {8440, true}, // Conquering Arathi Basin lvl 39
+        {8441, true}, // Conquering Arathi Basin lvl 49
+        {8442, true}, // Conquering Arathi Basin lvl 59
+        {8443, true}, // Conquering Arathi Basin lvl 60
+        {8387, true}, // Invaders of Alterac Valley
+        {8383, true}, // Remember Alterac Valley!
+        {8385, true}, // Concerted Efforts
+        {8388, true}, // For Great Honor
+        {8493, true}, // The Alliance Needs More Copper Bars!
+        {8495, true}, // The Alliance Needs More Iron Bars!
+        {8500, true}, // The Alliance Needs More Thorium Bars!
+        {8504, true}, // The Alliance Needs More Stranglekelp!
+        {8506, true}, // The Alliance Needs More Purple Lotus!
+        {8510, true}, // The Alliance Needs More Arthas' Tears!
+        {8512, true}, // The Alliance Needs More Light Leather!
+        {8514, true}, // The Alliance Needs More Medium Leather!
+        {8516, true}, // The Alliance Needs More Thick Leather!
+        {8518, true}, // The Alliance Needs More Linen Bandages!
+        {8521, true}, // The Alliance Needs More Silk Bandages!
+        {8523, true}, // The Alliance Needs More Runecloth Bandages!
+        {8525, true}, // The Alliance Needs More Rainbow Fin Albacore!
+        {8527, true}, // The Alliance Needs More Roast Raptor!
+        {8529, true}, // The Alliance Needs More Spotted Yellowtail!
+        {8531, true}, // The Alliance Needs More Singed Corestones!
+        {8533, true}, // The Horde Needs More Copper Bars!
+        {8543, true}, // The Horde Needs More Tin Bars!
+        {8546, true}, // The Horde Needs More Mithril Bars!
+        {8550, true}, // The Horde Needs More Peacebloom!
+        {8581, true}, // The Horde Needs More Firebloom!
+        {8583, true}, // The Horde Needs More Purple Lotus!
+        {8589, true}, // The Horde Needs More Heavy Leather!
+        {8591, true}, // The Horde Needs More Thick Leather!
+        {8601, true}, // The Horde Needs More Rugged Leather!
+        {8605, true}, // The Horde Needs More Wool Bandages!
+        {8608, true}, // The Horde Needs More Mageweave Bandages!
+        {8610, true}, // The Horde Needs More Runecloth Bandages!
+        {8612, true}, // The Horde Needs More Lean Wolf Steaks!
+        {8614, true}, // The Horde Needs More Spotted Yellowtail!
+        {8616, true}, // The Horde Needs More Baked Salmon!
+        {8618, true}, // The Horde Needs More Singed Corestones!
         // AQ Opening silithus quests
-        8302, // The Hand of the Righteous (AQ scepter quest)
-        8507, // Field Duty - Alliance
-        8731, // Field Duty - Horde
+        {8302, true}, // The Hand of the Righteous (AQ scepter quest)
+        {8507, true}, // Field Duty - Alliance
+        {8731, true}, // Field Duty - Horde
         // AQ Tactics
-        8535, // Hoary Templar
-        8536, // Earthen Templar
-        8537, // Crimson Templar
-        8737, // Azure Templar
-        8538, // The Four Dukes
-        8498, // Twilight Battle Orders
-        8740, // Twilight Marauders
-        8739, // Hive'Ashi Scout Report
-        8738, // Hive'Regal Scout Report
-        8534, // Hive'Zora Scout Report
+        {8535, true}, // Hoary Templar
+        {8536, true}, // Earthen Templar
+        {8537, true}, // Crimson Templar
+        {8737, true}, // Azure Templar
+        {8538, true}, // The Four Dukes
+        {8498, true}, // Twilight Battle Orders
+        {8740, true}, // Twilight Marauders
+        {8739, true}, // Hive'Ashi Scout Report
+        {8738, true}, // Hive'Regal Scout Report
+        {8534, true}, // Hive'Zora Scout Report
         // AQ Combat
-        8501, // Target: Hive'Ashi Stingers
-        8502, // Target: Hive'Ashi Workers
-        8770, // Target: Hive'Ashi Defenders
-        8771, // Target: Hive'Ashi Sandstalkers
-        8539, // Target: Hive'Zora Hive Sisters
-        8687, // Target: Hive'Zora Tunnelers
-        8772, // Target: Hive'Zora Waywatchers
-        8773, // Target: Hive'Zora Reavers
-        8774, // Target: Hive'Regal Ambushers
-        8775, // Target: Hive'Regal Spitfires
-        8776, // Target: Hive'Regal Slavemakers
-        8777, // Target: Hive'Regal Burrowers
+        {8501, true}, // Target: Hive'Ashi Stingers
+        {8502, true}, // Target: Hive'Ashi Workers
+        {8770, true}, // Target: Hive'Ashi Defenders
+        {8771, true}, // Target: Hive'Ashi Sandstalkers
+        {8539, true}, // Target: Hive'Zora Hive Sisters
+        {8687, true}, // Target: Hive'Zora Tunnelers
+        {8772, true}, // Target: Hive'Zora Waywatchers
+        {8773, true}, // Target: Hive'Zora Reavers
+        {8774, true}, // Target: Hive'Regal Ambushers
+        {8775, true}, // Target: Hive'Regal Spitfires
+        {8776, true}, // Target: Hive'Regal Slavemakers
+        {8777, true}, // Target: Hive'Regal Burrowers
         // AQ Logistics
-        8780, // Armor Kits for the Field - Alliance
-        8787, // Armor Kits for the Field - Horde
-        8781, // Arms for the Field - Alliance
-        8786, // Arms for the Field - Horde
-        8496, // Bandages for the Field - Alliance
-        8810, // Bandages for the Field - Horde
-        8540, // Boots for the Guard - Alliance
-        8805, // Boots for the Guard - Horde
-        8804, // Desert Survival Kits - Horde
-        8497, // Desert Survival Kits - Alliance
-        8783, // Extraordinary Materials - Alliance
-        8809, // Extraordinary Materials - Horde
-        8541, // Grinding Stones for the Guard - Alliance
-        8806, // Grinding Stones for the Guard - Horde
-        8779, // Scrying Materials - Alliance
-        8807, // Scrying Materials - Horde
-        8782, // Uniform Supplies - Alliance
-        8808, // Uniform Supplies - Horde
-        8778, // The Ironforge Brigade Needs Explosives!
-        8785, // The Orgrimmar Legion Needs Mojo!
-        8829, // The Ultimate Deception
+        {8780, true}, // Armor Kits for the Field - Alliance
+        {8787, true}, // Armor Kits for the Field - Horde
+        {8781, true}, // Arms for the Field - Alliance
+        {8786, true}, // Arms for the Field - Horde
+        {8496, true}, // Bandages for the Field - Alliance
+        {8810, true}, // Bandages for the Field - Horde
+        {8540, true}, // Boots for the Guard - Alliance
+        {8805, true}, // Boots for the Guard - Horde
+        {8804, true}, // Desert Survival Kits - Horde
+        {8497, true}, // Desert Survival Kits - Alliance
+        {8783, true}, // Extraordinary Materials - Alliance
+        {8809, true}, // Extraordinary Materials - Horde
+        {8541, true}, // Grinding Stones for the Guard - Alliance
+        {8806, true}, // Grinding Stones for the Guard - Horde
+        {8779, true}, // Scrying Materials - Alliance
+        {8807, true}, // Scrying Materials - Horde
+        {8782, true}, // Uniform Supplies - Alliance
+        {8808, true}, // Uniform Supplies - Horde
+        {8778, true}, // The Ironforge Brigade Needs Explosives!
+        {8785, true}, // The Orgrimmar Legion Needs Mojo!
+        {8829, true}, // The Ultimate Deception
         // Naxxramas Craftman quests
-        9178, // Craftsman's Writ - Dense Weightstone
-        9179, // Craftsman's Writ - Imperial Plate Chest
-        9181, // Craftsman's Writ - Volcanic Hammer
-        9182, // Craftsman's Writ - Huge Thorium Battleaxe
-        9183, // Craftsman's Writ - Radiant Circlet
-        9184, // Craftsman's Writ - Wicked Leather Headband
-        9185, // Craftsman's Writ - Rugged Armor Kit
-        9186, // Craftsman's Writ - Wicked Leather Belt
-        9187, // Craftsman's Writ - Runic Leather Pants
-        9188, // Craftsman's Writ - Brightcloth Pants
-        9190, // Craftsman's Writ - Runecloth Boots
-        9191, // Craftsman's Writ - Runecloth Bag
-        9194, // Craftsman's Writ - Runecloth Robe
-        9195, // Craftsman's Writ - Goblin Sapper Charge
-        9196, // Craftsman's Writ - Thorium Grenade
-        9197, // Craftsman's Writ - Gnomish Battle Chicken
-        9198, // Craftsman's Writ - Thorium Tube
-        9200, // Craftsman's Writ - Major Mana Potion
-        9201, // Craftsman's Writ - Greater Arcane Protection Potion
-        9202, // Craftsman's Writ - Major Healing Potion
-        9203, // Craftsman's Writ - Flask of Petrification
-        9204, // Craftsman's Writ - Stonescale Eel
-        9205, // Craftsman's Writ - Plated Armorfish
-        9206, // Craftsman's Writ - Lightning Eel
+        {9178, true}, // Craftsman's Writ - Dense Weightstone
+        {9179, true}, // Craftsman's Writ - Imperial Plate Chest
+        {9181, true}, // Craftsman's Writ - Volcanic Hammer
+        {9182, true}, // Craftsman's Writ - Huge Thorium Battleaxe
+        {9183, true}, // Craftsman's Writ - Radiant Circlet
+        {9184, true}, // Craftsman's Writ - Wicked Leather Headband
+        {9185, true}, // Craftsman's Writ - Rugged Armor Kit
+        {9186, true}, // Craftsman's Writ - Wicked Leather Belt
+        {9187, true}, // Craftsman's Writ - Runic Leather Pants
+        {9188, true}, // Craftsman's Writ - Brightcloth Pants
+        {9190, true}, // Craftsman's Writ - Runecloth Boots
+        {9191, true}, // Craftsman's Writ - Runecloth Bag
+        {9194, true}, // Craftsman's Writ - Runecloth Robe
+        {9195, true}, // Craftsman's Writ - Goblin Sapper Charge
+        {9196, true}, // Craftsman's Writ - Thorium Grenade
+        {9197, true}, // Craftsman's Writ - Gnomish Battle Chicken
+        {9198, true}, // Craftsman's Writ - Thorium Tube
+        {9200, true}, // Craftsman's Writ - Major Mana Potion
+        {9201, true}, // Craftsman's Writ - Greater Arcane Protection Potion
+        {9202, true}, // Craftsman's Writ - Major Healing Potion
+        {9203, true}, // Craftsman's Writ - Flask of Petrification
+        {9204, true}, // Craftsman's Writ - Stonescale Eel
+        {9205, true}, // Craftsman's Writ - Plated Armorfish
+        {9206, true}, // Craftsman's Writ - Lightning Eel
         // Naxxramas Necrotic runes quest
-        9317, // Consecrated Sharpening Stones - Alliance
-        9335, // Consecrated Sharpening Stones - Horde
-        9318, // Blessed Wizard Oil - Alliance
-        9334, // Blessed Wizard Oil - Horde
-        9320, // Major Mana Potion - Horde
-        9337, // Major Mana Potion - Alliance
-        9321, // Major Healing Potion - Alliance
-        9336, // Major Healing Potion - Horde
-        9094, // Argent Dawn Gloves - Alliance
-        9333, // Argent Dawn Gloves - Horde
-        9341, // Tabard of the Argent Dawn - Alliance
-        9343, // Tabard of the Argent Dawn - Horde
-        9386, // A Light in Dark Places repeatable version of 9319
+        {9317, true}, // Consecrated Sharpening Stones - Alliance
+        {9335, true}, // Consecrated Sharpening Stones - Horde
+        {9318, true}, // Blessed Wizard Oil - Alliance
+        {9334, true}, // Blessed Wizard Oil - Horde
+        {9320, true}, // Major Mana Potion - Horde
+        {9337, true}, // Major Mana Potion - Alliance
+        {9321, true}, // Major Healing Potion - Alliance
+        {9336, true}, // Major Healing Potion - Horde
+        {9094, true}, // Argent Dawn Gloves - Alliance
+        {9333, true}, // Argent Dawn Gloves - Horde
+        {9341, true}, // Tabard of the Argent Dawn - Alliance
+        {9343, true}, // Tabard of the Argent Dawn - Horde
+        {9386, true}, // A Light in Dark Places repeatable version of 9319
+        
+        {9131, false} // Binding the Dreadnaught - Repeatable version is 9131 Dark Iron Scraps 
     };
 
     public static async Task<Quest> GetQuest(int id)
@@ -387,6 +398,12 @@ public class Quest : IHtmlProducerPaths
             isRepeatable = quickFacts.InnerText.Contains("[li]Repeatable");
         }
 
+        bool? isRepeatableOverride = null;
+        if (ManualRepeatableOverride.TryGetValue(id, out var repeatableOverride))
+        {
+            isRepeatableOverride = repeatableOverride;
+        }
+
         var minLevel = 0;
         var maxLevel = 0;
         var money = new MoneyReward();
@@ -467,6 +484,7 @@ public class Quest : IHtmlProducerPaths
             Level = level,
             RequiredLevel = requiredLevel,
             IsRepeatable = isRepeatable,
+            IsManuallyRepeatableOverride = isRepeatableOverride,
             RequiredMoney = turnInMoney,
             MinLevel = minLevel,
             MaxLevel = maxLevel,

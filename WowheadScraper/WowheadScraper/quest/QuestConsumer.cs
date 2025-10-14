@@ -26,7 +26,7 @@ public class QuestConsumer
                     "level",
                     "requiredLevel",
                     "wowheadRepeatable",
-                    "manualRepeatable",
+                    "manualRepeatableOverride",
                     "minLevel",
                     "maxLevel"
                 };
@@ -78,7 +78,7 @@ public class QuestConsumer
                             quest.Level.ToString(),
                             quest.RequiredLevel.ToString(),
                             quest.IsRepeatable.ToString(),
-                            quest.IsManuallyTaggedRepeatable.ToString(),
+                            quest.IsManuallyRepeatableOverride.HasValue ? quest.IsManuallyRepeatableOverride.Value.ToString() : "",
                             quest.MinLevel.ToString(),
                             quest.MaxLevel.ToString()
                         };
@@ -160,6 +160,7 @@ public class QuestConsumer
         {
             var key = Math.Min(quest.Experience.Keys.Max(), 60);
             xpAt60 = quest.Experience[key];
+            xpAt60 = xpAt60 == 10 ? 0 : xpAt60; // Fix for 3 level 1 quests giving 10 xp, but 0 at 60.
         }
 
         if (xpAt60 == 0)
@@ -176,8 +177,7 @@ public class QuestConsumer
                 : new Tuple<string, string>("Validate", "Quests requiring gold gives gold back");
         }
         
-        var isRepeatable = quest.IsRepeatable || quest.IsManuallyTaggedRepeatable;
-        if (isRepeatable)
+        if (quest.GetIsRepeatable())
         {
             return xpToMoneyAt60 == 0 
                 ? new Tuple<string, string>("OK", "Repeatable quest gives no gold") 
