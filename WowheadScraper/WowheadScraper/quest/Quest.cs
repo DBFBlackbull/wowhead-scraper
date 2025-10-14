@@ -23,7 +23,7 @@ public class Quest : IHtmlProducerPaths
     public int RequiredLevel { get; set; }
     public bool IsRepeatable { get; set; }
     public bool IsManuallyTaggedRepeatable => ManuallyTaggedRepeatable.Contains(Id);
-    public int MoneyTurnIn { get; set; }
+    public int RequiredMoney { get; set; }
     public int MinLevel { get; set; }
     public int MaxLevel { get; set; }
     public MoneyReward Money { get; set; }
@@ -467,7 +467,7 @@ public class Quest : IHtmlProducerPaths
             Level = level,
             RequiredLevel = requiredLevel,
             IsRepeatable = isRepeatable,
-            MoneyTurnIn = turnInMoney,
+            RequiredMoney = turnInMoney,
             MinLevel = minLevel,
             MaxLevel = maxLevel,
             Experience = experience,

@@ -41,7 +41,7 @@ public class QuestConsumer
                 }
                 headers.AddRange(
                     "xpToMoneyAt60",
-                    "turnInMoney",
+                    "requiredMoney",
                     "goldAt60Status",
                     "goldAt60Note",
                     "calculatedTotalMoneyAt60"
@@ -113,7 +113,7 @@ public class QuestConsumer
 
                         var xpToGoldStatus = XpToGoldStatus(quest);
                         row.AddRange(
-                            quest.MoneyTurnIn.ToString(),
+                            quest.RequiredMoney.ToString(),
                             xpToGoldStatus.Item1,
                             xpToGoldStatus.Item2
                         );
@@ -169,7 +169,7 @@ public class QuestConsumer
                 : new Tuple<string, string>("Validate", "No xp, but still gives gold");
         }
 
-        if (quest.MoneyTurnIn > 0)
+        if (quest.RequiredMoney > 0)
         {
             return xpToMoneyAt60 == 0 
                 ? new Tuple<string, string>("OK", "Quests requiring gold, gives no gold") 
