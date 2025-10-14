@@ -132,6 +132,12 @@ public class Quest : IHtmlProducerPaths
 
     private static readonly Dictionary<int, bool> ManualRepeatableOverride = new Dictionary<int, bool>()
     {
+        // Random quests
+        {2881, true}, // Troll Necklace Bounty repeatable version of 2880
+        {7735, true}, // Pristine Yeti Hide - Based on Thottbot / Allakazam comments 
+        {7738, true}, // Perfect Yeti Hide - Based on Thottbot / Allakazam comments
+        {9386, true}, // A Light in Dark Places repeatable version of 9319
+        // Felwood flowers
         {996, true},  // Corrupted Windblossom 
         {998, true},  // Corrupted Windblossom 
         {1514, true}, // Corrupted Windblossom 
@@ -162,7 +168,6 @@ public class Quest : IHtmlProducerPaths
         {4447, true}, // Corrupted Night Dragon
         {4448, true}, // Corrupted Night Dragon
         {4462, true}, // Corrupted Night Dragon
-        {2881, true}, // Troll Necklace Bounty repeatable version of 2880
         // PVP Quests
         {8389, true}, // Battle of Warsong Gulch lvl 19
         {8431, true}, // Battle of Warsong Gulch lvl 29
@@ -310,7 +315,6 @@ public class Quest : IHtmlProducerPaths
         {9333, true}, // Argent Dawn Gloves - Horde
         {9341, true}, // Tabard of the Argent Dawn - Alliance
         {9343, true}, // Tabard of the Argent Dawn - Horde
-        {9386, true}, // A Light in Dark Places repeatable version of 9319
         
         {9131, false} // Binding the Dreadnaught - Repeatable version is 9131 Dark Iron Scraps 
     };
