@@ -21,6 +21,7 @@ public class Quest : IHtmlProducerPaths
     public string Name { get; set; }
     public int Level { get; set; }
     public int RequiredLevel { get; set; }
+    public string Type { get; set; }
     public bool IsRepeatable { get; set; }
     public bool? IsManuallyRepeatableOverride { get; set; }
     public int RequiredMoney { get; set; }
@@ -382,6 +383,7 @@ public class Quest : IHtmlProducerPaths
         var level = 0;
         var requiredLevel = 0;
         var isRepeatable = false;
+        var questType = "";
         var quickFacts = htmlDocument.DocumentNode.SelectSingleNode(".//table[@class='infobox']")?
             .SelectSingleNode(".//tr/td/script[contains(normalize-space(.), 'WH.markup.printHtml(\"[ul][li]Level:')]");
         if (quickFacts != null)
@@ -392,11 +394,16 @@ public class Quest : IHtmlProducerPaths
                 level = int.Parse(levelMatch.Groups[1].Value);
             }
 
-            var requiredLevelMatch =
-                new Regex("Requires level (\\d+)", RegexOptions.Compiled).Match(quickFacts.InnerText);
+            var requiredLevelMatch = new Regex("Requires level (\\d+)", RegexOptions.Compiled).Match(quickFacts.InnerText);
             if (requiredLevelMatch.Success)
             {
                 requiredLevel = int.Parse(requiredLevelMatch.Groups[1].Value);
+            }
+            
+            var questTypeMatch = new Regex("Type: (\\w+)", RegexOptions.Compiled).Match(quickFacts.InnerText);
+            if (questTypeMatch.Success)
+            {
+                questType = questTypeMatch.Groups[1].Value;
             }
 
             isRepeatable = quickFacts.InnerText.Contains("[li]Repeatable");
@@ -487,6 +494,7 @@ public class Quest : IHtmlProducerPaths
             Name = questName,
             Level = level,
             RequiredLevel = requiredLevel,
+            Type = questType,
             IsRepeatable = isRepeatable,
             IsManuallyRepeatableOverride = isRepeatableOverride,
             RequiredMoney = turnInMoney,
