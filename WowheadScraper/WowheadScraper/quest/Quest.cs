@@ -22,6 +22,8 @@ public class Quest : IHtmlProducerPaths
     public int Level { get; set; }
     public int RequiredLevel { get; set; }
     public string Type { get; set; }
+    public bool? IsBattleground { get; set; }
+    public string Faction { get; set; }
     public bool IsRepeatable { get; set; }
     public bool? IsManuallyRepeatableOverride { get; set; }
     public int RequiredMoney { get; set; }
@@ -69,6 +71,7 @@ public class Quest : IHtmlProducerPaths
     {
         {3911, "duplicate quest"}, // The Last Element
         //{8856, "duplicate quest"}, // Desert Survival Kits 
+        {6843, "test quest"}, // Da Foo
         {7906, "test quest"}, // Darkmoon Cards - Beasts
         {7961, "test quest"}, // Waskily Wabbits!
         {7962, "test quest"}, // Wabbit Pelts
@@ -384,6 +387,7 @@ public class Quest : IHtmlProducerPaths
         var requiredLevel = 0;
         var isRepeatable = false;
         var questType = "";
+        var faction = "";
         var quickFacts = htmlDocument.DocumentNode.SelectSingleNode(".//table[@class='infobox']")?
             .SelectSingleNode(".//tr/td/script[contains(normalize-space(.), 'WH.markup.printHtml(\"[ul][li]Level:')]");
         if (quickFacts != null)
@@ -406,6 +410,13 @@ public class Quest : IHtmlProducerPaths
                 questType = questTypeMatch.Groups[1].Value;
             }
 
+            //Side: [span class=icon-alliance]Alliance
+            var factionMatch = new Regex("Side: (?:\\[span class=.*?])?(\\w+)", RegexOptions.Compiled).Match(quickFacts.InnerText);
+            if (factionMatch.Success)
+            {
+                faction = factionMatch.Groups[1].Value;
+            }
+            
             isRepeatable = quickFacts.InnerText.Contains("[li]Repeatable");
         }
 
@@ -413,6 +424,12 @@ public class Quest : IHtmlProducerPaths
         if (ManualRepeatableOverride.TryGetValue(id, out var repeatableOverride))
         {
             isRepeatableOverride = repeatableOverride;
+        }
+        
+        bool? isBattleground = null;
+        if (BattlegroundQuests.Contains(id))
+        {
+            isBattleground = true;
         }
 
         var minLevel = 0;
@@ -495,6 +512,8 @@ public class Quest : IHtmlProducerPaths
             Level = level,
             RequiredLevel = requiredLevel,
             Type = questType,
+            IsBattleground = isBattleground,
+            Faction = faction,
             IsRepeatable = isRepeatable,
             IsManuallyRepeatableOverride = isRepeatableOverride,
             RequiredMoney = turnInMoney,
@@ -505,6 +524,203 @@ public class Quest : IHtmlProducerPaths
             Reputations = reputations
         };
     }
+
+    private static readonly HashSet<int> BattlegroundQuests = new HashSet<int>()
+    {
+        // AV Quests
+        5892, // Irondeep Supplies - Alliance
+        6985, // Irondeep Supplies - Horde
+        5893, // Coldtooth Supplies - Horde
+        6982, // Coldtooth Supplies - Alliance
+        7224, // Enemy Booty - Horde
+        6741, // More Booty! 
+        7223, // Armor Scraps - Alliance
+        6781, // More Armor Scraps
+        6825, // Call of Air - Guse's Fleet
+        6826, // Call of Air - Jeztor's Fleet
+        6827, // Call of Air - Mulverick's Fleet
+        6941, // Call of Air - Vipore's Fleet
+        6942, // Call of Air - Slidore's Fleet
+        6943, // Call of Air - Ichman's Fleet
+        6847, // Master Ryson's All Seeing Eye - Horde
+        6848, // Master Ryson's All Seeing Eye - Alliance
+        6881, // Ivus the Forest Lord
+        6801, // Lokholar the Ice Lord
+        6901, // Launch the Attack!
+        7001, // Empty Stables - Horde
+        7027, // Empty Stables - Alliance
+        7002, // Ram Hide Harnesses
+        7026, // Ram Riding Harnesses
+        7081, // Alterac Valley Graveyards - Alliance
+        7082, // The Graveyards of Alterac - Horde
+        7101, // Towers and Bunkers - Horde
+        7102, // Towers and Bunkers - Alliance
+        7121, // The Quartermaster
+        7123, // Speak with our Quartermaster
+        7122, // Capture a Mine
+        7124, // Capture a Mine
+        7141, // The Battle of Alterac
+        7142, // The Battle for Alterac
+        7161, // Proving Grounds
+        7162, // Proving Grounds
+        7163, // Rise and Be Recognized
+        7168, // Rise and Be Recognized
+        7164, // Honored Amongst the Clan
+        7169, // Honored Amongst the Guard
+        7165, // Earned Reverence
+        7170, // Earned Reverence
+        7166, // Legendary Heroes
+        7171, // Legendary Heroes
+        7167, // The Eye of Command
+        7172, // The Eye of Command
+        7181, // The Legend of Korrak
+        7202, // Korrak the Bloodrager
+        7221, // Speak with Prospector Stonehewer
+        7222, // Speak with Voggah Deathgrip
+        7281, // Brotherly Love - Horde
+        7282, // Brotherly Love - Alliance
+        7301, // Fallen Sky Lords - Alliance
+        7302, // Fallen Sky Lords - Horde
+        7367, // Defusing the Threat - (Alliance)
+        7368, // Defusing the Threat - (Horde)
+        7381, // The Return of Korrak
+        7382, // Korrak the Everliving
+        7385, // A Gallon of Blood
+        7386, // Crystal Cluster
+        7401, // WANTED: Dwarves!
+        7402, // WANTED: Orcs!
+        7421, // Darkspear Defense
+        7422, // Tuft it Out
+        7423, // I've Got A Fever For More Bone Chips
+        7424, // What the Hoof?
+        7425, // Staghelm's Mojo Jamboree
+        7426, // One Man's Love
+        7427, // Wanted: MORE DWARVES!
+        7428, // Wanted: MORE ORCS!
+        7361, // Favor Amongst the Darkspear
+        7362, // Ally of the Tauren
+        7363, // The Human Condition
+        7364, // Gnomeregan Bounty
+        7365, // Staghelm's Requiem
+        7366, // The Archbishop's Mercy
+        8271, // Hero of the Stormpike
+        8272, // Hero of the Frostwolf
+        8369, // Invaders of Alterac Valley
+        8387, // Invaders of Alterac Valley
+        8375, // Remember Alterac Valley!
+        8383, // Remember Alterac Valley!
+        
+        // WSG Quests
+        7788, // Vanquish the Invaders!
+        7871, // Vanquish the Invaders!
+        7872, // Vanquish the Invaders!
+        7873, // Vanquish the Invaders!
+        8290, // Vanquish the Invaders
+        8291, // Vanquish the Invaders!
+        7789, // Quell the Silverwing Usurpers
+        7874, // Quell the Silverwing Usurpers
+        7875, // Quell the Silverwing Usurpers
+        7876, // Quell the Silverwing Usurpers
+        8294, // Quell the Silverwing Usurpers
+        8295, // Quell the Silverwing Usurpers
+        7886, // Talismans of Merit
+        7887, // Talismans of Merit
+        7888, // Talismans of Merit
+        7921, // Talismans of Merit
+        8289, // Talismans of Merit
+        8292, // Talismans of Merit
+        7922, // Mark of Honor
+        7923, // Mark of Honor
+        7924, // Mark of Honor
+        7925, // Mark of Honor
+        8293, // Mark of Honor
+        8296, // Mark of Honor
+        8368, // Battle of Warsong Gulch
+        8389, // Battle of Warsong Gulch
+        8426, // Battle of Warsong Gulch
+        8427, // Battle of Warsong Gulch
+        8428, // Battle of Warsong Gulch
+        8429, // Battle of Warsong Gulch
+        8430, // Battle of Warsong Gulch
+        8431, // Battle of Warsong Gulch
+        8432, // Battle of Warsong Gulch
+        8433, // Battle of Warsong Gulch
+        8434, // Battle of Warsong Gulch
+        8435, // Battle of Warsong Gulch
+        8372, // Fight for Warsong Gulch
+        8386, // Fight for Warsong Gulch
+        8399, // Fight for Warsong Gulch
+        8400, // Fight for Warsong Gulch
+        8401, // Fight for Warsong Gulch
+        8402, // Fight for Warsong Gulch
+        8403, // Fight for Warsong Gulch
+        8404, // Fight for Warsong Gulch
+        8405, // Fight for Warsong Gulch
+        8406, // Fight for Warsong Gulch
+        8407, // Fight for Warsong Gulch
+        8408, // Fight for Warsong Gulch
+        
+        // AB Quests
+        8080, // Arathi Basin Resources!
+        8154, // Arathi Basin Resources!
+        8155, // Arathi Basin Resources!
+        8156, // Arathi Basin Resources!
+        8297, // Arathi Basin Resources!
+        8123, // Cut Arathor Supply Lines
+        8160, // Cut Arathor Supply Lines
+        8161, // Cut Arathor Supply Lines
+        8162, // Cut Arathor Supply Lines
+        8299, // Cut Arathor Supply Lines
+        8081, // More Resource Crates
+        8124, // More Resource Crates
+        8163, // More Resource Crates
+        8164, // More Resource Crates
+        8165, // More Resource Crates
+        8157, // More Resource Crates
+        8158, // More Resource Crates
+        8159, // More Resource Crates
+        8298, // More Resource Crates
+        8300, // More Resource Crates
+        8105, // The Battle for Arathi Basin! - Alliance
+        8166, // The Battle for Arathi Basin! - Alliance
+        8167, // The Battle for Arathi Basin! - Alliance
+        8168, // The Battle for Arathi Basin! - Alliance
+        8120, // The Battle for Arathi Basin! - Horde
+        8169, // The Battle for Arathi Basin! - Horde
+        8170, // The Battle for Arathi Basin! - Horde
+        8171, // The Battle for Arathi Basin! - Horde
+        8114, // Control Four Bases - Alliance
+        8115, // Control Five Bases - Alliance
+        8121, // Take Four Bases - Horde
+        8122, // Take Five Bases - Horde
+        8370, // Conquering Arathi Basin
+        8390, // Conquering Arathi Basin
+        8436, // Conquering Arathi Basin
+        8437, // Conquering Arathi Basin
+        8438, // Conquering Arathi Basin
+        8439, // Conquering Arathi Basin
+        8440, // Conquering Arathi Basin
+        8441, // Conquering Arathi Basin
+        8442, // Conquering Arathi Basin
+        8443, // Conquering Arathi Basin
+        8374, // Claiming Arathi Basin
+        8384, // Claiming Arathi Basin
+        8391, // Claiming Arathi Basin
+        8392, // Claiming Arathi Basin
+        8393, // Claiming Arathi Basin
+        8394, // Claiming Arathi Basin
+        8395, // Claiming Arathi Basin
+        8396, // Claiming Arathi Basin
+        8397, // Claiming Arathi Basin
+        8398, // Claiming Arathi Basin
+        
+        
+        // 3 marks from each quest
+        8371, // Concerted Efforts
+        8385, // Concerted Efforts
+        8367, // For Great Honor
+        8388, // For Great Honor
+    };
 
     public static int GetXpForLevel(int fullXp, int playerLevel, int questLevel)
     {
