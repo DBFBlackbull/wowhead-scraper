@@ -536,17 +536,18 @@ public class Quest : IHtmlProducerPaths
         6741, // More Booty! 
         7223, // Armor Scraps - Alliance
         6781, // More Armor Scraps
-        6825, // Call of Air - Guse's Fleet
+        6825, // Call of Air - Guse's Fleet - Horde
         6826, // Call of Air - Jeztor's Fleet
         6827, // Call of Air - Mulverick's Fleet
-        6941, // Call of Air - Vipore's Fleet
+        6941, // Call of Air - Vipore's Fleet - Alliance
         6942, // Call of Air - Slidore's Fleet
         6943, // Call of Air - Ichman's Fleet
         6847, // Master Ryson's All Seeing Eye - Horde
         6848, // Master Ryson's All Seeing Eye - Alliance
         6881, // Ivus the Forest Lord
         6801, // Lokholar the Ice Lord
-        6901, // Launch the Attack!
+        6901, // Launch the Attack! - Horde
+        6846, // Begin the Attack! - Alliance
         7001, // Empty Stables - Horde
         7027, // Empty Stables - Alliance
         7002, // Ram Hide Harnesses
@@ -575,6 +576,8 @@ public class Quest : IHtmlProducerPaths
         7172, // The Eye of Command
         7181, // The Legend of Korrak
         7202, // Korrak the Bloodrager
+        7381, // The Return of Korrak
+        7382, // Korrak the Everliving
         7221, // Speak with Prospector Stonehewer
         7222, // Speak with Voggah Deathgrip
         7281, // Brotherly Love - Horde
@@ -583,8 +586,6 @@ public class Quest : IHtmlProducerPaths
         7302, // Fallen Sky Lords - Horde
         7367, // Defusing the Threat - (Alliance)
         7368, // Defusing the Threat - (Horde)
-        7381, // The Return of Korrak
-        7382, // Korrak the Everliving
         7385, // A Gallon of Blood
         7386, // Crystal Cluster
         7401, // WANTED: Dwarves!
