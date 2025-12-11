@@ -7,7 +7,7 @@ public class QuestConsumer
     public static async Task Run(ITaskGetter<Quest> questGetter, int itemsToProcess = Quest.LastIdInClassic)
     {
         Directory.CreateDirectory(Program.TsvFolderPath);
-        
+
         var totalStopwatch = new Stopwatch();
         totalStopwatch.Start();
         Console.WriteLine($"Starting consuming {itemsToProcess} items...");
@@ -49,7 +49,7 @@ public class QuestConsumer
                     "goldAt60Note",
                     "calculatedTotalMoneyAt60"
                 );
-                for (int i = 1; i <= 10; i++)
+                for (int i = 1; i <= 4; i++)
                 {
                     headers.AddRange(
                         $"reputationId{i}",
