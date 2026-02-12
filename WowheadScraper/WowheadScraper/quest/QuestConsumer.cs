@@ -4,18 +4,18 @@ namespace WowheadScraper;
 
 public class QuestConsumer
 {
-    public static async Task Run(ITaskGetter<Quest> questGetter, int itemsToProcess = Quest.LastIdInClassic)
+    public static async Task Run(ITaskGetter<Quest> questGetter, IQuestSetup setup)
     {
         Directory.CreateDirectory(Program.TsvFolderPath);
 
         var totalStopwatch = new Stopwatch();
         totalStopwatch.Start();
-        Console.WriteLine($"Starting consuming {itemsToProcess} items...");
+        Console.WriteLine($"Starting consuming {setup.LastId} items...");
         
-        await using (var availableStream = new StreamWriter(File.Create(Quest.AvailableTsvFilePath)))
+        await using (var availableStream = new StreamWriter(File.Create(setup.AvailableTsvFilePath)))
         {
             availableStream.AutoFlush = true;
-            await using (var notAvailableStream = new StreamWriter(File.Create(Quest.NotAvailableTsvFilePath)))
+            await using (var notAvailableStream = new StreamWriter(File.Create(setup.NotAvailableTsvFilePath)))
             {
                 notAvailableStream.AutoFlush = true;
 
@@ -69,7 +69,7 @@ public class QuestConsumer
                 
                 var stopwatch = new Stopwatch();
                 stopwatch.Start();
-                for (int id = 1; id <= itemsToProcess; id++)
+                for (int id = 1; id <= setup.LastId; id++)
                 {
                     var quest = await questGetter.GetTask(id);
                     if (quest.IsAvailable)
@@ -148,14 +148,13 @@ public class QuestConsumer
                         await notAvailableStream.WriteLineAsync(string.Join("\t", row));
                     }
 
-                    Program.LogProgress(id, itemsToProcess, stopwatch);
+                    Program.LogProgress(id, setup.LastId, stopwatch);
                     // ------------------------------------
                 }
             }
         }
         
-        Console.WriteLine();
-        Console.WriteLine($"All quests consumed. Elapsed {totalStopwatch.Elapsed:g}");
+        Program.LogJobDone("quests", totalStopwatch);
     }
 
     private static Tuple<string, string> XpToGoldStatus(Quest quest)

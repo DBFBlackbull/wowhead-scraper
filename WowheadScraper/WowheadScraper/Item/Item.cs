@@ -1,75 +1,19 @@
 using System.Net;
-using System.Text.RegularExpressions;
 using HtmlAgilityPack;
 
 namespace WowheadScraper;
 
-public class Item : IHtmlProducerPaths
+public class Item
 {
-    public const int LastIdInClassic = 24283;
-    public static readonly string HtmlFolderPath = Path.Join(Program.SolutionDirectory(), "classic", "items");
-    public static readonly string AvailableTsvFilePath = Path.Join(Program.TsvFolderPath, "items-available.tsv");
-    public static readonly string NotAvailableTsvFilePath = Path.Join(Program.TsvFolderPath, "items-not-available.tsv");
-    private static string HtmlFilePath(int id) => Path.Join(HtmlFolderPath, $"item-{id}.html");
-    
-    public Uri GetUri(int id) => new Uri($"classic/item={id}", UriKind.Relative);
-    public string GetHtmlFolderPath() => HtmlFolderPath;
-    public string GetHtmlFilePath(int id) => HtmlFilePath(id);
-    
     public int Id { get; set; }
     public string Name { get; set; }
     public int SellPrice { get; set; }
     public string ErrorMessage { get; set; }
-    
     public bool IsAvailable => string.IsNullOrWhiteSpace(ErrorMessage);
     
-    private static readonly List<string> NotAvailableNameIdentifiers = new List<string>()
+    public static async Task<Item> GetItem(int id, IItemSetup setup)
     {
-        "OLD",
-        "(old)",
-        "DEBUG",
-        "Deprecated",
-        "Deprecate",
-        "Depricated", // misspelled item
-        "Deptecated", // misspelled item
-        "DEPRECATED",
-        "[DEP]",
-        "DEP",
-        "(DND)",
-        "Monster",
-        "[PH]",
-        "PH",
-        "QA",
-        "(test)",
-        "(Test)",
-        "(TEST)",
-        "Test",
-        "TEST",
-        "Unused",
-        "<UNUSED>",
-        "[UNUSED]",
-        "UNUSED",
-    };
-
-    private static readonly List<Regex> NotAvailableQuickFactsIdentifier = new List<Regex>()
-    {
-        new Regex("Added in patch.*Season of Discovery"),
-        new Regex("Deprecated"),
-    };
-    
-    private static readonly List<int> NotAvailableExceptions = new List<int>()
-    {
-        16110, // Recipe: Monster Omelet
-        12218, // Monster Omelet
-        8523, // Field Testing Kit
-        15102, // Un'Goro Tested Sample - Incorrectly marked as Not Available to players even though it is
-        15103, // Corrupt Tested Sample - Incorrectly marked as Not Available to players even though it is
-        5108, // Dark Iron Leather - Marked as Deprecated but still drops
-    };
-    
-    public static async Task<Item> GetItem(int id)
-    {
-        var html = await File.ReadAllTextAsync(HtmlFilePath(id));
+        var html = await File.ReadAllTextAsync(setup.GetHtmlFilePath(id));
         
         var htmlDocument = new HtmlDocument();
         htmlDocument.LoadHtml(html);
@@ -81,14 +25,14 @@ public class Item : IHtmlProducerPaths
         }
 
         itemName = WebUtility.HtmlDecode(itemName);
-        if (itemName == "Classic Items")
+        if (itemName == setup.NotFoundName)
         {
             return new Item {Id = id, ErrorMessage = "item not found"};
         }
 
-        var identifier = NotAvailableNameIdentifiers.Find(identifier =>
+        var identifier = ItemLists.NotAvailableNameIdentifiers.Find(identifier =>
             itemName.Contains(identifier, StringComparison.InvariantCulture));
-        var isException = NotAvailableExceptions.Contains(id);
+        var isException = ItemLists.NotAvailableExceptions.Contains(id);
         if (identifier != null && !isException)
         {
             return new Item {Id = id, Name = itemName, ErrorMessage = $"itemName has identifier {identifier}"};
@@ -97,7 +41,7 @@ public class Item : IHtmlProducerPaths
         var quickFacts = htmlDocument.DocumentNode.SelectSingleNode(".//table[@class='infobox after-buttons']")?.InnerHtml;
         if (quickFacts != null)
         {
-            var regex = NotAvailableQuickFactsIdentifier.Find(regex =>
+            var regex = ItemLists.NotAvailableQuickFactsIdentifier.Find(regex =>
                 regex.IsMatch(quickFacts));
             if (regex != null && !isException)
             {

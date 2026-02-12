@@ -5,18 +5,18 @@ namespace WowheadScraper;
 
 public class ItemConsumer
 {
-    public static async Task Run(ITaskGetter<Item> itemGetter, int itemsToProcess = Item.LastIdInClassic)
+    public static async Task Run(ITaskGetter<Item> itemGetter, IItemSetup setup)
     {
         Directory.CreateDirectory(Program.TsvFolderPath);
         
         var totalStopwatch = new Stopwatch();
         totalStopwatch.Start();
-        Console.WriteLine($"Starting consuming {itemsToProcess} items...");
+        Console.WriteLine($"Starting consuming {setup.LastId} items...");
         
-        await using (var availableStream = new StreamWriter(File.Create(Item.AvailableTsvFilePath)))
+        await using (var availableStream = new StreamWriter(File.Create(setup.AvailableTsvFilePath)))
         {
             availableStream.AutoFlush = true;
-            await using (var notAvailableStream = new StreamWriter(File.Create(Item.NotAvailableTsvFilePath)))
+            await using (var notAvailableStream = new StreamWriter(File.Create(setup.NotAvailableTsvFilePath)))
             {
                 notAvailableStream.AutoFlush = true;
 
@@ -25,7 +25,7 @@ public class ItemConsumer
                 
                 var stopwatch = new Stopwatch();
                 stopwatch.Start();
-                for (int id = 1; id <= itemsToProcess; id++)
+                for (int id = 1; id <= setup.LastId; id++)
                 {
                     var item = await itemGetter.GetTask(id);
                     if (item.IsAvailable)
@@ -37,13 +37,12 @@ public class ItemConsumer
                         await notAvailableStream.WriteLineAsync($"{item.Id}\t{item.Name}\t{item.ErrorMessage}");
                     }
 
-                    Program.LogProgress(id, itemsToProcess, stopwatch);
+                    Program.LogProgress(id, setup.LastId, stopwatch);
                     // ------------------------------------
                 }
             }
         }
         
-        Console.WriteLine();
-        Console.WriteLine($"All items consumed. Elapsed {totalStopwatch.Elapsed:g}");
+        Program.LogJobDone("items", totalStopwatch);
     }
 }

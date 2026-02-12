@@ -8,17 +8,17 @@ public class QuestProducer
     /// The producer method. Its job is to get a key, do the work, 
     /// and then set the result on the corresponding TaskCompletionSource.
     /// </summary>
-    public static async Task Run(IdGenerator idGenerator, ConcurrentDictionary<int, TaskCompletionSource<Quest>> tasks, int itemsToProcess = Quest.LastIdInClassic)
+    public static async Task Run(IdGenerator idGenerator, ConcurrentDictionary<int, TaskCompletionSource<Quest>> tasks, IQuestSetup setup)
     {
         while (true)
         {
             var id = idGenerator.GetNextId();
-            if (id > itemsToProcess)
+            if (id > setup.LastId)
             {
                 break;
             }
 
-            var quest = await Quest.GetQuest(id);
+            var quest = await Quest.GetQuest(id, setup);
 
             // Find the "promise" for this key and set its result.
             // This unblocks the consumer if it's waiting for this specific key.
