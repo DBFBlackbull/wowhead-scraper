@@ -1,8 +1,5 @@
 ﻿using System.Diagnostics;
 using System.Globalization;
-using System.Net;
-using System.Text.RegularExpressions;
-using HtmlAgilityPack;
 
 namespace WowheadScraper;
 
@@ -16,7 +13,7 @@ class Program
     {
         HttpClient.BaseAddress = BaseUrl;
 
-        await new HtmlProducer().Run(1, new SetupClassicQuests());
+        await new HtmlProducer().Run(40, new SetupClassicQuests());
         
         //await new OrderedProducerConsumer<Item>().Run(40, Item.LastIdInClassic, ItemProducer.Run, ItemConsumer.Run);
         // await new OrderedProducerConsumer<Quest>().Run(40, Quest.LastIdInClassic, QuestProducer.Run, QuestConsumer.Run);
@@ -34,6 +31,12 @@ class Program
         return int.Parse(money) * factor;
     }
 
+    public static void Log(string message)
+    {
+        Console.WriteLine($"[{DateTime.Now.ToString("T", CultureInfo.InvariantCulture)}] {message}");
+    }
+
+    
     public static void LogProgress(int key, int itemsToProcess, Stopwatch? stopwatch = null)
     {
         if (key % 100 == 0 || key == itemsToProcess)
@@ -45,14 +48,14 @@ class Program
                 elapsedTime = $"Elapsed {stopwatch.Elapsed.Seconds} seconds";
                 stopwatch.Restart();
             }
-            Console.WriteLine($"[{DateTime.Now.ToString("T", CultureInfo.InvariantCulture)}] {percentageComplete,3:F0}% {key,5} / {itemsToProcess} completed. {elapsedTime}");
+            Log($"{percentageComplete,3:F0}% {key,5} / {itemsToProcess} completed. {elapsedTime}");
         }
     }
 
     public static void LogJobDone(string worker, Stopwatch stopwatch)
     {
         Console.WriteLine();
-        Console.WriteLine($"[{DateTime.Now.ToString("T", CultureInfo.InvariantCulture)}] All {worker} have finished their work. Elapsed {stopwatch.Elapsed:g}");
+        Log($"All {worker} have finished their work. Elapsed {stopwatch.Elapsed:g}");
     }
 
     public static string SolutionDirectory()

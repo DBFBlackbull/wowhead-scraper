@@ -7,13 +7,17 @@ namespace WowheadScraper;
 public class HtmlProducer
 {
     // Use a thread-safe counter to give each producer a unique ID for its work
-    private int _currentId = 0;
+    private static int _currentId = 0;
     private static readonly string ServerTime = $"\"serverTime\":\"{DateTime.Today:yyyy-MM-dd}";
+
+    private static ManualResetEventSlim _canProceed = new(true);
+    private static bool _isHandlingBlock = false;
+    private static readonly Lock RetryLock = new();
 
     public async Task Run(int producerCount, IPathsGetter pathsGetter)
     {
         Directory.CreateDirectory(pathsGetter.GetHtmlFolderPath());
-        
+
         Console.WriteLine($"Starting {producerCount} html producers...");
         var stopwatch = new Stopwatch();
         stopwatch.Start();
@@ -45,7 +49,7 @@ public class HtmlProducer
             // Get a unique ID for this piece of work
             int id = Interlocked.Increment(ref _currentId);
             if (id > pathsGetter.LastId)
-            {   
+            {
                 break;
             }
 
@@ -60,25 +64,81 @@ public class HtmlProducer
             }
 
             var requestUri = pathsGetter.GetUri(id);
-            using var response = await Program.HttpClient.GetAsync(requestUri);
+            using var response = await GetResponse(requestUri);
             if (response.StatusCode == HttpStatusCode.Forbidden)
             {
-                Console.WriteLine($"Forbidden reading id {requestUri.ToString()}. Stopping HTML producer.");
+                Program.Log($"Forbidden reading id {requestUri.ToString()}. Stopping HTML producer.");
                 return;
             }
-            
+
             using var content = response.Content;
             var html = await content.ReadAsStringAsync();
-            
-            if (html.Contains("ERROR: The request could not be satisfied", StringComparison.InvariantCultureIgnoreCase) || 
+
+            if (html.Contains("ERROR: The request could not be satisfied",
+                    StringComparison.InvariantCultureIgnoreCase) ||
                 html.Contains("504 Gateway Timeout ERROR", StringComparison.InvariantCultureIgnoreCase))
             {
-                Console.WriteLine($"Error reading id {requestUri.ToString()}");
+                Program.Log($"Error reading id {requestUri.ToString()}");
             }
-            
+
             await File.WriteAllTextAsync(filePath, html, Encoding.UTF8);
-            
+
             Program.LogProgress(id, pathsGetter.LastId);
         }
+    }
+
+    private static async Task<HttpResponseMessage> GetResponse(Uri requestUri)
+    {
+        var response = await Program.HttpClient.GetAsync(requestUri);
+        if (response.StatusCode == HttpStatusCode.Forbidden)
+        {
+            var shouldHandleBlock = false;
+            
+            lock (RetryLock)
+            {
+                if (!_isHandlingBlock)
+                {
+                    _isHandlingBlock = true;
+                    _canProceed.Reset(); // block all other threads
+                    Program.Log("Wowhead is blocked. Retrying...");
+                    shouldHandleBlock = true;
+                }
+            }
+
+            if (!shouldHandleBlock)
+            {
+                // Another thread is already handling the block, just wait for it to finish
+                _canProceed.Wait();
+                return await Program.HttpClient.GetAsync(requestUri);
+            }
+
+            // This thread is responsible for handling the block
+            var retry = 0;
+            var success = false;
+            while (!success)
+            {
+                retry++;
+                await Task.Delay(TimeSpan.FromMinutes(1));
+
+                response = await Program.HttpClient.GetAsync(requestUri);
+                if (response.StatusCode == HttpStatusCode.Forbidden)
+                {
+                    Program.Log($"Wowhead is still blocked after {retry} minutes...");
+                }
+
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    success = true;
+                    lock (RetryLock)
+                    {
+                        _isHandlingBlock = false;
+                        _canProceed.Set(); // allow other threads to proceed
+                        Program.Log("Wowhead is available again. Continuing.");
+                    }
+                }
+            }
+        }
+
+        return response;
     }
 }

@@ -2,7 +2,9 @@ namespace WowheadScraper;
 
 public abstract class SetupBaseQuests
 {
+    public abstract int LastId { get; }
     public abstract string ExpansionPath { get; }
+    public abstract string NotFoundName { get; }
 
     public string AvailableTsvFilePath => Path.Join(Program.TsvFolderPath, ExpansionPath, "quests-available.tsv");
     public string NotAvailableTsvFilePath => Path.Join(Program.TsvFolderPath, ExpansionPath, "quests-not-available.tsv");

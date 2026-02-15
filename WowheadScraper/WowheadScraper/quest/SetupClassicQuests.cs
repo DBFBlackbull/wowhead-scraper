@@ -4,9 +4,9 @@ namespace WowheadScraper;
 
 public class SetupClassicQuests : SetupBaseQuests, IQuestSetup
 {
-    public int LastId => 9665;
+    public override int LastId => 9665;
     public override string ExpansionPath => "classic";
-    public string NotFoundName => "Classic Quest";
+    public override string NotFoundName => "Classic Quest";
     public List<string> NotAvailableNameIdentifiers => QuestLists.NotAvailableNameIdentifiers;
     public List<Regex> NotAvailableNameRegexIdentifier => QuestLists.NotAvailableNameRegexIdentifier;
     private readonly Dictionary<int, string> _notAvailableQuestIDs = QuestLists.NotAvailableQuestIDs
