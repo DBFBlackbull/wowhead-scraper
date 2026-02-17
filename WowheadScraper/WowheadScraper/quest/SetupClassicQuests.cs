@@ -7,7 +7,7 @@ public class SetupClassicQuests : SetupBaseQuests, IQuestSetup
     public override int LastId => 9665;
     public override int MaxLevel => 60;
     public override string ExpansionPath => "classic";
-    public override string NotFoundName => "Classic Quest";
+    public override string NotFoundName => "Classic Quests";
     
     private readonly Dictionary<int, string> _notAvailableQuestIDs = QuestLists.NotAvailableQuestIDs
         .Concat(QuestLists.TbcQuestsIDs)
