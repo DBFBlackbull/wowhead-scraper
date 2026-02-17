@@ -56,6 +56,10 @@ public class HtmlProducer
             // Since Wowhead has started blocking IPs that request too many pages,
             // We now check the current file to see if it is up to date
             var filePath = pathsGetter.GetHtmlFilePath(id);
+            if (!File.Exists(filePath))
+            {
+                await File.Create(filePath).DisposeAsync();
+            }
             var oldHtml = await File.ReadAllTextAsync(filePath);
             if (oldHtml.Contains(ServerTime))
             {
@@ -99,9 +103,9 @@ public class HtmlProducer
                 if (!_isHandlingBlock)
                 {
                     _isHandlingBlock = true;
+                    shouldHandleBlock = true;
                     _canProceed.Reset(); // block all other threads
                     Program.Log("Wowhead is blocked. Retrying...");
-                    shouldHandleBlock = true;
                 }
             }
 
@@ -129,12 +133,9 @@ public class HtmlProducer
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
                     success = true;
-                    lock (RetryLock)
-                    {
-                        _isHandlingBlock = false;
-                        _canProceed.Set(); // allow other threads to proceed
-                        Program.Log("Wowhead is available again. Continuing.");
-                    }
+                    _isHandlingBlock = false;
+                    _canProceed.Set(); // allow other threads to proceed
+                    Program.Log("Wowhead is available again. Continuing.");
                 }
             }
         }

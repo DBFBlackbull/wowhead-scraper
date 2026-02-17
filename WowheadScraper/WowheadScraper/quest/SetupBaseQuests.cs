@@ -3,6 +3,7 @@ namespace WowheadScraper;
 public abstract class SetupBaseQuests
 {
     public abstract int LastId { get; }
+    public abstract int MaxLevel { get; }
     public abstract string ExpansionPath { get; }
     public abstract string NotFoundName { get; }
 

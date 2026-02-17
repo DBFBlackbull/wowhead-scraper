@@ -2,17 +2,15 @@ using System.Text.RegularExpressions;
 
 namespace WowheadScraper;
 
-public class SetupClassicQuests : SetupBaseQuests, IQuestSetup
+public class SetupTBCQuests : SetupBaseQuests, IQuestSetup
 {
-    public override int LastId => 9665;
-    public override int MaxLevel => 60;
-
-    public override string ExpansionPath => "classic";
-    public override string NotFoundName => "Classic Quest";
+    public override int LastId => 12515;
+    public override int MaxLevel => 70;
+    public override string ExpansionPath => "tbc";
+    public override string NotFoundName => "TBC Quests";
     public List<string> NotAvailableNameIdentifiers => QuestLists.NotAvailableNameIdentifiers;
     public List<Regex> NotAvailableNameRegexIdentifier => QuestLists.NotAvailableNameRegexIdentifier;
     private readonly Dictionary<int, string> _notAvailableQuestIDs = QuestLists.NotAvailableQuestIDs
-        .Concat(QuestLists.TbcQuestsIDs)
         .Concat(QuestLists.WotLkQuestsIDs)
         .ToDictionary(kv => kv.Key, kv => kv.Value);
     public Dictionary<int, string> GetNotAvailableQuestIDs()

@@ -13,7 +13,7 @@ class Program
     {
         HttpClient.BaseAddress = BaseUrl;
 
-        await new HtmlProducer().Run(40, new SetupClassicQuests());
+        await new HtmlProducer().Run(40, new SetupTBCQuests());
         
         //await new OrderedProducerConsumer<Item>().Run(40, Item.LastIdInClassic, ItemProducer.Run, ItemConsumer.Run);
         // await new OrderedProducerConsumer<Quest>().Run(40, Quest.LastIdInClassic, QuestProducer.Run, QuestConsumer.Run);
