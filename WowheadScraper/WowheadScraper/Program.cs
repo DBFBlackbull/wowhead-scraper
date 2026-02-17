@@ -12,11 +12,12 @@ class Program
     static async Task Main(string[] args)
     {
         HttpClient.BaseAddress = BaseUrl;
+        var setup = new SetupClassicQuests();
 
-        await new HtmlProducer().Run(40, new SetupTBCQuests());
+        // await new HtmlProducer().Run(40, setup);
         
         //await new OrderedProducerConsumer<Item>().Run(40, Item.LastIdInClassic, ItemProducer.Run, ItemConsumer.Run);
-        // await new OrderedProducerConsumer<Quest>().Run(40, Quest.LastIdInClassic, QuestProducer.Run, QuestConsumer.Run);
+        await new OrderedProducerConsumer<Quest>().Run(40, setup.LastId, setup.Producer(), setup.Consumer());
 
         //await QuestConsumer.Run(new HtmlQuestGetter());            
     }
