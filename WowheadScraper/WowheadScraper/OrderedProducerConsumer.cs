@@ -10,15 +10,17 @@ public class OrderedProducerConsumer<T>
 
     public async Task Run(
         int producerCount, 
-        int itemsToProcess, 
+        IPathsGetter pathsGetter, 
         Func<IdGenerator, ConcurrentDictionary<int, TaskCompletionSource<T>>, Task> producerFactory,
         Func<ITaskGetter<T>, Task> consumerFactory)
     {
-        Console.WriteLine($"Starting with {producerCount} producers to process {itemsToProcess} items IN ORDER.");
+        Directory.CreateDirectory(pathsGetter.TsvFolderPath);
+        
+        Console.WriteLine($"Starting with {producerCount} producers to process {pathsGetter.LastId} items IN ORDER.");
         Console.WriteLine();
 
         // 1. Create all the "promise" tasks BEFORE starting the work.
-        for (int i = 1; i <= itemsToProcess; i++)
+        for (int i = 1; i <= pathsGetter.LastId; i++)
         {
             _tasks[i] = new TaskCompletionSource<T>();
         }

@@ -16,7 +16,7 @@ public class HtmlProducer
 
     public async Task Run(int producerCount, IPathsGetter pathsGetter)
     {
-        Directory.CreateDirectory(pathsGetter.GetHtmlFolderPath());
+        Directory.CreateDirectory(pathsGetter.HtmlFolderPath);
 
         Console.WriteLine($"Starting {producerCount} html producers...");
         var stopwatch = new Stopwatch();

@@ -14,12 +14,14 @@ public abstract class SetupBaseQuests : IQuestSetup
     public List<Regex> NotAvailableNameRegexIdentifier => QuestLists.NotAvailableNameRegexIdentifier;
     public abstract Dictionary<int, string> GetNotAvailableQuestIDs();
 
-    public string AvailableTsvFilePath => Path.Join(Program.TsvFolderPath, ExpansionPath, "quests-available.tsv");
-    public string NotAvailableTsvFilePath => Path.Join(Program.TsvFolderPath, ExpansionPath, "quests-not-available.tsv");
+    public string TsvFolderPath => Path.Join(Program.TsvFolderPath, ExpansionPath);
+    public string AvailableTsvFilePath => Path.Join(TsvFolderPath, "quests-available.tsv");
+    public string NotAvailableTsvFilePath => Path.Join(TsvFolderPath, "quests-not-available.tsv");
 
     public Uri GetUri(int id) => new Uri($"{ExpansionPath}/quest={id}", UriKind.Relative);
-    public string GetHtmlFolderPath() => Path.Join(Program.SolutionDirectory(), ExpansionPath, "quests");
-    public string GetHtmlFilePath(int id) => Path.Join(GetHtmlFolderPath(), $"quest-{id}.html");
+
+    public string HtmlFolderPath => Path.Join(Program.SolutionDirectory(), ExpansionPath, "quests");
+    public string GetHtmlFilePath(int id) => Path.Join(HtmlFolderPath, $"quest-{id}.html");
     
     public Func<IdGenerator, ConcurrentDictionary<int, TaskCompletionSource<Quest>>, Task> Producer()
     {

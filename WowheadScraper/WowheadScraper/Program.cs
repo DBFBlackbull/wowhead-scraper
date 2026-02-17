@@ -12,12 +12,12 @@ class Program
     static async Task Main(string[] args)
     {
         HttpClient.BaseAddress = BaseUrl;
-        var setup = new SetupClassicQuests();
+        var setup = new SetupTBCQuests();
 
         // await new HtmlProducer().Run(40, setup);
         
         //await new OrderedProducerConsumer<Item>().Run(40, Item.LastIdInClassic, ItemProducer.Run, ItemConsumer.Run);
-        await new OrderedProducerConsumer<Quest>().Run(40, setup.LastId, setup.Producer(), setup.Consumer());
+        await new OrderedProducerConsumer<Quest>().Run(40, setup, setup.Producer(), setup.Consumer());
 
         //await QuestConsumer.Run(new HtmlQuestGetter());            
     }
@@ -29,7 +29,8 @@ class Program
             return 0;
         }
 
-        return int.Parse(money) * factor;
+        // NumberFormatInfo.InvariantInfo allows "," as thousand separator and only groups of 3
+        return int.Parse(money, NumberStyles.AllowThousands, NumberFormatInfo.InvariantInfo) * factor;
     }
 
     public static void Log(string message)
