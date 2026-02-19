@@ -35,8 +35,10 @@ public class QuestLists
         new Regex("test.*quest", RegexOptions.IgnoreCase),
     };
 
+    // This list is validated for Classic and TBC.
     public static readonly Dictionary<int, string> NotAvailableQuestIDs = new Dictionary<int, string>()
     {
+        {1, "test quest"}, // Classic "The "Chow" Quest (123)aa", TBC "Alexander's Quest", WotLK "Kanrethad's Quest"
         {3911, "duplicate quest"}, // The Last Element
         {6843, "test quest"}, // Da Foo
         {7906, "test quest"}, // Darkmoon Cards - Beasts
