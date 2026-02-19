@@ -14,6 +14,7 @@ id	name	reason
 259	<UNUSED>	questName has identifier <UNUSED>
 260		quest not found
 300		quest not found
+316	<UNUSED 1>	questName has identifier <UNUSED 1>
 326		quest not found
 327		quest not found
 352	<UNUSED>	questName has identifier <UNUSED>
@@ -4968,6 +4969,8 @@ id	name	reason
 9298	reuse	questName has identifier reuse
 9306		quest not found
 9307		quest not found
+9308	<DEPRECATED>Blood Elf Remains?	questName has identifier <DEPRECATED>
+9316	[TXT] Goblin Savages	questName has identifier [TXT]
 9378		quest not found
 9384	<NYI>Harnessing the Light	questName has identifier <NYI>
 9411	<UNUSED>Infused Bandages	questName has identifier <UNUSED>
@@ -4991,11 +4994,29 @@ id	name	reason
 9597		quest not found
 9599	<UNUSED>	questName has identifier <UNUSED>
 9611		quest not found
+9613	Deprecated: Keanna's Will	questName has identifier Deprecated:
+9614	Deprecated: Reforge a Short Blade	questName has identifier Deprecated:
+9615	Deprecated: Reforge a Long Blade	questName has identifier Deprecated:
+9650	Deprecated: Magical Augmentation	questName has identifier Deprecated:
+9651	Deprecated: Magical Augmentation	questName has identifier Deprecated:
+9652	Deprecated: Physical Enhancement	questName has identifier Deprecated:
+9653	Deprecated: Physical Enhancement	questName has identifier Deprecated:
+9654	Deprecated: A Well Rounded Defense	questName has identifier Deprecated:
+9655	Deprecated: Healing Amplification	questName has identifier Deprecated:
+9656	Deprecated: Lethality First	questName has identifier Deprecated:
+9657	Deprecated: Offensive Channeling	questName has identifier Deprecated:
+9658	Deprecated: Offensive Channeling	questName has identifier Deprecated:
+9659	Deprecated: Healing Amplification	questName has identifier Deprecated:
+9660	Deprecated: Lethality First	questName has identifier Deprecated:
+9661	Deprecated: A Well Rounded Defense	questName has identifier Deprecated:
+9662	Deprecated: Keanna's Freedom	questName has identifier Deprecated:
 9679		quest not found
 9713		quest not found
 9745		quest not found
+9750	UNUSED Urgent Delivery	questName has identifier UNUSED
 9754		quest not found
 9755		quest not found
+10145	Mission: Sever the Tie UNUSED	questName has identifier UNUSED
 10181		quest not found
 10207	Forward Base: Reaver's Fall REUSE	questName has identifier REUSE
 10215		quest not found
@@ -5005,6 +5026,8 @@ id	name	reason
 10376		quest not found
 10378		quest not found
 10402	<TXT>	questName has identifier <TXT>
+10452	DON'T USE [PH] Fel Orc 1	questName has identifier [PH]
+10453	DON'T USE [PH] Fel Orc bread	questName has identifier [PH]
 10454		quest not found
 10533		quest not found
 10536		quest not found
@@ -5012,10 +5035,16 @@ id	name	reason
 10591		quest not found
 10610		quest not found
 10616		quest not found
+10638	NOT A QUEST	questName has identifier NOT A QUEST
 10743	[DEPRECATED]<txt>Hero of the Mok'Nathal	questName has identifier [DEPRECATED]
+10746	DEPRECATED Karazhan: LAB - E - Exalted Ring - Caster	questName has identifier DEPRECATED
 10787	[DEPRECATED]<txt><nyi>The Dragons of Dragons' End	questName has identifier [DEPRECATED]
 10890	[UNUSED] <NYI>	questName has identifier <NYI>
+11088	<DEPRECATED>Unravelling Your Training	questName has identifier <DEPRECATED>
+11115	The Mark of Vashj (FLAG ONLY)	questName has identifier (FLAG ONLY)
+11116	Trial of the Naaru: (QUEST FLAG)	questName has identifier (QUEST FLAG)
 11121	DAILY TEST QUEST (RAID)	questName has identifier test quest
+11125	[PH] New Hinterlands Quest	questName has identifier [PH]
 11127	<NYI>Thunderbrew Secrets	questName has identifier <NYI>
 11153		quest not found
 11154		quest not found
@@ -5128,6 +5157,7 @@ id	name	reason
 11316		quest not found
 11317		quest not found
 11319		quest not found
+11320	[NYI] Now this is Ram Racing... Almost.	questName has identifier [NYI]
 11322		quest not found
 11323		quest not found
 11324		quest not found
@@ -5189,6 +5219,8 @@ id	name	reason
 11433		quest not found
 11434		quest not found
 11436		quest not found
+11437	[PH] Beer Garden A	questName has identifier [PH]
+11438	[PH] Beer Garden B	questName has identifier [PH]
 11443		quest not found
 11444		quest not found
 11445		quest not found
@@ -5907,6 +5939,8 @@ id	name	reason
 12476		quest not found
 12477		quest not found
 12478		quest not found
+12479	Wrath of the Lich King: Onwards to Northrend!	Wothlk quest
+12480	Wrath of the Lich King: Onwards to Northrend!	Wothlk quest
 12481		quest not found
 12482		quest not found
 12483		quest not found

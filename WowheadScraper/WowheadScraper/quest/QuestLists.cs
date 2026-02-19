@@ -9,14 +9,25 @@ public class QuestLists
         "(123)aa",
         "<CHANGE INTO GOSSIP>",
         "<CHANGE TO GOSSIP>",
+        "<DEPRECATED>",
         "[DEPRECATED]",
+        "DEPRECATED",
+        "Deprecated:",
+        "(FLAG ONLY)",
+        "NOT A QUEST",
         "<nyi>",
         "<NYI>",
+        "[NYI]",
+        "[PH]",
+        "(QUEST FLAG)",
         "reuse",
         "REUSE",
         "<TEST>",
         "<TXT>",
+        "[TXT]",
         "<UNUSED>",
+        "<UNUSED 1>",
+        "UNUSED",
     };
 
     public static readonly List<Regex> NotAvailableNameRegexIdentifier = new List<Regex>()
@@ -91,6 +102,8 @@ public class QuestLists
     {
         {236, "Wothlk quest"}, // Fueling the Demolishers
         {7702, "Wothlk quest"}, // Kill 'Em With Sleep Deprivation
+        {12479, "Wothlk quest"}, // Wrath of the Lich King: Onwards to Northrend!
+        {12480, "Wothlk quest"}, // Wrath of the Lich King: Onwards to Northrend!
     };
 
     public static readonly Dictionary<int, bool> ManualRepeatableOverride = new Dictionary<int, bool>()
